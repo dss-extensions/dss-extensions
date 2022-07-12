@@ -9,3 +9,5 @@ Since 2019, that goal has been reached and the target moved to modernize the our
 
 Projects currently hosted on this organization use several languages (Pascal, C, C++, Python, Julia, C#, MATLAB) and there have been requests and comments from users interested language bindings for other languages like Java, Go, and Rust. 
 To avoid upsetting one the language bindings when updating the base library, sometimes we cannot change certain aspects of the base library. This is the place to raise concerns and suggestions about such topics.
+
+Several pre-2022 issues from the other projects were transferred to the issue tracker here. Even though the wording on those may suggest the original project/language, they present challenges or tasks shared across all projects.
