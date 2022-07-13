@@ -6565,47 +6565,47 @@ msgid "PlotOption.PlotID"
 msgstr ""
 "Plot identifier for dynamic updates of \"profile\" and \"scatter\" plots in the OpenDSS Viewer (See \"plot type\" for more details).When multiple \"plot\" commands are executed with the same PlotID, the same figure will be updated with the most recent simulation results.\v\vThis identifier could be declared as an integer number or a string without spaces.\v\vExample:\v\vset OpenDSSViewer=true ! OpenDSS Viewer enabled\vsolve\vplot scatter PlotID=plotA  !Generates a new scatter plot\vsolve\vplot scatter PlotID=plotB  !Generates a new scatter plot\vsolve\vplot scatter PlotID=plotA  !Updates the data in plotA\vsolve\vplot scatter PlotID=plotA  !Updates the data in plotA\v"
 
-msgid "ESPVLControl.(1) Element"
+msgid "ESPVLControl.Element"
 msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; must be specified."
 
-msgid "ESPVLControl.(2) Terminal"
+msgid "ESPVLControl.Terminal"
 msgstr "Number of the terminal of the circuit element to which the ESPVLControl control is connected. 1 or 2, typically.  Default is 1. Make sure you have the direction on the power matching the sign of kWLimit."
 
-msgid "ESPVLControl.(3) Type"
+msgid "ESPVLControl.Type"
 msgstr "Type of controller.  1= System Controller; 2= Local controller. "
 
-msgid "ESPVLControl.(4) kWBand"
+msgid "ESPVLControl.kWBand"
 msgstr "Bandwidth (kW) of the dead band around the target limit.No dispatch changes are attempted if the power in the monitored terminal stays within this band."
 
-msgid "ESPVLControl.(5) kvarlimit"
+msgid "ESPVLControl.kvarlimit"
 msgstr "Max kvar to be delivered through the element.  Uses same dead band as kW."
 
-msgid "ESPVLControl.(6) LocalControlList"
+msgid "ESPVLControl.LocalControlList"
 msgstr "Array list of ESPVLControl local controller objects to be dispatched by System Controller. If not specified, all ESPVLControl devices with type=local in the circuit not attached to another controller are assumed to be part of this controller's fleet."
 
-msgid "ESPVLControl.(7) LocalControlWeights"
+msgid "ESPVLControl.LocalControlWeights"
 msgstr "Array of proportional weights corresponding to each ESPVLControl local controller in the LocalControlList."
 
-msgid "ESPVLControl.(8) PVSystemList"
+msgid "ESPVLControl.PVSystemList"
 msgstr "Array list of PVSystem objects to be dispatched by a Local Controller. "
 
-msgid "ESPVLControl.(9) PVSystemWeights"
+msgid "ESPVLControl.PVSystemWeights"
 msgstr "Array of proportional weights corresponding to each PVSystem in the PVSystemList."
 
-msgid "ESPVLControl.(10) StorageList"
+msgid "ESPVLControl.StorageList"
 msgstr "Array list of Storage objects to be dispatched by Local Controller. "
 
-msgid "ESPVLControl.(11) StorageWeights"
+msgid "ESPVLControl.StorageWeights"
 msgstr "Array of proportional weights corresponding to each Storage object in the StorageControlList."
 
-msgid "ESPVLControl.(12) Forecast"
+msgid "ESPVLControl.Forecast"
 msgstr "Loadshape object containing daily forecast."
 
-msgid "ESPVLControl.(13) basefreq"
+msgid "ESPVLControl.basefreq"
 msgstr "Base Frequency for ratings."
 
-msgid "ESPVLControl.(14) enabled"
+msgid "ESPVLControl.enabled"
 msgstr "{Yes|No or True|False} Indicates whether this element is enabled."
 
-msgid "ESPVLControl.(15) like"
+msgid "ESPVLControl.like"
 msgstr "Make like another object, e.g.:\v\vNew Capacitor.C2 like=c1  ..."
