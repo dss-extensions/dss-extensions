@@ -6213,7 +6213,7 @@ msgid "ShowOption.buses"
 msgstr "Report showing all buses and nodes currently defined."
 
 msgid "ShowOption.busflow"
-msgstr "Creates a report showing power and current flows as well as voltages around a selected bus. Syntax:\v\vShow BUSFlow busname [MVA|kVA*] [Seq* | Elements]\v\vShow busflow busxxx kVA elem\vShow busflow busxxx MVA seq\v\vNOTE: The Show menu will prompt you for these values."
+msgstr "Creates a report showing power and current flows as well as voltages around a selected bus. Syntax:\n\nShow BUSFlow busname [MVA|kVA*] [Seq* | Elements]\n\nShow busflow busxxx kVA elem\nShow busflow busxxx MVA seq\n\nNOTE: The Show menu will prompt you for these values."
 
 msgid "ShowOption.Controlled"
 msgstr "Show Controlled elements and the names of the controls connected to them in CSV format."
@@ -6225,13 +6225,13 @@ msgid "ShowOption.convergence"
 msgstr "Report on the convergence of each node voltage."
 
 msgid "ShowOption.currents"
-msgstr "Report showing currents from most recent solution. syntax: \v\vShow Currents  [[residual=]yes|no*] [Seq* | Elements]\v\vIf \"residual\" flag is yes, the sum of currents in all conductors is reported. Default is to report Sequence currents; otherwise currents in all conductors are reported."
+msgstr "Report showing currents from most recent solution. syntax: \n\nShow Currents  [[residual=]yes|no*] [Seq* | Elements]\n\nIf \"residual\" flag is yes, the sum of currents in all conductors is reported. Default is to report Sequence currents; otherwise currents in all conductors are reported."
 
 msgid "ShowOption.deltaV"
 msgstr "Show voltages ACROSS each 2-terminal element, phase-by-phase. "
 
 msgid "ShowOption.elements"
-msgstr "Shows names of all elements in circuit or all elements of a specified class. Syntax: \v\vShow ELements [Classname] \v\vUseful for creating scripts that act on selected classes of elements. "
+msgstr "Shows names of all elements in circuit or all elements of a specified class. Syntax: \n\nShow ELements [Classname] \n\nUseful for creating scripts that act on selected classes of elements. "
 
 msgid "ShowOption.eventlog"
 msgstr "Shows the present event log. (Regulator tap changes, capacitor switching, etc.)"
@@ -6240,7 +6240,7 @@ msgid "ShowOption.faults"
 msgstr "After fault study solution, shows fault currents."
 
 msgid "ShowOption.generators"
-msgstr "Report showing generator elements currently defined and the values of the energy meters \vassociated with each generator."
+msgstr "Report showing generator elements currently defined and the values of the energy meters \nassociated with each generator."
 
 msgid "ShowOption.isolated"
 msgstr "Report showing buses and elements that are isolated from the main source."
@@ -6249,7 +6249,7 @@ msgid "ShowOption.kvbasemismatch"
 msgstr "Creates a report of Load and Generator elements for which the base voltage does not match the Bus base voltage. Scripts for correcting the voltage base are suggested."
 
 msgid "ShowOption.lineconstants"
-msgstr "Creates two report files for the line constants (impedances) of every LINEGEOMETRY element currently defined. One file shows the main report with the matrices. The other file contains corresponding LINECODE definitions that you may use in subsequent simulations.  Syntax:\v\vShow LIneConstants [frequency] [none|mi|km|kft|m|me|ft|in|cm] [rho]\v\vSpecify the frequency, length units and earth resistivity (meter-ohms). Examples:\v\vShow Lineconstants 60 kft 100\vShow Linecon 50 km 1000"
+msgstr "Creates two report files for the line constants (impedances) of every LINEGEOMETRY element currently defined. One file shows the main report with the matrices. The other file contains corresponding LINECODE definitions that you may use in subsequent simulations.  Syntax:\n\nShow LIneConstants [frequency] [none|mi|km|kft|m|me|ft|in|cm] [rho]\n\nSpecify the frequency, length units and earth resistivity (meter-ohms). Examples:\n\nShow Lineconstants 60 kft 100\nShow Linecon 50 km 1000"
 
 msgid "ShowOption.loops"
 msgstr "Shows closed loops detected by EnergyMeter elements that are possibly unwanted. Otherwise, loops are OK."
@@ -6264,7 +6264,7 @@ msgid "ShowOption.mismatch"
 msgstr "Shows the current mismatches at each node in amperes and percent of max currents at node."
 
 msgid "ShowOption.monitor"
-msgstr "Shows the contents of a selected monitor. Syntax: \v\v Show Monitor  monitorname"
+msgstr "Shows the contents of a selected monitor. Syntax: \n\n Show Monitor  monitorname"
 
 msgid "ShowOption.overloads"
 msgstr "Shows overloaded power delivery elements."
@@ -6273,7 +6273,7 @@ msgid "ShowOption.panel"
 msgstr "Shows control panel. (not necessary for standalone version)"
 
 msgid "ShowOption.powers"
-msgstr "Report on powers flowing in circuit from most recent solution. \vPowers may be reported in kVA or MVA and in sequence quantities or in every conductor of each element. Syntax:\v\vShow Powers [MVA|kVA*] [Seq* | Elements]\v\vSequence powers in kVA is the default. Examples:\v\vShow powers\vShow power kva element\vShow power mva elem"
+msgstr "Report on powers flowing in circuit from most recent solution. \nPowers may be reported in kVA or MVA and in sequence quantities or in every conductor of each element. Syntax:\n\nShow Powers [MVA|kVA*] [Seq* | Elements]\n\nSequence powers in kVA is the default. Examples:\n\nShow powers\nShow power kva element\nShow power mva elem"
 
 msgid "ShowOption.QueryLog"
 msgstr "Show Query Log file. "
@@ -6291,13 +6291,13 @@ msgid "ShowOption.topology"
 msgstr "Shows the topology as seen by the SwtControl elements."
 
 msgid "ShowOption.unserved"
-msgstr "Shows loads that are \"unserved\". That is, loads for which the voltage is too low, or a branch on the source side is overloaded. If UEonly is specified, shows only those loads in which the emergency rating has been exceeded. Syntax:\v\vShow Unserved [UEonly] (unserved loads)"
+msgstr "Shows loads that are \"unserved\". That is, loads for which the voltage is too low, or a branch on the source side is overloaded. If UEonly is specified, shows only those loads in which the emergency rating has been exceeded. Syntax:\n\nShow Unserved [UEonly] (unserved loads)"
 
 msgid "ShowOption.variables"
 msgstr "Shows internal state variables of devices (Power conversion elements) that report them."
 
 msgid "ShowOption.voltages"
-msgstr "Reports voltages from most recent solution. Voltages are reported with respect to \vsystem reference (Node 0) by default (LN option), but may also be reported Line-Line (LL option).\vThe voltages are normally reported by bus/node, but may also be reported by circuit element. Syntax:\v\vShow Voltages [LL |LN*]  [Seq* | Nodes | Elements]\v\vShow Voltages\vShow Voltage LN Nodes\vShow Voltages LL Nodes\vShow Voltage LN Elem"
+msgstr "Reports voltages from most recent solution. Voltages are reported with respect to \nsystem reference (Node 0) by default (LN option), but may also be reported Line-Line (LL option).\nThe voltages are normally reported by bus/node, but may also be reported by circuit element. Syntax:\n\nShow Voltages [LL |LN*]  [Seq* | Nodes | Elements]\n\nShow Voltages\nShow Voltage LN Nodes\nShow Voltages LL Nodes\nShow Voltage LN Elem"
 
 msgid "ShowOption.y"
 msgstr "Show the system Y matrix. Could be a large file!"
@@ -6306,7 +6306,7 @@ msgid "ShowOption.yprim"
 msgstr "Show the primitive admittance (y) matrix for the active element."
 
 msgid "ShowOption.zone"
-msgstr "Shows the zone for a selected EnergyMeter element. Shows zone either in a text file or in a graphical tree view.\v\vShow Zone  energymetername [Treeview]"
+msgstr "Shows the zone for a selected EnergyMeter element. Shows zone either in a text file or in a graphical tree view.\n\nShow Zone  energymetername [Treeview]"
 
 msgid "ExportOption.AllocationFactors"
 msgstr "Exports load allocation factors. File name is assigned."
@@ -6342,10 +6342,10 @@ msgid "ExportOption.CDPSMTopo"
 msgstr "** Deprecated ** (IEC 61968-13, CDPSM Topology profile)"
 
 msgid "ExportOption.CIM100"
-msgstr "(Default file = CIM100x.XML) (IEC 61968-13, combined CIM100 for unbalanced load flow profile)\v [File=filename fid=_uuidstring Substation=subname sid=_uuidstring\v SubGeographicRegion=subgeoname sgrid=_uuidstring GeographicRegion=geoname rgnid=_uuidstring]"
+msgstr "(Default file = CIM100x.XML) (IEC 61968-13, combined CIM100 for unbalanced load flow profile)\n [File=filename fid=_uuidstring Substation=subname sid=_uuidstring\n SubGeographicRegion=subgeoname sgrid=_uuidstring GeographicRegion=geoname rgnid=_uuidstring]"
 
 msgid "ExportOption.CIM100Fragments"
-msgstr "(Default file ROOT = CIM100) (IEC 61968-13, CIM100 for unbalanced load flow profile)\v produces 6 separate files ROOT_FUN.XML for Functional profile,\v ROOT_EP.XML for Electrical Properties profile,\v ROOT_TOPO.XML for Topology profile,\v ROOT_CAT.XML for Asset Catalog profile,\v ROOT_GEO.XML for Geographical profile and\v ROOT_SSH.XML for Steady State Hypothesis profile\v [File=fileroot fid=_uuidstring Substation=subname sid=_uuidstring\v SubGeographicRegion=subgeoname sgrid=_uuidstring GeographicRegion=geoname rgnid=_uuidstring]"
+msgstr "(Default file ROOT = CIM100) (IEC 61968-13, CIM100 for unbalanced load flow profile)\n produces 6 separate files ROOT_FUN.XML for Functional profile,\n ROOT_EP.XML for Electrical Properties profile,\n ROOT_TOPO.XML for Topology profile,\n ROOT_CAT.XML for Asset Catalog profile,\n ROOT_GEO.XML for Geographical profile and\n ROOT_SSH.XML for Steady State Hypothesis profile\n [File=fileroot fid=_uuidstring Substation=subname sid=_uuidstring\n SubGeographicRegion=subgeoname sgrid=_uuidstring GeographicRegion=geoname rgnid=_uuidstring]"
 
 msgid "ExportOption.Contours"
 msgstr "Exports the Contours matrix (C) calculated after initilizing A-Diakoptics. The output format is compressed coordianted and the values are integers.  If A-Diakoptics is not initialized this command does nothing"
@@ -6405,7 +6405,7 @@ msgid "ExportOption.Meters"
 msgstr "(Default file = EXP_METERS.CSV) Energy meter exports. Adding the switch \"/multiple\" or \"/m\" will  cause a separate file to be written for each meter."
 
 msgid "ExportOption.Monitors"
-msgstr "(file name is assigned by Monitor export) Monitor values. The argument is the name of the monitor (e.g. Export Monitor XYZ, XYZ is the name of the monitor).\vThe argument can be ALL, which means that all the monitors will be exported"
+msgstr "(file name is assigned by Monitor export) Monitor values. The argument is the name of the monitor (e.g. Export Monitor XYZ, XYZ is the name of the monitor).\nThe argument can be ALL, which means that all the monitors will be exported"
 
 msgid "ExportOption.NodeNames"
 msgstr "(Default file = EXP_NodeNames.CSV) Exports Single-column file of all node names in the active circuit. Useful for making scripts."
@@ -6423,7 +6423,7 @@ msgid "ExportOption.Powers"
 msgstr "(Default file = EXP_POWERS.CSV) [MVA] [Filename] Powers (kVA by default) into each terminal of each element."
 
 msgid "ExportOption.Profile"
-msgstr "[Default file = EXP_Profile.CSV] Coordinates, color of each line section in Profile plot. Same options as Plot Profile Phases property.\v\vExample:  Export Profile Phases=All [optional file name]"
+msgstr "[Default file = EXP_Profile.CSV] Coordinates, color of each line section in Profile plot. Same options as Plot Profile Phases property.\n\nExample:  Export Profile Phases=All [optional file name]"
 
 msgid "ExportOption.PVSystem_Meters"
 msgstr "(Default file = EXP_PVMETERS.CSV) Present values of PVSystem meters. Adding the switch \"/multiple\" or \"/m\" will  cause a separate file to be written for each PVSystem."
@@ -6432,7 +6432,7 @@ msgid "ExportOption.Result"
 msgstr "(Default file = EXP_Result.CSV)  Exports the result of the most recent command."
 
 msgid "ExportOption.Sections"
-msgstr "(Default file = EXP_SECTIONS.CSV) Data for each section between overcurrent protection devices. \v\vExamples: \v  Export Sections [optional filename]\vExport Sections meter=M1 [optional filename]"
+msgstr "(Default file = EXP_SECTIONS.CSV) Data for each section between overcurrent protection devices. \n\nExamples: \n  Export Sections [optional filename]\nExport Sections meter=M1 [optional filename]"
 
 msgid "ExportOption.SeqCurrents"
 msgstr "(Default file = EXP_SEQCURRENTS.CSV) Sequence currents in each terminal of 3-phase elements."
@@ -6493,10 +6493,10 @@ msgstr "Exports the Link branches matrix (ZLL) calculated after initilizing A-Di
 
 msgid "PlotOption.type"
 msgstr ""
-"One of {Circuit | Monitor | Daisy | Zones | AutoAdd | General (bus data) | Loadshape | Tshape | Priceshape |Profile} \vA \"Daisy\" plot is a special circuit plot that places a marker at each Generator location or at buses in the BusList property, if defined. A Zones plot shows the meter zones (see help on Object). Autoadd shows the autoadded generators. General plot shows quantities associated with buses using gradient colors between C1 and C2. Values are read from a file (see Object). Loadshape plots the specified loadshape. Examples:\v\vPlot type=circuit quantity=power\vPlot Circuit Losses 1phlinestyle=3\vPlot Circuit quantity=3 object=mybranchdata.csv\vPlot daisy "
-"power max=5000 dots=N Buslist=[file=MyBusList.txt]\vPlot General quantity=1 object=mybusdata.csv\vPlot Loadshape object=myloadshape\vPlot Tshape object=mytemperatureshape\vPlot Priceshape object=mypriceshape\vPlot Profile\vPlot Profile Phases=Primary\v\vAdditional plots with the OpenDSS Viewer (These plots are enabled with the \"OpenDSSViewer\" option):\v- Plot evolution  ! Probabilistic density evolution plot with the line-to-ground magnitude of all load voltages in per unit base.\v- Plot energymeter object=system  ! System energy meter plot. The \"DemandInterval\" option is required.\v- Plot energymeter object=Totals  ! Totals energy meter plot. The \"DemandInterval"
-"\" option is required.\v- Plot energymeter object=voltexception  ! Voltage exception plot. The \"DemandInterval\" and \"VoltExceptionReport\" options are required.\v- Plot energymeter object=overloads  ! Overload report plot. The \"DemandInterval\" and \"OverloadReport\" options are required.\v- Plot energymeter object=myMeter  ! Energy meter plot. The \"DemandInterval\" and \"DIVerbose\" options are required.\v- Plot loadshape object=myLoadshape  ! Loadshapes with the OpenDSS Viewer functionalities.\v- Plot matrix incidence  ! Incidence matrix plot (Requires: CalcIncMatrix or CalcIncMatrix_O).\v- Plot matrix laplacian  ! Laplacian matrix plot (Requires: "
-"CalcLaplacian).\v- Plot monitor object=myMonitor  ! Monitors with the OpenDSS Viewer functionalities. All channels are included in this plot.\v- Plot phasevoltage object=myMeter  ! Phase voltage plot associated to an energy meter. The \"DemandInterval\", \"DIVerbose\" options and the \"PhaseVoltageReport\" parameter are required.\v- Plot profile  ! 3D and 2D versions of the voltage profile.\v- Plot scatter  ! Scatter plot with geovisualization of line-to-ground bus voltage magnitudes in per unit."
+"One of {Circuit | Monitor | Daisy | Zones | AutoAdd | General (bus data) | Loadshape | Tshape | Priceshape |Profile} \nA \"Daisy\" plot is a special circuit plot that places a marker at each Generator location or at buses in the BusList property, if defined. A Zones plot shows the meter zones (see help on Object). Autoadd shows the autoadded generators. General plot shows quantities associated with buses using gradient colors between C1 and C2. Values are read from a file (see Object). Loadshape plots the specified loadshape. Examples:\n\nPlot type=circuit quantity=power\nPlot Circuit Losses 1phlinestyle=3\nPlot Circuit quantity=3 object=mybranchdata.csv\nPlot daisy "
+"power max=5000 dots=N Buslist=[file=MyBusList.txt]\nPlot General quantity=1 object=mybusdata.csv\nPlot Loadshape object=myloadshape\nPlot Tshape object=mytemperatureshape\nPlot Priceshape object=mypriceshape\nPlot Profile\nPlot Profile Phases=Primary\n\nAdditional plots with the OpenDSS Viewer (These plots are enabled with the \"OpenDSSViewer\" option):\n- Plot evolution  ! Probabilistic density evolution plot with the line-to-ground magnitude of all load voltages in per unit base.\n- Plot energymeter object=system  ! System energy meter plot. The \"DemandInterval\" option is required.\n- Plot energymeter object=Totals  ! Totals energy meter plot. The \"DemandInterval"
+"\" option is required.\n- Plot energymeter object=voltexception  ! Voltage exception plot. The \"DemandInterval\" and \"VoltExceptionReport\" options are required.\n- Plot energymeter object=overloads  ! Overload report plot. The \"DemandInterval\" and \"OverloadReport\" options are required.\n- Plot energymeter object=myMeter  ! Energy meter plot. The \"DemandInterval\" and \"DIVerbose\" options are required.\n- Plot loadshape object=myLoadshape  ! Loadshapes with the OpenDSS Viewer functionalities.\n- Plot matrix incidence  ! Incidence matrix plot (Requires: CalcIncMatrix or CalcIncMatrix_O).\n- Plot matrix laplacian  ! Laplacian matrix plot (Requires: "
+"CalcLaplacian).\n- Plot monitor object=myMonitor  ! Monitors with the OpenDSS Viewer functionalities. All channels are included in this plot.\n- Plot phasevoltage object=myMeter  ! Phase voltage plot associated to an energy meter. The \"DemandInterval\", \"DIVerbose\" options and the \"PhaseVoltageReport\" parameter are required.\n- Plot profile  ! 3D and 2D versions of the voltage profile.\n- Plot scatter  ! Scatter plot with geovisualization of line-to-ground bus voltage magnitudes in per unit."
 
 msgid "PlotOption.quantity"
 msgstr "One of {Voltage | Current | Power | Losses | Capacity | (Value Index for General, AutoAdd, or Circuit[w/ file]) }"
@@ -6523,19 +6523,19 @@ msgid "PlotOption.r2"
 msgstr "pu value for tri-color plot mid range [default=.50 of max scale]. Corresponds to color C2."
 
 msgid "PlotOption.c1"
-msgstr "RGB color number or standard color name for color C1. This is the default color for circuit plots. Default is blue. See options in the Plot menu.\v\vStandard color names are: \v\v Black  \v Maroon \v Green  \v Olive  \v Navy   \v Purple \v Teal   \v Gray   \v Silver \v Red    \v Lime   \v Yellow \v Blue   \v Fuchsia\v Aqua   \v LtGray \v DkGray \v White  "
+msgstr "RGB color number or standard color name for color C1. This is the default color for circuit plots. Default is blue. See options in the Plot menu.\n\nStandard color names are: \n\n Black  \n Maroon \n Green  \n Olive  \n Navy   \n Purple \n Teal   \n Gray   \n Silver \n Red    \n Lime   \n Yellow \n Blue   \n Fuchsia\n Aqua   \n LtGray \n DkGray \n White  "
 
 msgid "PlotOption.c2"
-msgstr "RGB color number or standard color name for color C2. Used for gradients and tricolor plots such as circuit voltage.\v\vSee Help on C1 for list of standard color names."
+msgstr "RGB color number or standard color name for color C2. Used for gradients and tricolor plots such as circuit voltage.\n\nSee Help on C1 for list of standard color names."
 
 msgid "PlotOption.c3"
-msgstr "RGB color number or standard color name for color C3. Used for gradients and tricolor plots such a circuit voltage.\v\vSee Help on C1 for list of standard color names."
+msgstr "RGB color number or standard color name for color C3. Used for gradients and tricolor plots such a circuit voltage.\n\nSee Help on C1 for list of standard color names."
 
 msgid "PlotOption.channels"
-msgstr "Array of channel numbers for monitor plot. Example\v\vPlot Type=Monitor Object=MyMonitor Channels=[1, 3, 5]\v\vDo \"Show Monitor MyMonitor\" to see channel definitions."
+msgstr "Array of channel numbers for monitor plot. Example\n\nPlot Type=Monitor Object=MyMonitor Channels=[1, 3, 5]\n\nDo \"Show Monitor MyMonitor\" to see channel definitions."
 
 msgid "PlotOption.bases"
-msgstr "Array of base values for each channel for monitor plot. Useful for creating per unit plots. Default is 1.0 for each channel.  Set Base= property after defining channels.\v\vPlot Type=Monitor Object=MyMonitor Channels=[1, 3, 5] Bases=[2400 2400 2400]\v\vDo \"Show Monitor MyMonitor\" to see channel range and definitions."
+msgstr "Array of base values for each channel for monitor plot. Useful for creating per unit plots. Default is 1.0 for each channel.  Set Base= property after defining channels.\n\nPlot Type=Monitor Object=MyMonitor Channels=[1, 3, 5] Bases=[2400 2400 2400]\n\nDo \"Show Monitor MyMonitor\" to see channel range and definitions."
 
 msgid "PlotOption.subs"
 msgstr "{Yes | No*} Displays a marker at each transformer declared to be a substation. At least one bus coordinate must be defined for the transformer. See MarkTransformer and TransMarkerCode options."
@@ -6544,7 +6544,7 @@ msgid "PlotOption.thickness"
 msgstr "Max thickness allowed for lines in circuit plots (default=7)."
 
 msgid "PlotOption.buslist"
-msgstr "{Array of Bus Names | File=filename } This is for the Daisy plot. \v\vPlot daisy power max=5000 dots=N Buslist=[file=MyBusList.txt]\v\vA \"daisy\" marker is plotted for each bus in the list. Bus name may be repeated, which results in multiple markers distributed around the bus location. This gives the appearance of a daisy if there are several symbols at a bus. Not needed for plotting active generators."
+msgstr "{Array of Bus Names | File=filename } This is for the Daisy plot. \n\nPlot daisy power max=5000 dots=N Buslist=[file=MyBusList.txt]\n\nA \"daisy\" marker is plotted for each bus in the list. Bus name may be repeated, which results in multiple markers distributed around the bus location. This gives the appearance of a daisy if there are several symbols at a bus. Not needed for plotting active generators."
 
 msgid "PlotOption.min"
 msgstr "Enter 0 (the default value) or the value corresponding to min value corresponding to color C1 in General bus data plots."
@@ -6556,14 +6556,14 @@ msgid "PlotOption.1phLinestyle"
 msgstr "Line style for drawing 1-phase lines. A number in the range of [1..7].Default is 1 (solid). Use 3 for dotted; 2 for dashed."
 
 msgid "PlotOption.phases"
-msgstr "{default* | ALL | PRIMARY | LL3ph | LLALL | LLPRIMARY | (phase number)} For Profile plot. Specify which phases you want plotted.\v\vdefault = plot only nodes 1-3 at 3-phase buses (default)\vALL = plot all nodes\vPRIMARY = plot all nodes -- primary only (voltage > 1kV)\vLL3ph = 3-ph buses only -- L-L voltages)\vLLALL = plot all nodes -- L-L voltages)\vLLPRIMARY = plot all nodes -- L-L voltages primary only)\v(phase number) = plot all nodes on selected phase\v\vNote: Only nodes downline from an energy meter are plotted."
+msgstr "{default* | ALL | PRIMARY | LL3ph | LLALL | LLPRIMARY | (phase number)} For Profile plot. Specify which phases you want plotted.\n\ndefault = plot only nodes 1-3 at 3-phase buses (default)\nALL = plot all nodes\nPRIMARY = plot all nodes -- primary only (voltage > 1kV)\nLL3ph = 3-ph buses only -- L-L voltages)\nLLALL = plot all nodes -- L-L voltages)\nLLPRIMARY = plot all nodes -- L-L voltages primary only)\n(phase number) = plot all nodes on selected phase\n\nNote: Only nodes downline from an energy meter are plotted."
 
 msgid "PlotOption.profilescale"
-msgstr "PUKM | 120KFT, default is PUKM\vPUKM = per-unit voltage vs. distance in km\v120KFT = voltage on 120-V base vs. distance in kft."
+msgstr "PUKM | 120KFT, default is PUKM\nPUKM = per-unit voltage vs. distance in km\n120KFT = voltage on 120-V base vs. distance in kft."
 
 msgid "PlotOption.PlotID"
 msgstr ""
-"Plot identifier for dynamic updates of \"profile\" and \"scatter\" plots in the OpenDSS Viewer (See \"plot type\" for more details).When multiple \"plot\" commands are executed with the same PlotID, the same figure will be updated with the most recent simulation results.\v\vThis identifier could be declared as an integer number or a string without spaces.\v\vExample:\v\vset OpenDSSViewer=true ! OpenDSS Viewer enabled\vsolve\vplot scatter PlotID=plotA  !Generates a new scatter plot\vsolve\vplot scatter PlotID=plotB  !Generates a new scatter plot\vsolve\vplot scatter PlotID=plotA  !Updates the data in plotA\vsolve\vplot scatter PlotID=plotA  !Updates the data in plotA\v"
+"Plot identifier for dynamic updates of \"profile\" and \"scatter\" plots in the OpenDSS Viewer (See \"plot type\" for more details).When multiple \"plot\" commands are executed with the same PlotID, the same figure will be updated with the most recent simulation results.\n\nThis identifier could be declared as an integer number or a string without spaces.\n\nExample:\n\nset OpenDSSViewer=true ! OpenDSS Viewer enabled\nsolve\nplot scatter PlotID=plotA  !Generates a new scatter plot\nsolve\nplot scatter PlotID=plotB  !Generates a new scatter plot\nsolve\nplot scatter PlotID=plotA  !Updates the data in plotA\nsolve\nplot scatter PlotID=plotA  !Updates the data in plotA"
 
 msgid "ESPVLControl.Element"
 msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; must be specified."
@@ -6608,4 +6608,4 @@ msgid "ESPVLControl.enabled"
 msgstr "{Yes|No or True|False} Indicates whether this element is enabled."
 
 msgid "ESPVLControl.like"
-msgstr "Make like another object, e.g.:\v\vNew Capacitor.C2 like=c1  ..."
+msgstr "Make like another object, e.g.:\n\nNew Capacitor.C2 like=c1  ..."
