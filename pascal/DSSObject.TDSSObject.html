@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSObject: Class TDSSObject</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSObject"></span><h1 class="cio">Class TDSSObject</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="DSSObject.html">DSSObject</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSObject = class(<a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TNamedObject description follows</div><p>
+this is a GUID compliant to RFC 4122, v4</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a></li>
+<li class="thisitem">TDSSObject</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#DSS">DSS</a></strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#PrpSequence">PrpSequence</a></strong>: <a href="CAPI_Types.html#PIntegerArray0">pIntegerArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#DSSObjType">DSSObjType</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#ParentClass">ParentClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#ClassIndex">ClassIndex</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSObject.TDSSObject.html#Flags">Flags</a></strong>: <a href="DSSClass.html#TDSSObjectFlags">TDSSObjectFlags</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObject.TDSSObject.html#GetNextPropertySet">GetNextPropertySet</a></strong>(idx: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#PropertySideEffects">PropertySideEffects</a></strong>(Idx: Integer; previousIntVal: Integer = 0); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#DoErrorMsg">DoErrorMsg</a></strong>(Const S, Emsg, ProbCause: String; ErrNum: Integer); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#DoSimpleMsg">DoSimpleMsg</a></strong>(Const S: String; ErrNum:Integer); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#DoSimpleMsg">DoSimpleMsg</a></strong>(Const S: String; fmtArgs: Array of Const; ErrNum:Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#AppendToEventLog">AppendToEventLog</a></strong>(const opdev: String; const action: String); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="DSSObject.TDSSObject.html#Create">Create</a></strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="DSSObject.TDSSObject.html#Destroy">Destroy</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObject.TDSSObject.html#Edit">Edit</a></strong>(Parser: <a href="ParserDel.TDSSParser.html">TDSSParser</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#MakeLike">MakeLike</a></strong>(OtherPtr: Pointer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#SetAsNextSeq">SetAsNextSeq</a></strong>(Index: Integer); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObject.TDSSObject.html#GetPropertyValue">GetPropertyValue</a></strong>(Index: Integer): String; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#DumpProperties">DumpProperties</a></strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#SaveWrite">SaveWrite</a></strong>(F: TFileStream); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObject.TDSSObject.html#CustomSetRaw">CustomSetRaw</a></strong>(Idx: Integer; Value: String); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObject.TDSSObject.html#FullName">FullName</a></strong>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObject.TDSSObject.html#DSSClassName">DSSClassName</a></strong>: String;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSObject.TDSSObject.html#PropertyValue">PropertyValue</a></strong>[Index:Integer]: String READ <a href="DSSObject.TDSSObject.html#GetPropertyValue">GetPropertyValue</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSObject.TDSSObject.html#Name">Name</a></strong>: String READ <a href="NamedObject.TNamedObject.html#LName">LName</a> WRITE Set_Name;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSS"></span><code><strong>DSS</strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PrpSequence"></span><code><strong>PrpSequence</strong>: <a href="CAPI_Types.html#PIntegerArray0">pIntegerArray0</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSObjType"></span><code><strong>DSSObjType</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParentClass"></span><code><strong>ParentClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+PD, PC, Monitor, LineCode, etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClassIndex"></span><code><strong>ClassIndex</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Flags"></span><code><strong>Flags</strong>: <a href="DSSClass.html#TDSSObjectFlags">TDSSObjectFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Index into the class collection list</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetNextPropertySet"></span><code>function <strong>GetNextPropertySet</strong>(idx: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PropertySideEffects"></span><code>procedure <strong>PropertySideEffects</strong>(Idx: Integer; previousIntVal: Integer = 0); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoErrorMsg"></span><code>procedure <strong>DoErrorMsg</strong>(Const S, Emsg, ProbCause: String; ErrNum: Integer); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+DSSContext convenience functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoSimpleMsg"></span><code>procedure <strong>DoSimpleMsg</strong>(Const S: String; ErrNum:Integer); inline; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoSimpleMsg"></span><code>procedure <strong>DoSimpleMsg</strong>(Const S: String; fmtArgs: Array of Const; ErrNum:Integer); overload; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendToEventLog"></span><code>procedure <strong>AppendToEventLog</strong>(const opdev: String; const action: String); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Edit"></span><code>function <strong>Edit</strong>(Parser: <a href="ParserDel.TDSSParser.html">TDSSParser</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeLike"></span><code>procedure <strong>MakeLike</strong>(OtherPtr: Pointer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Allow Calls to edit from object itself</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAsNextSeq"></span><code>procedure <strong>SetAsNextSeq</strong>(Index: Integer); inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPropertyValue"></span><code>function <strong>GetPropertyValue</strong>(Index: Integer): String; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DumpProperties"></span><code>procedure <strong>DumpProperties</strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Use dssclass.propertyindex to get index by name</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveWrite"></span><code>procedure <strong>SaveWrite</strong>(F: TFileStream); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CustomSetRaw"></span><code>procedure <strong>CustomSetRaw</strong>(Idx: Integer; Value: String); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FullName"></span><code>function <strong>FullName</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSClassName"></span><code>function <strong>DSSClassName</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PropertyValue"></span><code>property <strong>PropertyValue</strong>[Index:Integer]: String READ <a href="DSSObject.TDSSObject.html#GetPropertyValue">GetPropertyValue</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: String READ <a href="NamedObject.TNamedObject.html#LName">LName</a> WRITE Set_Name;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

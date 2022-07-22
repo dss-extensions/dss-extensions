@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSClassDefs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit DSSClassDefs</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="DSSClass.html">DSSClass</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li><a href="HashList.html">HashList</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSClassDefs.html#CreateDSSClasses">CreateDSSClasses</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSClassDefs.html#DisposeDSSClasses">DisposeDSSClasses</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSClassDefs.html#GetDSSClassPtr">GetDSSClassPtr</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const ClassName: String): <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSClassDefs.html#SetObjectClass">SetObjectClass</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const ObjType: String): Boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#BASECLASSMASK">BASECLASSMASK</a></strong>: Cardinal = $00000007;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#CLASSMASK">CLASSMASK</a></strong>: Cardinal = $FFFFFFF8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#NON_PCPD_ELEM">NON_PCPD_ELEM</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#PD_ELEMENT">PD_ELEMENT</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#PC_ELEMENT">PC_ELEMENT</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#CTRL_ELEMENT">CTRL_ELEMENT</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#METER_ELEMENT">METER_ELEMENT</a></strong> = 5;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#HIDDEN_ELEMENT">HIDDEN_ELEMENT</a></strong> = 6;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#MON_ELEMENT">MON_ELEMENT</a></strong> = 1 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#DSS_OBJECT">DSS_OBJECT</a></strong> = 2 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#SOURCE">SOURCE</a></strong> = 3 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#XFMR_ELEMENT">XFMR_ELEMENT</a></strong> = 4 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#SUBSTATION">SUBSTATION</a></strong> = 5 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#LINE_ELEMENT">LINE_ELEMENT</a></strong> = 6 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#LOAD_ELEMENT">LOAD_ELEMENT</a></strong> = 7 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#FAULTOBJECT">FAULTOBJECT</a></strong> = 8 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#ENERGY_METER">ENERGY_METER</a></strong> = 9 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#GEN_ELEMENT">GEN_ELEMENT</a></strong> = 10 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#CAP_CONTROL">CAP_CONTROL</a></strong> = 11 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#REG_CONTROL">REG_CONTROL</a></strong> = 12 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#CAP_ELEMENT">CAP_ELEMENT</a></strong> = 13 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#RELAY_CONTROL">RELAY_CONTROL</a></strong> = 14 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#RECLOSER_CONTROL">RECLOSER_CONTROL</a></strong> = 15 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#FUSE_CONTROL">FUSE_CONTROL</a></strong> = 16 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#REACTOR_ELEMENT">REACTOR_ELEMENT</a></strong> = 17 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#GEN_CONTROL">GEN_CONTROL</a></strong> = 19 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#SENSOR_ELEMENT">SENSOR_ELEMENT</a></strong> = 20 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#STORAGE_ELEMENT">STORAGE_ELEMENT</a></strong> = 21 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#STORAGE_CONTROL">STORAGE_CONTROL</a></strong> = 22 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#SWT_CONTROL">SWT_CONTROL</a></strong> = 23 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#PVSYSTEM_ELEMENT">PVSYSTEM_ELEMENT</a></strong> = 24 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#GIC_Line">GIC_Line</a></strong> = 26 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#GIC_Transformer">GIC_Transformer</a></strong> = 27 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#INV_CONTROL">INV_CONTROL</a></strong> = 28 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#VS_CONVERTER">VS_CONVERTER</a></strong> = 29 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#EXP_CONTROL">EXP_CONTROL</a></strong> = 30 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#UPFC_ELEMENT">UPFC_ELEMENT</a></strong> = 31 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#UPFC_CONTROL">UPFC_CONTROL</a></strong> = 32 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#VCCS_ELEMENT">VCCS_ELEMENT</a></strong> = 33 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#ESPVL_CONTROL">ESPVL_CONTROL</a></strong> = 34 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#INDMACH012_ELEMENT">INDMACH012_ELEMENT</a></strong> = 35 * 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#GIC_SOURCE">GIC_SOURCE</a></strong> = 36 * 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClassDefs.html#AUTOTRANS_ELEMENT">AUTOTRANS_ELEMENT</a></strong> = 37 * 8;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateDSSClasses"></span><code>procedure <strong>CreateDSSClasses</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DisposeDSSClasses"></span><code>procedure <strong>DisposeDSSClasses</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetDSSClassPtr"></span><code>function <strong>GetDSSClassPtr</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const ClassName: String): <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetObjectClass"></span><code>function <strong>SetObjectClass</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const ObjType: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BASECLASSMASK"></span><code><strong>BASECLASSMASK</strong>: Cardinal = $00000007;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CLASSMASK"></span><code><strong>CLASSMASK</strong>: Cardinal = $FFFFFFF8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NON_PCPD_ELEM"></span><code><strong>NON_PCPD_ELEM</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Basic element types</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PD_ELEMENT"></span><code><strong>PD_ELEMENT</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A circuit Element we don't want enumerated in PD and PC Elements</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PC_ELEMENT"></span><code><strong>PC_ELEMENT</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CTRL_ELEMENT"></span><code><strong>CTRL_ELEMENT</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="METER_ELEMENT"></span><code><strong>METER_ELEMENT</strong> = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="HIDDEN_ELEMENT"></span><code><strong>HIDDEN_ELEMENT</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MON_ELEMENT"></span><code><strong>MON_ELEMENT</strong> = 1 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Specific element Types</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_OBJECT"></span><code><strong>DSS_OBJECT</strong> = 2 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SOURCE"></span><code><strong>SOURCE</strong> = 3 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Just a general DSS object, accessible to all circuits</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="XFMR_ELEMENT"></span><code><strong>XFMR_ELEMENT</strong> = 4 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SUBSTATION"></span><code><strong>SUBSTATION</strong> = 5 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LINE_ELEMENT"></span><code><strong>LINE_ELEMENT</strong> = 6 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+not used</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LOAD_ELEMENT"></span><code><strong>LOAD_ELEMENT</strong> = 7 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FAULTOBJECT"></span><code><strong>FAULTOBJECT</strong> = 8 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ENERGY_METER"></span><code><strong>ENERGY_METER</strong> = 9 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GEN_ELEMENT"></span><code><strong>GEN_ELEMENT</strong> = 10 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CAP_CONTROL"></span><code><strong>CAP_CONTROL</strong> = 11 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="REG_CONTROL"></span><code><strong>REG_CONTROL</strong> = 12 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CAP_ELEMENT"></span><code><strong>CAP_ELEMENT</strong> = 13 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RELAY_CONTROL"></span><code><strong>RELAY_CONTROL</strong> = 14 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RECLOSER_CONTROL"></span><code><strong>RECLOSER_CONTROL</strong> = 15 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FUSE_CONTROL"></span><code><strong>FUSE_CONTROL</strong> = 16 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="REACTOR_ELEMENT"></span><code><strong>REACTOR_ELEMENT</strong> = 17 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GEN_CONTROL"></span><code><strong>GEN_CONTROL</strong> = 19 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+FEEDER_ELEMENT = 18 * 8;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SENSOR_ELEMENT"></span><code><strong>SENSOR_ELEMENT</strong> = 20 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORAGE_ELEMENT"></span><code><strong>STORAGE_ELEMENT</strong> = 21 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORAGE_CONTROL"></span><code><strong>STORAGE_CONTROL</strong> = 22 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SWT_CONTROL"></span><code><strong>SWT_CONTROL</strong> = 23 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PVSYSTEM_ELEMENT"></span><code><strong>PVSYSTEM_ELEMENT</strong> = 24 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GIC_Line"></span><code><strong>GIC_Line</strong> = 26 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deleted &mdash; VV_CONTROL = 25 * 8;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GIC_Transformer"></span><code><strong>GIC_Transformer</strong> = 27 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="INV_CONTROL"></span><code><strong>INV_CONTROL</strong> = 28 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VS_CONVERTER"></span><code><strong>VS_CONVERTER</strong> = 29 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EXP_CONTROL"></span><code><strong>EXP_CONTROL</strong> = 30 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UPFC_ELEMENT"></span><code><strong>UPFC_ELEMENT</strong> = 31 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UPFC_CONTROL"></span><code><strong>UPFC_CONTROL</strong> = 32 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VCCS_ELEMENT"></span><code><strong>VCCS_ELEMENT</strong> = 33 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ESPVL_CONTROL"></span><code><strong>ESPVL_CONTROL</strong> = 34 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="INDMACH012_ELEMENT"></span><code><strong>INDMACH012_ELEMENT</strong> = 35 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GIC_SOURCE"></span><code><strong>GIC_SOURCE</strong> = 36 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AUTOTRANS_ELEMENT"></span><code><strong>AUTOTRANS_ELEMENT</strong> = 37 * 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

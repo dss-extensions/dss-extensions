@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Parallel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Parallel</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_NumCPUs">Parallel_Get_NumCPUs</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_NumCores">Parallel_Get_NumCores</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_ActiveActor">Parallel_Get_ActiveActor</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Set_ActiveActor">Parallel_Set_ActiveActor</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_CreateActor">Parallel_CreateActor</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_ActorCPU">Parallel_Get_ActorCPU</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Set_ActorCPU">Parallel_Set_ActorCPU</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_NumOfActors">Parallel_Get_NumOfActors</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Wait">Parallel_Wait</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Get_ActorProgress">Parallel_Get_ActorProgress</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Get_ActorProgress_GR">Parallel_Get_ActorProgress_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Get_ActorStatus">Parallel_Get_ActorStatus</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Get_ActorStatus_GR">Parallel_Get_ActorStatus_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_ActiveParallel">Parallel_Get_ActiveParallel</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Set_ActiveParallel">Parallel_Set_ActiveParallel</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Parallel.html#Parallel_Get_ConcatenateReports">Parallel_Get_ConcatenateReports</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Parallel.html#Parallel_Set_ConcatenateReports">Parallel_Set_ConcatenateReports</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_NumCPUs"></span><code>function <strong>Parallel_Get_NumCPUs</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_NumCores"></span><code>function <strong>Parallel_Get_NumCores</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActiveActor"></span><code>function <strong>Parallel_Get_ActiveActor</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Set_ActiveActor"></span><code>procedure <strong>Parallel_Set_ActiveActor</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_CreateActor"></span><code>procedure <strong>Parallel_CreateActor</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActorCPU"></span><code>function <strong>Parallel_Get_ActorCPU</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Set_ActorCPU"></span><code>procedure <strong>Parallel_Set_ActorCPU</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_NumOfActors"></span><code>function <strong>Parallel_Get_NumOfActors</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Wait"></span><code>procedure <strong>Parallel_Wait</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActorProgress"></span><code>procedure <strong>Parallel_Get_ActorProgress</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActorProgress_GR"></span><code>procedure <strong>Parallel_Get_ActorProgress_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActorStatus"></span><code>procedure <strong>Parallel_Get_ActorStatus</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActorStatus_GR"></span><code>procedure <strong>Parallel_Get_ActorStatus_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ActiveParallel"></span><code>function <strong>Parallel_Get_ActiveParallel</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Set_ActiveParallel"></span><code>procedure <strong>Parallel_Set_ActiveParallel</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Get_ConcatenateReports"></span><code>function <strong>Parallel_Get_ConcatenateReports</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Parallel_Set_ConcatenateReports"></span><code>procedure <strong>Parallel_Set_ConcatenateReports</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: KLUSolve</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit KLUSolve</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="KLUSolve.html#mvmult">mvmult</a></strong>(N: integer; b, A, x: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#NewSparseSet">NewSparseSet</a></strong>(nBus:LongWord):NativeUInt; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#DeleteSparseSet">DeleteSparseSet</a></strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#SolveSparseSet">SolveSparseSet</a></strong>(id:NativeUInt; x,b:<a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#ZeroSparseSet">ZeroSparseSet</a></strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#FactorSparseMatrix">FactorSparseMatrix</a></strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetSize">GetSize</a></strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetFlops">GetFlops</a></strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetNNZ">GetNNZ</a></strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetSparseNNZ">GetSparseNNZ</a></strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetSingularCol">GetSingularCol</a></strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetRGrowth">GetRGrowth</a></strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetRCond">GetRCond</a></strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetCondEst">GetCondEst</a></strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#AddPrimitiveMatrix">AddPrimitiveMatrix</a></strong>(id:NativeUInt; nOrder:LongWord; Nodes: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#SetLogFile">SetLogFile</a></strong>(Path: pChar; Action:LongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetCompressedMatrix">GetCompressedMatrix</a></strong>(id:NativeUInt; nColP, nNZ:LongWord; pColP, pRowIdx: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetTripletMatrix">GetTripletMatrix</a></strong>(id:NativeUInt; nNZ:LongWord; pRows, pCols: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#FindIslands">FindIslands</a></strong>(id:NativeUInt; nOrder:LongWord; pNodes: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#AddMatrixElement">AddMatrixElement</a></strong>(id:NativeUInt; i,j:LongWord; Value:<a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#GetMatrixElement">GetMatrixElement</a></strong>(id:NativeUInt; i,j:LongWord; Value:<a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#IncrementMatrixElement">IncrementMatrixElement</a></strong>(id:NativeUInt; i,j:LongWord; re: Double; im: Double):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#ZeroiseMatrixElement">ZeroiseMatrixElement</a></strong>(id:NativeUInt; i,j:LongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>FUNCTION <strong><a href="KLUSolve.html#SetOptions">SetOptions</a></strong>(id:NativeUInt; options: UInt64):LongWord; cdecl; external;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="mvmult"></span><code>procedure <strong>mvmult</strong>(N: integer; b, A, x: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NewSparseSet"></span><code>FUNCTION <strong>NewSparseSet</strong>(nBus:LongWord):NativeUInt; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+in general, KLU arrays are 0-based function calls return 0 to indicate failure, 1 for success returns the non-zero handle of a new sparse matrix, if successful must call DeleteSparseSet on the valid handle when finished</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DeleteSparseSet"></span><code>FUNCTION <strong>DeleteSparseSet</strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+return 1 for success, 0 for invalid handle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SolveSparseSet"></span><code>FUNCTION <strong>SolveSparseSet</strong>(id:NativeUInt; x,b:<a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+return 1 for success, 2 for singular, 0 for invalid handle factors matrix if needed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ZeroSparseSet"></span><code>FUNCTION <strong>ZeroSparseSet</strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+return 1 for success, 0 for invalid handle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FactorSparseMatrix"></span><code>FUNCTION <strong>FactorSparseMatrix</strong>(id:NativeUInt):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+return 1 for success, 2 for singular, 0 for invalid handle FactorSparseMatrix does no extra work if the factoring was done previously</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetSize"></span><code>FUNCTION <strong>GetSize</strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+These &quot;Get&quot; functions for matrix information all return 1 for success, 0 for invalid handle Res is the matrix order (number of nodes)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetFlops"></span><code>FUNCTION <strong>GetFlops</strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the following function results are not known prior to factoring Res is the number of floating point operations to factor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetNNZ"></span><code>FUNCTION <strong>GetNNZ</strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is number of non-zero entries in the original matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetSparseNNZ"></span><code>FUNCTION <strong>GetSparseNNZ</strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is the number of non-zero entries in factored matrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetSingularCol"></span><code>FUNCTION <strong>GetSingularCol</strong>(id:NativeUInt; Res: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is a column number corresponding to a singularity, or 0 if not singular</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetRGrowth"></span><code>FUNCTION <strong>GetRGrowth</strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is the pivot element growth factor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetRCond"></span><code>FUNCTION <strong>GetRCond</strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is aquick estimate of the reciprocal of condition number</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetCondEst"></span><code>FUNCTION <strong>GetCondEst</strong>(id:NativeUInt; Res: pDouble):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Res is a more accurate estimate of condition number</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AddPrimitiveMatrix"></span><code>FUNCTION <strong>AddPrimitiveMatrix</strong>(id:NativeUInt; nOrder:LongWord; Nodes: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+return 1 for success, 0 for invalid handle or a node number out of range</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetLogFile"></span><code>FUNCTION <strong>SetLogFile</strong>(Path: pChar; Action:LongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Action = 0 (close), 1 (rewrite) or 2 (append)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetCompressedMatrix"></span><code>FUNCTION <strong>GetCompressedMatrix</strong>(id:NativeUInt; nColP, nNZ:LongWord; pColP, pRowIdx: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+fill sparse matrix in compressed column form return 1 for success, 0 for invalid handle, 2 for invalid array sizes pColP must be of length nColP == nBus + 1 pRowIdx and pMat of length nNZ, which must be at least the value returned by GetNNZ</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetTripletMatrix"></span><code>FUNCTION <strong>GetTripletMatrix</strong>(id:NativeUInt; nNZ:LongWord; pRows, pCols: pLongWord; Mat: <a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+fill sparse matrix in triplet form return 1 for success, 0 for invalid handle, 2 for invalid array sizes pRows, pCols, and Mat must all be of length nNZ</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FindIslands"></span><code>FUNCTION <strong>FindIslands</strong>(id:NativeUInt; nOrder:LongWord; pNodes: pLongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+returns number of islands &gt;= 1 by graph traversal pNodes contains the island number for each node</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AddMatrixElement"></span><code>FUNCTION <strong>AddMatrixElement</strong>(id:NativeUInt; i,j:LongWord; Value:<a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+AddMatrixElement is deprecated, use AddPrimitiveMatrix instead</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetMatrixElement"></span><code>FUNCTION <strong>GetMatrixElement</strong>(id:NativeUInt; i,j:LongWord; Value:<a href="DSSUcomplex.html#PComplex">pComplex</a>):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+GetMatrixElement is deprecated, use GetCompressedMatrix or GetTripletMatrix</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IncrementMatrixElement"></span><code>FUNCTION <strong>IncrementMatrixElement</strong>(id:NativeUInt; i,j:LongWord; re: Double; im: Double):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ZeroiseMatrixElement"></span><code>FUNCTION <strong>ZeroiseMatrixElement</strong>(id:NativeUInt; i,j:LongWord):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetOptions"></span><code>FUNCTION <strong>SetOptions</strong>(id:NativeUInt; options: UInt64):LongWord; cdecl; external;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Transformer: Class TTransfObj</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TTransfObj"></span><h1 class="cio">Class TTransfObj</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="Transformer.html">Transformer</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TTransfObj = class(<a class="normal" href="PDElement.TPDElement.html">TPDElement</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TPDElement description follows</div><div class="nodescription">No description available, ancestor TDSSCktElement description follows</div><div class="nodescription">No description available, ancestor TDSSObject description follows</div><div class="nodescription">No description available, ancestor TNamedObject description follows</div><p>
+this is a GUID compliant to RFC 4122, v4</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a></li>
+<li class="ancestor"><a class="normal" href="DSSObject.TDSSObject.html">TDSSObject</a></li>
+<li class="ancestor"><a class="normal" href="CktElement.TDSSCktElement.html">TDSSCktElement</a></li>
+<li class="ancestor"><a class="normal" href="PDElement.TPDElement.html">TPDElement</a></li>
+<li class="thisitem">TTransfObj</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#DeltaDirection">DeltaDirection</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XRConst">XRConst</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#MaxWindings">MaxWindings</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#TermRef">TermRef</a></strong>: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Zbase">Zbase</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XSC">XSC</a></strong>: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#ZB">ZB</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Y_1Volt">Y_1Volt</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Y_Term">Y_Term</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Y_1Volt_NL">Y_1Volt_NL</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Y_Term_NL">Y_Term_NL</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Y_Terminal_Freqmult">Y_Terminal_Freqmult</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#HVLeadsLV">HVLeadsLV</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XHLChanged">XHLChanged</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#kVARatings">kVARatings</a></strong>: Array Of Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#NumWindings">NumWindings</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#ActiveWinding">ActiveWinding</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#IsSubstation">IsSubstation</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#SubstationName">SubstationName</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#Winding">Winding</a></strong>: <a href="Transformer.html#pWindingArray">pWindingArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XfmrBank">XfmrBank</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XfmrCodeObj">XfmrCodeObj</a></strong>: <a href="DSSObject.TDSSObject.html">TDSSObject</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#CoreType">CoreType</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#n_thermal">n_thermal</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#m_thermal">m_thermal</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XHL">XHL</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XHT">XHT</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#XLT">XLT</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#NormMaxHkVA">NormMaxHkVA</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#EmergMaxHkVA">EmergMaxHkVA</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#ThermalTimeConst">ThermalTimeConst</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#FLrise">FLrise</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#HSrise">HSrise</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#pctLoadLoss">pctLoadLoss</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#pctNoLoadLoss">pctNoLoadLoss</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#ppm_FloatFactor">ppm_FloatFactor</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#pctImag">pctImag</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="Transformer.TTransfObj.html#VABase">VABase</a></strong>: Double;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_PresentTap">Get_PresentTap</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#Set_PresentTap">Set_PresentTap</a></strong>(i: Integer; const Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_MinTap">Get_MinTap</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_MaxTap">Get_MaxTap</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_TapIncrement">Get_TapIncrement</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_BaseVoltage">Get_BaseVoltage</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_BasekVLL">Get_BasekVLL</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_NumTaps">Get_NumTaps</a></strong>(i: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_WdgResistance">Get_WdgResistance</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_WdgConnection">Get_WdgConnection</a></strong>(i: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_WdgkVA">Get_WdgkVA</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_Xsc">Get_Xsc</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_WdgRneutral">Get_WdgRneutral</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#Get_WdgXneutral">Get_WdgXneutral</a></strong>(i: Integer): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#CalcY_Terminal">CalcY_Terminal</a></strong>(FreqMult: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#GICBuildYTerminal">GICBuildYTerminal</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#BuildYPrimComponent">BuildYPrimComponent</a></strong>(YPrim_Component, Y_Terminal: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#AddNeutralToY">AddNeutralToY</a></strong>(FreqMultiplier: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#FetchXfmrCode">FetchXfmrCode</a></strong>();</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#SetTermRef">SetTermRef</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="Transformer.TTransfObj.html#Create">Create</a></strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; const TransfName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="Transformer.TTransfObj.html#Destroy">Destroy</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#PropertySideEffects">PropertySideEffects</a></strong>(Idx: Integer; previousIntVal: Integer = 0); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#MakeLike">MakeLike</a></strong>(OtherPtr: Pointer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#SetNumWindings">SetNumWindings</a></strong>(N: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#RecalcElementData">RecalcElementData</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#CalcYPrim">CalcYPrim</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#GetLosses">GetLosses</a></strong>(var TotalLosses, LoadLosses, NoLoadLosses: <a href="DSSUcomplex.html#Complex">Complex</a>); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="Transformer.TTransfObj.html#RotatePhases">RotatePhases</a></strong>(iPhs: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#DumpProperties">DumpProperties</a></strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#SaveWrite">SaveWrite</a></strong>(F: TFileStream); OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#GetWindingVoltages">GetWindingVoltages</a></strong>(iWind: Integer; VBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#GetAllWindingCurrents">GetAllWindingCurrents</a></strong>(CurrBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="Transformer.TTransfObj.html#MakePosSequence">MakePosSequence</a></strong>(); OVERRIDE;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#PresentTap">PresentTap</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_PresentTap">Get_PresentTap</a> WRITE <a href="Transformer.TTransfObj.html#Set_PresentTap">Set_PresentTap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#Mintap">Mintap</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_MinTap">Get_MinTap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#Maxtap">Maxtap</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_MaxTap">Get_MaxTap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#TapIncrement">TapIncrement</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_TapIncrement">Get_TapIncrement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#BaseVoltage">BaseVoltage</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_BaseVoltage">Get_BaseVoltage</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#BasekVLL">BasekVLL</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_BasekVLL">Get_BasekVLL</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#NumTaps">NumTaps</a></strong>[i:Integer]: Integer READ <a href="Transformer.TTransfObj.html#Get_NumTaps">Get_NumTaps</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#WdgResistance">WdgResistance</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgResistance">Get_WdgResistance</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#WdgkVA">WdgkVA</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgkVA">Get_WdgkVA</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#WdgConnection">WdgConnection</a></strong>[i:Integer]: Integer READ <a href="Transformer.TTransfObj.html#Get_WdgConnection">Get_WdgConnection</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#WdgRneutral">WdgRneutral</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgRneutral">Get_WdgRneutral</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#WdgXneutral">WdgXneutral</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgXneutral">Get_WdgXneutral</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="Transformer.TTransfObj.html#XscVal">XscVal</a></strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_Xsc">Get_Xsc</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeltaDirection"></span><code><strong>DeltaDirection</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XRConst"></span><code><strong>XRConst</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MaxWindings"></span><code><strong>MaxWindings</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TermRef"></span><code><strong>TermRef</strong>: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Zbase"></span><code><strong>Zbase</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+keeps track of terminal connections</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="XSC"></span><code><strong>XSC</strong>: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZB"></span><code><strong>ZB</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+per unit SC measurements</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Y_1Volt"></span><code><strong>Y_1Volt</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Y_Term"></span><code><strong>Y_Term</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Y_1Volt_NL"></span><code><strong>Y_1Volt_NL</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Y_Term_NL"></span><code><strong>Y_Term_NL</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+No Load Y's</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Y_Terminal_Freqmult"></span><code><strong>Y_Terminal_Freqmult</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="HVLeadsLV"></span><code><strong>HVLeadsLV</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="XHLChanged"></span><code><strong>XHLChanged</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="kVARatings"></span><code><strong>kVARatings</strong>: Array Of Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumWindings"></span><code><strong>NumWindings</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveWinding"></span><code><strong>ActiveWinding</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsSubstation"></span><code><strong>IsSubstation</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+public for COM interface</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SubstationName"></span><code><strong>SubstationName</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Winding"></span><code><strong>Winding</strong>: <a href="Transformer.html#pWindingArray">pWindingArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XfmrBank"></span><code><strong>XfmrBank</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XfmrCodeObj"></span><code><strong>XfmrCodeObj</strong>: <a href="DSSObject.TDSSObject.html">TDSSObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CoreType"></span><code><strong>CoreType</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="n_thermal"></span><code><strong>n_thermal</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+0=Shell; 1=1ph; 3-3leg; 5=5-leg</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="m_thermal"></span><code><strong>m_thermal</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XHL"></span><code><strong>XHL</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Exponents</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XHT"></span><code><strong>XHT</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Exponents</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XLT"></span><code><strong>XLT</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Exponents</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NormMaxHkVA"></span><code><strong>NormMaxHkVA</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+per unit</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EmergMaxHkVA"></span><code><strong>EmergMaxHkVA</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ThermalTimeConst"></span><code><strong>ThermalTimeConst</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FLrise"></span><code><strong>FLrise</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+hr</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HSrise"></span><code><strong>HSrise</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="pctLoadLoss"></span><code><strong>pctLoadLoss</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="pctNoLoadLoss"></span><code><strong>pctNoLoadLoss</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ppm_FloatFactor"></span><code><strong>ppm_FloatFactor</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="pctImag"></span><code><strong>pctImag</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+parts per million winding float factor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VABase"></span><code><strong>VABase</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_PresentTap"></span><code>function <strong>Get_PresentTap</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_PresentTap"></span><code>procedure <strong>Set_PresentTap</strong>(i: Integer; const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_MinTap"></span><code>function <strong>Get_MinTap</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_MaxTap"></span><code>function <strong>Get_MaxTap</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_TapIncrement"></span><code>function <strong>Get_TapIncrement</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_BaseVoltage"></span><code>function <strong>Get_BaseVoltage</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_BasekVLL"></span><code>function <strong>Get_BasekVLL</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_NumTaps"></span><code>function <strong>Get_NumTaps</strong>(i: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CIM accessors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_WdgResistance"></span><code>function <strong>Get_WdgResistance</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_WdgConnection"></span><code>function <strong>Get_WdgConnection</strong>(i: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_WdgkVA"></span><code>function <strong>Get_WdgkVA</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_Xsc"></span><code>function <strong>Get_Xsc</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_WdgRneutral"></span><code>function <strong>Get_WdgRneutral</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_WdgXneutral"></span><code>function <strong>Get_WdgXneutral</strong>(i: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CalcY_Terminal"></span><code>procedure <strong>CalcY_Terminal</strong>(FreqMult: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GICBuildYTerminal"></span><code>procedure <strong>GICBuildYTerminal</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BuildYPrimComponent"></span><code>procedure <strong>BuildYPrimComponent</strong>(YPrim_Component, Y_Terminal: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddNeutralToY"></span><code>procedure <strong>AddNeutralToY</strong>(FreqMultiplier: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FetchXfmrCode"></span><code>procedure <strong>FetchXfmrCode</strong>();</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetTermRef"></span><code>procedure <strong>SetTermRef</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; const TransfName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+FOR impedances</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PropertySideEffects"></span><code>procedure <strong>PropertySideEffects</strong>(Idx: Integer; previousIntVal: Integer = 0); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeLike"></span><code>procedure <strong>MakeLike</strong>(OtherPtr: Pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetNumWindings"></span><code>procedure <strong>SetNumWindings</strong>(N: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RecalcElementData"></span><code>procedure <strong>RecalcElementData</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CalcYPrim"></span><code>procedure <strong>CalcYPrim</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLosses"></span><code>procedure <strong>GetLosses</strong>(var TotalLosses, LoadLosses, NoLoadLosses: <a href="DSSUcomplex.html#Complex">Complex</a>); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+GetLosses override for Transformer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotatePhases"></span><code>function <strong>RotatePhases</strong>(iPhs: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DumpProperties"></span><code>procedure <strong>DumpProperties</strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveWrite"></span><code>procedure <strong>SaveWrite</strong>(F: TFileStream); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetWindingVoltages"></span><code>procedure <strong>GetWindingVoltages</strong>(iWind: Integer; VBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAllWindingCurrents"></span><code>procedure <strong>GetAllWindingCurrents</strong>(CurrBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakePosSequence"></span><code>procedure <strong>MakePosSequence</strong>(); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+All Winding currents in complex array</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PresentTap"></span><code>property <strong>PresentTap</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_PresentTap">Get_PresentTap</a> WRITE <a href="Transformer.TTransfObj.html#Set_PresentTap">Set_PresentTap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Make a positive Sequence Model TODO: remove most of these</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Mintap"></span><code>property <strong>Mintap</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_MinTap">Get_MinTap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Maxtap"></span><code>property <strong>Maxtap</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_MaxTap">Get_MaxTap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapIncrement"></span><code>property <strong>TapIncrement</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_TapIncrement">Get_TapIncrement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BaseVoltage"></span><code>property <strong>BaseVoltage</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_BaseVoltage">Get_BaseVoltage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BasekVLL"></span><code>property <strong>BasekVLL</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_BasekVLL">Get_BasekVLL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Winding VBase</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumTaps"></span><code>property <strong>NumTaps</strong>[i:Integer]: Integer READ <a href="Transformer.TTransfObj.html#Get_NumTaps">Get_NumTaps</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Winding VBase</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WdgResistance"></span><code>property <strong>WdgResistance</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgResistance">Get_WdgResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WdgkVA"></span><code>property <strong>WdgkVA</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgkVA">Get_WdgkVA</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WdgConnection"></span><code>property <strong>WdgConnection</strong>[i:Integer]: Integer READ <a href="Transformer.TTransfObj.html#Get_WdgConnection">Get_WdgConnection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WdgRneutral"></span><code>property <strong>WdgRneutral</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgRneutral">Get_WdgRneutral</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WdgXneutral"></span><code>property <strong>WdgXneutral</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_WdgXneutral">Get_WdgXneutral</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XscVal"></span><code>property <strong>XscVal</strong>[i:Integer]: Double READ <a href="Transformer.TTransfObj.html#Get_Xsc">Get_Xsc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

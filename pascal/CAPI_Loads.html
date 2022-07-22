@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Loads</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Loads</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Get_AllNames">Loads_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Get_AllNames_GR">Loads_Get_AllNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_First">Loads_Get_First</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_idx">Loads_Get_idx</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Name">Loads_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Next">Loads_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_idx">Loads_Set_idx</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Name">Loads_Set_Name</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kV">Loads_Get_kV</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kvar">Loads_Get_kvar</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kW">Loads_Get_kW</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_PF">Loads_Get_PF</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kV">Loads_Set_kV</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kvar">Loads_Set_kvar</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kW">Loads_Set_kW</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_PF">Loads_Set_PF</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Count">Loads_Get_Count</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_AllocationFactor">Loads_Get_AllocationFactor</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Cfactor">Loads_Get_Cfactor</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Class_">Loads_Get_Class_</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_CVRcurve">Loads_Get_CVRcurve</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_CVRvars">Loads_Get_CVRvars</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_CVRwatts">Loads_Get_CVRwatts</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_daily">Loads_Get_daily</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_duty">Loads_Get_duty</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Growth">Loads_Get_Growth</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_IsDelta">Loads_Get_IsDelta</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kva">Loads_Get_kva</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kwh">Loads_Get_kwh</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_kwhdays">Loads_Get_kwhdays</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Model">Loads_Get_Model</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_NumCust">Loads_Get_NumCust</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_PctMean">Loads_Get_PctMean</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_PctStdDev">Loads_Get_PctStdDev</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Rneut">Loads_Get_Rneut</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Spectrum">Loads_Get_Spectrum</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Status">Loads_Get_Status</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Vmaxpu">Loads_Get_Vmaxpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Vminemerg">Loads_Get_Vminemerg</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Vminnorm">Loads_Get_Vminnorm</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Vminpu">Loads_Get_Vminpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_xfkVA">Loads_Get_xfkVA</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Xneut">Loads_Get_Xneut</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Yearly">Loads_Get_Yearly</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_AllocationFactor">Loads_Set_AllocationFactor</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Cfactor">Loads_Set_Cfactor</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Class_">Loads_Set_Class_</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_CVRcurve">Loads_Set_CVRcurve</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_CVRvars">Loads_Set_CVRvars</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_CVRwatts">Loads_Set_CVRwatts</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_daily">Loads_Set_daily</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_duty">Loads_Set_duty</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Growth">Loads_Set_Growth</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_IsDelta">Loads_Set_IsDelta</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kva">Loads_Set_kva</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kwh">Loads_Set_kwh</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_kwhdays">Loads_Set_kwhdays</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Model">Loads_Set_Model</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_NumCust">Loads_Set_NumCust</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_PctMean">Loads_Set_PctMean</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_PctStdDev">Loads_Set_PctStdDev</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Rneut">Loads_Set_Rneut</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Spectrum">Loads_Set_Spectrum</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Status">Loads_Set_Status</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Vmaxpu">Loads_Set_Vmaxpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Vminemerg">Loads_Set_Vminemerg</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Vminnorm">Loads_Set_Vminnorm</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Vminpu">Loads_Set_Vminpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_xfkVA">Loads_Set_xfkVA</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Xneut">Loads_Set_Xneut</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Yearly">Loads_Set_Yearly</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Get_ZIPV">Loads_Get_ZIPV</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Get_ZIPV_GR">Loads_Get_ZIPV_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_ZIPV">Loads_Set_ZIPV</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_pctSeriesRL">Loads_Get_pctSeriesRL</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_pctSeriesRL">Loads_Set_pctSeriesRL</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_RelWeight">Loads_Get_RelWeight</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_RelWeight">Loads_Set_RelWeight</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Sensor">Loads_Get_Sensor</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Phases">Loads_Get_Phases</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Phases">Loads_Set_Phases</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Loads.html#Loads_Get_Bus1">Loads_Get_Bus1</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Loads.html#Loads_Set_Bus1">Loads_Set_Bus1</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_AllNames"></span><code>procedure <strong>Loads_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_AllNames_GR"></span><code>procedure <strong>Loads_Get_AllNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_First"></span><code>function <strong>Loads_Get_First</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_idx"></span><code>function <strong>Loads_Get_idx</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Name"></span><code>function <strong>Loads_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Next"></span><code>function <strong>Loads_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_idx"></span><code>procedure <strong>Loads_Set_idx</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Name"></span><code>procedure <strong>Loads_Set_Name</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kV"></span><code>function <strong>Loads_Get_kV</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kvar"></span><code>function <strong>Loads_Get_kvar</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kW"></span><code>function <strong>Loads_Get_kW</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_PF"></span><code>function <strong>Loads_Get_PF</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kV"></span><code>procedure <strong>Loads_Set_kV</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kvar"></span><code>procedure <strong>Loads_Set_kvar</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kW"></span><code>procedure <strong>Loads_Set_kW</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_PF"></span><code>procedure <strong>Loads_Set_PF</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Count"></span><code>function <strong>Loads_Get_Count</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_AllocationFactor"></span><code>function <strong>Loads_Get_AllocationFactor</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Cfactor"></span><code>function <strong>Loads_Get_Cfactor</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Class_"></span><code>function <strong>Loads_Get_Class_</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_CVRcurve"></span><code>function <strong>Loads_Get_CVRcurve</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_CVRvars"></span><code>function <strong>Loads_Get_CVRvars</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_CVRwatts"></span><code>function <strong>Loads_Get_CVRwatts</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_daily"></span><code>function <strong>Loads_Get_daily</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_duty"></span><code>function <strong>Loads_Get_duty</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Growth"></span><code>function <strong>Loads_Get_Growth</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_IsDelta"></span><code>function <strong>Loads_Get_IsDelta</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kva"></span><code>function <strong>Loads_Get_kva</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kwh"></span><code>function <strong>Loads_Get_kwh</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_kwhdays"></span><code>function <strong>Loads_Get_kwhdays</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Model"></span><code>function <strong>Loads_Get_Model</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_NumCust"></span><code>function <strong>Loads_Get_NumCust</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_PctMean"></span><code>function <strong>Loads_Get_PctMean</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_PctStdDev"></span><code>function <strong>Loads_Get_PctStdDev</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Rneut"></span><code>function <strong>Loads_Get_Rneut</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Spectrum"></span><code>function <strong>Loads_Get_Spectrum</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Status"></span><code>function <strong>Loads_Get_Status</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Vmaxpu"></span><code>function <strong>Loads_Get_Vmaxpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Vminemerg"></span><code>function <strong>Loads_Get_Vminemerg</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Vminnorm"></span><code>function <strong>Loads_Get_Vminnorm</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Vminpu"></span><code>function <strong>Loads_Get_Vminpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_xfkVA"></span><code>function <strong>Loads_Get_xfkVA</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Xneut"></span><code>function <strong>Loads_Get_Xneut</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Yearly"></span><code>function <strong>Loads_Get_Yearly</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_AllocationFactor"></span><code>procedure <strong>Loads_Set_AllocationFactor</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Cfactor"></span><code>procedure <strong>Loads_Set_Cfactor</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Class_"></span><code>procedure <strong>Loads_Set_Class_</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_CVRcurve"></span><code>procedure <strong>Loads_Set_CVRcurve</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_CVRvars"></span><code>procedure <strong>Loads_Set_CVRvars</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_CVRwatts"></span><code>procedure <strong>Loads_Set_CVRwatts</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_daily"></span><code>procedure <strong>Loads_Set_daily</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_duty"></span><code>procedure <strong>Loads_Set_duty</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Growth"></span><code>procedure <strong>Loads_Set_Growth</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_IsDelta"></span><code>procedure <strong>Loads_Set_IsDelta</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kva"></span><code>procedure <strong>Loads_Set_kva</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kwh"></span><code>procedure <strong>Loads_Set_kwh</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_kwhdays"></span><code>procedure <strong>Loads_Set_kwhdays</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Model"></span><code>procedure <strong>Loads_Set_Model</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_NumCust"></span><code>procedure <strong>Loads_Set_NumCust</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_PctMean"></span><code>procedure <strong>Loads_Set_PctMean</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_PctStdDev"></span><code>procedure <strong>Loads_Set_PctStdDev</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Rneut"></span><code>procedure <strong>Loads_Set_Rneut</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Spectrum"></span><code>procedure <strong>Loads_Set_Spectrum</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Status"></span><code>procedure <strong>Loads_Set_Status</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Vmaxpu"></span><code>procedure <strong>Loads_Set_Vmaxpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Vminemerg"></span><code>procedure <strong>Loads_Set_Vminemerg</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Vminnorm"></span><code>procedure <strong>Loads_Set_Vminnorm</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Vminpu"></span><code>procedure <strong>Loads_Set_Vminpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_xfkVA"></span><code>procedure <strong>Loads_Set_xfkVA</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Xneut"></span><code>procedure <strong>Loads_Set_Xneut</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Yearly"></span><code>procedure <strong>Loads_Set_Yearly</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_ZIPV"></span><code>procedure <strong>Loads_Get_ZIPV</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_ZIPV_GR"></span><code>procedure <strong>Loads_Get_ZIPV_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_ZIPV"></span><code>procedure <strong>Loads_Set_ZIPV</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_pctSeriesRL"></span><code>function <strong>Loads_Get_pctSeriesRL</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_pctSeriesRL"></span><code>procedure <strong>Loads_Set_pctSeriesRL</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_RelWeight"></span><code>function <strong>Loads_Get_RelWeight</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_RelWeight"></span><code>procedure <strong>Loads_Set_RelWeight</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Sensor"></span><code>function <strong>Loads_Get_Sensor</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Phases"></span><code>function <strong>Loads_Get_Phases</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+API extensions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Phases"></span><code>procedure <strong>Loads_Set_Phases</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Get_Bus1"></span><code>function <strong>Loads_Get_Bus1</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Loads_Set_Bus1"></span><code>procedure <strong>Loads_Set_Bus1</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

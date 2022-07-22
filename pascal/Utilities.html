@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Utilities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Utilities</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Arraydef.html">ArrayDef</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="PDElement.html">PDElement</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Ucmatrix.html">UcMatrix</a></li><li><a href="DSSClass.html">DSSClass</a></li><li>Classes</li><li><a href="Dynamics.html">Dynamics</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#StrTOrF">StrTOrF</a></strong>(const b: Boolean): String; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#StrYOrN">StrYOrN</a></strong>(const b: Boolean): String; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#CompareTextShortest">CompareTextShortest</a></strong>(const S1, S2: String): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FireOffEditor">FireOffEditor</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DoDOSCmd">DoDOSCmd</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; CmdString: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#StripExtension">StripExtension</a></strong>(const S: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#StripClassName">StripClassName</a></strong>(const S: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetNodeString">GetNodeString</a></strong>(const Busname: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#Pad">Pad</a></strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#PadDots">PadDots</a></strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#PadTrunc">PadTrunc</a></strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#IntArrayToString">IntArrayToString</a></strong>(iarray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#DblArrayToString">DblArrayToString</a></strong>(dblarray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#CmplxArrayToString">CmplxArrayToString</a></strong>(cpxarray: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#StringListToString">StringListToString</a></strong>(lst: TStringList): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#EncloseQuotes">EncloseQuotes</a></strong>(const s: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ShowMessageBeep">ShowMessageBeep</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ParseObjectClassandName">ParseObjectClassandName</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const FullObjName: String; var ClassName, ObjName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ParseIntArray">ParseIntArray</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var iarray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>; var count: Integer; const s: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretYesNo">InterpretYesNo</a></strong>(const s: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#InitDblArray">InitDblArray</a></strong>(NumValues: Integer; Xarray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; Value: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretDblArray">InterpretDblArray</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; MaxValues: Integer; ResultArray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretIntArray">InterpretIntArray</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; MaxValues: Integer; ResultArray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#InterpretTStringListArray">InterpretTStringListArray</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; var ResultList: TStringList);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretTimeStepSize">InterpretTimeStepSize</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretColorName">InterpretColorName</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#ConstructElemName">ConstructElemName</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const Param: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetDSSArray_Real">GetDSSArray_Real</a></strong>(n: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; scale: Double = 1.0): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetDSSArray_Single">GetDSSArray_Single</a></strong>(n: Integer; sngs: <a href="Arraydef.html#pSingleArray">pSingleArray</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetDSSArray_Integer">GetDSSArray_Integer</a></strong>(n: Integer; ints: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetOCPDeviceType">GetOCPDeviceType</a></strong>(pElem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetOCPDeviceTypeString">GetOCPDeviceTypeString</a></strong>(icode: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InterpretDblArrayMMF">InterpretDblArrayMMF</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; mmPtr: pByte; FileType: <a href="Utilities.html#TLSFileType">TLSFileType</a>; Column, INDEX, DataSize: Integer): double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#DoExecutiveCommand">DoExecutiveCommand</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetCktElementIndex">GetCktElementIndex</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const FullObjName: String): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#IsShuntElement">IsShuntElement</a></strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#IsLineElement">IsLineElement</a></strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#IsTransformerElement">IsTransformerElement</a></strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#CheckParallel">CheckParallel</a></strong>(const Line1, Line2: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#AllTerminalsClosed">AllTerminalsClosed</a></strong>(ThisElement: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#Str_Real">Str_Real</a></strong>(const Value: Double; NumDecimals: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DumpAllDSSCommands">DumpAllDSSCommands</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var Filename: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DumpAllocationFactors">DumpAllocationFactors</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var Filename: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DumpComplexMatrix">DumpComplexMatrix</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; F: TFileStream; AMatrix: <a href="Ucmatrix.TcMatrix.html">TcMatrix</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#NearestBasekV">NearestBasekV</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; kV: Double): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#DoResetFaults">DoResetFaults</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#DoResetControls">DoResetControls</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DoResetKeepList">DoResetKeepList</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetNodeNum">GetNodeNum</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; NodeRef: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#MaxdblArrayValue">MaxdblArrayValue</a></strong>(npts: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#iMaxAbsdblArrayValue">iMaxAbsdblArrayValue</a></strong>(npts: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#iMaxAbssngArrayValue">iMaxAbssngArrayValue</a></strong>(npts: Integer; sngs: <a href="Arraydef.html#pSingleArray">pSingleArray</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#QuadSolver">QuadSolver</a></strong>(const a, b, c: Double): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#WriteClassFile">WriteClassFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const DSS_Class: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; FileName: String; IsCktElement: Boolean): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#WriteVsourceClassFile">WriteVsourceClassFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const DSS_Class: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; IsCktElement: Boolean): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#WriteActiveDSSObject">WriteActiveDSSObject</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; F: TFileStream; const NeworEdit: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#checkforblanks">checkforblanks</a></strong>(const S: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#RewriteAlignedFile">RewriteAlignedFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const Filename: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ClearEventLog">ClearEventLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#AppendToEventLog">AppendToEventLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const opdev: String; const action: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#LogThisEvent">LogThisEvent</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const EventName: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ClearErrorLog">ClearErrorLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#RotatePhasorDeg">RotatePhasorDeg</a></strong>(var Phasor: <a href="DSSUcomplex.html#Complex">Complex</a>; const h, AngleDeg: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#RotatePhasorRad">RotatePhasorRad</a></strong>(var Phasor: <a href="DSSUcomplex.html#Complex">Complex</a>; const h, AngleRad: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ConvertComplexArrayToPolar">ConvertComplexArrayToPolar</a></strong>(const Buffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; N: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#ConvertComplexArrayToPowerandPF">ConvertComplexArrayToPowerandPF</a></strong>(const Buffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; N: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#Residual">Residual</a></strong>(p: Pointer; Nph: Integer): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#ResidualPolar">ResidualPolar</a></strong>(p: Pointer; Nph: Integer): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#Powerfactor">Powerfactor</a></strong>(const S: <a href="DSSUcomplex.html#Complex">Complex</a>): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#CmulArray">CmulArray</a></strong>(pc: <a href="DSSUcomplex.html#pComplexArray">pcomplexarray</a>; Multiplier: Double; size: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#CalcInitialMachineStates">CalcInitialMachineStates</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#InvalidateAllPCELEMENTS">InvalidateAllPCELEMENTS</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#InitializeForHarmonics">InitializeForHarmonics</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#SavePresentVoltages">SavePresentVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#RetrieveSavedVoltages">RetrieveSavedVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetMaxPUVoltage">GetMaxPUVoltage</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetMinPUVoltage">GetMinPUVoltage</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; IgnoreNeutrals: Boolean): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetTotalPowerFromSources">GetTotalPowerFromSources</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetMaxCktElementSize">GetMaxCktElementSize</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#GetUniqueNodeNumber">GetUniqueNodeNumber</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const sBusName: String; StartNode: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#IsPathBetween">IsPathBetween</a></strong>(FromLine, ToLine: <a href="PDElement.TPDElement.html">TPDElement</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#TraceAndEdit">TraceAndEdit</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FromLine, ToLine: <a href="PDElement.TPDElement.html">TPDElement</a>; NPhases: Integer; EditStr: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#GoForwardAndRephase">GoForwardAndRephase</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FromLine: <a href="PDElement.TPDElement.html">TPDElement</a>; const PhaseString, EditStr, ScriptFileName: String; TransStop: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#MakeDistributedGenerators">MakeDistributedGenerators</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; kW, PF: Double; How: String; Skip: Integer; Fname: String; DoGenerators: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#Obfuscate">Obfuscate</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#AdjustInputFilePath">AdjustInputFilePath</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; param: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWriteLn">FSWriteLn</a></strong>(F: TFileStream; Ss: Array of String); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWriteLn">FSWriteLn</a></strong>(F: TFileStream; S: String = ''); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWriteLn">FSWriteLn</a></strong>(F: TFileStream; S: String; S2: String); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWriteLn">FSWriteLn</a></strong>(F: TFileStream; S: String; S2: String; S3: String); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWrite">FSWrite</a></strong>(F: TFileStream; S: String); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWrite">FSWrite</a></strong>(F: TFileStream; S: String; S2: String); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSWrite">FSWrite</a></strong>(F: TFileStream; S: String; S2: String; S3: String); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSReadln">FSReadln</a></strong>(F: TStream; out S: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#FSFlush">FSFlush</a></strong>(F: TFileStream);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Utilities.html#SliceProps">SliceProps</a></strong>(props: <a href="Arraydef.html#pStringArray">pStringArray</a>; count: Integer): <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DoSngFile">DoSngFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DoDblFile">DoDblFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DoCSVFile">DoCSVFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Utilities.html#DelFilesFromDir">DelFilesFromDir</a></strong>(Directory: String; FileMask: String = '*'; DelSubDirs: Boolean = True);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#TLSFileType">TLSFileType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#sCRLF">sCRLF</a></strong>: String = sLineBreak;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clAqua">clAqua</a></strong>: Integer = $FFFF00;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clBlack">clBlack</a></strong>: Integer = $000000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clBlue">clBlue</a></strong>: Integer = $FF0000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clDkGray">clDkGray</a></strong>: Integer = $808080;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clFuchsia">clFuchsia</a></strong>: Integer = $FF00FF;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clGray">clGray</a></strong>: Integer = $808080;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clGreen">clGreen</a></strong>: Integer = $008000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clLime">clLime</a></strong>: Integer = $00FF00;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clLtGray">clLtGray</a></strong>: Integer = $C0C0C0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clMaroon">clMaroon</a></strong>: Integer = $000080;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clNavy">clNavy</a></strong>: Integer = $800000;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clOlive">clOlive</a></strong>: Integer = $008080;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clPurple">clPurple</a></strong>: Integer = $800080;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clRed">clRed</a></strong>: Integer = $0000FF;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clSilver">clSilver</a></strong>: Integer = $C0C0C0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clTeal">clTeal</a></strong>: Integer = $808000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Utilities.html#clWhite">clWhite</a></strong>: Integer = $FFFFFF;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Utilities.html#clYellow">clYellow</a></strong>: Integer = $00FFFF;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StrTOrF"></span><code>function <strong>StrTOrF</strong>(const b: Boolean): String; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StrYOrN"></span><code>function <strong>StrYOrN</strong>(const b: Boolean): String; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CompareTextShortest"></span><code>function <strong>CompareTextShortest</strong>(const S1, S2: String): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FireOffEditor"></span><code>procedure <strong>FireOffEditor</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoDOSCmd"></span><code>procedure <strong>DoDOSCmd</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; CmdString: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StripExtension"></span><code>function <strong>StripExtension</strong>(const S: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StripClassName"></span><code>function <strong>StripClassName</strong>(const S: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetNodeString"></span><code>function <strong>GetNodeString</strong>(const Busname: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return only element name sans class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Pad"></span><code>function <strong>Pad</strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PadDots"></span><code>function <strong>PadDots</strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PadTrunc"></span><code>function <strong>PadTrunc</strong>(const S: String; Width: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IntArrayToString"></span><code>function <strong>IntArrayToString</strong>(iarray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DblArrayToString"></span><code>function <strong>DblArrayToString</strong>(dblarray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CmplxArrayToString"></span><code>function <strong>CmplxArrayToString</strong>(cpxarray: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; count: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StringListToString"></span><code>function <strong>StringListToString</strong>(lst: TStringList): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EncloseQuotes"></span><code>function <strong>EncloseQuotes</strong>(const s: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowMessageBeep"></span><code>procedure <strong>ShowMessageBeep</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ParseObjectClassandName"></span><code>procedure <strong>ParseObjectClassandName</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const FullObjName: String; var ClassName, ObjName: String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Parsing Utilities</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ParseIntArray"></span><code>procedure <strong>ParseIntArray</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var iarray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>; var count: Integer; const s: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretYesNo"></span><code>function <strong>InterpretYesNo</strong>(const s: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InitDblArray"></span><code>procedure <strong>InitDblArray</strong>(NumValues: Integer; Xarray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; Value: Double);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretDblArray"></span><code>function <strong>InterpretDblArray</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; MaxValues: Integer; ResultArray: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretIntArray"></span><code>function <strong>InterpretIntArray</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; MaxValues: Integer; ResultArray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretTStringListArray"></span><code>procedure <strong>InterpretTStringListArray</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String; var ResultList: TStringList);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretTimeStepSize"></span><code>function <strong>InterpretTimeStepSize</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretColorName"></span><code>function <strong>InterpretColorName</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ConstructElemName"></span><code>function <strong>ConstructElemName</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const Param: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetDSSArray_Real"></span><code>function <strong>GetDSSArray_Real</strong>(n: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>; scale: Double = 1.0): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetDSSArray_Single"></span><code>function <strong>GetDSSArray_Single</strong>(n: Integer; sngs: <a href="Arraydef.html#pSingleArray">pSingleArray</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetDSSArray_Integer"></span><code>function <strong>GetDSSArray_Integer</strong>(n: Integer; ints: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetOCPDeviceType"></span><code>function <strong>GetOCPDeviceType</strong>(pElem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetOCPDeviceTypeString"></span><code>function <strong>GetOCPDeviceTypeString</strong>(icode: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpretDblArrayMMF"></span><code>function <strong>InterpretDblArrayMMF</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; mmPtr: pByte; FileType: <a href="Utilities.html#TLSFileType">TLSFileType</a>; Column, INDEX, DataSize: Integer): double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Addition to deal with Memory mapped data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoExecutiveCommand"></span><code>function <strong>DoExecutiveCommand</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const s: String): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+misc functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetCktElementIndex"></span><code>function <strong>GetCktElementIndex</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const FullObjName: String): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsShuntElement"></span><code>function <strong>IsShuntElement</strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsLineElement"></span><code>function <strong>IsLineElement</strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsTransformerElement"></span><code>function <strong>IsTransformerElement</strong>(const Elem: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CheckParallel"></span><code>function <strong>CheckParallel</strong>(const Line1, Line2: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AllTerminalsClosed"></span><code>function <strong>AllTerminalsClosed</strong>(ThisElement: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Str_Real"></span><code>function <strong>Str_Real</strong>(const Value: Double; NumDecimals: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DumpAllDSSCommands"></span><code>procedure <strong>DumpAllDSSCommands</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var Filename: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DumpAllocationFactors"></span><code>procedure <strong>DumpAllocationFactors</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var Filename: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DumpComplexMatrix"></span><code>procedure <strong>DumpComplexMatrix</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; F: TFileStream; AMatrix: <a href="Ucmatrix.TcMatrix.html">TcMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NearestBasekV"></span><code>function <strong>NearestBasekV</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; kV: Double): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoResetFaults"></span><code>function <strong>DoResetFaults</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoResetControls"></span><code>function <strong>DoResetControls</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoResetKeepList"></span><code>procedure <strong>DoResetKeepList</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetNodeNum"></span><code>function <strong>GetNodeNum</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; NodeRef: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MaxdblArrayValue"></span><code>function <strong>MaxdblArrayValue</strong>(npts: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="iMaxAbsdblArrayValue"></span><code>function <strong>iMaxAbsdblArrayValue</strong>(npts: Integer; dbls: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="iMaxAbssngArrayValue"></span><code>function <strong>iMaxAbssngArrayValue</strong>(npts: Integer; sngs: <a href="Arraydef.html#pSingleArray">pSingleArray</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="QuadSolver"></span><code>function <strong>QuadSolver</strong>(const a, b, c: Double): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WriteClassFile"></span><code>function <strong>WriteClassFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const DSS_Class: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; FileName: String; IsCktElement: Boolean): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+returns largest of two answers Save Function Helper</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WriteVsourceClassFile"></span><code>function <strong>WriteVsourceClassFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const DSS_Class: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; IsCktElement: Boolean): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WriteActiveDSSObject"></span><code>procedure <strong>WriteActiveDSSObject</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; F: TFileStream; const NeworEdit: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="checkforblanks"></span><code>function <strong>checkforblanks</strong>(const S: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RewriteAlignedFile"></span><code>function <strong>RewriteAlignedFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const Filename: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearEventLog"></span><code>procedure <strong>ClearEventLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event Log</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendToEventLog"></span><code>procedure <strong>AppendToEventLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const opdev: String; const action: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LogThisEvent"></span><code>procedure <strong>LogThisEvent</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const EventName: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearErrorLog"></span><code>procedure <strong>ClearErrorLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RotatePhasorDeg"></span><code>procedure <strong>RotatePhasorDeg</strong>(var Phasor: <a href="DSSUcomplex.html#Complex">Complex</a>; const h, AngleDeg: Double);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Routines for doing common things to complex numbers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RotatePhasorRad"></span><code>procedure <strong>RotatePhasorRad</strong>(var Phasor: <a href="DSSUcomplex.html#Complex">Complex</a>; const h, AngleRad: Double);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ConvertComplexArrayToPolar"></span><code>procedure <strong>ConvertComplexArrayToPolar</strong>(const Buffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; N: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ConvertComplexArrayToPowerandPF"></span><code>procedure <strong>ConvertComplexArrayToPowerandPF</strong>(const Buffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; N: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Residual"></span><code>function <strong>Residual</strong>(p: Pointer; Nph: Integer): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ResidualPolar"></span><code>function <strong>ResidualPolar</strong>(p: Pointer; Nph: Integer): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Powerfactor"></span><code>function <strong>Powerfactor</strong>(const S: <a href="DSSUcomplex.html#Complex">Complex</a>): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CmulArray"></span><code>procedure <strong>CmulArray</strong>(pc: <a href="DSSUcomplex.html#pComplexArray">pcomplexarray</a>; Multiplier: Double; size: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CalcInitialMachineStates"></span><code>procedure <strong>CalcInitialMachineStates</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multiply a complex array times a double Support for going in and out of Dynamics Mode and Harmonics Mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InvalidateAllPCELEMENTS"></span><code>procedure <strong>InvalidateAllPCELEMENTS</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InitializeForHarmonics"></span><code>function <strong>InitializeForHarmonics</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SavePresentVoltages"></span><code>function <strong>SavePresentVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RetrieveSavedVoltages"></span><code>function <strong>RetrieveSavedVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetMaxPUVoltage"></span><code>function <strong>GetMaxPUVoltage</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetMinPUVoltage"></span><code>function <strong>GetMinPUVoltage</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; IgnoreNeutrals: Boolean): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetTotalPowerFromSources"></span><code>function <strong>GetTotalPowerFromSources</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetMaxCktElementSize"></span><code>function <strong>GetMaxCktElementSize</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUniqueNodeNumber"></span><code>function <strong>GetUniqueNodeNumber</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const sBusName: String; StartNode: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsPathBetween"></span><code>function <strong>IsPathBetween</strong>(FromLine, ToLine: <a href="PDElement.TPDElement.html">TPDElement</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TraceBack Functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TraceAndEdit"></span><code>procedure <strong>TraceAndEdit</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FromLine, ToLine: <a href="PDElement.TPDElement.html">TPDElement</a>; NPhases: Integer; EditStr: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GoForwardAndRephase"></span><code>procedure <strong>GoForwardAndRephase</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FromLine: <a href="PDElement.TPDElement.html">TPDElement</a>; const PhaseString, EditStr, ScriptFileName: String; TransStop: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MakeDistributedGenerators"></span><code>procedure <strong>MakeDistributedGenerators</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; kW, PF: Double; How: String; Skip: Integer; Fname: String; DoGenerators: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obfuscate"></span><code>procedure <strong>Obfuscate</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AdjustInputFilePath"></span><code>function <strong>AdjustInputFilePath</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; param: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWriteLn"></span><code>procedure <strong>FSWriteLn</strong>(F: TFileStream; Ss: Array of String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWriteLn"></span><code>procedure <strong>FSWriteLn</strong>(F: TFileStream; S: String = ''); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWriteLn"></span><code>procedure <strong>FSWriteLn</strong>(F: TFileStream; S: String; S2: String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWriteLn"></span><code>procedure <strong>FSWriteLn</strong>(F: TFileStream; S: String; S2: String; S3: String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWrite"></span><code>procedure <strong>FSWrite</strong>(F: TFileStream; S: String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWrite"></span><code>procedure <strong>FSWrite</strong>(F: TFileStream; S: String; S2: String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSWrite"></span><code>procedure <strong>FSWrite</strong>(F: TFileStream; S: String; S2: String; S3: String); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSReadln"></span><code>procedure <strong>FSReadln</strong>(F: TStream; out S: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FSFlush"></span><code>procedure <strong>FSFlush</strong>(F: TFileStream);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SliceProps"></span><code>function <strong>SliceProps</strong>(props: <a href="Arraydef.html#pStringArray">pStringArray</a>; count: Integer): <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoSngFile"></span><code>procedure <strong>DoSngFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The built-in Slice was causing issues on ARM64</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoDblFile"></span><code>procedure <strong>DoDblFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoCSVFile"></span><code>procedure <strong>DoCSVFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; var pA, pB: <a href="Arraydef.html#pDoubleArray">PDoubleArray</a>; var NumPoints: Integer; OnlyLoadB: Boolean; const FileName: String; const ClassName: String; RoundA: Boolean = False);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DelFilesFromDir"></span><code>procedure <strong>DelFilesFromDir</strong>(Directory: String; FileMask: String = '*'; DelSubDirs: Boolean = True);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLSFileType"></span><code><strong>TLSFileType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="PlainText">PlainText = 0</span></li>
+<li>
+<span id="Float64">Float64 = 1</span></li>
+<li>
+<span id="Float32">Float32 = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="sCRLF"></span><code><strong>sCRLF</strong>: String = sLineBreak;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clAqua"></span><code><strong>clAqua</strong>: Integer = $FFFF00;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clBlack"></span><code><strong>clBlack</strong>: Integer = $000000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clBlue"></span><code><strong>clBlue</strong>: Integer = $FF0000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clDkGray"></span><code><strong>clDkGray</strong>: Integer = $808080;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clFuchsia"></span><code><strong>clFuchsia</strong>: Integer = $FF00FF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clGray"></span><code><strong>clGray</strong>: Integer = $808080;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clGreen"></span><code><strong>clGreen</strong>: Integer = $008000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clLime"></span><code><strong>clLime</strong>: Integer = $00FF00;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clLtGray"></span><code><strong>clLtGray</strong>: Integer = $C0C0C0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clMaroon"></span><code><strong>clMaroon</strong>: Integer = $000080;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clNavy"></span><code><strong>clNavy</strong>: Integer = $800000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clOlive"></span><code><strong>clOlive</strong>: Integer = $008080;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clPurple"></span><code><strong>clPurple</strong>: Integer = $800080;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clRed"></span><code><strong>clRed</strong>: Integer = $0000FF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clSilver"></span><code><strong>clSilver</strong>: Integer = $C0C0C0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clTeal"></span><code><strong>clTeal</strong>: Integer = $808000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clWhite"></span><code><strong>clWhite</strong>: Integer = $FFFFFF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clYellow"></span><code><strong>clYellow</strong>: Integer = $00FFFF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

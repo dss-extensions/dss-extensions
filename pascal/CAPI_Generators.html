@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Generators</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Generators</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_AllNames">Generators_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_AllNames_GR">Generators_Get_AllNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_First">Generators_Get_First</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Name">Generators_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Next">Generators_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_RegisterNames">Generators_Get_RegisterNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_RegisterNames_GR">Generators_Get_RegisterNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_RegisterValues">Generators_Get_RegisterValues</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Get_RegisterValues_GR">Generators_Get_RegisterValues_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_ForcedON">Generators_Get_ForcedON</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_ForcedON">Generators_Set_ForcedON</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Name">Generators_Set_Name</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_kV">Generators_Get_kV</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_kvar">Generators_Get_kvar</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_kW">Generators_Get_kW</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_PF">Generators_Get_PF</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Phases">Generators_Get_Phases</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_kV">Generators_Set_kV</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_kvar">Generators_Set_kvar</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_kW">Generators_Set_kW</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_PF">Generators_Set_PF</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Phases">Generators_Set_Phases</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Count">Generators_Get_Count</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_idx">Generators_Get_idx</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_idx">Generators_Set_idx</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Model">Generators_Get_Model</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Model">Generators_Set_Model</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_kVArated">Generators_Get_kVArated</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_kVArated">Generators_Set_kVArated</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Vmaxpu">Generators_Get_Vmaxpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Vminpu">Generators_Get_Vminpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Vmaxpu">Generators_Set_Vmaxpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Vminpu">Generators_Set_Vminpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Class_">Generators_Get_Class_</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_daily">Generators_Get_daily</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_duty">Generators_Get_duty</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Yearly">Generators_Get_Yearly</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Status">Generators_Get_Status</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_IsDelta">Generators_Get_IsDelta</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_kva">Generators_Get_kva</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Generators.html#Generators_Get_Bus1">Generators_Get_Bus1</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Class_">Generators_Set_Class_</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_daily">Generators_Set_daily</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_duty">Generators_Set_duty</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Yearly">Generators_Set_Yearly</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Status">Generators_Set_Status</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_IsDelta">Generators_Set_IsDelta</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_kva">Generators_Set_kva</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Generators.html#Generators_Set_Bus1">Generators_Set_Bus1</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_AllNames"></span><code>procedure <strong>Generators_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_AllNames_GR"></span><code>procedure <strong>Generators_Get_AllNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_First"></span><code>function <strong>Generators_Get_First</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Name"></span><code>function <strong>Generators_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Next"></span><code>function <strong>Generators_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_RegisterNames"></span><code>procedure <strong>Generators_Get_RegisterNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_RegisterNames_GR"></span><code>procedure <strong>Generators_Get_RegisterNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_RegisterValues"></span><code>procedure <strong>Generators_Get_RegisterValues</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_RegisterValues_GR"></span><code>procedure <strong>Generators_Get_RegisterValues_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_ForcedON"></span><code>function <strong>Generators_Get_ForcedON</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_ForcedON"></span><code>procedure <strong>Generators_Set_ForcedON</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Name"></span><code>procedure <strong>Generators_Set_Name</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_kV"></span><code>function <strong>Generators_Get_kV</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_kvar"></span><code>function <strong>Generators_Get_kvar</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_kW"></span><code>function <strong>Generators_Get_kW</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_PF"></span><code>function <strong>Generators_Get_PF</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Phases"></span><code>function <strong>Generators_Get_Phases</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_kV"></span><code>procedure <strong>Generators_Set_kV</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_kvar"></span><code>procedure <strong>Generators_Set_kvar</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_kW"></span><code>procedure <strong>Generators_Set_kW</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_PF"></span><code>procedure <strong>Generators_Set_PF</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Phases"></span><code>procedure <strong>Generators_Set_Phases</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Count"></span><code>function <strong>Generators_Get_Count</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_idx"></span><code>function <strong>Generators_Get_idx</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_idx"></span><code>procedure <strong>Generators_Set_idx</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Model"></span><code>function <strong>Generators_Get_Model</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Model"></span><code>procedure <strong>Generators_Set_Model</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_kVArated"></span><code>function <strong>Generators_Get_kVArated</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_kVArated"></span><code>procedure <strong>Generators_Set_kVArated</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Vmaxpu"></span><code>function <strong>Generators_Get_Vmaxpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Vminpu"></span><code>function <strong>Generators_Get_Vminpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Vmaxpu"></span><code>procedure <strong>Generators_Set_Vmaxpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Vminpu"></span><code>procedure <strong>Generators_Set_Vminpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Class_"></span><code>function <strong>Generators_Get_Class_</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+API Extensions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_daily"></span><code>function <strong>Generators_Get_daily</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_duty"></span><code>function <strong>Generators_Get_duty</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Yearly"></span><code>function <strong>Generators_Get_Yearly</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Status"></span><code>function <strong>Generators_Get_Status</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_IsDelta"></span><code>function <strong>Generators_Get_IsDelta</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_kva"></span><code>function <strong>Generators_Get_kva</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Get_Bus1"></span><code>function <strong>Generators_Get_Bus1</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Class_"></span><code>procedure <strong>Generators_Set_Class_</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_daily"></span><code>procedure <strong>Generators_Set_daily</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_duty"></span><code>procedure <strong>Generators_Set_duty</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Yearly"></span><code>procedure <strong>Generators_Set_Yearly</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Status"></span><code>procedure <strong>Generators_Set_Status</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_IsDelta"></span><code>procedure <strong>Generators_Set_IsDelta</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_kva"></span><code>procedure <strong>Generators_Set_kva</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generators_Set_Bus1"></span><code>procedure <strong>Generators_Set_Bus1</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

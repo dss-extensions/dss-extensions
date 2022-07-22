@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CktTree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CktTree</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="Arraydef.html">ArrayDef</a></li><li><a href="StackDef.html">StackDef</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li><a href="CktElement.html">CktElement</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="CktTree.TCktTreeNode.html"><code>TCktTreeNode</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="CktTree.TZoneEndsList.html"><code>TZoneEndsList</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="CktTree.TCktTree.html"><code>TCktTree</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CktTree.html#GetIsolatedSubArea">GetIsolatedSubArea</a></strong>(Circuit: TObject; StartElement: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>; Analyze: Boolean = FALSE): <a href="CktTree.TCktTree.html">TCktTree</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CktTree.html#BuildActiveBusAdjacencyLists">BuildActiveBusAdjacencyLists</a></strong>(Circuit: TObject; var lstPD, lstPC: <a href="CktTree.html#TAdjArray">TAdjArray</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CktTree.html#FreeAndNilBusAdjacencyLists">FreeAndNilBusAdjacencyLists</a></strong>(var lstPD, lstPC: <a href="CktTree.html#TAdjArray">TAdjArray</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="CktTree.html#TAdjArray">TAdjArray</a></strong> = array of TList;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetIsolatedSubArea"></span><code>function <strong>GetIsolatedSubArea</strong>(Circuit: TObject; StartElement: <a href="CktElement.TDSSCktElement.html">TDSSCktElement</a>; Analyze: Boolean = FALSE): <a href="CktTree.TCktTree.html">TCktTree</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+build a tree of connected elements beginning at StartElement Analyze = TRUE will check for loops, isolated components, and parallel lines (takes longer)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BuildActiveBusAdjacencyLists"></span><code>procedure <strong>BuildActiveBusAdjacencyLists</strong>(Circuit: TObject; var lstPD, lstPC: <a href="CktTree.html#TAdjArray">TAdjArray</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FreeAndNilBusAdjacencyLists"></span><code>procedure <strong>FreeAndNilBusAdjacencyLists</strong>(var lstPD, lstPC: <a href="CktTree.html#TAdjArray">TAdjArray</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAdjArray"></span><code><strong>TAdjArray</strong> = array of TList;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

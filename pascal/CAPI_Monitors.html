@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Monitors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Monitors</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_AllNames">Monitors_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_AllNames_GR">Monitors_Get_AllNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_FileName">Monitors_Get_FileName</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_First">Monitors_Get_First</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Mode">Monitors_Get_Mode</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Name">Monitors_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Next">Monitors_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Reset">Monitors_Reset</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_ResetAll">Monitors_ResetAll</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Sample">Monitors_Sample</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Save">Monitors_Save</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Set_Mode">Monitors_Set_Mode</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Show">Monitors_Show</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Set_Name">Monitors_Set_Name</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_ByteStream">Monitors_Get_ByteStream</a></strong>(var ResultPtr: PByte; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_ByteStream_GR">Monitors_Get_ByteStream_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_SampleCount">Monitors_Get_SampleCount</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_SampleAll">Monitors_SampleAll</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_SaveAll">Monitors_SaveAll</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Count">Monitors_Get_Count</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Process">Monitors_Process</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_ProcessAll">Monitors_ProcessAll</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_Channel">Monitors_Get_Channel</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_Channel_GR">Monitors_Get_Channel_GR</a></strong>(Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_dblFreq">Monitors_Get_dblFreq</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_dblFreq_GR">Monitors_Get_dblFreq_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_dblHour">Monitors_Get_dblHour</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_dblHour_GR">Monitors_Get_dblHour_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_FileVersion">Monitors_Get_FileVersion</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_Header">Monitors_Get_Header</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Get_Header_GR">Monitors_Get_Header_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_NumChannels">Monitors_Get_NumChannels</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_RecordSize">Monitors_Get_RecordSize</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Element">Monitors_Get_Element</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Set_Element">Monitors_Set_Element</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_Terminal">Monitors_Get_Terminal</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Set_Terminal">Monitors_Set_Terminal</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Monitors.html#Monitors_Get_idx">Monitors_Get_idx</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Monitors.html#Monitors_Set_idx">Monitors_Set_idx</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_AllNames"></span><code>procedure <strong>Monitors_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_AllNames_GR"></span><code>procedure <strong>Monitors_Get_AllNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_FileName"></span><code>function <strong>Monitors_Get_FileName</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_First"></span><code>function <strong>Monitors_Get_First</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Mode"></span><code>function <strong>Monitors_Get_Mode</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Name"></span><code>function <strong>Monitors_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Next"></span><code>function <strong>Monitors_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Reset"></span><code>procedure <strong>Monitors_Reset</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_ResetAll"></span><code>procedure <strong>Monitors_ResetAll</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Sample"></span><code>procedure <strong>Monitors_Sample</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Save"></span><code>procedure <strong>Monitors_Save</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Set_Mode"></span><code>procedure <strong>Monitors_Set_Mode</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Show"></span><code>procedure <strong>Monitors_Show</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Set_Name"></span><code>procedure <strong>Monitors_Set_Name</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_ByteStream"></span><code>procedure <strong>Monitors_Get_ByteStream</strong>(var ResultPtr: PByte; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_ByteStream_GR"></span><code>procedure <strong>Monitors_Get_ByteStream_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_SampleCount"></span><code>function <strong>Monitors_Get_SampleCount</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_SampleAll"></span><code>procedure <strong>Monitors_SampleAll</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_SaveAll"></span><code>procedure <strong>Monitors_SaveAll</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Count"></span><code>function <strong>Monitors_Get_Count</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Process"></span><code>procedure <strong>Monitors_Process</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_ProcessAll"></span><code>procedure <strong>Monitors_ProcessAll</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Channel"></span><code>procedure <strong>Monitors_Get_Channel</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Channel_GR"></span><code>procedure <strong>Monitors_Get_Channel_GR</strong>(Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_dblFreq"></span><code>procedure <strong>Monitors_Get_dblFreq</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_dblFreq_GR"></span><code>procedure <strong>Monitors_Get_dblFreq_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_dblHour"></span><code>procedure <strong>Monitors_Get_dblHour</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_dblHour_GR"></span><code>procedure <strong>Monitors_Get_dblHour_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_FileVersion"></span><code>function <strong>Monitors_Get_FileVersion</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Header"></span><code>procedure <strong>Monitors_Get_Header</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Header_GR"></span><code>procedure <strong>Monitors_Get_Header_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_NumChannels"></span><code>function <strong>Monitors_Get_NumChannels</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_RecordSize"></span><code>function <strong>Monitors_Get_RecordSize</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Element"></span><code>function <strong>Monitors_Get_Element</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Set_Element"></span><code>procedure <strong>Monitors_Set_Element</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_Terminal"></span><code>function <strong>Monitors_Get_Terminal</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Set_Terminal"></span><code>procedure <strong>Monitors_Set_Terminal</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Get_idx"></span><code>function <strong>Monitors_Get_idx</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+API extensions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Monitors_Set_idx"></span><code>procedure <strong>Monitors_Set_idx</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Bus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Bus</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Name">Bus_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_NumNodes">Bus_Get_NumNodes</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_SeqVoltages">Bus_Get_SeqVoltages</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_SeqVoltages_GR">Bus_Get_SeqVoltages_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Voltages">Bus_Get_Voltages</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Voltages_GR">Bus_Get_Voltages_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Nodes">Bus_Get_Nodes</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Nodes_GR">Bus_Get_Nodes_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Isc">Bus_Get_Isc</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Isc_GR">Bus_Get_Isc_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Voc">Bus_Get_Voc</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Voc_GR">Bus_Get_Voc_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_kVBase">Bus_Get_kVBase</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVoltages">Bus_Get_puVoltages</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVoltages_GR">Bus_Get_puVoltages_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Zsc0">Bus_Get_Zsc0</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Zsc0_GR">Bus_Get_Zsc0_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Zsc1">Bus_Get_Zsc1</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_Zsc1_GR">Bus_Get_Zsc1_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_ZscMatrix">Bus_Get_ZscMatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_ZscMatrix_GR">Bus_Get_ZscMatrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_ZscRefresh">Bus_ZscRefresh</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_YscMatrix">Bus_Get_YscMatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_YscMatrix_GR">Bus_Get_YscMatrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Coorddefined">Bus_Get_Coorddefined</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_x">Bus_Get_x</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Set_x">Bus_Set_x</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_y">Bus_Get_y</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Set_y">Bus_Set_y</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Distance">Bus_Get_Distance</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_GetUniqueNodeNumber">Bus_GetUniqueNodeNumber</a></strong>(StartNumber: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_CplxSeqVoltages">Bus_Get_CplxSeqVoltages</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_CplxSeqVoltages_GR">Bus_Get_CplxSeqVoltages_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Int_Duration">Bus_Get_Int_Duration</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Lambda">Bus_Get_Lambda</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Cust_Duration">Bus_Get_Cust_Duration</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Cust_Interrupts">Bus_Get_Cust_Interrupts</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_N_Customers">Bus_Get_N_Customers</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_N_interrupts">Bus_Get_N_interrupts</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVLL">Bus_Get_puVLL</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVLL_GR">Bus_Get_puVLL_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_VLL">Bus_Get_VLL</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_VLL_GR">Bus_Get_VLL_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVmagAngle">Bus_Get_puVmagAngle</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_puVmagAngle_GR">Bus_Get_puVmagAngle_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_VMagAngle">Bus_Get_VMagAngle</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_VMagAngle_GR">Bus_Get_VMagAngle_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_TotalMiles">Bus_Get_TotalMiles</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_SectionID">Bus_Get_SectionID</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Bus.html#Bus_Get_Next">Bus_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_LineList">Bus_Get_LineList</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_LineList_GR">Bus_Get_LineList_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_LoadList">Bus_Get_LoadList</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_LoadList_GR">Bus_Get_LoadList_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_ZSC012Matrix">Bus_Get_ZSC012Matrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_ZSC012Matrix_GR">Bus_Get_ZSC012Matrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_AllPCEatBus">Bus_Get_AllPCEatBus</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Bus.html#Bus_Get_AllPDEatBus">Bus_Get_AllPDEatBus</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Name"></span><code>function <strong>Bus_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_NumNodes"></span><code>function <strong>Bus_Get_NumNodes</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_SeqVoltages"></span><code>procedure <strong>Bus_Get_SeqVoltages</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_SeqVoltages_GR"></span><code>procedure <strong>Bus_Get_SeqVoltages_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Voltages"></span><code>procedure <strong>Bus_Get_Voltages</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Voltages_GR"></span><code>procedure <strong>Bus_Get_Voltages_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Nodes"></span><code>procedure <strong>Bus_Get_Nodes</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Nodes_GR"></span><code>procedure <strong>Bus_Get_Nodes_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Isc"></span><code>procedure <strong>Bus_Get_Isc</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Isc_GR"></span><code>procedure <strong>Bus_Get_Isc_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Voc"></span><code>procedure <strong>Bus_Get_Voc</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Voc_GR"></span><code>procedure <strong>Bus_Get_Voc_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_kVBase"></span><code>function <strong>Bus_Get_kVBase</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVoltages"></span><code>procedure <strong>Bus_Get_puVoltages</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVoltages_GR"></span><code>procedure <strong>Bus_Get_puVoltages_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Zsc0"></span><code>procedure <strong>Bus_Get_Zsc0</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Zsc0_GR"></span><code>procedure <strong>Bus_Get_Zsc0_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Zsc1"></span><code>procedure <strong>Bus_Get_Zsc1</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Zsc1_GR"></span><code>procedure <strong>Bus_Get_Zsc1_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_ZscMatrix"></span><code>procedure <strong>Bus_Get_ZscMatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_ZscMatrix_GR"></span><code>procedure <strong>Bus_Get_ZscMatrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_ZscRefresh"></span><code>function <strong>Bus_ZscRefresh</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_YscMatrix"></span><code>procedure <strong>Bus_Get_YscMatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_YscMatrix_GR"></span><code>procedure <strong>Bus_Get_YscMatrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Coorddefined"></span><code>function <strong>Bus_Get_Coorddefined</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_x"></span><code>function <strong>Bus_Get_x</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Set_x"></span><code>procedure <strong>Bus_Set_x</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_y"></span><code>function <strong>Bus_Get_y</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Set_y"></span><code>procedure <strong>Bus_Set_y</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Distance"></span><code>function <strong>Bus_Get_Distance</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_GetUniqueNodeNumber"></span><code>function <strong>Bus_GetUniqueNodeNumber</strong>(StartNumber: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_CplxSeqVoltages"></span><code>procedure <strong>Bus_Get_CplxSeqVoltages</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_CplxSeqVoltages_GR"></span><code>procedure <strong>Bus_Get_CplxSeqVoltages_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Int_Duration"></span><code>function <strong>Bus_Get_Int_Duration</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Lambda"></span><code>function <strong>Bus_Get_Lambda</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Cust_Duration"></span><code>function <strong>Bus_Get_Cust_Duration</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Cust_Interrupts"></span><code>function <strong>Bus_Get_Cust_Interrupts</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_N_Customers"></span><code>function <strong>Bus_Get_N_Customers</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_N_interrupts"></span><code>function <strong>Bus_Get_N_interrupts</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVLL"></span><code>procedure <strong>Bus_Get_puVLL</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVLL_GR"></span><code>procedure <strong>Bus_Get_puVLL_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_VLL"></span><code>procedure <strong>Bus_Get_VLL</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_VLL_GR"></span><code>procedure <strong>Bus_Get_VLL_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVmagAngle"></span><code>procedure <strong>Bus_Get_puVmagAngle</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_puVmagAngle_GR"></span><code>procedure <strong>Bus_Get_puVmagAngle_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_VMagAngle"></span><code>procedure <strong>Bus_Get_VMagAngle</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_VMagAngle_GR"></span><code>procedure <strong>Bus_Get_VMagAngle_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_TotalMiles"></span><code>function <strong>Bus_Get_TotalMiles</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_SectionID"></span><code>function <strong>Bus_Get_SectionID</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_Next"></span><code>function <strong>Bus_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_LineList"></span><code>procedure <strong>Bus_Get_LineList</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+API Extension</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_LineList_GR"></span><code>procedure <strong>Bus_Get_LineList_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_LoadList"></span><code>procedure <strong>Bus_Get_LoadList</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_LoadList_GR"></span><code>procedure <strong>Bus_Get_LoadList_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_ZSC012Matrix"></span><code>procedure <strong>Bus_Get_ZSC012Matrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_ZSC012Matrix_GR"></span><code>procedure <strong>Bus_Get_ZSC012Matrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_AllPCEatBus"></span><code>procedure <strong>Bus_Get_AllPCEatBus</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Bus_Get_AllPDEatBus"></span><code>procedure <strong>Bus_Get_AllPDEatBus</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

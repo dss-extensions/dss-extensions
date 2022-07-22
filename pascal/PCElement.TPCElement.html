@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: PCElement: Class TPCElement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TPCElement"></span><h1 class="cio">Class TPCElement</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="PCElement.html">PCElement</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPCElement = class(<a class="normal" href="CktElement.TDSSCktElement.html">TDSSCktElement</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TDSSCktElement description follows</div><div class="nodescription">No description available, ancestor TDSSObject description follows</div><div class="nodescription">No description available, ancestor TNamedObject description follows</div><p>
+this is a GUID compliant to RFC 4122, v4</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a></li>
+<li class="ancestor"><a class="normal" href="DSSObject.TDSSObject.html">TDSSObject</a></li>
+<li class="ancestor"><a class="normal" href="CktElement.TDSSCktElement.html">TDSSCktElement</a></li>
+<li class="thisitem">TPCElement</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="PCElement.TPCElement.html#SpectrumObj">SpectrumObj</a></strong>: <a href="Spectrum.TSpectrumObj.html">TSpectrumObj</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="PCElement.TPCElement.html#MeterObj">MeterObj</a></strong>: <a href="MeterElement.TMeterElement.html">TMeterElement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="PCElement.TPCElement.html#SensorObj">SensorObj</a></strong>: <a href="MeterElement.TMeterElement.html">TMeterElement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="PCElement.TPCElement.html#InjCurrent">InjCurrent</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#GetTerminalCurrents">GetTerminalCurrents</a></strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="PCElement.TPCElement.html#Get_Variable">Get_Variable</a></strong>(i: Integer): Double; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#Set_Variable">Set_Variable</a></strong>(i: Integer; Value: Double); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="PCElement.TPCElement.html#Create">Create</a></strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="PCElement.TPCElement.html#Destroy">Destroy</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#MakeLike">MakeLike</a></strong>(OtherObj: Pointer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#ZeroInjCurrent">ZeroInjCurrent</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#GetCurrents">GetCurrents</a></strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#ComputeIterminal">ComputeIterminal</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="PCElement.TPCElement.html#InjCurrents">InjCurrents</a></strong>: Integer; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#CalcYPrimContribution">CalcYPrimContribution</a></strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); INLINE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#DumpProperties">DumpProperties</a></strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#set_ITerminalUpdated">set_ITerminalUpdated</a></strong>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#InitHarmonics">InitHarmonics</a></strong>; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#InitStateVars">InitStateVars</a></strong>; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#IntegrateStates">IntegrateStates</a></strong>; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="PCElement.TPCElement.html#NumVariables">NumVariables</a></strong>: Integer; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="PCElement.TPCElement.html#GetAllVariables">GetAllVariables</a></strong>(States: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="PCElement.TPCElement.html#VariableName">VariableName</a></strong>(i: Integer): String; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="PCElement.TPCElement.html#LookupVariable">LookupVariable</a></strong>(const s: String): Integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="PCElement.TPCElement.html#Variable">Variable</a></strong>[i:Integer]: Double READ <a href="PCElement.TPCElement.html#Get_Variable">Get_Variable</a> WRITE <a href="PCElement.TPCElement.html#Set_Variable">Set_Variable</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="PCElement.TPCElement.html#ITerminalUpdated">ITerminalUpdated</a></strong>: Boolean READ FITerminalUpdated WRITE <a href="PCElement.TPCElement.html#set_ITerminalUpdated">set_ITerminalUpdated</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpectrumObj"></span><code><strong>SpectrumObj</strong>: <a href="Spectrum.TSpectrumObj.html">TSpectrumObj</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MeterObj"></span><code><strong>MeterObj</strong>: <a href="MeterElement.TMeterElement.html">TMeterElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SensorObj"></span><code><strong>SensorObj</strong>: <a href="MeterElement.TMeterElement.html">TMeterElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upline Energymeter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InjCurrent"></span><code><strong>InjCurrent</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Upline Sensor for this element</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTerminalCurrents"></span><code>procedure <strong>GetTerminalCurrents</strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Get_Variable"></span><code>function <strong>Get_Variable</strong>(i: Integer): Double; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Set_Variable"></span><code>procedure <strong>Set_Variable</strong>(i: Integer; Value: Double); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeLike"></span><code>procedure <strong>MakeLike</strong>(OtherObj: Pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ZeroInjCurrent"></span><code>procedure <strong>ZeroInjCurrent</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCurrents"></span><code>procedure <strong>GetCurrents</strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeIterminal"></span><code>procedure <strong>ComputeIterminal</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get present values of terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InjCurrents"></span><code>function <strong>InjCurrents</strong>: Integer; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CalcYPrimContribution"></span><code>procedure <strong>CalcYPrimContribution</strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); INLINE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DumpProperties"></span><code>procedure <strong>DumpProperties</strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_ITerminalUpdated"></span><code>procedure <strong>set_ITerminalUpdated</strong>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InitHarmonics"></span><code>procedure <strong>InitHarmonics</strong>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sweep solution removed PROCEDURE BackwardSweep;Override; For Harmonics Mode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InitStateVars"></span><code>procedure <strong>InitStateVars</strong>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+For Dynamics Mode and Control Devices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IntegrateStates"></span><code>procedure <strong>IntegrateStates</strong>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumVariables"></span><code>function <strong>NumVariables</strong>: Integer; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAllVariables"></span><code>procedure <strong>GetAllVariables</strong>(States: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VariableName"></span><code>function <strong>VariableName</strong>(i: Integer): String; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LookupVariable"></span><code>function <strong>LookupVariable</strong>(const s: String): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Variable"></span><code>property <strong>Variable</strong>[i:Integer]: Double READ <a href="PCElement.TPCElement.html#Get_Variable">Get_Variable</a> WRITE <a href="PCElement.TPCElement.html#Set_Variable">Set_Variable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ITerminalUpdated"></span><code>property <strong>ITerminalUpdated</strong>: Boolean READ FITerminalUpdated WRITE <a href="PCElement.TPCElement.html#set_ITerminalUpdated">set_ITerminalUpdated</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

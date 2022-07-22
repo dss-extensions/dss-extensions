@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: RegControl: Class TRegControlObj</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TRegControlObj"></span><h1 class="cio">Class TRegControlObj</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="RegControl.html">RegControl</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TRegControlObj = class(<a class="normal" href="ControlElem.TControlElem.html">TControlElem</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TControlElem description follows</div><div class="nodescription">No description available, ancestor TDSSCktElement description follows</div><div class="nodescription">No description available, ancestor TDSSObject description follows</div><div class="nodescription">No description available, ancestor TNamedObject description follows</div><p>
+this is a GUID compliant to RFC 4122, v4</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a></li>
+<li class="ancestor"><a class="normal" href="DSSObject.TDSSObject.html">TDSSObject</a></li>
+<li class="ancestor"><a class="normal" href="CktElement.TDSSCktElement.html">TDSSCktElement</a></li>
+<li class="ancestor"><a class="normal" href="ControlElem.TControlElem.html">TControlElem</a></li>
+<li class="thisitem">TRegControlObj</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#LastChange">LastChange</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#RemotePTRatio">RemotePTRatio</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#LDC_Z">LDC_Z</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#RevPowerThreshold">RevPowerThreshold</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#kWRevPowerThreshold">kWRevPowerThreshold</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revDelay">revDelay</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revLDC_Z">revLDC_Z</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#InReverseMode">InReverseMode</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#ReversePending">ReversePending</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#ReverseNeutral">ReverseNeutral</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#CogenEnabled">CogenEnabled</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#InCogenMode">InCogenMode</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#RevHandle">RevHandle</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#RevBackHandle">RevBackHandle</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#UsingRegulatedBus">UsingRegulatedBus</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#RegulatedBus">RegulatedBus</a></strong>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#FPendingTapChange">FPendingTapChange</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#DebugTrace">DebugTrace</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#Armed">Armed</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#TraceFile">TraceFile</a></strong>: TFileStream;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#TapWinding">TapWinding</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#FPTphase">FPTphase</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#ControlledPhase">ControlledPhase</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#ControlActionHandle">ControlActionHandle</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#VBuffer">VBuffer</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#CBuffer">CBuffer</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#TapLimitPerChange">TapLimitPerChange</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#InverseTime">InverseTime</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#LDCActive">LDCActive</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#IsReversible">IsReversible</a></strong>: LongBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#TapDelay">TapDelay</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#Vlimit">Vlimit</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#CTRating">CTRating</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#PTRatio">PTRatio</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#Vreg">Vreg</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revVreg">revVreg</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#Bandwidth">Bandwidth</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revBandwidth">revBandwidth</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#R">R</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#X">X</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revR">revR</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="RegControl.TRegControlObj.html#revX">revX</a></strong>: Double;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#Set_Enabled">Set_Enabled</a></strong>(Value: Boolean); OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_Transformer">Get_Transformer</a></strong>: <a href="Transformer.TTransfObj.html">TTransfObj</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_Winding">Get_Winding</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_MinTap">Get_MinTap</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_MaxTap">Get_MaxTap</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_TapIncrement">Get_TapIncrement</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_NumTaps">Get_NumTaps</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#Get_TapNum">Get_TapNum</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#Set_TapNum">Set_TapNum</a></strong>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#RegWriteTraceRecord">RegWriteTraceRecord</a></strong>(TapChangeMade: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#RegWriteDebugRecord">RegWriteDebugRecord</a></strong>(S: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#set_PendingTapChange">set_PendingTapChange</a></strong>(const Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#AtLeastOneTap">AtLeastOneTap</a></strong>(const ProposedChange: Double; Increment: Double): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#ComputeTimeDelay">ComputeTimeDelay</a></strong>(Vavg: Double): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#GetControlVoltage">GetControlVoltage</a></strong>(VBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; Nphs: Integer; PTRatio: Double): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="RegControl.TRegControlObj.html#Create">Create</a></strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; const RegControlName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="RegControl.TRegControlObj.html#Destroy">Destroy</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#PropertySideEffects">PropertySideEffects</a></strong>(Idx: Integer; previousIntVal: Integer = 0); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#MakeLike">MakeLike</a></strong>(OtherPtr: Pointer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#RecalcElementData">RecalcElementData</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#Sample">Sample</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#DoPendingAction">DoPendingAction</a></strong>(const Code, ProxyHdl: Integer); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#Reset">Reset</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#MakePosSequence">MakePosSequence</a></strong>(); OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="RegControl.TRegControlObj.html#DumpProperties">DumpProperties</a></strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="RegControl.TRegControlObj.html#VLimitActive">VLimitActive</a></strong>: Boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#Transformer">Transformer</a></strong>: <a href="Transformer.TTransfObj.html">TTransfObj</a> READ <a href="RegControl.TRegControlObj.html#Get_Transformer">Get_Transformer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#TrWinding">TrWinding</a></strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_Winding">Get_Winding</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#PendingTapChange">PendingTapChange</a></strong>: Double READ <a href="RegControl.TRegControlObj.html#FPendingTapChange">FPendingTapChange</a> WRITE <a href="RegControl.TRegControlObj.html#set_PendingTapChange">set_PendingTapChange</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#MinTap">MinTap</a></strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_MinTap">Get_MinTap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#MaxTap">MaxTap</a></strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_MaxTap">Get_MaxTap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#TapIncrement">TapIncrement</a></strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_TapIncrement">Get_TapIncrement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#NumTaps">NumTaps</a></strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_NumTaps">Get_NumTaps</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="RegControl.TRegControlObj.html#TapNum">TapNum</a></strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_TapNum">Get_TapNum</a> WRITE <a href="RegControl.TRegControlObj.html#Set_TapNum">Set_TapNum</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastChange"></span><code><strong>LastChange</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemotePTRatio"></span><code><strong>RemotePTRatio</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LDC_Z"></span><code><strong>LDC_Z</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RevPowerThreshold"></span><code><strong>RevPowerThreshold</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reverse Power Variables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="kWRevPowerThreshold"></span><code><strong>kWRevPowerThreshold</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+W</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revDelay"></span><code><strong>revDelay</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+W</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revLDC_Z"></span><code><strong>revLDC_Z</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+W</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InReverseMode"></span><code><strong>InReverseMode</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReversePending"></span><code><strong>ReversePending</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReverseNeutral"></span><code><strong>ReverseNeutral</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CogenEnabled"></span><code><strong>CogenEnabled</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InCogenMode"></span><code><strong>InCogenMode</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RevHandle"></span><code><strong>RevHandle</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RevBackHandle"></span><code><strong>RevBackHandle</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UsingRegulatedBus"></span><code><strong>UsingRegulatedBus</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RegulatedBus"></span><code><strong>RegulatedBus</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FPendingTapChange"></span><code><strong>FPendingTapChange</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DebugTrace"></span><code><strong>DebugTrace</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+amount of tap change pending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Armed"></span><code><strong>Armed</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TraceFile"></span><code><strong>TraceFile</strong>: TFileStream;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapWinding"></span><code><strong>TapWinding</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FPTphase"></span><code><strong>FPTphase</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlledPhase"></span><code><strong>ControlledPhase</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlActionHandle"></span><code><strong>ControlActionHandle</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VBuffer"></span><code><strong>VBuffer</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CBuffer"></span><code><strong>CBuffer</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapLimitPerChange"></span><code><strong>TapLimitPerChange</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InverseTime"></span><code><strong>InverseTime</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+MaxTapChange</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LDCActive"></span><code><strong>LDCActive</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+IsInverseTime</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsReversible"></span><code><strong>IsReversible</strong>: LongBool;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+UseLineDrop</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapDelay"></span><code><strong>TapDelay</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+UseReverseDrop</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Vlimit"></span><code><strong>Vlimit</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+delay between taps // SubsequentDelay</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CTRating"></span><code><strong>CTRating</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+VoltageLimit</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PTRatio"></span><code><strong>PTRatio</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CT</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Vreg"></span><code><strong>Vreg</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+PT</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revVreg"></span><code><strong>revVreg</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TargetVoltage</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Bandwidth"></span><code><strong>Bandwidth</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+RevTargetVoltage</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revBandwidth"></span><code><strong>revBandwidth</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+BandVoltage</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="R"></span><code><strong>R</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+RevBandVoltage</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="X"></span><code><strong>X</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LineDropR</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revR"></span><code><strong>revR</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LineDropX</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="revX"></span><code><strong>revX</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+RevLineDropR</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_Enabled"></span><code>procedure <strong>Set_Enabled</strong>(Value: Boolean); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_Transformer"></span><code>function <strong>Get_Transformer</strong>: <a href="Transformer.TTransfObj.html">TTransfObj</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_Winding"></span><code>function <strong>Get_Winding</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_MinTap"></span><code>function <strong>Get_MinTap</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_MaxTap"></span><code>function <strong>Get_MaxTap</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_TapIncrement"></span><code>function <strong>Get_TapIncrement</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_NumTaps"></span><code>function <strong>Get_NumTaps</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_TapNum"></span><code>function <strong>Get_TapNum</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_TapNum"></span><code>procedure <strong>Set_TapNum</strong>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RegWriteTraceRecord"></span><code>procedure <strong>RegWriteTraceRecord</strong>(TapChangeMade: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RegWriteDebugRecord"></span><code>procedure <strong>RegWriteDebugRecord</strong>(S: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="set_PendingTapChange"></span><code>procedure <strong>set_PendingTapChange</strong>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AtLeastOneTap"></span><code>function <strong>AtLeastOneTap</strong>(const ProposedChange: Double; Increment: Double): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeTimeDelay"></span><code>function <strong>ComputeTimeDelay</strong>(Vavg: Double): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetControlVoltage"></span><code>function <strong>GetControlVoltage</strong>(VBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; Nphs: Integer; PTRatio: Double): <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>; const RegControlName: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+RevLineDropX</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PropertySideEffects"></span><code>procedure <strong>PropertySideEffects</strong>(Idx: Integer; previousIntVal: Integer = 0); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeLike"></span><code>procedure <strong>MakeLike</strong>(OtherPtr: Pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RecalcElementData"></span><code>procedure <strong>RecalcElementData</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Sample"></span><code>procedure <strong>Sample</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoPendingAction"></span><code>procedure <strong>DoPendingAction</strong>(const Code, ProxyHdl: Integer); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sample control quantities and set action times in Control Queue</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Reset"></span><code>procedure <strong>Reset</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Do the action that is pending from last sample</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakePosSequence"></span><code>procedure <strong>MakePosSequence</strong>(); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reset to initial defined state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DumpProperties"></span><code>procedure <strong>DumpProperties</strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Make a positive Sequence Model</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VLimitActive"></span><code>function <strong>VLimitActive</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Transformer"></span><code>property <strong>Transformer</strong>: <a href="Transformer.TTransfObj.html">TTransfObj</a> READ <a href="RegControl.TRegControlObj.html#Get_Transformer">Get_Transformer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TrWinding"></span><code>property <strong>TrWinding</strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_Winding">Get_Winding</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Pointer to controlled Transformer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PendingTapChange"></span><code>property <strong>PendingTapChange</strong>: Double READ <a href="RegControl.TRegControlObj.html#FPendingTapChange">FPendingTapChange</a> WRITE <a href="RegControl.TRegControlObj.html#set_PendingTapChange">set_PendingTapChange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Report Tapped winding</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinTap"></span><code>property <strong>MinTap</strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_MinTap">Get_MinTap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+property InitialDelay: Double READ TimeDelay;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxTap"></span><code>property <strong>MaxTap</strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_MaxTap">Get_MaxTap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapIncrement"></span><code>property <strong>TapIncrement</strong>: Double READ <a href="RegControl.TRegControlObj.html#Get_TapIncrement">Get_TapIncrement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumTaps"></span><code>property <strong>NumTaps</strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_NumTaps">Get_NumTaps</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TapNum"></span><code>property <strong>TapNum</strong>: Integer READ <a href="RegControl.TRegControlObj.html#Get_TapNum">Get_TapNum</a> WRITE <a href="RegControl.TRegControlObj.html#Set_TapNum">Set_TapNum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

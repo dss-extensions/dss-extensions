@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ExportResults</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ExportResults</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="EnergyMeter.html">EnergyMeter</a></li><li><a href="XYcurve.html">XYCurve</a></li><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportVoltages">ExportVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSeqVoltages">ExportSeqVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportCurrents">ExportCurrents</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportEstimation">ExportEstimation</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Filenm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSeqCurrents">ExportSeqCurrents</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportPowers">ExportPowers</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportPbyphase">ExportPbyphase</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSeqPowers">ExportSeqPowers</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportFaultStudy">ExportFaultStudy</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportMeters">ExportMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportGenMeters">ExportGenMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportPVSystemMeters">ExportPVSystemMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportPVSystem2Meters">ExportPVSystem2Meters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportStorageMeters">ExportStorageMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportStorage2Meters">ExportStorage2Meters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportLoads">ExportLoads</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportCapacity">ExportCapacity</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportOverloads">ExportOverloads</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportUnserved">ExportUnserved</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; UE_Only: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportYprim">ExportYprim</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportY">ExportY</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; TripletOpt: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSeqZ">ExportSeqZ</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportBusCoords">ExportBusCoords</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportLosses">ExportLosses</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportUuids">ExportUuids</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportCounts">ExportCounts</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSummary">ExportSummary</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportProfile">ExportProfile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; PhasesToPlot: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportEventLog">ExportEventLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportVoltagesElements">ExportVoltagesElements</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportGICMvar">ExportGICMvar</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportBusReliability">ExportBusReliability</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportBranchReliability">ExportBranchReliability</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportNodeNames">ExportNodeNames</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportTaps">ExportTaps</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportNodeOrder">ExportNodeOrder</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportElemCurrents">ExportElemCurrents</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportElemVoltages">ExportElemVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportElemPowers">ExportElemPowers</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportResult">ExportResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportYNodeList">ExportYNodeList</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportYVoltages">ExportYVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportYCurrents">ExportYCurrents</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportSections">ExportSections</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String; pMeter: <a href="EnergyMeter.TEnergyMeterObj.html">TEnergyMeterObj</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportErrorLog">ExportErrorLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportIncMatrix">ExportIncMatrix</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportIncMatrixRows">ExportIncMatrixRows</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportIncMatrixCols">ExportIncMatrixCols</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportBusLevels">ExportBusLevels</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportResults.html#ExportLaplacian">ExportLaplacian</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportVoltages"></span><code>procedure <strong>ExportVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSeqVoltages"></span><code>procedure <strong>ExportSeqVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportCurrents"></span><code>procedure <strong>ExportCurrents</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportEstimation"></span><code>procedure <strong>ExportEstimation</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Filenm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSeqCurrents"></span><code>procedure <strong>ExportSeqCurrents</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportPowers"></span><code>procedure <strong>ExportPowers</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportPbyphase"></span><code>procedure <strong>ExportPbyphase</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSeqPowers"></span><code>procedure <strong>ExportSeqPowers</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportFaultStudy"></span><code>procedure <strong>ExportFaultStudy</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportMeters"></span><code>procedure <strong>ExportMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportGenMeters"></span><code>procedure <strong>ExportGenMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportPVSystemMeters"></span><code>procedure <strong>ExportPVSystemMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportPVSystem2Meters"></span><code>procedure <strong>ExportPVSystem2Meters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportStorageMeters"></span><code>procedure <strong>ExportStorageMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportStorage2Meters"></span><code>procedure <strong>ExportStorage2Meters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportLoads"></span><code>procedure <strong>ExportLoads</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportCapacity"></span><code>procedure <strong>ExportCapacity</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportOverloads"></span><code>procedure <strong>ExportOverloads</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportUnserved"></span><code>procedure <strong>ExportUnserved</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; UE_Only: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportYprim"></span><code>procedure <strong>ExportYprim</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportY"></span><code>procedure <strong>ExportY</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; TripletOpt: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSeqZ"></span><code>procedure <strong>ExportSeqZ</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportBusCoords"></span><code>procedure <strong>ExportBusCoords</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportLosses"></span><code>procedure <strong>ExportLosses</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportUuids"></span><code>procedure <strong>ExportUuids</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportCounts"></span><code>procedure <strong>ExportCounts</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSummary"></span><code>procedure <strong>ExportSummary</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportProfile"></span><code>procedure <strong>ExportProfile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; PhasesToPlot: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportEventLog"></span><code>procedure <strong>ExportEventLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportVoltagesElements"></span><code>procedure <strong>ExportVoltagesElements</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportGICMvar"></span><code>procedure <strong>ExportGICMvar</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportBusReliability"></span><code>procedure <strong>ExportBusReliability</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportBranchReliability"></span><code>procedure <strong>ExportBranchReliability</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportNodeNames"></span><code>procedure <strong>ExportNodeNames</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportTaps"></span><code>procedure <strong>ExportTaps</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportNodeOrder"></span><code>procedure <strong>ExportNodeOrder</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportElemCurrents"></span><code>procedure <strong>ExportElemCurrents</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportElemVoltages"></span><code>procedure <strong>ExportElemVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportElemPowers"></span><code>procedure <strong>ExportElemPowers</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportResult"></span><code>procedure <strong>ExportResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportYNodeList"></span><code>procedure <strong>ExportYNodeList</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportYVoltages"></span><code>procedure <strong>ExportYVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportYCurrents"></span><code>procedure <strong>ExportYCurrents</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportSections"></span><code>procedure <strong>ExportSections</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNM: String; pMeter: <a href="EnergyMeter.TEnergyMeterObj.html">TEnergyMeterObj</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportErrorLog"></span><code>procedure <strong>ExportErrorLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportIncMatrix"></span><code>procedure <strong>ExportIncMatrix</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportIncMatrixRows"></span><code>procedure <strong>ExportIncMatrixRows</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportIncMatrixCols"></span><code>procedure <strong>ExportIncMatrixCols</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportBusLevels"></span><code>procedure <strong>ExportBusLevels</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExportLaplacian"></span><code>procedure <strong>ExportLaplacian</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Circuit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Circuit</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Get_Name">Circuit_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Get_NumBuses">Circuit_Get_NumBuses</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Get_NumCktElements">Circuit_Get_NumCktElements</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Get_NumNodes">Circuit_Get_NumNodes</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_LineLosses">Circuit_Get_LineLosses</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_LineLosses_GR">Circuit_Get_LineLosses_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_Losses">Circuit_Get_Losses</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_Losses_GR">Circuit_Get_Losses_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVmag">Circuit_Get_AllBusVmag</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVmag_GR">Circuit_Get_AllBusVmag_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVolts">Circuit_Get_AllBusVolts</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVolts_GR">Circuit_Get_AllBusVolts_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllElementNames">Circuit_Get_AllElementNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllElementNames_GR">Circuit_Get_AllElementNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_SubstationLosses">Circuit_Get_SubstationLosses</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_SubstationLosses_GR">Circuit_Get_SubstationLosses_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_TotalPower">Circuit_Get_TotalPower</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_TotalPower_GR">Circuit_Get_TotalPower_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Disable">Circuit_Disable</a></strong>(const Name: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Enable">Circuit_Enable</a></strong>(const Name: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_FirstPCElement">Circuit_FirstPCElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_FirstPDElement">Circuit_FirstPDElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_NextPCElement">Circuit_NextPCElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_NextPDElement">Circuit_NextPDElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusNames">Circuit_Get_AllBusNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusNames_GR">Circuit_Get_AllBusNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllElementLosses">Circuit_Get_AllElementLosses</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllElementLosses_GR">Circuit_Get_AllElementLosses_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Sample">Circuit_Sample</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_SaveSample">Circuit_SaveSample</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_SetActiveElement">Circuit_SetActiveElement</a></strong>(const FullName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Capacity">Circuit_Capacity</a></strong>(Start, Increment: Double): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVmagPu">Circuit_Get_AllBusVmagPu</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusVmagPu_GR">Circuit_Get_AllBusVmagPu_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_SetActiveBus">Circuit_SetActiveBus</a></strong>(const BusName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_SetActiveBusi">Circuit_SetActiveBusi</a></strong>(BusIndex: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeNames">Circuit_Get_AllNodeNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeNames_GR">Circuit_Get_AllNodeNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_SystemY">Circuit_Get_SystemY</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_SystemY_GR">Circuit_Get_SystemY_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusDistances">Circuit_Get_AllBusDistances</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllBusDistances_GR">Circuit_Get_AllBusDistances_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeDistances">Circuit_Get_AllNodeDistances</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeDistances_GR">Circuit_Get_AllNodeDistances_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeDistancesByPhase">Circuit_Get_AllNodeDistancesByPhase</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeDistancesByPhase_GR">Circuit_Get_AllNodeDistancesByPhase_GR</a></strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeVmagByPhase">Circuit_Get_AllNodeVmagByPhase</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeVmagByPhase_GR">Circuit_Get_AllNodeVmagByPhase_GR</a></strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeVmagPUByPhase">Circuit_Get_AllNodeVmagPUByPhase</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeVmagPUByPhase_GR">Circuit_Get_AllNodeVmagPUByPhase_GR</a></strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeNamesByPhase">Circuit_Get_AllNodeNamesByPhase</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_AllNodeNamesByPhase_GR">Circuit_Get_AllNodeNamesByPhase_GR</a></strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_SetActiveClass">Circuit_SetActiveClass</a></strong>(const ClassName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_FirstElement">Circuit_FirstElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_NextElement">Circuit_NextElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_UpdateStorage">Circuit_UpdateStorage</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Circuit.html#Circuit_Get_ParentPDElement">Circuit_Get_ParentPDElement</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_EndOfTimeStepUpdate">Circuit_EndOfTimeStepUpdate</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YNodeOrder">Circuit_Get_YNodeOrder</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YNodeOrder_GR">Circuit_Get_YNodeOrder_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YCurrents">Circuit_Get_YCurrents</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YCurrents_GR">Circuit_Get_YCurrents_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YNodeVarray">Circuit_Get_YNodeVarray</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_YNodeVarray_GR">Circuit_Get_YNodeVarray_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_SetCktElementIndex">Circuit_SetCktElementIndex</a></strong>(const Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_SetCktElementName">Circuit_SetCktElementName</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_ElementLosses">Circuit_Get_ElementLosses</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ElementsPtr: PInteger; ElementsCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Circuit.html#Circuit_Get_ElementLosses_GR">Circuit_Get_ElementLosses_GR</a></strong>(ElementsPtr: PInteger; ElementsCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_Name"></span><code>function <strong>Circuit_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_NumBuses"></span><code>function <strong>Circuit_Get_NumBuses</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_NumCktElements"></span><code>function <strong>Circuit_Get_NumCktElements</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_NumNodes"></span><code>function <strong>Circuit_Get_NumNodes</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_LineLosses"></span><code>procedure <strong>Circuit_Get_LineLosses</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_LineLosses_GR"></span><code>procedure <strong>Circuit_Get_LineLosses_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_Losses"></span><code>procedure <strong>Circuit_Get_Losses</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_Losses_GR"></span><code>procedure <strong>Circuit_Get_Losses_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVmag"></span><code>procedure <strong>Circuit_Get_AllBusVmag</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVmag_GR"></span><code>procedure <strong>Circuit_Get_AllBusVmag_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVolts"></span><code>procedure <strong>Circuit_Get_AllBusVolts</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVolts_GR"></span><code>procedure <strong>Circuit_Get_AllBusVolts_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllElementNames"></span><code>procedure <strong>Circuit_Get_AllElementNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllElementNames_GR"></span><code>procedure <strong>Circuit_Get_AllElementNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_SubstationLosses"></span><code>procedure <strong>Circuit_Get_SubstationLosses</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_SubstationLosses_GR"></span><code>procedure <strong>Circuit_Get_SubstationLosses_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_TotalPower"></span><code>procedure <strong>Circuit_Get_TotalPower</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_TotalPower_GR"></span><code>procedure <strong>Circuit_Get_TotalPower_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Disable"></span><code>procedure <strong>Circuit_Disable</strong>(const Name: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Enable"></span><code>procedure <strong>Circuit_Enable</strong>(const Name: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_FirstPCElement"></span><code>function <strong>Circuit_FirstPCElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_FirstPDElement"></span><code>function <strong>Circuit_FirstPDElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_NextPCElement"></span><code>function <strong>Circuit_NextPCElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_NextPDElement"></span><code>function <strong>Circuit_NextPDElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusNames"></span><code>procedure <strong>Circuit_Get_AllBusNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusNames_GR"></span><code>procedure <strong>Circuit_Get_AllBusNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllElementLosses"></span><code>procedure <strong>Circuit_Get_AllElementLosses</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllElementLosses_GR"></span><code>procedure <strong>Circuit_Get_AllElementLosses_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Sample"></span><code>procedure <strong>Circuit_Sample</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SaveSample"></span><code>procedure <strong>Circuit_SaveSample</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetActiveElement"></span><code>function <strong>Circuit_SetActiveElement</strong>(const FullName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Capacity"></span><code>function <strong>Circuit_Capacity</strong>(Start, Increment: Double): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVmagPu"></span><code>procedure <strong>Circuit_Get_AllBusVmagPu</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusVmagPu_GR"></span><code>procedure <strong>Circuit_Get_AllBusVmagPu_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetActiveBus"></span><code>function <strong>Circuit_SetActiveBus</strong>(const BusName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetActiveBusi"></span><code>function <strong>Circuit_SetActiveBusi</strong>(BusIndex: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeNames"></span><code>procedure <strong>Circuit_Get_AllNodeNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeNames_GR"></span><code>procedure <strong>Circuit_Get_AllNodeNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_SystemY"></span><code>procedure <strong>Circuit_Get_SystemY</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_SystemY_GR"></span><code>procedure <strong>Circuit_Get_SystemY_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusDistances"></span><code>procedure <strong>Circuit_Get_AllBusDistances</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllBusDistances_GR"></span><code>procedure <strong>Circuit_Get_AllBusDistances_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeDistances"></span><code>procedure <strong>Circuit_Get_AllNodeDistances</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeDistances_GR"></span><code>procedure <strong>Circuit_Get_AllNodeDistances_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeDistancesByPhase"></span><code>procedure <strong>Circuit_Get_AllNodeDistancesByPhase</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeDistancesByPhase_GR"></span><code>procedure <strong>Circuit_Get_AllNodeDistancesByPhase_GR</strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeVmagByPhase"></span><code>procedure <strong>Circuit_Get_AllNodeVmagByPhase</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeVmagByPhase_GR"></span><code>procedure <strong>Circuit_Get_AllNodeVmagByPhase_GR</strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeVmagPUByPhase"></span><code>procedure <strong>Circuit_Get_AllNodeVmagPUByPhase</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeVmagPUByPhase_GR"></span><code>procedure <strong>Circuit_Get_AllNodeVmagPUByPhase_GR</strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeNamesByPhase"></span><code>procedure <strong>Circuit_Get_AllNodeNamesByPhase</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_AllNodeNamesByPhase_GR"></span><code>procedure <strong>Circuit_Get_AllNodeNamesByPhase_GR</strong>(Phase: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetActiveClass"></span><code>function <strong>Circuit_SetActiveClass</strong>(const ClassName: PAnsiChar): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_FirstElement"></span><code>function <strong>Circuit_FirstElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_NextElement"></span><code>function <strong>Circuit_NextElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_UpdateStorage"></span><code>procedure <strong>Circuit_UpdateStorage</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_ParentPDElement"></span><code>function <strong>Circuit_Get_ParentPDElement</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_EndOfTimeStepUpdate"></span><code>procedure <strong>Circuit_EndOfTimeStepUpdate</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YNodeOrder"></span><code>procedure <strong>Circuit_Get_YNodeOrder</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YNodeOrder_GR"></span><code>procedure <strong>Circuit_Get_YNodeOrder_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YCurrents"></span><code>procedure <strong>Circuit_Get_YCurrents</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YCurrents_GR"></span><code>procedure <strong>Circuit_Get_YCurrents_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YNodeVarray"></span><code>procedure <strong>Circuit_Get_YNodeVarray</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_YNodeVarray_GR"></span><code>procedure <strong>Circuit_Get_YNodeVarray_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetCktElementIndex"></span><code>procedure <strong>Circuit_SetCktElementIndex</strong>(const Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_SetCktElementName"></span><code>procedure <strong>Circuit_SetCktElementName</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_ElementLosses"></span><code>procedure <strong>Circuit_Get_ElementLosses</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ElementsPtr: PInteger; ElementsCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Extensions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Circuit_Get_ElementLosses_GR"></span><code>procedure <strong>Circuit_Get_ElementLosses_GR</strong>(ElementsPtr: PInteger; ElementsCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

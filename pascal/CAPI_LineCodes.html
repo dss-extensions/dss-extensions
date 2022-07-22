@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_LineCodes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_LineCodes</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li><li><a href="LineCode.html">LineCode</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Count">LineCodes_Get_Count</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_First">LineCodes_Get_First</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Next">LineCodes_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Name">LineCodes_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Name">LineCodes_Set_Name</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_IsZ1Z0">LineCodes_Get_IsZ1Z0</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Units">LineCodes_Get_Units</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Units">LineCodes_Set_Units</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Phases">LineCodes_Get_Phases</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Phases">LineCodes_Set_Phases</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_R1">LineCodes_Get_R1</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_R1">LineCodes_Set_R1</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_X1">LineCodes_Get_X1</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_X1">LineCodes_Set_X1</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_R0">LineCodes_Get_R0</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_X0">LineCodes_Get_X0</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_R0">LineCodes_Set_R0</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_X0">LineCodes_Set_X0</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_C0">LineCodes_Get_C0</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_C1">LineCodes_Get_C1</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_C0">LineCodes_Set_C0</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_C1">LineCodes_Set_C1</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Cmatrix">LineCodes_Get_Cmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Cmatrix_GR">LineCodes_Get_Cmatrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Rmatrix">LineCodes_Get_Rmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Rmatrix_GR">LineCodes_Get_Rmatrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Xmatrix">LineCodes_Get_Xmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_Xmatrix_GR">LineCodes_Get_Xmatrix_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Cmatrix">LineCodes_Set_Cmatrix</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Rmatrix">LineCodes_Set_Rmatrix</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_Xmatrix">LineCodes_Set_Xmatrix</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_NormAmps">LineCodes_Get_NormAmps</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_NormAmps">LineCodes_Set_NormAmps</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_EmergAmps">LineCodes_Get_EmergAmps</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_EmergAmps">LineCodes_Set_EmergAmps</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_AllNames">LineCodes_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Get_AllNames_GR">LineCodes_Get_AllNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineCodes.html#LineCodes_Get_idx">LineCodes_Get_idx</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineCodes.html#LineCodes_Set_idx">LineCodes_Set_idx</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Count"></span><code>function <strong>LineCodes_Get_Count</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_First"></span><code>function <strong>LineCodes_Get_First</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Next"></span><code>function <strong>LineCodes_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Name"></span><code>function <strong>LineCodes_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Name"></span><code>procedure <strong>LineCodes_Set_Name</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_IsZ1Z0"></span><code>function <strong>LineCodes_Get_IsZ1Z0</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Units"></span><code>function <strong>LineCodes_Get_Units</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Units"></span><code>procedure <strong>LineCodes_Set_Units</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Phases"></span><code>function <strong>LineCodes_Get_Phases</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Phases"></span><code>procedure <strong>LineCodes_Set_Phases</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_R1"></span><code>function <strong>LineCodes_Get_R1</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_R1"></span><code>procedure <strong>LineCodes_Set_R1</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_X1"></span><code>function <strong>LineCodes_Get_X1</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_X1"></span><code>procedure <strong>LineCodes_Set_X1</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_R0"></span><code>function <strong>LineCodes_Get_R0</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_X0"></span><code>function <strong>LineCodes_Get_X0</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_R0"></span><code>procedure <strong>LineCodes_Set_R0</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_X0"></span><code>procedure <strong>LineCodes_Set_X0</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_C0"></span><code>function <strong>LineCodes_Get_C0</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_C1"></span><code>function <strong>LineCodes_Get_C1</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_C0"></span><code>procedure <strong>LineCodes_Set_C0</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_C1"></span><code>procedure <strong>LineCodes_Set_C1</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Cmatrix"></span><code>procedure <strong>LineCodes_Get_Cmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Cmatrix_GR"></span><code>procedure <strong>LineCodes_Get_Cmatrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Rmatrix"></span><code>procedure <strong>LineCodes_Get_Rmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Rmatrix_GR"></span><code>procedure <strong>LineCodes_Get_Rmatrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Xmatrix"></span><code>procedure <strong>LineCodes_Get_Xmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_Xmatrix_GR"></span><code>procedure <strong>LineCodes_Get_Xmatrix_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Cmatrix"></span><code>procedure <strong>LineCodes_Set_Cmatrix</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Rmatrix"></span><code>procedure <strong>LineCodes_Set_Rmatrix</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_Xmatrix"></span><code>procedure <strong>LineCodes_Set_Xmatrix</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_NormAmps"></span><code>function <strong>LineCodes_Get_NormAmps</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_NormAmps"></span><code>procedure <strong>LineCodes_Set_NormAmps</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_EmergAmps"></span><code>function <strong>LineCodes_Get_EmergAmps</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_EmergAmps"></span><code>procedure <strong>LineCodes_Set_EmergAmps</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_AllNames"></span><code>procedure <strong>LineCodes_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_AllNames_GR"></span><code>procedure <strong>LineCodes_Get_AllNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Get_idx"></span><code>function <strong>LineCodes_Get_idx</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineCodes_Set_idx"></span><code>procedure <strong>LineCodes_Set_idx</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

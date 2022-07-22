@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Settings</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_AllowDuplicates">Settings_Get_AllowDuplicates</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_AutoBusList">Settings_Get_AutoBusList</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_CktModel">Settings_Get_CktModel</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_EmergVmaxpu">Settings_Get_EmergVmaxpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_EmergVminpu">Settings_Get_EmergVminpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_NormVmaxpu">Settings_Get_NormVmaxpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_NormVminpu">Settings_Get_NormVminpu</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_ZoneLock">Settings_Get_ZoneLock</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_AllocationFactors">Settings_Set_AllocationFactors</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_AllowDuplicates">Settings_Set_AllowDuplicates</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_AutoBusList">Settings_Set_AutoBusList</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_CktModel">Settings_Set_CktModel</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_EmergVmaxpu">Settings_Set_EmergVmaxpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_EmergVminpu">Settings_Set_EmergVminpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_NormVmaxpu">Settings_Set_NormVmaxpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_NormVminpu">Settings_Set_NormVminpu</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_ZoneLock">Settings_Set_ZoneLock</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_LossRegs">Settings_Get_LossRegs</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_LossRegs_GR">Settings_Get_LossRegs_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_LossWeight">Settings_Get_LossWeight</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_Trapezoidal">Settings_Get_Trapezoidal</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_UEregs">Settings_Get_UEregs</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_UEregs_GR">Settings_Get_UEregs_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_UEweight">Settings_Get_UEweight</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_LossRegs">Settings_Set_LossRegs</a></strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_LossWeight">Settings_Set_LossWeight</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_Trapezoidal">Settings_Set_Trapezoidal</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_UEregs">Settings_Set_UEregs</a></strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_UEweight">Settings_Set_UEweight</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_ControlTrace">Settings_Get_ControlTrace</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_VoltageBases">Settings_Get_VoltageBases</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Get_VoltageBases_GR">Settings_Get_VoltageBases_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_ControlTrace">Settings_Set_ControlTrace</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_VoltageBases">Settings_Set_VoltageBases</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_PriceCurve">Settings_Get_PriceCurve</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_PriceSignal">Settings_Get_PriceSignal</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_PriceCurve">Settings_Set_PriceCurve</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_PriceSignal">Settings_Set_PriceSignal</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_LoadsTerminalCheck">Settings_Get_LoadsTerminalCheck</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_LoadsTerminalCheck">Settings_Set_LoadsTerminalCheck</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Settings.html#Settings_Set_IterateDisabled">Settings_Set_IterateDisabled</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Settings.html#Settings_Get_IterateDisabled">Settings_Get_IterateDisabled</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_AllowDuplicates"></span><code>function <strong>Settings_Get_AllowDuplicates</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_AutoBusList"></span><code>function <strong>Settings_Get_AutoBusList</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_CktModel"></span><code>function <strong>Settings_Get_CktModel</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_EmergVmaxpu"></span><code>function <strong>Settings_Get_EmergVmaxpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_EmergVminpu"></span><code>function <strong>Settings_Get_EmergVminpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_NormVmaxpu"></span><code>function <strong>Settings_Get_NormVmaxpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_NormVminpu"></span><code>function <strong>Settings_Get_NormVminpu</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_ZoneLock"></span><code>function <strong>Settings_Get_ZoneLock</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_AllocationFactors"></span><code>procedure <strong>Settings_Set_AllocationFactors</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_AllowDuplicates"></span><code>procedure <strong>Settings_Set_AllowDuplicates</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_AutoBusList"></span><code>procedure <strong>Settings_Set_AutoBusList</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_CktModel"></span><code>procedure <strong>Settings_Set_CktModel</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_EmergVmaxpu"></span><code>procedure <strong>Settings_Set_EmergVmaxpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_EmergVminpu"></span><code>procedure <strong>Settings_Set_EmergVminpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_NormVmaxpu"></span><code>procedure <strong>Settings_Set_NormVmaxpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_NormVminpu"></span><code>procedure <strong>Settings_Set_NormVminpu</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_ZoneLock"></span><code>procedure <strong>Settings_Set_ZoneLock</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_LossRegs"></span><code>procedure <strong>Settings_Get_LossRegs</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_LossRegs_GR"></span><code>procedure <strong>Settings_Get_LossRegs_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_LossWeight"></span><code>function <strong>Settings_Get_LossWeight</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_Trapezoidal"></span><code>function <strong>Settings_Get_Trapezoidal</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_UEregs"></span><code>procedure <strong>Settings_Get_UEregs</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_UEregs_GR"></span><code>procedure <strong>Settings_Get_UEregs_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_UEweight"></span><code>function <strong>Settings_Get_UEweight</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_LossRegs"></span><code>procedure <strong>Settings_Set_LossRegs</strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_LossWeight"></span><code>procedure <strong>Settings_Set_LossWeight</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_Trapezoidal"></span><code>procedure <strong>Settings_Set_Trapezoidal</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_UEregs"></span><code>procedure <strong>Settings_Set_UEregs</strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_UEweight"></span><code>procedure <strong>Settings_Set_UEweight</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_ControlTrace"></span><code>function <strong>Settings_Get_ControlTrace</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_VoltageBases"></span><code>procedure <strong>Settings_Get_VoltageBases</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_VoltageBases_GR"></span><code>procedure <strong>Settings_Get_VoltageBases_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_ControlTrace"></span><code>procedure <strong>Settings_Set_ControlTrace</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_VoltageBases"></span><code>procedure <strong>Settings_Set_VoltageBases</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_PriceCurve"></span><code>function <strong>Settings_Get_PriceCurve</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_PriceSignal"></span><code>function <strong>Settings_Get_PriceSignal</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_PriceCurve"></span><code>procedure <strong>Settings_Set_PriceCurve</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_PriceSignal"></span><code>procedure <strong>Settings_Set_PriceSignal</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_LoadsTerminalCheck"></span><code>function <strong>Settings_Get_LoadsTerminalCheck</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+API extensions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_LoadsTerminalCheck"></span><code>procedure <strong>Settings_Set_LoadsTerminalCheck</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Set_IterateDisabled"></span><code>procedure <strong>Settings_Set_IterateDisabled</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Settings_Get_IterateDisabled"></span><code>function <strong>Settings_Get_IterateDisabled</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

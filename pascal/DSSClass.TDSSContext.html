@@ -1,0 +1,2803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSClass: Class TDSSContext</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSContext"></span><h1 class="cio">Class TDSSContext</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="DSSClass.html">DSSClass</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSContext = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TDSSContext</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLoadShapeClass">FLoadShapeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FTShapeClass">FTShapeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FPriceShapeClass">FPriceShapeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FXYCurveClass">FXYCurveClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGrowthShapeClass">FGrowthShapeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FSpectrumClass">FSpectrumClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FEnergyMeterClass">FEnergyMeterClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FMonitorClass">FMonitorClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FSensorClass">FSensorClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FTCC_CurveClass">FTCC_CurveClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FWireDataClass">FWireDataClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FCNDataClass">FCNDataClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FTSDataClass">FTSDataClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLineGeometryClass">FLineGeometryClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLineSpacingClass">FLineSpacingClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLineCodeClass">FLineCodeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FStorageClass">FStorageClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FStorage2Class">FStorage2Class</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FPVSystemClass">FPVSystemClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FPVSystem2Class">FPVSystem2Class</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FInvControlClass">FInvControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FInvControl2Class">FInvControl2Class</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FExpControlClass">FExpControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLineClass">FLineClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FVSourceClass">FVSourceClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FISourceClass">FISourceClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FVCSSClass">FVCSSClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FLoadClass">FLoadClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FTransformerClass">FTransformerClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FRegControlClass">FRegControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FCapacitorClass">FCapacitorClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FReactorClass">FReactorClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FCapControlClass">FCapControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FFaultClass">FFaultClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGeneratorClass">FGeneratorClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGenDispatcherClass">FGenDispatcherClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FStorageControllerClass">FStorageControllerClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FStorageController2Class">FStorageController2Class</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FRelayClass">FRelayClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FRecloserClass">FRecloserClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FFuseClass">FFuseClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FSwtControlClass">FSwtControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FUPFCClass">FUPFCClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FUPFCControlClass">FUPFCControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FESPVLControlClass">FESPVLControlClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FIndMach012Class">FIndMach012Class</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGICsourceClass">FGICsourceClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FAutoTransClass">FAutoTransClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FVSConverterClass">FVSConverterClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FXfmrCodeClass">FXfmrCodeClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGICLineClass">FGICLineClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FGICTransformerClass">FGICTransformerClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveFeederObj">FActiveFeederObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveSolutionObj">FActiveSolutionObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveCapControlObj">FActiveCapControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveESPVLControlObj">FActiveESPVLControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveExpControlObj">FActiveExpControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGenDispatcherObj">FActiveGenDispatcherObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveInvControlObj">FActiveInvControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveInvControl2Obj">FActiveInvControl2Obj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveRecloserObj">FActiveRecloserObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveRegControlObj">FActiveRegControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveRelayObj">FActiveRelayObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveStorageControllerObj">FActiveStorageControllerObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveStorageController2Obj">FActiveStorageController2Obj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveSwtControlObj">FActiveSwtControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveUPFCControlObj">FActiveUPFCControlObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveConductorDataObj">FActiveConductorDataObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGrowthShapeObj">FActiveGrowthShapeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLineCodeObj">FActiveLineCodeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLineGeometryObj">FActiveLineGeometryObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLineSpacingObj">FActiveLineSpacingObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLoadShapeObj">FActiveLoadShapeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActivePriceShapeObj">FActivePriceShapeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveSpectrumObj">FActiveSpectrumObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveTCC_CurveObj">FActiveTCC_CurveObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveTShapeObj">FActiveTShapeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveXfmrCodeObj">FActiveXfmrCodeObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveXYcurveObj">FActiveXYcurveObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveEnergyMeterObj">FActiveEnergyMeterObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveMonitorObj">FActiveMonitorObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveSensorObj">FActiveSensorObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveEquivalentObj">FActiveEquivalentObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGeneratorObj">FActiveGeneratorObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGICLineObj">FActiveGICLineObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGICsourceObj">FActiveGICsourceObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveIndMach012Obj">FActiveIndMach012Obj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveIsourceObj">FActiveIsourceObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLoadObj">FActiveLoadObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActivePVsystemObj">FActivePVsystemObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActivePVsystem2Obj">FActivePVsystem2Obj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveStorageObj">FActiveStorageObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveStorage2Obj">FActiveStorage2Obj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveUPFCObj">FActiveUPFCObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveVCCSObj">FActiveVCCSObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveVSConverterObj">FActiveVSConverterObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveVsourceObj">FActiveVsourceObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveAutoTransObj">FActiveAutoTransObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveCapacitorObj">FActiveCapacitorObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveFaultObj">FActiveFaultObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveFuseObj">FActiveFuseObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveGICTransformerObj">FActiveGICTransformerObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveLineObj">FActiveLineObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveReactorObj">FActiveReactorObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveTransfObj">FActiveTransfObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FDSSExecutive">FDSSExecutive</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FCIMExporter">FCIMExporter</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveCircuit">FActiveCircuit</a></strong>: <a href="NamedObject.TNamedObject.html">TNamedObject</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActiveDSSObject">FActiveDSSObject</a></strong>:<a href="NamedObject.TNamedObject.html">TNamedObject</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FActorThread">FActorThread</a></strong>: TThread;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CurrentDSSDir_internal">CurrentDSSDir_internal</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FSolutionAbort">FSolutionAbort</a></strong>: LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Parent">Parent</a></strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DSSPlotCallback">DSSPlotCallback</a></strong>: <a href="DSSClass.html#dss_callback_plot_t">dss_callback_plot_t</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DSSMessageCallback">DSSMessageCallback</a></strong>: <a href="DSSClass.html#dss_callback_message_t">dss_callback_message_t</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Children">Children</a></strong>: array of <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActiveChild">ActiveChild</a></strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActiveChildIndex">ActiveChildIndex</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CPU">CPU</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#IsSolveAll">IsSolveAll</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#AllActors">AllActors</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Parallel_enabled">Parallel_enabled</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ConcatenateReports">ConcatenateReports</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ConcatenateReportsLock">ConcatenateReportsLock</a></strong>: TCriticalSection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActorPctProgress">ActorPctProgress</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActorStatus">ActorStatus</a></strong>: <a href="DSSClass.html#TActorStatus">TActorStatus</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ThreadStatusEvent">ThreadStatusEvent</a></strong>: TEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#_Name">_Name</a></strong>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_DataPtr_PPAnsiChar">GR_DataPtr_PPAnsiChar</a></strong>: PPAnsiChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_DataPtr_PDouble">GR_DataPtr_PDouble</a></strong>: PDouble;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_DataPtr_PInteger">GR_DataPtr_PInteger</a></strong>: PInteger;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_DataPtr_PByte">GR_DataPtr_PByte</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_Counts_PPAnsiChar">GR_Counts_PPAnsiChar</a></strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_Counts_PDouble">GR_Counts_PDouble</a></strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_Counts_PInteger">GR_Counts_PInteger</a></strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GR_Counts_PByte">GR_Counts_PByte</a></strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ClassNames">ClassNames</a></strong>: <a href="HashList.html#TClassNamesHashListType">TClassNamesHashListType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DSSClassList">DSSClassList</a></strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Circuits">Circuits</a></strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DSSObjs">DSSObjs</a></strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#NumIntrinsicClasses">NumIntrinsicClasses</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#NumUserClasses">NumUserClasses</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActiveDSSClass">ActiveDSSClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#AuxParser">AuxParser</a></strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#PropParser">PropParser</a></strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Parser">Parser</a></strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ParserVars">ParserVars</a></strong>: <a href="ParserDel.TParserVar.html">TParserVar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastClassReferenced">LastClassReferenced</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#NumCircuits">NumCircuits</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#MaxAllocationIterations">MaxAllocationIterations</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ErrorPending">ErrorPending</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CmdResult">CmdResult</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ErrorNumber">ErrorNumber</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastErrorMessage">LastErrorMessage</a></strong>:String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DefaultEarthModel">DefaultEarthModel</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActiveEarthModel">ActiveEarthModel</a></strong>:Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastFileCompiled">LastFileCompiled</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastCommandWasCompile">LastCommandWasCompile</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#InShowResults">InShowResults</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Redirect_Abort">Redirect_Abort</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#In_Redirect">In_Redirect</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DIFilesAreOpen">DIFilesAreOpen</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#AutoShowExport">AutoShowExport</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SolutionWasAttempted">SolutionWasAttempted</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GlobalHelpString">GlobalHelpString</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GlobalPropertyValue">GlobalPropertyValue</a></strong>:String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#GlobalResult">GlobalResult</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastResultFile">LastResultFile</a></strong>:String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LogQueries">LogQueries</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#QueryFirstTime">QueryFirstTime</a></strong>:Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#QueryLogFileName">QueryLogFileName</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#QueryLogFile">QueryLogFile</a></strong>:TFileStream;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DataDirectory">DataDirectory</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#OutputDirectory">OutputDirectory</a></strong>:String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CircuitName_">CircuitName_</a></strong>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DefaultBaseFreq">DefaultBaseFreq</a></strong>:Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DaisySize">DaisySize</a></strong>:Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#EventStrings">EventStrings</a></strong>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SavedFileList">SavedFileList</a></strong>:TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ErrorStrings">ErrorStrings</a></strong>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#IncMat_Ordered">IncMat_Ordered</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SeasonalRating">SeasonalRating</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SeasonSignal">SeasonSignal</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LastCmdLine">LastCmdLine</a></strong>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#RedirFile">RedirFile</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#IsPrime">IsPrime</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FPropIndex">FPropIndex</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FPropClass">FPropClass</a></strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#tempBuffer">tempBuffer</a></strong>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ComParser">ComParser</a></strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ReduceEditString">ReduceEditString</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#EnergyMeterName">EnergyMeterName</a></strong>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FirstPDelement">FirstPDelement</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#FControlProxyObj">FControlProxyObj</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ActiveAction">ActiveAction</a></strong>: <a href="DSSClass.html#pAction">pAction</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#Enums">Enums</a></strong>: TObjectList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#UnitsEnum">UnitsEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ScanTypeEnum">ScanTypeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SequenceEnum">SequenceEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ConnectionEnum">ConnectionEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LeadLagEnum">LeadLagEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CoreTypeEnum">CoreTypeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LineTypeEnum">LineTypeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#EarthModelEnum">EarthModelEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#DefaultLoadModelEnum">DefaultLoadModelEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#RandomModeEnum">RandomModeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#ControlModeEnum">ControlModeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SolveModeEnum">SolveModeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#SolveAlgEnum">SolveAlgEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#CktModelEnum">CktModelEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#AddTypeEnum">AddTypeEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#LoadShapeClassEnum">LoadShapeClassEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#MonPhaseEnum">MonPhaseEnum</a></strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#unzipper">unzipper</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSClass.TDSSContext.html#inZipPath">inZipPath</a></strong>: String;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSClass.TDSSContext.html#get_SolutionAbort">get_SolutionAbort</a></strong>(): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSClass.TDSSContext.html#set_SolutionAbort">set_SolutionAbort</a></strong>(val: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="DSSClass.TDSSContext.html#Create">Create</a></strong>(_Parent: <a href="DSSClass.TDSSContext.html">TDSSContext</a> = nil; _IsPrime: Boolean = False);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="DSSClass.TDSSContext.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSClass.TDSSContext.html#GetPrime">GetPrime</a></strong>(): <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSClass.TDSSContext.html#CurrentDSSDir">CurrentDSSDir</a></strong>(): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSClass.TDSSContext.html#SetCurrentDSSDir">SetCurrentDSSDir</a></strong>(dir: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSClass.TDSSContext.html#GetROFileStream">GetROFileStream</a></strong>(fn: String): TStream;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSClass.TDSSContext.html#NewDSSClass">NewDSSClass</a></strong>(Value: Pointer);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSClass.TDSSContext.html#SolutionAbort">SolutionAbort</a></strong>: Boolean READ <a href="DSSClass.TDSSContext.html#get_SolutionAbort">get_SolutionAbort</a> WRITE <a href="DSSClass.TDSSContext.html#set_SolutionAbort">set_SolutionAbort</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLoadShapeClass"></span><code><strong>FLoadShapeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTShapeClass"></span><code><strong>FTShapeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPriceShapeClass"></span><code><strong>FPriceShapeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FXYCurveClass"></span><code><strong>FXYCurveClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGrowthShapeClass"></span><code><strong>FGrowthShapeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSpectrumClass"></span><code><strong>FSpectrumClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEnergyMeterClass"></span><code><strong>FEnergyMeterClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMonitorClass"></span><code><strong>FMonitorClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSensorClass"></span><code><strong>FSensorClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTCC_CurveClass"></span><code><strong>FTCC_CurveClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FWireDataClass"></span><code><strong>FWireDataClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCNDataClass"></span><code><strong>FCNDataClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTSDataClass"></span><code><strong>FTSDataClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineGeometryClass"></span><code><strong>FLineGeometryClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineSpacingClass"></span><code><strong>FLineSpacingClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineCodeClass"></span><code><strong>FLineCodeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStorageClass"></span><code><strong>FStorageClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStorage2Class"></span><code><strong>FStorage2Class</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPVSystemClass"></span><code><strong>FPVSystemClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPVSystem2Class"></span><code><strong>FPVSystem2Class</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FInvControlClass"></span><code><strong>FInvControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FInvControl2Class"></span><code><strong>FInvControl2Class</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FExpControlClass"></span><code><strong>FExpControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineClass"></span><code><strong>FLineClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FVSourceClass"></span><code><strong>FVSourceClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FISourceClass"></span><code><strong>FISourceClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FVCSSClass"></span><code><strong>FVCSSClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLoadClass"></span><code><strong>FLoadClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTransformerClass"></span><code><strong>FTransformerClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRegControlClass"></span><code><strong>FRegControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCapacitorClass"></span><code><strong>FCapacitorClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FReactorClass"></span><code><strong>FReactorClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCapControlClass"></span><code><strong>FCapControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFaultClass"></span><code><strong>FFaultClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGeneratorClass"></span><code><strong>FGeneratorClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGenDispatcherClass"></span><code><strong>FGenDispatcherClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStorageControllerClass"></span><code><strong>FStorageControllerClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStorageController2Class"></span><code><strong>FStorageController2Class</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRelayClass"></span><code><strong>FRelayClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRecloserClass"></span><code><strong>FRecloserClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFuseClass"></span><code><strong>FFuseClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSwtControlClass"></span><code><strong>FSwtControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUPFCClass"></span><code><strong>FUPFCClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUPFCControlClass"></span><code><strong>FUPFCControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FESPVLControlClass"></span><code><strong>FESPVLControlClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FIndMach012Class"></span><code><strong>FIndMach012Class</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGICsourceClass"></span><code><strong>FGICsourceClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAutoTransClass"></span><code><strong>FAutoTransClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FVSConverterClass"></span><code><strong>FVSConverterClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FXfmrCodeClass"></span><code><strong>FXfmrCodeClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGICLineClass"></span><code><strong>FGICLineClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGICTransformerClass"></span><code><strong>FGICTransformerClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveFeederObj"></span><code><strong>FActiveFeederObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveSolutionObj"></span><code><strong>FActiveSolutionObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveCapControlObj"></span><code><strong>FActiveCapControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveESPVLControlObj"></span><code><strong>FActiveESPVLControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveExpControlObj"></span><code><strong>FActiveExpControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGenDispatcherObj"></span><code><strong>FActiveGenDispatcherObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveInvControlObj"></span><code><strong>FActiveInvControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveInvControl2Obj"></span><code><strong>FActiveInvControl2Obj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveRecloserObj"></span><code><strong>FActiveRecloserObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveRegControlObj"></span><code><strong>FActiveRegControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveRelayObj"></span><code><strong>FActiveRelayObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveStorageControllerObj"></span><code><strong>FActiveStorageControllerObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveStorageController2Obj"></span><code><strong>FActiveStorageController2Obj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveSwtControlObj"></span><code><strong>FActiveSwtControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveUPFCControlObj"></span><code><strong>FActiveUPFCControlObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveConductorDataObj"></span><code><strong>FActiveConductorDataObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+FActiveVVCControlObj: TObject;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGrowthShapeObj"></span><code><strong>FActiveGrowthShapeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLineCodeObj"></span><code><strong>FActiveLineCodeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLineGeometryObj"></span><code><strong>FActiveLineGeometryObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLineSpacingObj"></span><code><strong>FActiveLineSpacingObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLoadShapeObj"></span><code><strong>FActiveLoadShapeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActivePriceShapeObj"></span><code><strong>FActivePriceShapeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveSpectrumObj"></span><code><strong>FActiveSpectrumObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveTCC_CurveObj"></span><code><strong>FActiveTCC_CurveObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveTShapeObj"></span><code><strong>FActiveTShapeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveXfmrCodeObj"></span><code><strong>FActiveXfmrCodeObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveXYcurveObj"></span><code><strong>FActiveXYcurveObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveEnergyMeterObj"></span><code><strong>FActiveEnergyMeterObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveMonitorObj"></span><code><strong>FActiveMonitorObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+FActiveFMonitorObj: TObject;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveSensorObj"></span><code><strong>FActiveSensorObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveEquivalentObj"></span><code><strong>FActiveEquivalentObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGeneratorObj"></span><code><strong>FActiveGeneratorObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGICLineObj"></span><code><strong>FActiveGICLineObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+FActiveGeneric5Obj: TObject;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGICsourceObj"></span><code><strong>FActiveGICsourceObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveIndMach012Obj"></span><code><strong>FActiveIndMach012Obj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveIsourceObj"></span><code><strong>FActiveIsourceObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLoadObj"></span><code><strong>FActiveLoadObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActivePVsystemObj"></span><code><strong>FActivePVsystemObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActivePVsystem2Obj"></span><code><strong>FActivePVsystem2Obj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveStorageObj"></span><code><strong>FActiveStorageObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveStorage2Obj"></span><code><strong>FActiveStorage2Obj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveUPFCObj"></span><code><strong>FActiveUPFCObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveVCCSObj"></span><code><strong>FActiveVCCSObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveVSConverterObj"></span><code><strong>FActiveVSConverterObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveVsourceObj"></span><code><strong>FActiveVsourceObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveAutoTransObj"></span><code><strong>FActiveAutoTransObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveCapacitorObj"></span><code><strong>FActiveCapacitorObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveFaultObj"></span><code><strong>FActiveFaultObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveFuseObj"></span><code><strong>FActiveFuseObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveGICTransformerObj"></span><code><strong>FActiveGICTransformerObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveLineObj"></span><code><strong>FActiveLineObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveReactorObj"></span><code><strong>FActiveReactorObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveTransfObj"></span><code><strong>FActiveTransfObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDSSExecutive"></span><code><strong>FDSSExecutive</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCIMExporter"></span><code><strong>FCIMExporter</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveCircuit"></span><code><strong>FActiveCircuit</strong>: <a href="NamedObject.TNamedObject.html">TNamedObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActiveDSSObject"></span><code><strong>FActiveDSSObject</strong>:<a href="NamedObject.TNamedObject.html">TNamedObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FActorThread"></span><code><strong>FActorThread</strong>: TThread;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CurrentDSSDir_internal"></span><code><strong>CurrentDSSDir_internal</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TODO: Currently only for solution, extend later (send redirect command to the other thread, etc.)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSolutionAbort"></span><code><strong>FSolutionAbort</strong>: LongInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Parent"></span><code><strong>Parent</strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSPlotCallback"></span><code><strong>DSSPlotCallback</strong>: <a href="DSSClass.html#dss_callback_plot_t">dss_callback_plot_t</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSMessageCallback"></span><code><strong>DSSMessageCallback</strong>: <a href="DSSClass.html#dss_callback_message_t">dss_callback_message_t</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Children"></span><code><strong>Children</strong>: array of <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parallel Machine state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveChild"></span><code><strong>ActiveChild</strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveChildIndex"></span><code><strong>ActiveChildIndex</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CPU"></span><code><strong>CPU</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsSolveAll"></span><code><strong>IsSolveAll</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AllActors"></span><code><strong>AllActors</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Parallel_enabled"></span><code><strong>Parallel_enabled</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConcatenateReports"></span><code><strong>ConcatenateReports</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConcatenateReportsLock"></span><code><strong>ConcatenateReportsLock</strong>: TCriticalSection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActorPctProgress"></span><code><strong>ActorPctProgress</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActorStatus"></span><code><strong>ActorStatus</strong>: <a href="DSSClass.html#TActorStatus">TActorStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ThreadStatusEvent"></span><code><strong>ThreadStatusEvent</strong>: TEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="_Name"></span><code><strong>_Name</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_DataPtr_PPAnsiChar"></span><code><strong>GR_DataPtr_PPAnsiChar</strong>: PPAnsiChar;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+C-API pointer data (GR mode)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_DataPtr_PDouble"></span><code><strong>GR_DataPtr_PDouble</strong>: PDouble;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_DataPtr_PInteger"></span><code><strong>GR_DataPtr_PInteger</strong>: PInteger;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_DataPtr_PByte"></span><code><strong>GR_DataPtr_PByte</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_Counts_PPAnsiChar"></span><code><strong>GR_Counts_PPAnsiChar</strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_Counts_PDouble"></span><code><strong>GR_Counts_PDouble</strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_Counts_PInteger"></span><code><strong>GR_Counts_PInteger</strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GR_Counts_PByte"></span><code><strong>GR_Counts_PByte</strong>: Array[0..3] of <a href="CAPI_Types.html#TAPISize">TAPISize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClassNames"></span><code><strong>ClassNames</strong>: <a href="HashList.html#TClassNamesHashListType">TClassNamesHashListType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Original global state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSClassList"></span><code><strong>DSSClassList</strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Circuits"></span><code><strong>Circuits</strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+pointers to the base class types</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSObjs"></span><code><strong>DSSObjs</strong>:<a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumIntrinsicClasses"></span><code><strong>NumIntrinsicClasses</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumUserClasses"></span><code><strong>NumUserClasses</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveDSSClass"></span><code><strong>ActiveDSSClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AuxParser"></span><code><strong>AuxParser</strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PropParser"></span><code><strong>PropParser</strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Auxiliary parser for use by anybody for reparsing values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Parser"></span><code><strong>Parser</strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parser dedicated for parsing in SetObjPropertyValue</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParserVars"></span><code><strong>ParserVars</strong>: <a href="ParserDel.TParserVar.html">TParserVar</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastClassReferenced"></span><code><strong>LastClassReferenced</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumCircuits"></span><code><strong>NumCircuits</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+index of class of last thing edited</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxAllocationIterations"></span><code><strong>MaxAllocationIterations</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ErrorPending"></span><code><strong>ErrorPending</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CmdResult"></span><code><strong>CmdResult</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ErrorNumber"></span><code><strong>ErrorNumber</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastErrorMessage"></span><code><strong>LastErrorMessage</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultEarthModel"></span><code><strong>DefaultEarthModel</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveEarthModel"></span><code><strong>ActiveEarthModel</strong>:Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastFileCompiled"></span><code><strong>LastFileCompiled</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastCommandWasCompile"></span><code><strong>LastCommandWasCompile</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InShowResults"></span><code><strong>InShowResults</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Redirect_Abort"></span><code><strong>Redirect_Abort</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="In_Redirect"></span><code><strong>In_Redirect</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DIFilesAreOpen"></span><code><strong>DIFilesAreOpen</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AutoShowExport"></span><code><strong>AutoShowExport</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolutionWasAttempted"></span><code><strong>SolutionWasAttempted</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GlobalHelpString"></span><code><strong>GlobalHelpString</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GlobalPropertyValue"></span><code><strong>GlobalPropertyValue</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GlobalResult"></span><code><strong>GlobalResult</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastResultFile"></span><code><strong>LastResultFile</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LogQueries"></span><code><strong>LogQueries</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="QueryFirstTime"></span><code><strong>QueryFirstTime</strong>:Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="QueryLogFileName"></span><code><strong>QueryLogFileName</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="QueryLogFile"></span><code><strong>QueryLogFile</strong>:TFileStream;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DataDirectory"></span><code><strong>DataDirectory</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OutputDirectory"></span><code><strong>OutputDirectory</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+used to be DSSDataDirectory</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CircuitName_"></span><code><strong>CircuitName_</strong>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+output files go here, same as DataDirectory if writable</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultBaseFreq"></span><code><strong>DefaultBaseFreq</strong>:Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Name of Circuit with a &quot;_&quot; appended</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DaisySize"></span><code><strong>DaisySize</strong>:Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EventStrings"></span><code><strong>EventStrings</strong>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SavedFileList"></span><code><strong>SavedFileList</strong>:TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ErrorStrings"></span><code><strong>ErrorStrings</strong>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IncMat_Ordered"></span><code><strong>IncMat_Ordered</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SeasonalRating"></span><code><strong>SeasonalRating</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+***********************Seasonal QSTS variables********************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SeasonSignal"></span><code><strong>SeasonSignal</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Tells the energy meter if the seasonal rating feature is active</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LastCmdLine"></span><code><strong>LastCmdLine</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Stores the name of the signal for selecting the rating dynamically</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RedirFile"></span><code><strong>RedirFile</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+always has last command processed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsPrime"></span><code><strong>IsPrime</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FPropIndex"></span><code><strong>FPropIndex</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Indicates whether this instance is the first/main DSS instance For external APIs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FPropClass"></span><code><strong>FPropClass</strong>: <a href="DSSClass.TDSSClass.html">TDSSClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="tempBuffer"></span><code><strong>tempBuffer</strong>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Previously C-API or COM globals</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComParser"></span><code><strong>ComParser</strong>: <a href="ParserDel.TDSSParser.html">TDSSParser</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_Utils.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReduceEditString"></span><code><strong>ReduceEditString</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_Parser.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EnergyMeterName"></span><code><strong>EnergyMeterName</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_ReduceCkt.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FirstPDelement"></span><code><strong>FirstPDelement</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_ReduceCkt.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FControlProxyObj"></span><code><strong>FControlProxyObj</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Full name &ndash; CAPI_ReduceCkt.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveAction"></span><code><strong>ActiveAction</strong>: <a href="DSSClass.html#pAction">pAction</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_CtrlQueue.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Enums"></span><code><strong>Enums</strong>: TObjectList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+CAPI_CtrlQueue.pas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnitsEnum"></span><code><strong>UnitsEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanTypeEnum"></span><code><strong>ScanTypeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SequenceEnum"></span><code><strong>SequenceEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConnectionEnum"></span><code><strong>ConnectionEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LeadLagEnum"></span><code><strong>LeadLagEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CoreTypeEnum"></span><code><strong>CoreTypeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineTypeEnum"></span><code><strong>LineTypeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EarthModelEnum"></span><code><strong>EarthModelEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultLoadModelEnum"></span><code><strong>DefaultLoadModelEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RandomModeEnum"></span><code><strong>RandomModeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlModeEnum"></span><code><strong>ControlModeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolveModeEnum"></span><code><strong>SolveModeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolveAlgEnum"></span><code><strong>SolveAlgEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CktModelEnum"></span><code><strong>CktModelEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddTypeEnum"></span><code><strong>AddTypeEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadShapeClassEnum"></span><code><strong>LoadShapeClassEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MonPhaseEnum"></span><code><strong>MonPhaseEnum</strong>: <a href="DSSClass.TDSSEnum.html">TDSSENum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="unzipper"></span><code><strong>unzipper</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ZIP file state</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="inZipPath"></span><code><strong>inZipPath</strong>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="get_SolutionAbort"></span><code>function <strong>get_SolutionAbort</strong>(): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+changed to LongInt to enable InterLockedIncrement and others</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="set_SolutionAbort"></span><code>procedure <strong>set_SolutionAbort</strong>(val: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(_Parent: <a href="DSSClass.TDSSContext.html">TDSSContext</a> = nil; _IsPrime: Boolean = False);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPrime"></span><code>function <strong>GetPrime</strong>(): <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurrentDSSDir"></span><code>function <strong>CurrentDSSDir</strong>(): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCurrentDSSDir"></span><code>procedure <strong>SetCurrentDSSDir</strong>(dir: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetROFileStream"></span><code>function <strong>GetROFileStream</strong>(fn: String): TStream;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewDSSClass"></span><code>procedure <strong>NewDSSClass</strong>(Value: Pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolutionAbort"></span><code>property <strong>SolutionAbort</strong>: Boolean READ <a href="DSSClass.TDSSContext.html#get_SolutionAbort">get_SolutionAbort</a> WRITE <a href="DSSClass.TDSSContext.html#set_SolutionAbort">set_SolutionAbort</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

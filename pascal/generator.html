@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit generator</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="GenUserModel.html">GenUserModel</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="PCClass.html">PCClass</a></li><li><a href="PCElement.html">PCElement</a></li><li><a href="Ucmatrix.html">ucmatrix</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="LoadShape.html">LoadShape</a></li><li><a href="Spectrum.html">Spectrum</a></li><li><a href="Arraydef.html">ArrayDef</a></li><li><a href="Dynamics.html">Dynamics</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="generator.TGeneratorVars.html"><code>TGeneratorVars</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="generator.TGenerator.html"><code>TGenerator</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="generator.TGeneratorObj.html"><code>TGeneratorObj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="generator.html#TGeneratorProp">TGeneratorProp</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="generator.html#NumGenRegisters">NumGenRegisters</a></strong> = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="generator.html#NumGenVariables">NumGenVariables</a></strong> = 6;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGeneratorProp"></span><code><strong>TGeneratorProp</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="phases">phases</span></li>
+<li>
+<span id="bus1">bus1</span></li>
+<li>
+<span id="kv">kv</span></li>
+<li>
+<span id="kW">kW</span></li>
+<li>
+<span id="pf">pf</span></li>
+<li>
+<span id="kvar">kvar</span></li>
+<li>
+<span id="model">model</span>: 13</li>
+<li>
+<span id="Vminpu">Vminpu</span>: 6</li>
+<li>
+<span id="Vmaxpu">Vmaxpu</span>: 23</li>
+<li>
+<span id="yearly">yearly</span>: 24</li>
+<li>
+<span id="daily">daily</span>: 7</li>
+<li>
+<span id="duty">duty</span>: 8</li>
+<li>
+<span id="dispmode">dispmode</span>: 9</li>
+<li>
+<span id="dispvalue">dispvalue</span>: 10</li>
+<li>
+<span id="conn">conn</span>: 11</li>
+<li>
+<span id="status">status</span>: 12</li>
+<li>
+<span id="cls">cls</span>: 16</li>
+<li>
+<span id="Vpu">Vpu</span>: 17</li>
+<li>
+<span id="maxkvar">maxkvar</span>: 18</li>
+<li>
+<span id="minkvar">minkvar</span>: 19</li>
+<li>
+<span id="pvfactor">pvfactor</span>: 20</li>
+<li>
+<span id="forceon">forceon</span>: 21</li>
+<li>
+<span id="kVA">kVA</span>: 25</li>
+<li>
+<span id="MVA">MVA</span>: 26</li>
+<li>
+<span id="Xd">Xd</span>: 27</li>
+<li>
+<span id="Xdp">Xdp</span>: 28</li>
+<li>
+<span id="Xdpp">Xdpp</span>: 29</li>
+<li>
+<span id="H">H</span>: 30</li>
+<li>
+<span id="D">D</span>: 31</li>
+<li>
+<span id="UserModel">UserModel</span>: 32</li>
+<li>
+<span id="UserData">UserData</span>: 33</li>
+<li>
+<span id="ShaftModel">ShaftModel</span>: 34</li>
+<li>
+<span id="ShaftData">ShaftData</span>: 35</li>
+<li>
+<span id="DutyStart">DutyStart</span>: 36</li>
+<li>
+<span id="debugtrace">debugtrace</span>: 37</li>
+<li>
+<span id="Balanced">Balanced</span>: 22</li>
+<li>
+<span id="XRdp">XRdp</span></li>
+<li>
+<span id="UseFuel">UseFuel</span></li>
+<li>
+<span id="FuelkWh">FuelkWh</span></li>
+<li>
+<span id="pctFuel">pctFuel</span></li>
+<li>
+<span id="pctReserve">pctReserve</span></li>
+<li>
+<span id="Refuel">Refuel</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumGenRegisters"></span><code><strong>NumGenRegisters</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+GrowthShape,</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumGenVariables"></span><code><strong>NumGenVariables</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Number of energy meter registers</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

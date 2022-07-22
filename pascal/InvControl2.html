@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: InvControl2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit InvControl2</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="RollAvgWindow.html">RollAvgWindow</a></li><li><a href="Command.html">Command</a></li><li><a href="ControlClass.html">ControlClass</a></li><li><a href="ControlElem.html">ControlElem</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="Bus.html">bus</a></li><li><a href="PCElement.html">PCElement</a></li><li><a href="PVsystem2.html">PVSystem2</a></li><li><a href="Storage2.html">Storage2</a></li><li><a href="Arraydef.html">Arraydef</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Utilities.html">utilities</a></li><li><a href="XYcurve.html">XYcurve</a></li><li><a href="Dynamics.html">Dynamics</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li>Classes</li><li>StrUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="InvControl2.TInvControl2.html"><code>TInvControl2</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="InvControl2.TInvControl2Obj.html"><code>TInvControl2Obj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="InvControl2.html#TInvControl2Prop">TInvControl2Prop</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="InvControl2.html#TInvControl2ControlMode">TInvControl2ControlMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="InvControl2.html#TInvControl2CombiMode">TInvControl2CombiMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="InvControl2.html#ERateofChangeMode">ERateofChangeMode</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInvControl2Prop"></span><code><strong>TInvControl2Prop</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="DERList">DERList = 1</span></li>
+<li>
+<span id="Mode">Mode = 2</span></li>
+<li>
+<span id="CombiMode">CombiMode = 3</span></li>
+<li>
+<span id="vvc_curve1">vvc_curve1 = 4</span></li>
+<li>
+<span id="hysteresis_offset">hysteresis_offset = 5</span></li>
+<li>
+<span id="voltage_curvex_ref">voltage_curvex_ref = 6</span></li>
+<li>
+<span id="avgwindowlen">avgwindowlen = 7</span></li>
+<li>
+<span id="voltwatt_curve">voltwatt_curve = 8</span></li>
+<li>
+<span id="DbVMin">DbVMin = 9</span></li>
+<li>
+<span id="DbVMax">DbVMax = 10</span></li>
+<li>
+<span id="ArGraLowV">ArGraLowV = 11</span></li>
+<li>
+<span id="ArGraHiV">ArGraHiV = 12</span></li>
+<li>
+<span id="DynReacavgwindowlen">DynReacavgwindowlen = 13</span></li>
+<li>
+<span id="deltaQ_Factor">deltaQ_Factor = 14</span></li>
+<li>
+<span id="VoltageChangeTolerance">VoltageChangeTolerance = 15</span></li>
+<li>
+<span id="VarChangeTolerance">VarChangeTolerance = 16</span></li>
+<li>
+<span id="VoltwattYAxis">VoltwattYAxis = 17</span></li>
+<li>
+<span id="RateofChangeMode">RateofChangeMode = 18</span></li>
+<li>
+<span id="LPFTau">LPFTau = 19</span></li>
+<li>
+<span id="RiseFallLimit">RiseFallLimit = 20</span>: weird double: in the original version, value was not set</li>
+<li>
+<span id="deltaP_Factor">deltaP_Factor = 21</span>: weird double: in the original version, value was not set</li>
+<li>
+<span id="EventLog">EventLog = 22</span></li>
+<li>
+<span id="RefReactivePower">RefReactivePower = 23</span></li>
+<li>
+<span id="ActivePChangeTolerance">ActivePChangeTolerance = 24</span></li>
+<li>
+<span id="monVoltageCalc">monVoltageCalc = 25</span></li>
+<li>
+<span id="monBus">monBus = 26</span></li>
+<li>
+<span id="MonBusesVbase">MonBusesVbase = 27</span></li>
+<li>
+<span id="voltwattCH_curve">voltwattCH_curve = 28</span></li>
+<li>
+<span id="wattpf_curve">wattpf_curve = 29</span></li>
+<li>
+<span id="wattvar_curve">wattvar_curve = 30</span></li>
+<li>
+<span id="PVSystemList">PVSystemList</span>: VV_RefReactivePower = 31, // was deprecated, removed</li>
+<li>
+<span id="Vsetpoint">Vsetpoint</span>: was 32</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInvControl2ControlMode"></span><code><strong>TInvControl2ControlMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+was 33 Modes keep enums as int32 values</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="NONE_MODE">NONE_MODE = 0</span></li>
+<li>
+<span id="VOLTVAR">VOLTVAR = 1</span></li>
+<li>
+<span id="VOLTWATT">VOLTWATT = 2</span></li>
+<li>
+<span id="DRC">DRC = 3</span></li>
+<li>
+<span id="WATTPF">WATTPF = 4</span></li>
+<li>
+<span id="WATTVAR">WATTVAR = 5</span></li>
+<li>
+<span id="AVR">AVR = 6</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInvControl2CombiMode"></span><code><strong>TInvControl2CombiMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Combi Modes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="NONE_COMBMODE">NONE_COMBMODE = 0</span></li>
+<li>
+<span id="VV_VW">VV_VW = 1</span></li>
+<li>
+<span id="VV_DRC">VV_DRC = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ERateofChangeMode"></span><code><strong>ERateofChangeMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INACTIVE">INACTIVE</span></li>
+<li>
+<span id="LPF">LPF</span></li>
+<li>
+<span id="RISEFALL">RISEFALL</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

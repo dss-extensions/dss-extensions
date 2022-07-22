@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSUcomplex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit DSSUcomplex</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>UComplex</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="DSSUcomplex.polar.html"><code>polar</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#cmplx">cmplx</a></strong>(const a, b: Double): <a href="DSSUcomplex.html#Complex">complex</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#cabs">cabs</a></strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="DSSUcomplex.html#cabs2">cabs2</a></strong>(const a:<a href="DSSUcomplex.html#Complex">complex</a>):double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#cang">cang</a></strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#cdang">cdang</a></strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#ctopolar">ctopolar</a></strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#ctopolardeg">ctopolardeg</a></strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#topolar">topolar</a></strong>(const a, b: Double): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#ptocomplex">ptocomplex</a></strong>(const a: <a href="DSSUcomplex.polar.html">polar</a>): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#pdegtocomplex">pdegtocomplex</a></strong>(const magn, angle: Double): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSUcomplex.html#pclx">pclx</a></strong>(const magn, angle: Double): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#Complex">Complex</a></strong> = UComplex.Complex;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#PComplex">PComplex</a></strong> = UComplex.PComplex;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#pComplexArray">pComplexArray</a></strong> = &circ;<a href="DSSUcomplex.html#ComplexArray">ComplexArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#ComplexArray">ComplexArray</a></strong> = array [1..100] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#CDOUBLEONE">CDOUBLEONE</a></strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 1.0; im: 1.0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#cZERO">cZERO</a></strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 0.0; im: 0.0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSUcomplex.html#cONE">cONE</a></strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 1.0; im: 0.0);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cmplx"></span><code>function <strong>cmplx</strong>(const a, b: Double): <a href="DSSUcomplex.html#Complex">complex</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cabs"></span><code>function <strong>cabs</strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cabs2"></span><code>Function <strong>cabs2</strong>(const a:<a href="DSSUcomplex.html#Complex">complex</a>):double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cang"></span><code>function <strong>cang</strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+best when you don't need sqrt &ndash; TODO: rename?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cdang"></span><code>function <strong>cdang</strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctopolar"></span><code>function <strong>ctopolar</strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+angle of complex number, degrees</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctopolardeg"></span><code>function <strong>ctopolardeg</strong>(const a: <a href="DSSUcomplex.html#Complex">complex</a>): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="topolar"></span><code>function <strong>topolar</strong>(const a, b: Double): <a href="DSSUcomplex.polar.html">polar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+complex to polar, degrees</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ptocomplex"></span><code>function <strong>ptocomplex</strong>(const a: <a href="DSSUcomplex.polar.html">polar</a>): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+scalar to polar</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pdegtocomplex"></span><code>function <strong>pdegtocomplex</strong>(const magn, angle: Double): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pclx"></span><code>function <strong>pclx</strong>(const magn, angle: Double): <a href="DSSUcomplex.html#Complex">complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Complex"></span><code><strong>Complex</strong> = UComplex.Complex;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PComplex"></span><code><strong>PComplex</strong> = UComplex.PComplex;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pComplexArray"></span><code><strong>pComplexArray</strong> = &circ;<a href="DSSUcomplex.html#ComplexArray">ComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComplexArray"></span><code><strong>ComplexArray</strong> = array [1..100] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CDOUBLEONE"></span><code><strong>CDOUBLEONE</strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 1.0; im: 1.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cZERO"></span><code><strong>cZERO</strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 0.0; im: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="cONE"></span><code><strong>cONE</strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re: 1.0; im: 0.0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

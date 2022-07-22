@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ExecCommands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ExecCommands</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExecCommands.html#ProcessCommand">ProcessCommand</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const CmdLine: String; LineNum: Integer = -1);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExecCommands.html#DefineCommands">DefineCommands</a></strong>(var ExecCommand: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExecCommands.html#TExecCommand">TExecCommand</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExecCommands.html#NumExecCommands">NumExecCommands</a></strong> = ord(High(<a href="ExecCommands.html#TExecCommand">TExecCommand</a>));</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ProcessCommand"></span><code>procedure <strong>ProcessCommand</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const CmdLine: String; LineNum: Integer = -1);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefineCommands"></span><code>procedure <strong>DefineCommands</strong>(var ExecCommand: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TExecCommand"></span><code><strong>TExecCommand</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Main executive commands</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="New">New = 1</span></li>
+<li>
+<span id="Edit">Edit = 2</span></li>
+<li>
+<span id="More">More = 3</span></li>
+<li>
+<span id="M">M = 4</span></li>
+<li>
+<span id="tilde">tilde = 5</span></li>
+<li>
+<span id="Select">Select = 6</span>: &quot;&tilde;&quot;</li>
+<li>
+<span id="Save">Save = 7</span></li>
+<li>
+<span id="Show">Show = 8</span></li>
+<li>
+<span id="Solve">Solve = 9</span></li>
+<li>
+<span id="Enable">Enable = 10</span></li>
+<li>
+<span id="Disable">Disable = 11</span></li>
+<li>
+<span id="Plot">Plot = 12</span></li>
+<li>
+<span id="Reset">Reset = 13</span></li>
+<li>
+<span id="Compile">Compile = 14</span></li>
+<li>
+<span id="SetOpt">SetOpt = 15</span></li>
+<li>
+<span id="Dump">Dump = 16</span>: &quot;Set&quot; = Set DSS Options</li>
+<li>
+<span id="Open">Open = 17</span>: Debug dump</li>
+<li>
+<span id="Close">Close = 18</span>: Open a device terminal conductor</li>
+<li>
+<span id="DoubleSlash">DoubleSlash = 19</span>: Close a device terminal conductor</li>
+<li>
+<span id="Redirect">Redirect = 20</span>: &quot;//&quot; Comment</li>
+<li>
+<span id="Help">Help = 21</span></li>
+<li>
+<span id="Quit">Quit = 22</span></li>
+<li>
+<span id="questionmark">questionmark = 23</span></li>
+<li>
+<span id="Next">Next = 24</span>: &quot;?&quot; = Property Value inquiry</li>
+<li>
+<span id="Panel">Panel = 25</span></li>
+<li>
+<span id="Sample">Sample = 26</span></li>
+<li>
+<span id="Clear">Clear = 27</span></li>
+<li>
+<span id="About">About = 28</span></li>
+<li>
+<span id="Calcvoltagebases">Calcvoltagebases = 29</span></li>
+<li>
+<span id="SetkVBase">SetkVBase = 30</span>: Computes voltage bases</li>
+<li>
+<span id="BuildY">BuildY = 31</span>: Set kV Base at a Bus</li>
+<li>
+<span id="Get">Get = 32</span>: forces Rebuild of Y matrix right now</li>
+<li>
+<span id="Init">Init = 33</span>: returns values set WITH Set command</li>
+<li>
+<span id="Export">Export = 34</span></li>
+<li>
+<span id="Fileedit">Fileedit = 35</span></li>
+<li>
+<span id="Voltages">Voltages = 36</span></li>
+<li>
+<span id="Currents">Currents = 37</span></li>
+<li>
+<span id="Powers">Powers = 38</span></li>
+<li>
+<span id="Seqvoltages">Seqvoltages = 39</span></li>
+<li>
+<span id="Seqcurrents">Seqcurrents = 40</span></li>
+<li>
+<span id="Seqpowers">Seqpowers = 41</span></li>
+<li>
+<span id="Losses">Losses = 42</span></li>
+<li>
+<span id="Phaselosses">Phaselosses = 43</span></li>
+<li>
+<span id="Cktlosses">Cktlosses = 44</span></li>
+<li>
+<span id="Allocateloads">Allocateloads = 45</span></li>
+<li>
+<span id="Formedit">Formedit = 46</span></li>
+<li>
+<span id="Totals">Totals = 47</span></li>
+<li>
+<span id="Capacity">Capacity = 48</span>: Total all energymeters</li>
+<li>
+<span id="Classes">Classes = 49</span>: Find upper kW limit of system for present year</li>
+<li>
+<span id="Userclasses">Userclasses = 50</span>: List of intrinsic classes</li>
+<li>
+<span id="Zsc">Zsc = 51</span>: List of user-defined classes</li>
+<li>
+<span id="Zsc10">Zsc10 = 52</span></li>
+<li>
+<span id="ZscRefresh">ZscRefresh = 53</span></li>
+<li>
+<span id="Ysc">Ysc = 54</span></li>
+<li>
+<span id="puvoltages">puvoltages = 55</span></li>
+<li>
+<span id="VarValues">VarValues = 56</span></li>
+<li>
+<span id="Varnames">Varnames = 57</span></li>
+<li>
+<span id="Buscoords">Buscoords = 58</span></li>
+<li>
+<span id="MakeBusList">MakeBusList = 59</span></li>
+<li>
+<span id="MakePosSeq">MakePosSeq = 60</span></li>
+<li>
+<span id="Reduce">Reduce = 61</span></li>
+<li>
+<span id="Interpolate">Interpolate = 62</span></li>
+<li>
+<span id="AlignFile">AlignFile = 63</span></li>
+<li>
+<span id="TOP">TOP = 64</span></li>
+<li>
+<span id="Rotate">Rotate = 65</span>: TODO: remove</li>
+<li>
+<span id="Vdiff">Vdiff = 66</span></li>
+<li>
+<span id="Summary">Summary = 67</span></li>
+<li>
+<span id="Distribute">Distribute = 68</span></li>
+<li>
+<span id="DI_plot">DI_plot = 69</span></li>
+<li>
+<span id="Comparecases">Comparecases = 70</span></li>
+<li>
+<span id="YearlyCurves">YearlyCurves = 71</span></li>
+<li>
+<span id="CD">CD = 72</span></li>
+<li>
+<span id="Visualize">Visualize = 73</span></li>
+<li>
+<span id="CloseDI">CloseDI = 74</span></li>
+<li>
+<span id="DOScmd">DOScmd = 75</span></li>
+<li>
+<span id="Estimate">Estimate = 76</span></li>
+<li>
+<span id="Reconductor">Reconductor = 77</span></li>
+<li>
+<span id="_InitSnap">_InitSnap = 78</span></li>
+<li>
+<span id="_SolveNoControl">_SolveNoControl = 79</span></li>
+<li>
+<span id="_SampleControls">_SampleControls = 80</span></li>
+<li>
+<span id="_DoControlActions">_DoControlActions = 81</span></li>
+<li>
+<span id="_ShowControlQueue">_ShowControlQueue = 82</span></li>
+<li>
+<span id="_SolveDirect">_SolveDirect = 83</span></li>
+<li>
+<span id="_SolvePFlow">_SolvePFlow = 84</span></li>
+<li>
+<span id="AddBusMarker">AddBusMarker = 85</span></li>
+<li>
+<span id="Uuids">Uuids = 86</span></li>
+<li>
+<span id="SetLoadAndGenKV">SetLoadAndGenKV = 87</span></li>
+<li>
+<span id="CvrtLoadshapes">CvrtLoadshapes = 88</span></li>
+<li>
+<span id="NodeDiff">NodeDiff = 89</span></li>
+<li>
+<span id="Rephase">Rephase = 90</span></li>
+<li>
+<span id="SetBusXY">SetBusXY = 91</span></li>
+<li>
+<span id="UpdateStorage">UpdateStorage = 92</span></li>
+<li>
+<span id="Obfuscate">Obfuscate = 93</span></li>
+<li>
+<span id="LatLongCoords">LatLongCoords = 94</span></li>
+<li>
+<span id="BatchEdit">BatchEdit = 95</span></li>
+<li>
+<span id="Pstcalc">Pstcalc = 96</span></li>
+<li>
+<span id="Variable">Variable = 97</span></li>
+<li>
+<span id="ReprocessBuses">ReprocessBuses = 98</span></li>
+<li>
+<span id="ClearBusMarkers">ClearBusMarkers = 99</span></li>
+<li>
+<span id="RelCalc">RelCalc = 100</span></li>
+<li>
+<span id="vr">vr = 101</span></li>
+<li>
+<span id="Cleanup">Cleanup = 102</span>: var</li>
+<li>
+<span id="FinishTimeStep">FinishTimeStep = 103</span></li>
+<li>
+<span id="NodeList">NodeList = 104</span></li>
+<li>
+<span id="Connect">Connect = 105</span></li>
+<li>
+<span id="Disconnect">Disconnect = 106</span>: TODO: remove</li>
+<li>
+<span id="Remove">Remove = 107</span>: TODO: remove</li>
+<li>
+<span id="CalcIncMatrix">CalcIncMatrix = 108</span></li>
+<li>
+<span id="CalcIncMatrix_O">CalcIncMatrix_O = 109</span></li>
+<li>
+<span id="Refine_BusLevels">Refine_BusLevels = 110</span></li>
+<li>
+<span id="CalcLaplacian">CalcLaplacian = 111</span></li>
+<li>
+<span id="ExportOverloads">ExportOverloads = 112</span></li>
+<li>
+<span id="ExportVViolations">ExportVViolations = 113</span></li>
+<li>
+<span id="Zsc012">Zsc012 = 114</span></li>
+<li>
+<span id="AllPCEatBus">AllPCEatBus</span></li>
+<li>
+<span id="AllPDEatBus">AllPDEatBus</span></li>
+<li>
+<span id="TotalPowers">TotalPowers</span></li>
+<li>
+<span id="GISCoords">GISCoords</span></li>
+<li>
+<span id="ClearAll">ClearAll</span></li>
+<li>
+<span id="COMHelp">COMHelp</span></li>
+<li>
+<span id="NewActor">NewActor</span></li>
+<li>
+<span id="Wait">Wait</span></li>
+<li>
+<span id="SolveAll">SolveAll</span></li>
+<li>
+<span id="Abort">Abort</span></li>
+<li>
+<span id="Clone">Clone</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumExecCommands"></span><code><strong>NumExecCommands</strong> = ord(High(<a href="ExecCommands.html#TExecCommand">TExecCommand</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

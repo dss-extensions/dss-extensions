@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Load</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Load</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="PCClass.html">PCClass</a></li><li><a href="PCElement.html">PCElement</a></li><li><a href="Ucmatrix.html">ucmatrix</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="LoadShape.html">LoadShape</a></li><li><a href="GrowthShape.html">GrowthShape</a></li><li><a href="Spectrum.html">Spectrum</a></li><li><a href="Arraydef.html">ArrayDef</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Load.TLoad.html"><code>TLoad</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Load.TLoadObj.html"><code>TLoadObj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Load.html#TLoadModel">TLoadModel</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Load.html#TLoadStatus">TLoadStatus</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Load.html#TLoadConnection">TLoadConnection</a></strong> = <a href="Arraydef.html#TGeneralConnection">TGeneralConnection</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Load.html#TLoadSpec">TLoadSpec</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Load.html#TLoadProp">TLoadProp</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoadModel"></span><code><strong>TLoadModel</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+keep enums as int32 values</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ConstPQ">ConstPQ = 1</span>: INVALID = 0,</li>
+<li>
+<span id="ConstZ">ConstZ = 2</span>: Constant kVA (P,Q always in same ratio)</li>
+<li>
+<span id="Motor">Motor = 3</span>: Constant impedance</li>
+<li>
+<span id="CVR">CVR = 4</span>: Constant P, Quadratic Q (Mostly motor)</li>
+<li>
+<span id="ConstI">ConstI = 5</span>: Linear P, Quadratic Q (Mixed motor/resistive Use this for CVR studies</li>
+<li>
+<span id="ConstPFixedQ">ConstPFixedQ = 6</span>: Constant |I|</li>
+<li>
+<span id="ConstPFixedX">ConstPFixedX = 7</span>: Constant P (Variable); Q is fixed value (not variable)</li>
+<li>
+<span id="ZIPV">ZIPV = 8</span>: Constant P (Variable); Q is fixed Z (not variable)</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoadStatus"></span><code><strong>TLoadStatus</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+ZIPV (3 real power coefficients, 3 reactive, Vcutoff)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Variable">Variable = 0</span></li>
+<li>
+<span id="Fixed">Fixed</span></li>
+<li>
+<span id="Exempt">Exempt</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoadConnection"></span><code><strong>TLoadConnection</strong> = <a href="Arraydef.html#TGeneralConnection">TGeneralConnection</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoadSpec"></span><code><strong>TLoadSpec</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="kW_PF">kW_PF = 0</span></li>
+<li>
+<span id="kW_kvar">kW_kvar = 1</span></li>
+<li>
+<span id="kVA_PF">kVA_PF = 2</span></li>
+<li>
+<span id="ConnectedkVA_PF">ConnectedkVA_PF = 3</span></li>
+<li>
+<span id="kWh_PF">kWh_PF = 4</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoadProp"></span><code><strong>TLoadProp</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="phases">phases = 1</span></li>
+<li>
+<span id="bus1">bus1 = 2</span></li>
+<li>
+<span id="kV">kV = 3</span></li>
+<li>
+<span id="kW">kW = 4</span></li>
+<li>
+<span id="pf">pf = 5</span></li>
+<li>
+<span id="model">model = 6</span></li>
+<li>
+<span id="yearly">yearly = 7</span></li>
+<li>
+<span id="daily">daily = 8</span></li>
+<li>
+<span id="duty">duty = 9</span></li>
+<li>
+<span id="growth">growth = 10</span></li>
+<li>
+<span id="conn">conn = 11</span></li>
+<li>
+<span id="kvar">kvar = 12</span></li>
+<li>
+<span id="Rneut">Rneut = 13</span></li>
+<li>
+<span id="Xneut">Xneut = 14</span>: IF entered -, assume open</li>
+<li>
+<span id="status">status = 15</span></li>
+<li>
+<span id="cls">cls = 16</span>: fixed or variable</li>
+<li>
+<span id="Vminpu">Vminpu = 17</span>: integer</li>
+<li>
+<span id="Vmaxpu">Vmaxpu = 18</span>: Min pu voltage for which model applies</li>
+<li>
+<span id="Vminnorm">Vminnorm = 19</span>: Max pu voltage for which model applies</li>
+<li>
+<span id="Vminemerg">Vminemerg = 20</span>: Min pu voltage normal load</li>
+<li>
+<span id="xfkVA">xfkVA = 21</span>: Min pu voltage emergency rating</li>
+<li>
+<span id="allocationfactor">allocationfactor = 22</span>: Service transformer rated kVA</li>
+<li>
+<span id="kVA">kVA = 23</span>: allocation factor for xfkVA</li>
+<li>
+<span id="pctmean">pctmean = 24</span>: specify load in kVA and PF</li>
+<li>
+<span id="pctstddev">pctstddev = 25</span>: per cent default mean</li>
+<li>
+<span id="CVRwatts">CVRwatts = 26</span>: per cent default standard deviation</li>
+<li>
+<span id="CVRvars">CVRvars = 27</span>: Percent watts reduction per 1% reduction in voltage from nominal</li>
+<li>
+<span id="kwh">kwh = 28</span>: Percent vars reduction per 1% reduction in voltage from nominal</li>
+<li>
+<span id="kwhdays">kwhdays = 29</span>: kwh billing</li>
+<li>
+<span id="Cfactor">Cfactor = 30</span>: kwh billing period (24-hr days)</li>
+<li>
+<span id="CVRcurve">CVRcurve = 31</span>: multiplier from kWh avg to peak kW</li>
+<li>
+<span id="NumCust">NumCust = 32</span>: name of curve to use for yearly CVR simulations</li>
+<li>
+<span id="ZIPV">ZIPV = 33</span>: Number of customers, this load</li>
+<li>
+<span id="pctSeriesRL">pctSeriesRL = 34</span>: array of 7 coefficients</li>
+<li>
+<span id="RelWeight">RelWeight = 35</span>: pct of Load that is series R-L</li>
+<li>
+<span id="Vlowpu">Vlowpu = 36</span>: Weighting factor for reliability</li>
+<li>
+<span id="puXharm">puXharm = 37</span>: Below this value resort to constant Z model = Yeq</li>
+<li>
+<span id="XRharm">XRharm = 38</span>: pu Reactance for Harmonics, if specifies</li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

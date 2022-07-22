@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_LineGeometries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_LineGeometries</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li><li><a href="LineGeometry.html">LineGeometry</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Count">LineGeometries_Get_Count</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_First">LineGeometries_Get_First</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Next">LineGeometries_Get_Next</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Name">LineGeometries_Get_Name</a></strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Name">LineGeometries_Set_Name</a></strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Nconds">LineGeometries_Get_Nconds</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Nconds">LineGeometries_Set_Nconds</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Phases">LineGeometries_Get_Phases</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Phases">LineGeometries_Set_Phases</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Cmatrix">LineGeometries_Get_Cmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Cmatrix_GR">LineGeometries_Get_Cmatrix_GR</a></strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Rmatrix">LineGeometries_Get_Rmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Rmatrix_GR">LineGeometries_Get_Rmatrix_GR</a></strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Xmatrix">LineGeometries_Get_Xmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Xmatrix_GR">LineGeometries_Get_Xmatrix_GR</a></strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Zmatrix">LineGeometries_Get_Zmatrix</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Zmatrix_GR">LineGeometries_Get_Zmatrix_GR</a></strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Units">LineGeometries_Get_Units</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Units_GR">LineGeometries_Get_Units_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Units">LineGeometries_Set_Units</a></strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Xcoords">LineGeometries_Get_Xcoords</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Xcoords_GR">LineGeometries_Get_Xcoords_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Xcoords">LineGeometries_Set_Xcoords</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Ycoords">LineGeometries_Get_Ycoords</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Ycoords_GR">LineGeometries_Get_Ycoords_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Ycoords">LineGeometries_Set_Ycoords</a></strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Conductors">LineGeometries_Get_Conductors</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Conductors_GR">LineGeometries_Get_Conductors_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_Reduce">LineGeometries_Get_Reduce</a></strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_Reduce">LineGeometries_Set_Reduce</a></strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_RhoEarth">LineGeometries_Get_RhoEarth</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_RhoEarth">LineGeometries_Set_RhoEarth</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_NormAmps">LineGeometries_Get_NormAmps</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_NormAmps">LineGeometries_Set_NormAmps</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_EmergAmps">LineGeometries_Get_EmergAmps</a></strong>(): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_EmergAmps">LineGeometries_Set_EmergAmps</a></strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_AllNames">LineGeometries_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_AllNames_GR">LineGeometries_Get_AllNames_GR</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_LineGeometries.html#LineGeometries_Get_idx">LineGeometries_Get_idx</a></strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_LineGeometries.html#LineGeometries_Set_idx">LineGeometries_Set_idx</a></strong>(Value: Integer); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Count"></span><code>function <strong>LineGeometries_Get_Count</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_First"></span><code>function <strong>LineGeometries_Get_First</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Next"></span><code>function <strong>LineGeometries_Get_Next</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Name"></span><code>function <strong>LineGeometries_Get_Name</strong>(): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Name"></span><code>procedure <strong>LineGeometries_Set_Name</strong>(const Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Nconds"></span><code>function <strong>LineGeometries_Get_Nconds</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Nconds"></span><code>procedure <strong>LineGeometries_Set_Nconds</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Phases"></span><code>function <strong>LineGeometries_Get_Phases</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Phases"></span><code>procedure <strong>LineGeometries_Set_Phases</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Cmatrix"></span><code>procedure <strong>LineGeometries_Get_Cmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Cmatrix_GR"></span><code>procedure <strong>LineGeometries_Get_Cmatrix_GR</strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Rmatrix"></span><code>procedure <strong>LineGeometries_Get_Rmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Rmatrix_GR"></span><code>procedure <strong>LineGeometries_Get_Rmatrix_GR</strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Xmatrix"></span><code>procedure <strong>LineGeometries_Get_Xmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Xmatrix_GR"></span><code>procedure <strong>LineGeometries_Get_Xmatrix_GR</strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Zmatrix"></span><code>procedure <strong>LineGeometries_Get_Zmatrix</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Zmatrix_GR"></span><code>procedure <strong>LineGeometries_Get_Zmatrix_GR</strong>(Frequency, Length: Double; Units: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Units"></span><code>procedure <strong>LineGeometries_Get_Units</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Units_GR"></span><code>procedure <strong>LineGeometries_Get_Units_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Units"></span><code>procedure <strong>LineGeometries_Set_Units</strong>(ValuePtr: PInteger; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Xcoords"></span><code>procedure <strong>LineGeometries_Get_Xcoords</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Xcoords_GR"></span><code>procedure <strong>LineGeometries_Get_Xcoords_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Xcoords"></span><code>procedure <strong>LineGeometries_Set_Xcoords</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Ycoords"></span><code>procedure <strong>LineGeometries_Get_Ycoords</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Ycoords_GR"></span><code>procedure <strong>LineGeometries_Get_Ycoords_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Ycoords"></span><code>procedure <strong>LineGeometries_Set_Ycoords</strong>(ValuePtr: PDouble; ValueCount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Conductors"></span><code>procedure <strong>LineGeometries_Get_Conductors</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Conductors_GR"></span><code>procedure <strong>LineGeometries_Get_Conductors_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_Reduce"></span><code>function <strong>LineGeometries_Get_Reduce</strong>(): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_Reduce"></span><code>procedure <strong>LineGeometries_Set_Reduce</strong>(Value: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_RhoEarth"></span><code>function <strong>LineGeometries_Get_RhoEarth</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_RhoEarth"></span><code>procedure <strong>LineGeometries_Set_RhoEarth</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_NormAmps"></span><code>function <strong>LineGeometries_Get_NormAmps</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_NormAmps"></span><code>procedure <strong>LineGeometries_Set_NormAmps</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_EmergAmps"></span><code>function <strong>LineGeometries_Get_EmergAmps</strong>(): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_EmergAmps"></span><code>procedure <strong>LineGeometries_Set_EmergAmps</strong>(Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_AllNames"></span><code>procedure <strong>LineGeometries_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_AllNames_GR"></span><code>procedure <strong>LineGeometries_Get_AllNames_GR</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Get_idx"></span><code>function <strong>LineGeometries_Get_idx</strong>(): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LineGeometries_Set_idx"></span><code>procedure <strong>LineGeometries_Set_idx</strong>(Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

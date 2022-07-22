@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: PVsystem2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit PVsystem2</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="PVSystemUserModel.html">PVsystemUserModel</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="PCClass.html">PCClass</a></li><li><a href="PCElement.html">PCElement</a></li><li><a href="Ucmatrix.html">ucmatrix</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="LoadShape.html">LoadShape</a></li><li><a href="TempShape.html">TempShape</a></li><li><a href="XYcurve.html">XYCurve</a></li><li><a href="Spectrum.html">Spectrum</a></li><li><a href="Arraydef.html">ArrayDef</a></li><li><a href="Dynamics.html">Dynamics</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="PVsystem2.TPVSystem2Vars.html"><code>TPVSystem2Vars</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="PVsystem2.TPVSystem2.html"><code>TPVSystem2</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="PVsystem2.TPVsystem2Obj.html"><code>TPVsystem2Obj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="PVsystem2.html#TPVSystem2Prop">TPVSystem2Prop</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="PVsystem2.html#NumPVSystem2Registers">NumPVSystem2Registers</a></strong> = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="PVsystem2.html#NumPVSystem2Variables">NumPVSystem2Variables</a></strong> = 13;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="PVsystem2.html#VARMODEPF">VARMODEPF</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="PVsystem2.html#VARMODEKVAR">VARMODEKVAR</a></strong> = 1;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPVSystem2Prop"></span><code><strong>TPVSystem2Prop</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="phases">phases = 1</span></li>
+<li>
+<span id="bus1">bus1 = 2</span></li>
+<li>
+<span id="kv">kv = 3</span></li>
+<li>
+<span id="irradiance">irradiance = 4</span>: propKV</li>
+<li>
+<span id="Pmpp">Pmpp = 5</span>: propIrradiance</li>
+<li>
+<span id="pctPmpp">pctPmpp = 6</span>: propPmpp</li>
+<li>
+<span id="Temperature">Temperature = 7</span>: proppctPmpp</li>
+<li>
+<span id="pf">pf = 8</span>: propTemp</li>
+<li>
+<span id="conn">conn = 9</span>: propPF</li>
+<li>
+<span id="kvar">kvar = 10</span>: propCONNECTION</li>
+<li>
+<span id="kVA">kVA = 11</span>: propKVAR</li>
+<li>
+<span id="pctCutin">pctCutin = 12</span>: propKVA</li>
+<li>
+<span id="pctCutout">pctCutout = 13</span>: propCutin</li>
+<li>
+<span id="EffCurve">EffCurve = 14</span>: propCutout</li>
+<li>
+<span id="P__TCurve">P__TCurve = 15</span>: propInvEffCurve</li>
+<li>
+<span id="pctR">pctR = 16</span>: propP_T_Curve</li>
+<li>
+<span id="pctX">pctX = 17</span>: propPCTR</li>
+<li>
+<span id="model">model = 18</span>: propPCTX</li>
+<li>
+<span id="Vminpu">Vminpu = 19</span>: propMODEL</li>
+<li>
+<span id="Vmaxpu">Vmaxpu = 20</span>: propVMINPU</li>
+<li>
+<span id="Balanced">Balanced = 21</span>: propVMAXPU</li>
+<li>
+<span id="LimitCurrent">LimitCurrent = 22</span>: propBalanced</li>
+<li>
+<span id="yearly">yearly = 23</span>: propLimited</li>
+<li>
+<span id="daily">daily = 24</span>: propYEARLY</li>
+<li>
+<span id="duty">duty = 25</span>: propDAILY</li>
+<li>
+<span id="Tyearly">Tyearly = 26</span>: propDUTY</li>
+<li>
+<span id="Tdaily">Tdaily = 27</span>: propTYEARLY</li>
+<li>
+<span id="Tduty">Tduty = 28</span>: propTDAILY</li>
+<li>
+<span id="cls">cls = 29</span>: propTDUTY</li>
+<li>
+<span id="UserModel">UserModel = 30</span>: propCLASS</li>
+<li>
+<span id="UserData">UserData = 31</span>: propUSERMODEL</li>
+<li>
+<span id="debugtrace">debugtrace = 32</span>: propUSERDATA</li>
+<li>
+<span id="VarFollowInverter">VarFollowInverter = 33</span>: propDEBUGTRACE</li>
+<li>
+<span id="DutyStart">DutyStart = 34</span>: propVarFollowInverter</li>
+<li>
+<span id="WattPriority">WattPriority = 35</span>: propDutyStart</li>
+<li>
+<span id="PFPriority">PFPriority = 36</span>: propPpriority</li>
+<li>
+<span id="pctPminNoVars">pctPminNoVars = 37</span>: propPFpriority</li>
+<li>
+<span id="pctPminkvarMax">pctPminkvarMax = 38</span>: propPminNoVars</li>
+<li>
+<span id="kvarMax">kvarMax = 39</span>: propPminkvarLimit</li>
+<li>
+<span id="kvarMaxAbs">kvarMaxAbs = 40</span>: propkvarLimit</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumPVSystem2Registers"></span><code><strong>NumPVSystem2Registers</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumPVSystem2Variables"></span><code><strong>NumPVSystem2Variables</strong> = 13;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Number of energy meter registers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VARMODEPF"></span><code><strong>VARMODEPF</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+No state variables that need integrating.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VARMODEKVAR"></span><code><strong>VARMODEKVAR</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

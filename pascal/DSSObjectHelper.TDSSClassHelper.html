@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSObjectHelper: Class TDSSClassHelper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSClassHelper"></span><h1 class="cio">Class TDSSClassHelper</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="DSSObjectHelper.html">DSSObjectHelper</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSClassHelper = class helper(TObject) for TDSSClass</code></p>
+<h2 class="description">Description</h2>
+<p>
+TODO</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TDSSClassHelper</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#AddProperties_Double">AddProperties_Double</a></strong>(props: Array of Integer; ptrs: Array of PDouble);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#AddProperties_Object">AddProperties_Object</a></strong>(props: Array of Integer; ptrs: Array of <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; clss: Array of <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#ParseObjPropertyValue">ParseObjPropertyValue</a></strong>(Obj: Pointer; Index: Integer; const Value: String; out prevInt: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjPropertyValue">GetObjPropertyValue</a></strong>(obj: Pointer; Index: Integer; out PropStr: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjPropertyJSONValue">GetObjPropertyJSONValue</a></strong>(obj: Pointer; Index: Integer; joptions: Integer; var val: TJSONData): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjDouble">SetObjDouble</a></strong>(ptr: Pointer; Index: Integer; Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjInteger">SetObjInteger</a></strong>(ptr: Pointer; Index: Integer; Value: Integer; prevInt: PInteger);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjString">SetObjString</a></strong>(ptr: Pointer; Index: Integer; Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjObject">SetObjObject</a></strong>(ptr: Pointer; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjDoubles">SetObjDoubles</a></strong>(ptr: Pointer; Index: Integer; Value: PDouble; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjIntegers">SetObjIntegers</a></strong>(ptr: Pointer; Index: Integer; Value: PInteger; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjStrings">SetObjStrings</a></strong>(ptr: Pointer; Index: Integer; Value: PPAnsiChar; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#SetObjObjects">SetObjObjects</a></strong>(ptr: Pointer; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjDouble">GetObjDouble</a></strong>(Obj: Pointer; Index: Integer): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjInteger">GetObjInteger</a></strong>(Obj: Pointer; Index: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjString">GetObjString</a></strong>(Obj: Pointer; Index: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjObject">GetObjObject</a></strong>(Obj: Pointer; Index: Integer): <a href="DSSObject.TDSSObject.html">TDSSObject</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjDoubles">GetObjDoubles</a></strong>(Obj: Pointer; Index: Integer; var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjIntegers">GetObjIntegers</a></strong>(Obj: Pointer; Index: Integer; var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjStrings">GetObjStrings</a></strong>(Obj: Pointer; Index: Integer; var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="DSSObjectHelper.TDSSClassHelper.html#GetObjObjects">GetObjObjects</a></strong>(Obj: Pointer; Index: Integer; var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSObjectHelper.TDSSClassHelper.html#ActiveCircuit">ActiveCircuit</a></strong>: <a href="Circuit.TDSSCircuit.html">TDSSCircuit</a> read GetCircuit;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddProperties_Double"></span><code>procedure <strong>AddProperties_Double</strong>(props: Array of Integer; ptrs: Array of PDouble);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddProperties_Object"></span><code>procedure <strong>AddProperties_Object</strong>(props: Array of Integer; ptrs: Array of <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; clss: Array of <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParseObjPropertyValue"></span><code>function <strong>ParseObjPropertyValue</strong>(Obj: Pointer; Index: Integer; const Value: String; out prevInt: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjPropertyValue"></span><code>function <strong>GetObjPropertyValue</strong>(obj: Pointer; Index: Integer; out PropStr: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjPropertyJSONValue"></span><code>function <strong>GetObjPropertyJSONValue</strong>(obj: Pointer; Index: Integer; joptions: Integer; var val: TJSONData): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjDouble"></span><code>procedure <strong>SetObjDouble</strong>(ptr: Pointer; Index: Integer; Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TODO: add error as result for the 16 following functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjInteger"></span><code>procedure <strong>SetObjInteger</strong>(ptr: Pointer; Index: Integer; Value: Integer; prevInt: PInteger);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjString"></span><code>procedure <strong>SetObjString</strong>(ptr: Pointer; Index: Integer; Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjObject"></span><code>procedure <strong>SetObjObject</strong>(ptr: Pointer; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjDoubles"></span><code>procedure <strong>SetObjDoubles</strong>(ptr: Pointer; Index: Integer; Value: PDouble; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjIntegers"></span><code>procedure <strong>SetObjIntegers</strong>(ptr: Pointer; Index: Integer; Value: PInteger; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjStrings"></span><code>procedure <strong>SetObjStrings</strong>(ptr: Pointer; Index: Integer; Value: PPAnsiChar; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetObjObjects"></span><code>procedure <strong>SetObjObjects</strong>(ptr: Pointer; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjDouble"></span><code>function <strong>GetObjDouble</strong>(Obj: Pointer; Index: Integer): Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjInteger"></span><code>function <strong>GetObjInteger</strong>(Obj: Pointer; Index: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjString"></span><code>function <strong>GetObjString</strong>(Obj: Pointer; Index: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjObject"></span><code>function <strong>GetObjObject</strong>(Obj: Pointer; Index: Integer): <a href="DSSObject.TDSSObject.html">TDSSObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjDoubles"></span><code>procedure <strong>GetObjDoubles</strong>(Obj: Pointer; Index: Integer; var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjIntegers"></span><code>procedure <strong>GetObjIntegers</strong>(Obj: Pointer; Index: Integer; var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjStrings"></span><code>procedure <strong>GetObjStrings</strong>(Obj: Pointer; Index: Integer; var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObjObjects"></span><code>procedure <strong>GetObjObjects</strong>(Obj: Pointer; Index: Integer; var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ActiveCircuit"></span><code>property <strong>ActiveCircuit</strong>: <a href="Circuit.TDSSCircuit.html">TDSSCircuit</a> read GetCircuit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

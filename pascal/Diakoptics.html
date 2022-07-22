@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Diakoptics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Diakoptics</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="DSSClass.html">DSSClass</a></li><li><a href="Circuit.html">Circuit</a></li><li><a href="Solution.html">Solution</a></li><li>SysUtils</li><li><a href="DSSClassDefs.html">DSSClassDefs</a></li><li><a href="EnergyMeter.html">EnergyMeter</a></li><li><a href="SolutionAlgs.html">SolutionAlgs</a></li><li><a href="Line.html">Line</a></li><li><a href="CmdForms.html">CmdForms</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Diakoptics.html#Solve_Diakoptics">Solve_Diakoptics</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Diakoptics.html#ADiakoptics_Tearing">ADiakoptics_Tearing</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; AddISrc: Boolean): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Diakoptics.html#ADiakopticsInit">ADiakopticsInit</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="Diakoptics.html#Calc_C_Matrix">Calc_C_Matrix</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; PLinks: PString; NLinks: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Diakoptics.html#Calc_ZLL">Calc_ZLL</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; PLinks: PString; NLinks: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Diakoptics.html#Calc_ZCC">Calc_ZCC</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Links: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="Diakoptics.html#Calc_Y4">Calc_Y4</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Diakoptics.html#SendIdx2Actors">SendIdx2Actors</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Diakoptics.html#get_Statistics">get_Statistics</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): String;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Solve_Diakoptics"></span><code>function <strong>Solve_Diakoptics</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ADiakoptics_Tearing"></span><code>function <strong>ADiakoptics_Tearing</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; AddISrc: Boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ADiakopticsInit"></span><code>procedure <strong>ADiakopticsInit</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Calc_C_Matrix"></span><code>function <strong>Calc_C_Matrix</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; PLinks: PString; NLinks: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Calc_ZLL"></span><code>function <strong>Calc_ZLL</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; PLinks: PString; NLinks: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Calc_ZCC"></span><code>procedure <strong>Calc_ZCC</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Links: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Calc_Y4"></span><code>procedure <strong>Calc_Y4</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SendIdx2Actors"></span><code>procedure <strong>SendIdx2Actors</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="get_Statistics"></span><code>function <strong>get_Statistics</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

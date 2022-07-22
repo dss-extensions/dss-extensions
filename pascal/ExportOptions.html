@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ExportOptions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ExportOptions</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="ExportOptions.html#DoExportCmd">DoExportCmd</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ExportOptions.html#DefineOptions">DefineOptions</a></strong>(var ExportOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExportOptions.html#TExportOption">TExportOption</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExportOptions.html#NumExportOptions">NumExportOptions</a></strong> = ord(High(<a href="ExportOptions.html#TExportOption">TExportOption</a>));</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoExportCmd"></span><code>function <strong>DoExportCmd</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefineOptions"></span><code>procedure <strong>DefineOptions</strong>(var ExportOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TExportOption"></span><code><strong>TExportOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="Voltages">Voltages = 1</span></li>
+<li>
+<span id="SeqVoltages">SeqVoltages = 2</span></li>
+<li>
+<span id="Currents">Currents = 3</span></li>
+<li>
+<span id="SeqCurrents">SeqCurrents = 4</span></li>
+<li>
+<span id="Estimation">Estimation = 5</span></li>
+<li>
+<span id="Capacity">Capacity = 6</span></li>
+<li>
+<span id="Overloads">Overloads = 7</span></li>
+<li>
+<span id="Unserved">Unserved = 8</span></li>
+<li>
+<span id="Powers">Powers = 9</span></li>
+<li>
+<span id="SeqPowers">SeqPowers = 10</span></li>
+<li>
+<span id="Faultstudy">Faultstudy = 11</span></li>
+<li>
+<span id="Generators">Generators = 12</span></li>
+<li>
+<span id="Loads">Loads = 13</span></li>
+<li>
+<span id="Meters">Meters = 14</span></li>
+<li>
+<span id="Monitors">Monitors = 15</span></li>
+<li>
+<span id="Yprims">Yprims = 16</span></li>
+<li>
+<span id="Y">Y = 17</span></li>
+<li>
+<span id="seqz">seqz = 18</span></li>
+<li>
+<span id="P_byphase">P_byphase = 19</span></li>
+<li>
+<span id="CIM100Fragments">CIM100Fragments = 20</span></li>
+<li>
+<span id="CIM100">CIM100 = 21</span></li>
+<li>
+<span id="CDPSMAsset">CDPSMAsset = 22</span></li>
+<li>
+<span id="Buscoords">Buscoords = 23</span></li>
+<li>
+<span id="Losses">Losses = 24</span></li>
+<li>
+<span id="Uuids">Uuids = 25</span></li>
+<li>
+<span id="Counts">Counts = 26</span></li>
+<li>
+<span id="Summary">Summary = 27</span></li>
+<li>
+<span id="CDPSMElec">CDPSMElec = 28</span></li>
+<li>
+<span id="CDPSMGeo">CDPSMGeo = 29</span></li>
+<li>
+<span id="CDPSMTopo">CDPSMTopo = 30</span></li>
+<li>
+<span id="CDPSMStateVar">CDPSMStateVar = 31</span></li>
+<li>
+<span id="Profile">Profile = 32</span></li>
+<li>
+<span id="EventLog">EventLog = 33</span></li>
+<li>
+<span id="AllocationFactors">AllocationFactors = 34</span></li>
+<li>
+<span id="VoltagesElements">VoltagesElements = 35</span></li>
+<li>
+<span id="GICMvars">GICMvars = 36</span></li>
+<li>
+<span id="BusReliability">BusReliability = 37</span></li>
+<li>
+<span id="BranchReliability">BranchReliability = 38</span></li>
+<li>
+<span id="NodeNames">NodeNames = 39</span></li>
+<li>
+<span id="Taps">Taps = 40</span></li>
+<li>
+<span id="NodeOrder">NodeOrder = 41</span></li>
+<li>
+<span id="ElemCurrents">ElemCurrents = 42</span></li>
+<li>
+<span id="ElemVoltages">ElemVoltages = 43</span></li>
+<li>
+<span id="ElemPowers">ElemPowers = 44</span></li>
+<li>
+<span id="Result">Result = 45</span></li>
+<li>
+<span id="YNodeList">YNodeList = 46</span></li>
+<li>
+<span id="YVoltages">YVoltages = 47</span></li>
+<li>
+<span id="YCurrents">YCurrents = 48</span></li>
+<li>
+<span id="PVSystem_Meters">PVSystem_Meters = 49</span></li>
+<li>
+<span id="Storage_Meters">Storage_Meters = 50</span></li>
+<li>
+<span id="Sections">Sections = 51</span></li>
+<li>
+<span id="ErrorLog">ErrorLog = 52</span></li>
+<li>
+<span id="IncMatrix">IncMatrix = 53</span></li>
+<li>
+<span id="IncMatrixRows">IncMatrixRows = 54</span></li>
+<li>
+<span id="IncMatrixCols">IncMatrixCols = 55</span></li>
+<li>
+<span id="BusLevels">BusLevels = 56</span></li>
+<li>
+<span id="Laplacian">Laplacian = 57</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumExportOptions"></span><code><strong>NumExportOptions</strong> = ord(High(<a href="ExportOptions.html#TExportOption">TExportOption</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

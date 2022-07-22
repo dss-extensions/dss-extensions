@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Obj</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Obj</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Utils.html">CAPI_Utils</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li><li><a href="DSSObject.html">DSSObject</a></li><li>fpjson</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#DSS_Dispose_String">DSS_Dispose_String</a></strong>(S: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#DSS_ExtractSchema">DSS_ExtractSchema</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_New">Obj_New</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Name: PAnsiChar; Activate: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>): Pointer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetHandleByName">Obj_GetHandleByName</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Name: PAnsiChar): Pointer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetHandleByIdx">Obj_GetHandleByIdx</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Idx: Integer): Pointer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetName">Obj_GetName</a></strong>(Handle: Pointer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetNumProperties">Obj_GetNumProperties</a></strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetCount">Obj_GetCount</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetIdx">Obj_GetIdx</a></strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetClassName">Obj_GetClassName</a></strong>(Handle: Pointer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetClassIdx">Obj_GetClassIdx</a></strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_PropertySideEffects">Obj_PropertySideEffects</a></strong>(Handle: Pointer; Index: Integer; PreviousInt: Integer): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_BeginEdit">Obj_BeginEdit</a></strong>(Handle: Pointer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_EndEdit">Obj_EndEdit</a></strong>(Handle: Pointer; NumChanges: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_Activate">Obj_Activate</a></strong>(Handle: Pointer; AllLists: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetPropSeqPtr">Obj_GetPropSeqPtr</a></strong>(Handle: Pointer): PInteger; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetFloat64">Obj_GetFloat64</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Double; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetInt32">Obj_GetInt32</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetString">Obj_GetString</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetObject">Obj_GetObject</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Pointer; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_GetAsString">Obj_GetAsString</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_GetFloat64Array">Obj_GetFloat64Array</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_GetInt32Array">Obj_GetInt32Array</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_GetStringArray">Obj_GetStringArray</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_GetObjectArray">Obj_GetObjectArray</a></strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_ToJSON">Obj_ToJSON</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetAsString">Obj_SetAsString</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetFloat64">Obj_SetFloat64</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetInt32">Obj_SetInt32</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetString">Obj_SetString</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetObject">Obj_SetObject</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetFloat64Array">Obj_SetFloat64Array</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PDouble; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetInt32Array">Obj_SetInt32Array</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetStringArray">Obj_SetStringArray</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PPAnsiChar; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Obj_SetObjectArray">Obj_SetObjectArray</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_ToJSON_">Obj_ToJSON_</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Obj_ToJSONData">Obj_ToJSONData</a></strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): TJSONData;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateFromNew">Batch_CreateFromNew</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; Names: PPAnsiChar; Count: Integer; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_Dispose">Batch_Dispose</a></strong>(batch: Pointer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_BeginEdit">Batch_BeginEdit</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_EndEdit">Batch_EndEdit</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; NumEdits: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetPropSeq">Batch_GetPropSeq</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByClass">Batch_CreateByClass</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsIdx: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByRegExp">Batch_CreateByRegExp</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsIdx: Integer; re: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByIndex">Batch_CreateByIndex</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByInt32Property">Batch_CreateByInt32Property</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; propidx: Integer; value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Obj.html#Batch_ToJSON">Batch_ToJSON</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; joptions: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetFloat64">Batch_GetFloat64</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetInt32">Batch_GetInt32</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetString">Batch_GetString</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetAsString">Batch_GetAsString</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetObject">Batch_GetObject</a></strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_Float64">Batch_Float64</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Operation: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_Int32">Batch_Int32</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Operation: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetString">Batch_SetString</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetObject">Batch_SetObject</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetFloat64Array">Batch_SetFloat64Array</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PDouble); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetInt32Array">Batch_SetInt32Array</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PInteger); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetStringArray">Batch_SetStringArray</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PPAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetObjectArray">Batch_SetObjectArray</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateFromNewS">Batch_CreateFromNewS</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsName: String; Names: PPAnsiChar; Count: Integer; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByClassS">Batch_CreateByClassS</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsName: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByRegExpS">Batch_CreateByRegExpS</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; re: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByIndexS">Batch_CreateByIndexS</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_CreateByInt32PropertyS">Batch_CreateByInt32PropertyS</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; propname: PAnsiChar; value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetFloat64S">Batch_GetFloat64S</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetInt32S">Batch_GetInt32S</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetStringS">Batch_GetStringS</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetAsStringS">Batch_GetAsStringS</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_GetObjectS">Batch_GetObjectS</a></strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_Float64S">Batch_Float64S</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Operation: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_Int32S">Batch_Int32S</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Operation: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetStringS">Batch_SetStringS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetObjectS">Batch_SetObjectS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetFloat64ArrayS">Batch_SetFloat64ArrayS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PDouble); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetInt32ArrayS">Batch_SetInt32ArrayS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PInteger); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetStringArrayS">Batch_SetStringArrayS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PPAnsiChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Obj.html#Batch_SetObjectArrayS">Batch_SetObjectArrayS</a></strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>); CDECL;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_String"></span><code>procedure <strong>DSS_Dispose_String</strong>(S: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: decise if we want to expose the metadata (property index, name and type) now or later The classic API keeps the string buffer in the global state, but since this new API wants to avoid that, users must dispose the string copies themselves. TODO: consider using the same API as numeric arrays for string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_ExtractSchema"></span><code>function <strong>DSS_ExtractSchema</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_New"></span><code>function <strong>Obj_New</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Name: PAnsiChar; Activate: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>): Pointer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetHandleByName"></span><code>function <strong>Obj_GetHandleByName</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Name: PAnsiChar): Pointer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetHandleByIdx"></span><code>function <strong>Obj_GetHandleByIdx</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer; Idx: Integer): Pointer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetName"></span><code>function <strong>Obj_GetName</strong>(Handle: Pointer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetNumProperties"></span><code>function <strong>Obj_GetNumProperties</strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetCount"></span><code>function <strong>Obj_GetCount</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; ClsIdx: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetIdx"></span><code>function <strong>Obj_GetIdx</strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetClassName"></span><code>function <strong>Obj_GetClassName</strong>(Handle: Pointer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetClassIdx"></span><code>function <strong>Obj_GetClassIdx</strong>(Handle: Pointer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_PropertySideEffects"></span><code>function <strong>Obj_PropertySideEffects</strong>(Handle: Pointer; Index: Integer; PreviousInt: Integer): <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_BeginEdit"></span><code>procedure <strong>Obj_BeginEdit</strong>(Handle: Pointer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_EndEdit"></span><code>procedure <strong>Obj_EndEdit</strong>(Handle: Pointer; NumChanges: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_Activate"></span><code>procedure <strong>Obj_Activate</strong>(Handle: Pointer; AllLists: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetPropSeqPtr"></span><code>function <strong>Obj_GetPropSeqPtr</strong>(Handle: Pointer): PInteger; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetFloat64"></span><code>function <strong>Obj_GetFloat64</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Double; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetInt32"></span><code>function <strong>Obj_GetInt32</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetString"></span><code>function <strong>Obj_GetString</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetObject"></span><code>function <strong>Obj_GetObject</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): Pointer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetAsString"></span><code>function <strong>Obj_GetAsString</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetFloat64Array"></span><code>procedure <strong>Obj_GetFloat64Array</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetInt32Array"></span><code>procedure <strong>Obj_GetInt32Array</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetStringArray"></span><code>procedure <strong>Obj_GetStringArray</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_GetObjectArray"></span><code>procedure <strong>Obj_GetObjectArray</strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_ToJSON"></span><code>function <strong>Obj_ToJSON</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetAsString"></span><code>procedure <strong>Obj_SetAsString</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetFloat64"></span><code>procedure <strong>Obj_SetFloat64</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetInt32"></span><code>procedure <strong>Obj_SetInt32</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetString"></span><code>procedure <strong>Obj_SetString</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetObject"></span><code>procedure <strong>Obj_SetObject</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetFloat64Array"></span><code>procedure <strong>Obj_SetFloat64Array</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PDouble; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetInt32Array"></span><code>procedure <strong>Obj_SetInt32Array</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetStringArray"></span><code>procedure <strong>Obj_SetStringArray</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: PPAnsiChar; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_SetObjectArray"></span><code>procedure <strong>Obj_SetObjectArray</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_ToJSON_"></span><code>function <strong>Obj_ToJSON_</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+internal functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Obj_ToJSONData"></span><code>function <strong>Obj_ToJSONData</strong>(obj: <a href="DSSObject.TDSSObject.html">TDSSObject</a>; joptions: Integer): TJSONData;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateFromNew"></span><code>procedure <strong>Batch_CreateFromNew</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; Names: PPAnsiChar; Count: Integer; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Batch: creation and state setup</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_Dispose"></span><code>procedure <strong>Batch_Dispose</strong>(batch: Pointer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_BeginEdit"></span><code>procedure <strong>Batch_BeginEdit</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_EndEdit"></span><code>procedure <strong>Batch_EndEdit</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; NumEdits: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetPropSeq"></span><code>procedure <strong>Batch_GetPropSeq</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByClass"></span><code>procedure <strong>Batch_CreateByClass</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsIdx: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Batch &ndash; using class and property indices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByRegExp"></span><code>procedure <strong>Batch_CreateByRegExp</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsIdx: Integer; re: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByIndex"></span><code>procedure <strong>Batch_CreateByIndex</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByInt32Property"></span><code>procedure <strong>Batch_CreateByInt32Property</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; ClsIdx: Integer; propidx: Integer; value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_ToJSON"></span><code>function <strong>Batch_ToJSON</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; joptions: Integer): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetFloat64"></span><code>procedure <strong>Batch_GetFloat64</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetInt32"></span><code>procedure <strong>Batch_GetInt32</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetString"></span><code>procedure <strong>Batch_GetString</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetAsString"></span><code>procedure <strong>Batch_GetAsString</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetObject"></span><code>procedure <strong>Batch_GetObject</strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_Float64"></span><code>procedure <strong>Batch_Float64</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Operation: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+procedure Batch_SetAsString(batch: TDSSObjectPtr; batchSize: Integer; Index: Integer; Value: PAnsiChar); CDECL;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_Int32"></span><code>procedure <strong>Batch_Int32</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Operation: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetString"></span><code>procedure <strong>Batch_SetString</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetObject"></span><code>procedure <strong>Batch_SetObject</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetFloat64Array"></span><code>procedure <strong>Batch_SetFloat64Array</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PDouble); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetInt32Array"></span><code>procedure <strong>Batch_SetInt32Array</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PInteger); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetStringArray"></span><code>procedure <strong>Batch_SetStringArray</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: PPAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetObjectArray"></span><code>procedure <strong>Batch_SetObjectArray</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Index: Integer; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateFromNewS"></span><code>procedure <strong>Batch_CreateFromNewS</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsName: String; Names: PPAnsiChar; Count: Integer; BeginEdit: <a href="CAPI_Types.html#TAPIBoolean">TAPIBoolean</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Batch &ndash; using class and property names</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByClassS"></span><code>procedure <strong>Batch_CreateByClassS</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsName: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByRegExpS"></span><code>procedure <strong>Batch_CreateByRegExpS</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; re: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByIndexS"></span><code>procedure <strong>Batch_CreateByIndexS</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; Value: PInteger; ValueCount: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_CreateByInt32PropertyS"></span><code>procedure <strong>Batch_CreateByInt32PropertyS</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var ResultPtr: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; clsname: PAnsiChar; propname: PAnsiChar; value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetFloat64S"></span><code>procedure <strong>Batch_GetFloat64S</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetInt32S"></span><code>procedure <strong>Batch_GetInt32S</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetStringS"></span><code>procedure <strong>Batch_GetStringS</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetAsStringS"></span><code>procedure <strong>Batch_GetAsStringS</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_GetObjectS"></span><code>procedure <strong>Batch_GetObjectS</strong>(var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_Float64S"></span><code>procedure <strong>Batch_Float64S</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Operation: Integer; Value: Double); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+procedure Batch_SetAsStringS(batch: TDSSObjectPtr; batchSize: Integer; Name: PChar; Value: PAnsiChar); CDECL;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_Int32S"></span><code>procedure <strong>Batch_Int32S</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Operation: Integer; Value: Integer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetStringS"></span><code>procedure <strong>Batch_SetStringS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetObjectS"></span><code>procedure <strong>Batch_SetObjectS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: <a href="DSSObject.TDSSObject.html">TDSSObject</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetFloat64ArrayS"></span><code>procedure <strong>Batch_SetFloat64ArrayS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PDouble); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetInt32ArrayS"></span><code>procedure <strong>Batch_SetInt32ArrayS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PInteger); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetStringArrayS"></span><code>procedure <strong>Batch_SetStringArrayS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: PPAnsiChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Batch_SetObjectArrayS"></span><code>procedure <strong>Batch_SetObjectArrayS</strong>(batch: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>; batchSize: Integer; Name: PChar; Value: <a href="DSSObject.html#TDSSObjectPtr">TDSSObjectPtr</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

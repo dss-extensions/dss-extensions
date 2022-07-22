@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ShowOptions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ShowOptions</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="ShowOptions.html#DoShowCmd">DoShowCmd</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowOptions.html#DefineOptions">DefineOptions</a></strong>(var ShowOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ShowOptions.html#TShowOption">TShowOption</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ShowOptions.html#NumShowOptions">NumShowOptions</a></strong> = Ord(High(<a href="ShowOptions.html#TShowOption">TShowOption</a>));</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoShowCmd"></span><code>function <strong>DoShowCmd</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefineOptions"></span><code>procedure <strong>DefineOptions</strong>(var ShowOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TShowOption"></span><code><strong>TShowOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="autoadded">autoadded = 1</span></li>
+<li>
+<span id="buses">buses = 2</span></li>
+<li>
+<span id="currents">currents = 3</span></li>
+<li>
+<span id="convergence">convergence = 4</span></li>
+<li>
+<span id="elements">elements = 5</span></li>
+<li>
+<span id="faults">faults = 6</span></li>
+<li>
+<span id="isolated">isolated = 7</span></li>
+<li>
+<span id="generators">generators = 8</span></li>
+<li>
+<span id="meters">meters = 9</span></li>
+<li>
+<span id="monitor">monitor = 10</span></li>
+<li>
+<span id="panel">panel = 11</span></li>
+<li>
+<span id="powers">powers = 12</span></li>
+<li>
+<span id="voltages">voltages = 13</span></li>
+<li>
+<span id="zone">zone = 14</span></li>
+<li>
+<span id="taps">taps = 15</span></li>
+<li>
+<span id="overloads">overloads = 16</span></li>
+<li>
+<span id="unserved">unserved = 17</span></li>
+<li>
+<span id="eventlog">eventlog = 18</span></li>
+<li>
+<span id="variables">variables = 19</span></li>
+<li>
+<span id="ratings">ratings = 20</span></li>
+<li>
+<span id="loops">loops = 21</span></li>
+<li>
+<span id="losses">losses = 22</span></li>
+<li>
+<span id="busflow">busflow = 23</span></li>
+<li>
+<span id="lineconstants">lineconstants = 24</span></li>
+<li>
+<span id="yprim">yprim = 25</span></li>
+<li>
+<span id="y">y = 26</span></li>
+<li>
+<span id="controlqueue">controlqueue = 27</span></li>
+<li>
+<span id="topology">topology = 28</span></li>
+<li>
+<span id="mismatch">mismatch = 29</span></li>
+<li>
+<span id="kvbasemismatch">kvbasemismatch = 30</span></li>
+<li>
+<span id="deltaV">deltaV = 31</span></li>
+<li>
+<span id="QueryLog">QueryLog = 32</span></li>
+<li>
+<span id="Controlled">Controlled = 33</span></li>
+<li>
+<span id="Result">Result = 34</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumShowOptions"></span><code><strong>NumShowOptions</strong> = Ord(High(<a href="ShowOptions.html#TShowOption">TShowOption</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

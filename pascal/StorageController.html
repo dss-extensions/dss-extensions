@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: StorageController</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit StorageController</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="ControlClass.html">ControlClass</a></li><li><a href="ControlElem.html">ControlElem</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="Arraydef.html">Arraydef</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Utilities.html">utilities</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li>Classes</li><li><a href="LoadShape.html">Loadshape</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="StorageController.TStorageController.html"><code>TStorageController</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="StorageController.TStorageControllerObj.html"><code>TStorageControllerObj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="StorageController.html#TStorageControllerProp">TStorageControllerProp</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStorageControllerProp"></span><code><strong>TStorageControllerProp</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="Element">Element = 1</span></li>
+<li>
+<span id="Terminal">Terminal = 2</span></li>
+<li>
+<span id="kWTarget">kWTarget = 3</span></li>
+<li>
+<span id="kWTargetLow">kWTargetLow = 4</span></li>
+<li>
+<span id="pctkWBand">pctkWBand = 5</span></li>
+<li>
+<span id="pctkWBandLow">pctkWBandLow = 6</span></li>
+<li>
+<span id="PFTarget">PFTarget = 7</span></li>
+<li>
+<span id="PFBand">PFBand = 8</span></li>
+<li>
+<span id="ElementList">ElementList = 9</span></li>
+<li>
+<span id="Weights">Weights = 10</span></li>
+<li>
+<span id="ModeDischarge">ModeDischarge = 11</span></li>
+<li>
+<span id="ModeCharge">ModeCharge = 12</span></li>
+<li>
+<span id="TimeDischargeTrigger">TimeDischargeTrigger = 13</span></li>
+<li>
+<span id="TimeChargeTrigger">TimeChargeTrigger = 14</span></li>
+<li>
+<span id="pctRatekW">pctRatekW = 15</span></li>
+<li>
+<span id="pctRatekvar">pctRatekvar = 16</span></li>
+<li>
+<span id="pctRateCharge">pctRateCharge = 17</span></li>
+<li>
+<span id="pctReserve">pctReserve = 18</span></li>
+<li>
+<span id="kWhTotal">kWhTotal = 19</span></li>
+<li>
+<span id="kWTotal">kWTotal = 20</span></li>
+<li>
+<span id="kWhActual">kWhActual = 21</span></li>
+<li>
+<span id="kWActual">kWActual = 22</span></li>
+<li>
+<span id="kWneed">kWneed = 23</span></li>
+<li>
+<span id="pctParticipation">pctParticipation = 24</span></li>
+<li>
+<span id="Yearly">Yearly = 25</span>: TODO: unused, remove?</li>
+<li>
+<span id="Daily">Daily = 26</span></li>
+<li>
+<span id="Duty">Duty = 27</span></li>
+<li>
+<span id="EventLog">EventLog = 28</span></li>
+<li>
+<span id="VarDispatch">VarDispatch = 29</span></li>
+<li>
+<span id="InhibitTime">InhibitTime = 30</span></li>
+<li>
+<span id="Tup">Tup = 31</span></li>
+<li>
+<span id="TFlat">TFlat = 32</span></li>
+<li>
+<span id="Tdn">Tdn = 33</span></li>
+<li>
+<span id="kWThreshold">kWThreshold = 34</span></li>
+<li>
+<span id="ResetLevel">ResetLevel = 35</span></li>
+<li>
+<span id="Seasons">Seasons = 36</span></li>
+<li>
+<span id="SeasonTargets">SeasonTargets = 37</span></li>
+<li>
+<span id="SeasonTargetsLow">SeasonTargetsLow = 38</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

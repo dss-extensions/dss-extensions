@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSClass</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit DSSClass</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="Arraydef.html">Arraydef</a></li><li><a href="HashList.html">Hashlist</a></li><li>Classes</li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li><a href="NamedObject.html">NamedObject</a></li><li><a href="ParserDel.html">ParserDel</a></li><li>SyncObjs</li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li>contnrs</li><li><a href="CAPI_Types.html">CAPI_Types</a></li><li>gettext</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="DSSClass.TDSSEnum.html"><code>TDSSEnum</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="DSSClass.TAction.html"><code>TAction</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="DSSClass.TDSSClass.html"><code>TDSSClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="DSSClass.TProxyClass.html"><code>TProxyClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="DSSClass.TDSSContext.html"><code>TDSSContext</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TDSSObjectFlag">TDSSObjectFlag</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TDSSObjectFlags">TDSSObjectFlags</a></strong> = set of <a href="DSSClass.html#TDSSObjectFlag">TDSSObjectFlag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#Flg">Flg</a></strong> = <a href="DSSClass.html#TDSSObjectFlag">TDSSObjectFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TActorStatus">TActorStatus</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TDSSObjectProp">TDSSObjectProp</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TPropertyFlag">TPropertyFlag</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TPropertyFlags">TPropertyFlags</a></strong> = set of <a href="DSSClass.html#TPropertyFlag">TPropertyFlag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TPropertyType">TPropertyType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#ArrayOfDouble">ArrayOfDouble</a></strong> = Array of Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#ArrayOfInteger">ArrayOfInteger</a></strong> = Array of Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#ArrayOfString">ArrayOfString</a></strong> = Array of String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#ArrayOfPointer">ArrayOfPointer</a></strong> = Array of Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#PropertyTypeArray">PropertyTypeArray</a></strong> = Array[1..100] of <a href="DSSClass.html#TPropertyType">TPropertyType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#pPropertyTypeArray">pPropertyTypeArray</a></strong> = &circ;<a href="DSSClass.html#PropertyTypeArray">PropertyTypeArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TDoublePropertyFunction">TDoublePropertyFunction</a></strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TPropertyScaleFunction">TPropertyScaleFunction</a></strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer; getter: Boolean): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TIntegerPropertyFunction">TIntegerPropertyFunction</a></strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TStringPropertyFunction">TStringPropertyFunction</a></strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TStringListPropertyFunction">TStringListPropertyFunction</a></strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TDoublesPropertyFunction">TDoublesPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TObjRefsPropertyFunction">TObjRefsPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteDoublePropertyFunction">TWriteDoublePropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: double);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteObjRefPropertyFunction">TWriteObjRefPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: Pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteIntegerPropertyFunction">TWriteIntegerPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteStringListPropertyFunction">TWriteStringListPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: TStringList);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteObjRefsPropertyFunction">TWriteObjRefsPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Values: PPointer; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TWriteDoublesPropertyFunction">TWriteDoublesPropertyFunction</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Values: PDouble; ValueCount: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TEnumActionProcedure">TEnumActionProcedure</a></strong> = <a href="DSSClass.html#TWriteIntegerPropertyFunction">TWriteIntegerPropertyFunction</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#TActionProcedure">TActionProcedure</a></strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#BooleanArray">BooleanArray</a></strong> = Array[1..100] of Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#pBooleanArray">pBooleanArray</a></strong> = &circ;<a href="DSSClass.html#BooleanArray">BooleanArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#pAction">pAction</a></strong> = &circ;<a href="DSSClass.TAction.html">TAction</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#dss_callback_plot_t">dss_callback_plot_t</a></strong> = function (DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; jsonParams: PChar): Integer; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSClass.html#dss_callback_message_t">dss_callback_message_t</a></strong> = function (DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; messageStr: PChar; messageType: Integer): Integer; CDECL;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSClass.html#DSSPrime">DSSPrime</a></strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDSSObjectFlag"></span><code><strong>TDSSObjectFlag</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="EditionActive">EditionActive</span></li>
+<li>
+<span id="HasBeenSaved">HasBeenSaved</span></li>
+<li>
+<span id="Checked">Checked</span>: originally from TDSSObject Originally from TDSSCktElement</li>
+<li>
+<span id="Flag">Flag</span></li>
+<li>
+<span id="HasEnergyMeter">HasEnergyMeter</span>: General purpose Flag for each object don't assume inited</li>
+<li>
+<span id="HasSensorObj">HasSensorObj</span></li>
+<li>
+<span id="IsIsolated">IsIsolated</span></li>
+<li>
+<span id="HasControl">HasControl</span></li>
+<li>
+<span id="IsMonitored">IsMonitored</span></li>
+<li>
+<span id="HasOCPDevice">HasOCPDevice</span>: indicates some control is monitoring this element IsPartofFeeder, &ndash; UNUSED Drawn, // Flag used in tree searches etc &ndash; UNUSED</li>
+<li>
+<span id="HasAutoOCPDevice">HasAutoOCPDevice</span>: Fuse, Relay, or Recloser</li>
+<li>
+<span id="NeedsRecalc">NeedsRecalc</span>: Relay or Recloser only HasSwtControl // Has a remotely-controlled Switch &ndash; UNUSED</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDSSObjectFlags"></span><code><strong>TDSSObjectFlags</strong> = set of <a href="DSSClass.html#TDSSObjectFlag">TDSSObjectFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Used for Edit command loops</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Flg"></span><code><strong>Flg</strong> = <a href="DSSClass.html#TDSSObjectFlag">TDSSObjectFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TActorStatus"></span><code><strong>TActorStatus</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Busy">Busy = 0</span></li>
+<li>
+<span id="Idle">Idle = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDSSObjectProp"></span><code><strong>TDSSObjectProp</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="like">like = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPropertyFlag"></span><code><strong>TPropertyFlag</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="CustomSet">CustomSet</span></li>
+<li>
+<span id="CustomSetRaw">CustomSetRaw</span>: Implemented only for a few types &ndash; parse and pass value to the object.</li>
+<li>
+<span id="CustomGet">CustomGet</span>: Only for some LoadShape props &ndash; pass string instead of parsing first.</li>
+<li>
+<span id="IsFilename">IsFilename</span></li>
+<li>
+<span id="IgnoreInvalid">IgnoreInvalid</span>: for strings</li>
+<li>
+<span id="NonPositive">NonPositive</span></li>
+<li>
+<span id="NonNegative">NonNegative</span></li>
+<li>
+<span id="NonZero">NonZero</span></li>
+<li>
+<span id="Transform_Abs">Transform_Abs</span></li>
+<li>
+<span id="Transform_LowerCase">Transform_LowerCase</span></li>
+<li>
+<span id="ScaledByFunction">ScaledByFunction</span></li>
+<li>
+<span id="WriteByFunction">WriteByFunction</span>: Used only in Line and LineCode</li>
+<li>
+<span id="ReadByFunction">ReadByFunction</span></li>
+<li>
+<span id="RealPart">RealPart</span></li>
+<li>
+<span id="ImagPart">ImagPart</span></li>
+<li>
+<span id="GreaterThanOne">GreaterThanOne</span></li>
+<li>
+<span id="IntegerStructIndex">IntegerStructIndex</span></li>
+<li>
+<span id="OnArray">OnArray</span>: used in LineGeometry, Transformer, AutoTrans, XfmrCode</li>
+<li>
+<span id="IntervalUnits">IntervalUnits</span>: only used for LineGeometry</li>
+<li>
+<span id="AltIndex">AltIndex</span></li>
+<li>
+<span id="SizeIsFunction">SizeIsFunction</span>: only used for LineGeometry (nphases vs. nconds etc.)</li>
+<li>
+<span id="SilentReadOnly">SilentReadOnly</span></li>
+<li>
+<span id="ConditionalReadOnly">ConditionalReadOnly</span>: TODO: SilentRO=ignore writes. We might want to change this in the future to error out instead of ignoring</li>
+<li>
+<span id="ConditionalValue">ConditionalValue</span>: only implemented for MappedStringEnumProperty</li>
+<li>
+<span id="IntegerToDouble">IntegerToDouble</span>: for sym comp in LineCode</li>
+<li>
+<span id="CheckForVar">CheckForVar</span>: for double arrays &ndash; read integer, convert to double</li>
+<li>
+<span id="AllowNone">AllowNone</span>: for object references</li>
+<li>
+<span id="ArrayMaxSize">ArrayMaxSize</span>: for arrays</li>
+<li>
+<span id="ValueOffset">ValueOffset</span>: for arrays</li>
+<li>
+<span id="FullNameAsArray">FullNameAsArray</span>: only implemented for integers</li>
+<li>
+<span id="Redundant">Redundant</span>: special case for LineGeometry, when reading wire as an array of strings through the Obj_* API</li>
+<li>
+<span id="Util">Util</span></li>
+<li>
+<span id="Unused">Unused</span>: things like X and Y from XYcurve that don't have value as data</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPropertyFlags"></span><code><strong>TPropertyFlags</strong> = set of <a href="DSSClass.html#TPropertyFlag">TPropertyFlag</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPropertyType"></span><code><strong>TPropertyType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="DoubleProperty">DoubleProperty = 0</span></li>
+<li>
+<span id="EnabledProperty">EnabledProperty</span></li>
+<li>
+<span id="MakeLikeProperty">MakeLikeProperty</span></li>
+<li>
+<span id="BooleanActionProperty">BooleanActionProperty</span></li>
+<li>
+<span id="StringEnumActionProperty">StringEnumActionProperty</span></li>
+<li>
+<span id="DoubleOnArrayProperty">DoubleOnArrayProperty</span>: TODO: use Flags for the following (i.e. transform them into DoubleProperty) For (double,string,integer)-on-array, offset is the offset pointer to the pointer/array offset2 is the offset pointer to the element index (Integer)</li>
+<li>
+<span id="DoubleOnStructArrayProperty">DoubleOnStructArrayProperty</span>: 1-based For (double,string,integer)-on-array, offset is the offset pointer to the pointer/array offset2 is the offset pointer to the element index (Integer) step is the size of the step used in offset2 (direct integer)</li>
+<li>
+<span id="StringSilentROFunctionProperty">StringSilentROFunctionProperty</span></li>
+<li>
+<span id="DoubleArrayProperty">DoubleArrayProperty</span>: TODO: SilentRO=ignore writes. We might want to change this in the future to error out instead of ignoring</li>
+<li>
+<span id="DoubleDArrayProperty">DoubleDArrayProperty</span></li>
+<li>
+<span id="DoubleVArrayProperty">DoubleVArrayProperty</span>: -&gt; For dynamic arrays</li>
+<li>
+<span id="DoubleFArrayProperty">DoubleFArrayProperty</span>: -&gt; Use ParseAsVector</li>
+<li>
+<span id="ComplexPartSymMatrixProperty">ComplexPartSymMatrixProperty</span>: -&gt; For fixed-size arrays, with size in offset2</li>
+<li>
+<span id="DoubleSymMatrixProperty">DoubleSymMatrixProperty</span></li>
+<li>
+<span id="IntegerArrayProperty">IntegerArrayProperty</span></li>
+<li>
+<span id="StringListProperty">StringListProperty</span></li>
+<li>
+<span id="DSSObjectReferenceProperty">DSSObjectReferenceProperty</span>: A string with a name of an object offset is the offset pointer to the pointer to the object offset2 is the pointer to the TDSSClass; if NIL, assumes any CktElement</li>
+<li>
+<span id="DSSObjectReferenceArrayProperty">DSSObjectReferenceArrayProperty</span>: List of strings with names of objects offset is the offset pointer to the pointer to the object offset2 is the pointer to the TDSSClass; if NIL, assumes any CktElement</li>
+<li>
+<span id="DoubleArrayOnStructArrayProperty">DoubleArrayOnStructArrayProperty</span></li>
+<li>
+<span id="IntegerProperty">IntegerProperty</span></li>
+<li>
+<span id="StringProperty">StringProperty</span></li>
+<li>
+<span id="ComplexProperty">ComplexProperty</span></li>
+<li>
+<span id="BooleanProperty">BooleanProperty</span></li>
+<li>
+<span id="BusProperty">BusProperty</span></li>
+<li>
+<span id="ComplexPartsProperty">ComplexPartsProperty</span></li>
+<li>
+<span id="MappedStringEnumProperty">MappedStringEnumProperty</span></li>
+<li>
+<span id="MappedIntEnumProperty">MappedIntEnumProperty</span></li>
+<li>
+<span id="MappedStringEnumArrayProperty">MappedStringEnumArrayProperty</span></li>
+<li>
+<span id="MappedStringEnumOnStructArrayProperty">MappedStringEnumOnStructArrayProperty</span></li>
+<li>
+<span id="MappedStringEnumArrayOnStructArrayProperty">MappedStringEnumArrayOnStructArrayProperty</span></li>
+<li>
+<span id="StringOnArrayProperty">StringOnArrayProperty</span>: For (double,string,integer)-on-array, offset is the offset pointer to the pointer/array offset2 is the offset pointer to the element index (Integer)</li>
+<li>
+<span id="IntegerOnStructArrayProperty">IntegerOnStructArrayProperty</span>: 1-based For (double,string,integer)-on-array, offset is the offset pointer to the pointer/array offset2 is the offset pointer to the element index (Integer) step is the size of the step used in offset2 (direct integer)</li>
+<li>
+<span id="StringOnStructArrayProperty">StringOnStructArrayProperty</span></li>
+<li>
+<span id="BusOnStructArrayProperty">BusOnStructArrayProperty</span></li>
+<li>
+<span id="BusesOnStructArrayProperty">BusesOnStructArrayProperty</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfDouble"></span><code><strong>ArrayOfDouble</strong> = Array of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+AutoTrans, Transformer OtherProperty</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfInteger"></span><code><strong>ArrayOfInteger</strong> = Array of Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfString"></span><code><strong>ArrayOfString</strong> = Array of String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfPointer"></span><code><strong>ArrayOfPointer</strong> = Array of Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PropertyTypeArray"></span><code><strong>PropertyTypeArray</strong> = Array[1..100] of <a href="DSSClass.html#TPropertyType">TPropertyType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pPropertyTypeArray"></span><code><strong>pPropertyTypeArray</strong> = &circ;<a href="DSSClass.html#PropertyTypeArray">PropertyTypeArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDoublePropertyFunction"></span><code><strong>TDoublePropertyFunction</strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPropertyScaleFunction"></span><code><strong>TPropertyScaleFunction</strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer; getter: Boolean): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TIntegerPropertyFunction"></span><code><strong>TIntegerPropertyFunction</strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringPropertyFunction"></span><code><strong>TStringPropertyFunction</strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringListPropertyFunction"></span><code><strong>TStringListPropertyFunction</strong> = function (<a href="ExecOptions.html#obj">obj</a>: Pointer): TStringList;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDoublesPropertyFunction"></span><code><strong>TDoublesPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TObjRefsPropertyFunction"></span><code><strong>TObjRefsPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; var ResultPtr: PPointer; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteDoublePropertyFunction"></span><code><strong>TWriteDoublePropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: double);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TDoubleArrayPropertyFunction = function (obj: Pointer): Array of Double;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteObjRefPropertyFunction"></span><code><strong>TWriteObjRefPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: Pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteIntegerPropertyFunction"></span><code><strong>TWriteIntegerPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteStringListPropertyFunction"></span><code><strong>TWriteStringListPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Value: TStringList);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteObjRefsPropertyFunction"></span><code><strong>TWriteObjRefsPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Values: PPointer; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteDoublesPropertyFunction"></span><code><strong>TWriteDoublesPropertyFunction</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer; Values: PDouble; ValueCount: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEnumActionProcedure"></span><code><strong>TEnumActionProcedure</strong> = <a href="DSSClass.html#TWriteIntegerPropertyFunction">TWriteIntegerPropertyFunction</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TActionProcedure"></span><code><strong>TActionProcedure</strong> = procedure (<a href="ExecOptions.html#obj">obj</a>: Pointer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BooleanArray"></span><code><strong>BooleanArray</strong> = Array[1..100] of Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pBooleanArray"></span><code><strong>pBooleanArray</strong> = &circ;<a href="DSSClass.html#BooleanArray">BooleanArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pAction"></span><code><strong>pAction</strong> = &circ;<a href="DSSClass.TAction.html">TAction</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dss_callback_plot_t"></span><code><strong>dss_callback_plot_t</strong> = function (DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; jsonParams: PChar): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="dss_callback_message_t"></span><code><strong>dss_callback_message_t</strong> = function (DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; messageStr: PChar; messageType: Integer): Integer; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSPrime"></span><code><strong>DSSPrime</strong>: <a href="DSSClass.TDSSContext.html">TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

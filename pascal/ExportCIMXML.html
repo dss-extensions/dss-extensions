@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ExportCIMXML</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ExportCIMXML</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="NamedObject.html">NamedObject</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="PDElement.html">PDElement</a></li><li><a href="Transformer.html">Transformer</a></li><li><a href="AutoTrans.html">AutoTrans</a></li><li><a href="Storage2.html">Storage2</a></li><li><a href="InvControl2.html">InvControl2</a></li><li><a href="ExpControl.html">ExpControl</a></li><li><a href="PVsystem2.html">PVSystem2</a></li><li><a href="HashList.html">HashList</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="ExportCIMXML.TCIMBankObject.html"><code>TCIMBankObject</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="ExportCIMXML.TCIMOpLimitObject.html"><code>TCIMOpLimitObject</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="ExportCIMXML.TCIMExporter.html"><code>TCIMExporter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="ExportCIMXML.TRemoteSignalObject.html"><code>TRemoteSignalObject</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="ExportCIMXML.TIEEE1547Controller.html"><code>TIEEE1547Controller</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExportCIMXML.html#UuidChoice">UuidChoice</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="ExportCIMXML.html#ProfileChoice">ProfileChoice</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UuidChoice"></span><code><strong>UuidChoice</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for TUuid</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Bank">Bank</span></li>
+<li>
+<span id="Wdg">Wdg</span></li>
+<li>
+<span id="XfCore">XfCore</span></li>
+<li>
+<span id="XfMesh">XfMesh</span></li>
+<li>
+<span id="WdgInf">WdgInf</span></li>
+<li>
+<span id="ScTest">ScTest</span></li>
+<li>
+<span id="OcTest">OcTest</span></li>
+<li>
+<span id="BaseV">BaseV</span></li>
+<li>
+<span id="LinePhase">LinePhase</span></li>
+<li>
+<span id="LoadPhase">LoadPhase</span></li>
+<li>
+<span id="GenPhase">GenPhase</span></li>
+<li>
+<span id="CapPhase">CapPhase</span></li>
+<li>
+<span id="SolarPhase">SolarPhase</span></li>
+<li>
+<span id="BatteryPhase">BatteryPhase</span></li>
+<li>
+<span id="XfLoc">XfLoc</span></li>
+<li>
+<span id="LoadLoc">LoadLoc</span></li>
+<li>
+<span id="LineLoc">LineLoc</span></li>
+<li>
+<span id="CapLoc">CapLoc</span></li>
+<li>
+<span id="Topo">Topo</span></li>
+<li>
+<span id="ReacLoc">ReacLoc</span></li>
+<li>
+<span id="SolarLoc">SolarLoc</span></li>
+<li>
+<span id="BatteryLoc">BatteryLoc</span></li>
+<li>
+<span id="OpLimV">OpLimV</span></li>
+<li>
+<span id="OpLimI">OpLimI</span></li>
+<li>
+<span id="LoadResp">LoadResp</span></li>
+<li>
+<span id="CIMVer">CIMVer</span></li>
+<li>
+<span id="PosPt">PosPt</span></li>
+<li>
+<span id="CoordSys">CoordSys</span></li>
+<li>
+<span id="TopoIsland">TopoIsland</span></li>
+<li>
+<span id="Station">Station</span></li>
+<li>
+<span id="GeoRgn">GeoRgn</span></li>
+<li>
+<span id="SubGeoRgn">SubGeoRgn</span></li>
+<li>
+<span id="ZData">ZData</span></li>
+<li>
+<span id="OpLimT">OpLimT</span></li>
+<li>
+<span id="XfInfo">XfInfo</span></li>
+<li>
+<span id="FdrLoc">FdrLoc</span></li>
+<li>
+<span id="OpLimAHi">OpLimAHi</span></li>
+<li>
+<span id="OpLimALo">OpLimALo</span></li>
+<li>
+<span id="OpLimBHi">OpLimBHi</span></li>
+<li>
+<span id="OpLimBLo">OpLimBLo</span></li>
+<li>
+<span id="MachLoc">MachLoc</span></li>
+<li>
+<span id="PVPanels">PVPanels</span></li>
+<li>
+<span id="Battery">Battery</span></li>
+<li>
+<span id="SrcLoc">SrcLoc</span></li>
+<li>
+<span id="TankInfo">TankInfo</span></li>
+<li>
+<span id="TapCtrl">TapCtrl</span></li>
+<li>
+<span id="PUZ">PUZ</span></li>
+<li>
+<span id="WirePos">WirePos</span></li>
+<li>
+<span id="NormAmps">NormAmps</span></li>
+<li>
+<span id="EmergAmps">EmergAmps</span></li>
+<li>
+<span id="I1547NameplateData">I1547NameplateData</span></li>
+<li>
+<span id="I1547NameplateDataApplied">I1547NameplateDataApplied</span></li>
+<li>
+<span id="I1547Signal">I1547Signal</span></li>
+<li>
+<span id="I1547VoltVar">I1547VoltVar</span></li>
+<li>
+<span id="I1547WattVar">I1547WattVar</span></li>
+<li>
+<span id="I1547ConstPF">I1547ConstPF</span></li>
+<li>
+<span id="I1547VoltWatt">I1547VoltWatt</span></li>
+<li>
+<span id="I1547ConstQ">I1547ConstQ</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ProfileChoice"></span><code><strong>ProfileChoice</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="FunPrf">FunPrf</span></li>
+<li>
+<span id="EpPrf">EpPrf</span></li>
+<li>
+<span id="GeoPrf">GeoPrf</span></li>
+<li>
+<span id="TopoPrf">TopoPrf</span></li>
+<li>
+<span id="CatPrf">CatPrf</span></li>
+<li>
+<span id="SshPrf">SshPrf</span></li>
+<li>
+<span id="DynPrf">DynPrf</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

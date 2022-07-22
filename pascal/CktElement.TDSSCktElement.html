@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CktElement: Class TDSSCktElement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSCktElement"></span><h1 class="cio">Class TDSSCktElement</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="CktElement.html">CktElement</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSCktElement = class(<a class="normal" href="DSSObject.TDSSObject.html">TDSSObject</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TDSSObject description follows</div><div class="nodescription">No description available, ancestor TNamedObject description follows</div><p>
+this is a GUID compliant to RFC 4122, v4</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="NamedObject.TNamedObject.html">TNamedObject</a></li>
+<li class="ancestor"><a class="normal" href="DSSObject.TDSSObject.html">TDSSObject</a></li>
+<li class="thisitem">TDSSCktElement</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#FEnabled">FEnabled</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Fnterms">Fnterms</a></strong>: Int8;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Fnconds">Fnconds</a></strong>: Int8;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Fnphases">Fnphases</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#ComplexBuffer">ComplexBuffer</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#IterminalSolutionCount">IterminalSolutionCount</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#BusIndex">BusIndex</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#YPrim_Series">YPrim_Series</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#YPrim_Shunt">YPrim_Shunt</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#YPrim">YPrim</a></strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#FYprimFreq">FYprimFreq</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#NodeRef">NodeRef</a></strong>: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Yorder">Yorder</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#ControlElementList">ControlElementList</a></strong>: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Iterminal">Iterminal</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Vterminal">Vterminal</a></strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#BaseFrequency">BaseFrequency</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#Terminals">Terminals</a></strong>: Array of <a href="Terminal.TPowerTerminal.html">TPowerTerminal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#TerminalsChecked">TerminalsChecked</a></strong>: Array of Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#ActiveTerminal">ActiveTerminal</a></strong>: &circ;<a href="Terminal.TPowerTerminal.html">TPowerTerminal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#PublicDataSize">PublicDataSize</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="CktElement.TDSSCktElement.html#PublicDataStruct">PublicDataStruct</a></strong>: Pointer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#Set_Enabled">Set_Enabled</a></strong>(Value: Boolean); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#Set_ConductorClosed">Set_ConductorClosed</a></strong>(Index: Integer; Value: Boolean); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#Set_NTerms">Set_NTerms</a></strong>(Value: Int8);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#Set_Handle">Set_Handle</a></strong>(Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="CktElement.TDSSCktElement.html#Create">Create</a></strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="CktElement.TDSSCktElement.html#Destroy">Destroy</a></strong>; OVERRIDE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#MakeLike">MakeLike</a></strong>(OtherObj: Pointer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="CktElement.TDSSCktElement.html#GetYPrim">GetYPrim</a></strong>(var Ymatrix: <a href="Ucmatrix.TcMatrix.html">TCmatrix</a>; Opt: Integer): Integer; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="CktElement.TDSSCktElement.html#GetYPrimValues">GetYPrimValues</a></strong>(Opt: Integer): <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="CktElement.TDSSCktElement.html#MaxTerminalOneIMag">MaxTerminalOneIMag</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#ComputeIterminal">ComputeIterminal</a></strong>; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#ComputeVterminal">ComputeVterminal</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#ZeroITerminal">ZeroITerminal</a></strong>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetCurrents">GetCurrents</a></strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL; ABSTRACT;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="CktElement.TDSSCktElement.html#InjCurrents">InjCurrents</a></strong>: Integer; VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="CktElement.TDSSCktElement.html#GetBus">GetBus</a></strong>(i: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#SetBus">SetBus</a></strong>(i: Integer; const s: String); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#SetNodeRef">SetNodeRef</a></strong>(iTerm: Integer; NodeRefArray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#RecalcElementData">RecalcElementData</a></strong>; VIRTUAL; ABSTRACT;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#CalcYPrim">CalcYPrim</a></strong>; VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#MakePosSequence">MakePosSequence</a></strong>(); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetTermVoltages">GetTermVoltages</a></strong>(iTerm: Integer; VBuffer: <a href="DSSUcomplex.html#pComplexArray">PComplexArray</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetPhasePower">GetPhasePower</a></strong>(PowerBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetPhaseLosses">GetPhaseLosses</a></strong>(var Num_Phases: Integer; LossBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetLosses">GetLosses</a></strong>(var TotalLosses, LoadLosses, NoLoadLosses: <a href="DSSUcomplex.html#Complex">Complex</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#GetSeqLosses">GetSeqLosses</a></strong>(var PosSeqLosses, NegSeqLosses, ZeroModeLosses: <a href="DSSUcomplex.html#Complex">complex</a>); VIRTUAL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#DumpProperties">DumpProperties</a></strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#SumCurrents">SumCurrents</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="CktElement.TDSSCktElement.html#Get_Current_Mags">Get_Current_Mags</a></strong>(cMBuffer: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#Handle">Handle</a></strong>: Integer READ FHandle WRITE <a href="CktElement.TDSSCktElement.html#Set_Handle">Set_Handle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#Enabled">Enabled</a></strong>: Boolean READ <a href="CktElement.TDSSCktElement.html#FEnabled">FEnabled</a> WRITE <a href="CktElement.TDSSCktElement.html#Set_Enabled">Set_Enabled</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#YPrimInvalid">YPrimInvalid</a></strong>: Boolean READ FYPrimInvalid WRITE set_YprimInvalid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#YPrimFreq">YPrimFreq</a></strong>: Double READ <a href="CktElement.TDSSCktElement.html#FYprimFreq">FYprimFreq</a> WRITE Set_Freq;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#NTerms">NTerms</a></strong>: Int8 READ <a href="CktElement.TDSSCktElement.html#Fnterms">Fnterms</a> WRITE <a href="CktElement.TDSSCktElement.html#Set_NTerms">Set_NTerms</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#NConds">NConds</a></strong>: Int8 READ <a href="CktElement.TDSSCktElement.html#Fnconds">Fnconds</a> WRITE Set_Nconds;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#NPhases">NPhases</a></strong>: Integer READ <a href="CktElement.TDSSCktElement.html#Fnphases">Fnphases</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#FirstBus">FirstBus</a></strong>: String READ Get_FirstBus;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#NextBus">NextBus</a></strong>: String READ Get_NextBus;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#Losses">Losses</a></strong>: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_Losses;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#Power">Power</a></strong>[idxTerm:Integer]: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_Power;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#MaxPower">MaxPower</a></strong>[idxTerm:Integer]: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_MaxPower;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#MaxCurrent">MaxCurrent</a></strong>[idxTerm:Integer]: Double READ Get_MaxCurrent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#MaxVoltage">MaxVoltage</a></strong>[idxTerm:Integer]: Double READ Get_MaxVoltage;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#ActiveTerminalIdx">ActiveTerminalIdx</a></strong>: Int8 READ Get_ActiveTerminal WRITE Set_ActiveTerminal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#Closed">Closed</a></strong>[Index:Integer]: Boolean READ Get_ConductorClosed WRITE <a href="CktElement.TDSSCktElement.html#Set_ConductorClosed">Set_ConductorClosed</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#MaxCurrentAng">MaxCurrentAng</a></strong>[idxTerm:Integer]: Double READ Get_MaxCurrentAng;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#MaxVoltageAng">MaxVoltageAng</a></strong>[idxTerm:Integer]: Double READ Get_MaxVoltageAng;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="CktElement.TDSSCktElement.html#PCEValue">PCEValue</a></strong>[Index:Integer;ValType:Integer]: Double READ Get_PCE_Value;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEnabled"></span><code><strong>FEnabled</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fnterms"></span><code><strong>Fnterms</strong>: Int8;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fnconds"></span><code><strong>Fnconds</strong>: Int8;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fnphases"></span><code><strong>Fnphases</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+no. conductors per terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComplexBuffer"></span><code><strong>ComplexBuffer</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Phases, this device &ndash; TODO: Int8 someday...</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IterminalSolutionCount"></span><code><strong>IterminalSolutionCount</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BusIndex"></span><code><strong>BusIndex</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="YPrim_Series"></span><code><strong>YPrim_Series</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="YPrim_Shunt"></span><code><strong>YPrim_Shunt</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="YPrim"></span><code><strong>YPrim</strong>: <a href="Ucmatrix.TcMatrix.html">TCMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FYprimFreq"></span><code><strong>FYprimFreq</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Order will be NTerms * Ncond</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NodeRef"></span><code><strong>NodeRef</strong>: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Total Noderef array for element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Yorder"></span><code><strong>Yorder</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Need fast access to this</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlElementList"></span><code><strong>ControlElementList</strong>: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LastTerminalChecked: Int8; // Flag used in tree searches &ndash; UNUSED</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Iterminal"></span><code><strong>Iterminal</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Pointer to control for this device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Vterminal"></span><code><strong>Vterminal</strong>: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Others need this</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BaseFrequency"></span><code><strong>BaseFrequency</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Terminals"></span><code><strong>Terminals</strong>: Array of <a href="Terminal.TPowerTerminal.html">TPowerTerminal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TerminalsChecked"></span><code><strong>TerminalsChecked</strong>: Array of Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveTerminal"></span><code><strong>ActiveTerminal</strong>: &circ;<a href="Terminal.TPowerTerminal.html">TPowerTerminal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PublicDataSize"></span><code><strong>PublicDataSize</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PublicDataStruct"></span><code><strong>PublicDataStruct</strong>: Pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+size of PublicDataStruct</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_Enabled"></span><code>procedure <strong>Set_Enabled</strong>(Value: Boolean); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frequency at which YPrim has been computed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_ConductorClosed"></span><code>procedure <strong>Set_ConductorClosed</strong>(Index: Integer; Value: Boolean); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_NTerms"></span><code>procedure <strong>Set_NTerms</strong>(Value: Int8);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Set_Handle"></span><code>procedure <strong>Set_Handle</strong>(Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ParClass: <a href="DSSClass.TDSSClass.html">TDSSClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Generic Pointer to public data Block that may be access by other classes of elements Accessing app has to know the structure Inited to Nil. If Nil, accessing app should ignore</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeLike"></span><code>procedure <strong>MakeLike</strong>(OtherObj: Pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetYPrim"></span><code>function <strong>GetYPrim</strong>(var Ymatrix: <a href="Ucmatrix.TcMatrix.html">TCmatrix</a>; Opt: Integer): Integer; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetYPrimValues"></span><code>function <strong>GetYPrimValues</strong>(Opt: Integer): <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns values of array</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxTerminalOneIMag"></span><code>function <strong>MaxTerminalOneIMag</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeIterminal"></span><code>procedure <strong>ComputeIterminal</strong>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Max of Iterminal 1 phase currents</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeVterminal"></span><code>procedure <strong>ComputeVterminal</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Computes Iterminal for this device</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ZeroITerminal"></span><code>procedure <strong>ZeroITerminal</strong>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCurrents"></span><code>procedure <strong>GetCurrents</strong>(Curr: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL; ABSTRACT;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InjCurrents"></span><code>function <strong>InjCurrents</strong>: Integer; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get present value of terminal Curr for reports</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBus"></span><code>function <strong>GetBus</strong>(i: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Applies to PC Elements Puts straight into Solution Array</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBus"></span><code>procedure <strong>SetBus</strong>(i: Integer; const s: String); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get bus name by index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetNodeRef"></span><code>procedure <strong>SetNodeRef</strong>(iTerm: Integer; NodeRefArray: <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set bus name by index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RecalcElementData"></span><code>procedure <strong>RecalcElementData</strong>; VIRTUAL; ABSTRACT;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set NodeRef Array for fast solution with intrinsics</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CalcYPrim"></span><code>procedure <strong>CalcYPrim</strong>; VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakePosSequence"></span><code>procedure <strong>MakePosSequence</strong>(); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTermVoltages"></span><code>procedure <strong>GetTermVoltages</strong>(iTerm: Integer; VBuffer: <a href="DSSUcomplex.html#pComplexArray">PComplexArray</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Make a positive Sequence Model</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPhasePower"></span><code>procedure <strong>GetPhasePower</strong>(PowerBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPhaseLosses"></span><code>procedure <strong>GetPhaseLosses</strong>(var Num_Phases: Integer; LossBuffer: <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLosses"></span><code>procedure <strong>GetLosses</strong>(var TotalLosses, LoadLosses, NoLoadLosses: <a href="DSSUcomplex.html#Complex">Complex</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSeqLosses"></span><code>procedure <strong>GetSeqLosses</strong>(var PosSeqLosses, NegSeqLosses, ZeroModeLosses: <a href="DSSUcomplex.html#Complex">complex</a>); VIRTUAL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DumpProperties"></span><code>procedure <strong>DumpProperties</strong>(F: TFileStream; Complete: Boolean; Leaf: Boolean = False); OVERRIDE;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SumCurrents"></span><code>procedure <strong>SumCurrents</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get_Current_Mags"></span><code>procedure <strong>Get_Current_Mags</strong>(cMBuffer: <a href="Arraydef.html#pDoubleArray">pDoubleArray</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Handle"></span><code>property <strong>Handle</strong>: Integer READ FHandle WRITE <a href="CktElement.TDSSCktElement.html#Set_Handle">Set_Handle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Enabled"></span><code>property <strong>Enabled</strong>: Boolean READ <a href="CktElement.TDSSCktElement.html#FEnabled">FEnabled</a> WRITE <a href="CktElement.TDSSCktElement.html#Set_Enabled">Set_Enabled</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="YPrimInvalid"></span><code>property <strong>YPrimInvalid</strong>: Boolean READ FYPrimInvalid WRITE set_YprimInvalid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="YPrimFreq"></span><code>property <strong>YPrimFreq</strong>: Double READ <a href="CktElement.TDSSCktElement.html#FYprimFreq">FYprimFreq</a> WRITE Set_Freq;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NTerms"></span><code>property <strong>NTerms</strong>: Int8 READ <a href="CktElement.TDSSCktElement.html#Fnterms">Fnterms</a> WRITE <a href="CktElement.TDSSCktElement.html#Set_NTerms">Set_NTerms</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NConds"></span><code>property <strong>NConds</strong>: Int8 READ <a href="CktElement.TDSSCktElement.html#Fnconds">Fnconds</a> WRITE Set_Nconds;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NPhases"></span><code>property <strong>NPhases</strong>: Integer READ <a href="CktElement.TDSSCktElement.html#Fnphases">Fnphases</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FirstBus"></span><code>property <strong>FirstBus</strong>: String READ Get_FirstBus;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NextBus"></span><code>property <strong>NextBus</strong>: String READ Get_NextBus;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Losses"></span><code>property <strong>Losses</strong>: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_Losses;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+null string if no more values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Power"></span><code>property <strong>Power</strong>[idxTerm:Integer]: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_Power;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxPower"></span><code>property <strong>MaxPower</strong>[idxTerm:Integer]: <a href="DSSUcomplex.html#Complex">Complex</a> READ Get_MaxPower;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Total power in active terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxCurrent"></span><code>property <strong>MaxCurrent</strong>[idxTerm:Integer]: Double READ Get_MaxCurrent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Total power in active terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxVoltage"></span><code>property <strong>MaxVoltage</strong>[idxTerm:Integer]: Double READ Get_MaxVoltage;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Max current in active terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveTerminalIdx"></span><code>property <strong>ActiveTerminalIdx</strong>: Int8 READ Get_ActiveTerminal WRITE Set_ActiveTerminal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Max voltage in active terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Closed"></span><code>property <strong>Closed</strong>[Index:Integer]: Boolean READ Get_ConductorClosed WRITE <a href="CktElement.TDSSCktElement.html#Set_ConductorClosed">Set_ConductorClosed</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxCurrentAng"></span><code>property <strong>MaxCurrentAng</strong>[idxTerm:Integer]: Double READ Get_MaxCurrentAng;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxVoltageAng"></span><code>property <strong>MaxVoltageAng</strong>[idxTerm:Integer]: Double READ Get_MaxVoltageAng;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Max current in active terminal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PCEValue"></span><code>property <strong>PCEValue</strong>[Index:Integer;ValType:Integer]: Double READ Get_PCE_Value;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Max current in active terminal</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

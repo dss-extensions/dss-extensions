@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ShowResults</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ShowResults</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowVoltages">ShowVoltages</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; LL: Boolean; ShowOptionCode: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowCurrents">ShowCurrents</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; ShowResidual: Boolean; ShowOptionCode: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowPowers">ShowPowers</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt, ShowOptionCode: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowBusPowers">ShowBusPowers</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm, BusName: String; opt, ShowOptionCode: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowFaultStudy">ShowFaultStudy</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowElements">ShowElements</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; ClassName: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowBuses">ShowBuses</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowMeters">ShowMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowGenMeters">ShowGenMeters</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowMeterZone">ShowMeterZone</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowLosses">ShowLosses</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowRegulatorTaps">ShowRegulatorTaps</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowOverloads">ShowOverloads</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowUnserved">ShowUnserved</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; UE_Only: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowVariables">ShowVariables</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowIsolated">ShowIsolated</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowRatings">ShowRatings</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowLoops">ShowLoops</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowLineConstants">ShowLineConstants</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; Freq: Double; Units: Integer; Rho: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowYPrim">ShowYPrim</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowY">ShowY</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowTopology">ShowTopology</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileRoot: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowNodeCurrentSum">ShowNodeCurrentSum</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowkVBaseMismatch">ShowkVBaseMismatch</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowDeltaV">ShowDeltaV</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowControlledElements">ShowControlledElements</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowResult">ShowResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="ShowResults.html#ShowEventLog">ShowEventLog</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowVoltages"></span><code>procedure <strong>ShowVoltages</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; LL: Boolean; ShowOptionCode: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowCurrents"></span><code>procedure <strong>ShowCurrents</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; ShowResidual: Boolean; ShowOptionCode: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowPowers"></span><code>procedure <strong>ShowPowers</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; opt, ShowOptionCode: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowBusPowers"></span><code>procedure <strong>ShowBusPowers</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm, BusName: String; opt, ShowOptionCode: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowFaultStudy"></span><code>procedure <strong>ShowFaultStudy</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowElements"></span><code>procedure <strong>ShowElements</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; ClassName: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowBuses"></span><code>procedure <strong>ShowBuses</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowMeters"></span><code>procedure <strong>ShowMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowGenMeters"></span><code>procedure <strong>ShowGenMeters</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowMeterZone"></span><code>procedure <strong>ShowMeterZone</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowLosses"></span><code>procedure <strong>ShowLosses</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowRegulatorTaps"></span><code>procedure <strong>ShowRegulatorTaps</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowOverloads"></span><code>procedure <strong>ShowOverloads</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowUnserved"></span><code>procedure <strong>ShowUnserved</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; UE_Only: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowVariables"></span><code>procedure <strong>ShowVariables</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowIsolated"></span><code>procedure <strong>ShowIsolated</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowRatings"></span><code>procedure <strong>ShowRatings</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowLoops"></span><code>procedure <strong>ShowLoops</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowLineConstants"></span><code>procedure <strong>ShowLineConstants</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String; Freq: Double; Units: Integer; Rho: Double);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowYPrim"></span><code>procedure <strong>ShowYPrim</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowY"></span><code>procedure <strong>ShowY</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowTopology"></span><code>procedure <strong>ShowTopology</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileRoot: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowNodeCurrentSum"></span><code>procedure <strong>ShowNodeCurrentSum</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+summary and tree-view to separate files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowkVBaseMismatch"></span><code>procedure <strong>ShowkVBaseMismatch</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowDeltaV"></span><code>procedure <strong>ShowDeltaV</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowControlledElements"></span><code>procedure <strong>ShowControlledElements</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowResult"></span><code>procedure <strong>ShowResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ShowEventLog"></span><code>procedure <strong>ShowEventLog</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; FileNm: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Solution</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Solution</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Arraydef.html">Arraydef</a></li><li><a href="Command.html">Command</a></li><li><a href="Monitor.html">Monitor</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="DSSObject.html">DSSObject</a></li><li><a href="Dynamics.html">Dynamics</a></li><li><a href="EnergyMeter.html">EnergyMeter</a></li><li><a href="Sparse_Math.html">Sparse_Math</a></li><li><a href="VSource.html">VSource</a></li><li><a href="Isource.html">ISource</a></li><li>SysUtils</li><li>generics.collections</li><li>BaseUnix</li><li>Unix</li><li>Strings</li><li>SyncObjs</li><li><a href="ExecHelper.html">ExecHelper</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Solution.EControlProblem.html"><code>EControlProblem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Solution.ESolveError.html"><code>ESolveError</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Solution.TSolver.html"><code>TSolver</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Solution.TSolutionObj.html"><code>TSolutionObj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Solution.html#TActorMessage">TActorMessage</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Solution.html#TSolverOptions">TSolverOptions</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Solution.html#TNodeVarray">TNodeVarray</a></strong> = array[0..1000] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Solution.html#pNodeVarray">pNodeVarray</a></strong> = &circ;<a href="Solution.html#TNodeVarray">TNodeVarray</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Solution.html#NORMALSOLVE">NORMALSOLVE</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Solution.html#NEWTONSOLVE">NEWTONSOLVE</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Solution.html#ALL_ACTORS">ALL_ACTORS</a></strong> = 0;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TActorMessage"></span><code><strong>TActorMessage</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Wait flag for all the actors</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="SIMULATE">SIMULATE = 0</span>: Constants for the actor's messaging</li>
+<li>
+<span id="EXIT_ACTOR">EXIT_ACTOR</span></li>
+<li>
+<span id="CALC_INJ_CURR">CALC_INJ_CURR</span></li>
+<li>
+<span id="DO_CTRL_ACTIONS">DO_CTRL_ACTIONS</span>: Uses the total solution to estiamte the injection currents</li>
+<li>
+<span id="ZEROIVECTOR">ZEROIVECTOR</span>: Does the control actions distributedly</li>
+<li>
+<span id="GETCURRINJ">GETCURRINJ</span>: Zeroes the actor's I vector</li>
+<li>
+<span id="CHECKYBUS">CHECKYBUS</span>: Gets the current injections for the actor and uploades them in the local I vector</li>
+<li>
+<span id="CHECK_FAULT">CHECK_FAULT</span>: Rebuilds the YBus if needed at local level</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSolverOptions"></span><code><strong>TSolverOptions</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks the fault status at local level</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ReuseNothing">ReuseNothing = 0</span>: The values themselves are subject to change in future versions, use this enum for easier upgrades</li>
+<li>
+<span id="ReuseCompressedMatrix">ReuseCompressedMatrix = 1</span></li>
+<li>
+<span id="ReuseSymbolicFactorization">ReuseSymbolicFactorization = 2</span>: Reuse only the prepared CSC matrix</li>
+<li>
+<span id="ReuseNumericFactorization">ReuseNumericFactorization = 3</span>: Reuse the symbolic factorization, implies ReuseCompressedMatrix</li>
+<li>
+<span id="AlwaysResetYPrimInvalid">AlwaysResetYPrimInvalid = $10000000</span>: Reuse the numeric factorization, implies ReuseSymbolicFactorization</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TNodeVarray"></span><code><strong>TNodeVarray</strong> = array[0..1000] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Raised when solution aborted</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pNodeVarray"></span><code><strong>pNodeVarray</strong> = &circ;<a href="Solution.html#TNodeVarray">TNodeVarray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NORMALSOLVE"></span><code><strong>NORMALSOLVE</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NEWTONSOLVE"></span><code><strong>NEWTONSOLVE</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ALL_ACTORS"></span><code><strong>ALL_ACTORS</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSHelper: Class TDSSGlobalHelper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSGlobalHelper"></span><h1 class="cio">Class TDSSGlobalHelper</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section">Methods</div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="DSSHelper.html">DSSHelper</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSGlobalHelper = class helper(TObject) for TDSSContext</code></p>
+<h2 class="description">Description</h2>
+<p>
+VVControl,</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TDSSGlobalHelper</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#NumOfActors">NumOfActors</a></strong>: Integer read GetNumOfActors;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ActorThread">ActorThread</a></strong>: <a href="Solution.TSolver.html">TSolver</a> read GetActorThread write SetActorThread;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ControlProxyObj">ControlProxyObj</a></strong>: <a href="ControlProxy.TControlProxyObj.html">TControlProxyObj</a> read GetControlProxyObj;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#DSSExecutive">DSSExecutive</a></strong>: <a href="Executive.TExecutive.html">TExecutive</a> read GetDSSExecutive write SetDSSExecutive;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#CIMExporter">CIMExporter</a></strong>: <a href="ExportCIMXML.TCIMExporter.html">TCIMExporter</a> read GetCIMExporter write SetCIMExporter;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ActiveCircuit">ActiveCircuit</a></strong>: <a href="Circuit.TDSSCircuit.html">TDSSCircuit</a> read GetActiveCircuit write SetActiveCircuit;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ActiveDSSObject">ActiveDSSObject</a></strong>: <a href="DSSObject.TDSSObject.html">TDSSObject</a> read GetActiveDSSObject write SetActiveDSSObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ActiveFaultObj">ActiveFaultObj</a></strong>: <a href="Fault.TFaultObj.html">TFaultObj</a> read GetActiveFaultObj write SetActiveFaultObj;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ActiveEnergyMeterObj">ActiveEnergyMeterObj</a></strong>: <a href="EnergyMeter.TEnergyMeterObj.html">TEnergyMeterObj</a> read GetActiveEnergyMeterObj write SetActiveEnergyMeterObj;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LoadShapeClass">LoadShapeClass</a></strong>: <a href="LoadShape.TLoadShape.html">TLoadShape</a> read GetLoadShapeClass write SetLoadShapeClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#TShapeClass">TShapeClass</a></strong>: <a href="TempShape.TTShape.html">TTshape</a> read GetTShapeClass write SetTShapeClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#PriceShapeClass">PriceShapeClass</a></strong>: <a href="PriceShape.TPriceShape.html">TPriceShape</a> read GetPriceShapeClass write SetPriceShapeClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#XYCurveClass">XYCurveClass</a></strong>: <a href="XYcurve.TXYcurve.html">TXYCurve</a> read GetXYCurveClass write SetXYCurveClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GrowthShapeClass">GrowthShapeClass</a></strong>: <a href="GrowthShape.TGrowthShape.html">TGrowthShape</a> read GetGrowthShapeClass write SetGrowthShapeClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#SpectrumClass">SpectrumClass</a></strong>: <a href="Spectrum.TSpectrum.html">TSpectrum</a> read GetSpectrumClass write SetSpectrumClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#EnergyMeterClass">EnergyMeterClass</a></strong>: <a href="EnergyMeter.TEnergyMeter.html">TEnergyMeter</a> read GetEnergyMeterClass write SetEnergyMeterClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#MonitorClass">MonitorClass</a></strong>: <a href="Monitor.TDSSMonitor.html">TDSSMonitor</a> read GetMonitorClass write SetMonitorClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#SensorClass">SensorClass</a></strong>: <a href="Sensor.TSensor.html">TSensor</a> read GetSensorClass write SetSensorClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#TCC_CurveClass">TCC_CurveClass</a></strong>: <a href="TCC_Curve.TTCC_Curve.html">TTCC_Curve</a> read GetTCC_CurveClass write SetTCC_CurveClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#WireDataClass">WireDataClass</a></strong>: <a href="WireData.TWireData.html">TWireData</a> read GetWireDataClass write SetWireDataClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#CNDataClass">CNDataClass</a></strong>: <a href="CNData.TCNData.html">TCNData</a> read GetCNDataClass write SetCNDataClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#TSDataClass">TSDataClass</a></strong>: <a href="TSData.TTSData.html">TTSData</a> read GetTSDataClass write SetTSDataClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LineGeometryClass">LineGeometryClass</a></strong>: <a href="LineGeometry.TLineGeometry.html">TLineGeometry</a> read GetLineGeometryClass write SetLineGeometryClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LineSpacingClass">LineSpacingClass</a></strong>: <a href="LineSpacing.TLineSpacing.html">TLineSpacing</a> read GetLineSpacingClass write SetLineSpacingClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LineCodeClass">LineCodeClass</a></strong>: <a href="LineCode.TLineCode.html">TLineCode</a> read GetLineCodeClass write SetLineCodeClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#StorageClass">StorageClass</a></strong>: <a href="Storage.TStorage.html">TStorage</a> read GetStorageClass write SetStorageClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#Storage2Class">Storage2Class</a></strong>: <a href="Storage2.TStorage2.html">TStorage2</a> read GetStorage2Class write SetStorage2Class;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#PVSystemClass">PVSystemClass</a></strong>: <a href="PVsystem.TPVSystem.html">TPVSystem</a> read GetPVSystemClass write SetPVSystemClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#PVSystem2Class">PVSystem2Class</a></strong>: <a href="PVsystem2.TPVSystem2.html">TPVSystem2</a> read GetPVSystem2Class write SetPVSystem2Class;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#InvControlClass">InvControlClass</a></strong>: <a href="InvControl.TInvControl.html">TInvControl</a> read GetInvControlClass write SetInvControlClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#InvControl2Class">InvControl2Class</a></strong>: <a href="InvControl2.TInvControl2.html">TInvControl2</a> read GetInvControl2Class write SetInvControl2Class;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ExpControlClass">ExpControlClass</a></strong>: <a href="ExpControl.TExpControl.html">TExpControl</a> read GetExpControlClass write SetExpControlClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LineClass">LineClass</a></strong>: <a href="Line.TLine.html">TLine</a> read GetLineClass write SetLineClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#VSourceClass">VSourceClass</a></strong>: <a href="VSource.TVsource.html">TVSource</a> read GetVSourceClass write SetVSourceClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ISourceClass">ISourceClass</a></strong>: <a href="Isource.TIsource.html">TISource</a> read GetISourceClass write SetISourceClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#VCSSClass">VCSSClass</a></strong>: <a href="VCCS.TVCCS.html">TVCCS</a> read GetVCSSClass write SetVCSSClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#LoadClass">LoadClass</a></strong>: <a href="Load.TLoad.html">TLoad</a> read GetLoadClass write SetLoadClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#TransformerClass">TransformerClass</a></strong>: <a href="Transformer.TTransf.html">TTransf</a> read GetTransformerClass write SetTransformerClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#RegControlClass">RegControlClass</a></strong>: <a href="RegControl.TRegControl.html">TRegControl</a> read GetRegControlClass write SetRegControlClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#CapacitorClass">CapacitorClass</a></strong>: <a href="Capacitor.TCapacitor.html">TCapacitor</a> read GetCapacitorClass write SetCapacitorClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ReactorClass">ReactorClass</a></strong>: <a href="Reactor.TReactor.html">TReactor</a> read GetReactorClass write SetReactorClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#CapControlClass">CapControlClass</a></strong>: <a href="CapControl.TCapControl.html">TCapControl</a> read GetCapControlClass write SetCapControlClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#FaultClass">FaultClass</a></strong>: <a href="Fault.TFault.html">TFault</a> read GetFaultClass write SetFaultClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GeneratorClass">GeneratorClass</a></strong>: <a href="generator.TGenerator.html">TGenerator</a> read GetGeneratorClass write SetGeneratorClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GenDispatcherClass">GenDispatcherClass</a></strong>: <a href="GenDispatcher.TGenDispatcher.html">TGenDispatcher</a> read GetGenDispatcherClass write SetGenDispatcherClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#StorageControllerClass">StorageControllerClass</a></strong>: <a href="StorageController.TStorageController.html">TStorageController</a> read GetStorageControllerClass write SetStorageControllerClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#StorageController2Class">StorageController2Class</a></strong>: <a href="StorageController2.TStorageController2.html">TStorageController2</a> read GetStorageController2Class write SetStorageController2Class;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#RelayClass">RelayClass</a></strong>: <a href="Relay.TRelay.html">TRelay</a> read GetRelayClass write SetRelayClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#RecloserClass">RecloserClass</a></strong>: <a href="Recloser.TRecloser.html">TRecloser</a> read GetRecloserClass write SetRecloserClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#FuseClass">FuseClass</a></strong>: <a href="Fuse.TFuse.html">TFuse</a> read GetFuseClass write SetFuseClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#SwtControlClass">SwtControlClass</a></strong>: <a href="SwtControl.TSwtControl.html">TSwtControl</a> read GetSwtControlClass write SetSwtControlClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#UPFCClass">UPFCClass</a></strong>: <a href="UPFC.TUPFC.html">TUPFC</a> read GetUPFCClass write SetUPFCClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#UPFCControlClass">UPFCControlClass</a></strong>: <a href="UPFCControl.TUPFCControl.html">TUPFCControl</a> read GetUPFCControlClass write SetUPFCControlClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#ESPVLControlClass">ESPVLControlClass</a></strong>: <a href="ESPVLControl.TESPVLControl.html">TESPVLControl</a> read GetESPVLControlClass write SetESPVLControlClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#IndMach012Class">IndMach012Class</a></strong>: <a href="IndMach012.TIndMach012.html">TIndMach012</a> read GetIndMach012Class write SetIndMach012Class;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GICsourceClass">GICsourceClass</a></strong>: <a href="GICsource.TGICsource.html">TGICsource</a> read GetGICsourceClass write SetGICsourceClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#AutoTransClass">AutoTransClass</a></strong>: <a href="AutoTrans.TAutoTrans.html">TAutoTrans</a> read GetAutoTransClass write SetAutoTransClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#VSConverterClass">VSConverterClass</a></strong>: <a href="VSConverter.TVSConverter.html">TVSConverter</a> read GetVSConverterClass write SetVSConverterClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#XfmrCodeClass">XfmrCodeClass</a></strong>: <a href="XfmrCode.TXfmrCode.html">TXfmrCode</a> read GetXfmrCodeClass write SetXfmrCodeClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GICLineClass">GICLineClass</a></strong>: <a href="GICLine.TGICLine.html">TGICLine</a> read GetGICLineClass write SetGICLineClass;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="DSSHelper.TDSSGlobalHelper.html#GICTransformerClass">GICTransformerClass</a></strong>: <a href="GICTransformer.TGICTransformer.html">TGICTransformer</a> read GetGICTransformerClass write SetGICTransformerClass;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NumOfActors"></span><code>property <strong>NumOfActors</strong>: Integer read GetNumOfActors;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActorThread"></span><code>property <strong>ActorThread</strong>: <a href="Solution.TSolver.html">TSolver</a> read GetActorThread write SetActorThread;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlProxyObj"></span><code>property <strong>ControlProxyObj</strong>: <a href="ControlProxy.TControlProxyObj.html">TControlProxyObj</a> read GetControlProxyObj;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DSSExecutive"></span><code>property <strong>DSSExecutive</strong>: <a href="Executive.TExecutive.html">TExecutive</a> read GetDSSExecutive write SetDSSExecutive;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CIMExporter"></span><code>property <strong>CIMExporter</strong>: <a href="ExportCIMXML.TCIMExporter.html">TCIMExporter</a> read GetCIMExporter write SetCIMExporter;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveCircuit"></span><code>property <strong>ActiveCircuit</strong>: <a href="Circuit.TDSSCircuit.html">TDSSCircuit</a> read GetActiveCircuit write SetActiveCircuit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveDSSObject"></span><code>property <strong>ActiveDSSObject</strong>: <a href="DSSObject.TDSSObject.html">TDSSObject</a> read GetActiveDSSObject write SetActiveDSSObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveFaultObj"></span><code>property <strong>ActiveFaultObj</strong>: <a href="Fault.TFaultObj.html">TFaultObj</a> read GetActiveFaultObj write SetActiveFaultObj;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveEnergyMeterObj"></span><code>property <strong>ActiveEnergyMeterObj</strong>: <a href="EnergyMeter.TEnergyMeterObj.html">TEnergyMeterObj</a> read GetActiveEnergyMeterObj write SetActiveEnergyMeterObj;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadShapeClass"></span><code>property <strong>LoadShapeClass</strong>: <a href="LoadShape.TLoadShape.html">TLoadShape</a> read GetLoadShapeClass write SetLoadShapeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TShapeClass"></span><code>property <strong>TShapeClass</strong>: <a href="TempShape.TTShape.html">TTshape</a> read GetTShapeClass write SetTShapeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PriceShapeClass"></span><code>property <strong>PriceShapeClass</strong>: <a href="PriceShape.TPriceShape.html">TPriceShape</a> read GetPriceShapeClass write SetPriceShapeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XYCurveClass"></span><code>property <strong>XYCurveClass</strong>: <a href="XYcurve.TXYcurve.html">TXYCurve</a> read GetXYCurveClass write SetXYCurveClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GrowthShapeClass"></span><code>property <strong>GrowthShapeClass</strong>: <a href="GrowthShape.TGrowthShape.html">TGrowthShape</a> read GetGrowthShapeClass write SetGrowthShapeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpectrumClass"></span><code>property <strong>SpectrumClass</strong>: <a href="Spectrum.TSpectrum.html">TSpectrum</a> read GetSpectrumClass write SetSpectrumClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EnergyMeterClass"></span><code>property <strong>EnergyMeterClass</strong>: <a href="EnergyMeter.TEnergyMeter.html">TEnergyMeter</a> read GetEnergyMeterClass write SetEnergyMeterClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MonitorClass"></span><code>property <strong>MonitorClass</strong>: <a href="Monitor.TDSSMonitor.html">TDSSMonitor</a> read GetMonitorClass write SetMonitorClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SensorClass"></span><code>property <strong>SensorClass</strong>: <a href="Sensor.TSensor.html">TSensor</a> read GetSensorClass write SetSensorClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TCC_CurveClass"></span><code>property <strong>TCC_CurveClass</strong>: <a href="TCC_Curve.TTCC_Curve.html">TTCC_Curve</a> read GetTCC_CurveClass write SetTCC_CurveClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WireDataClass"></span><code>property <strong>WireDataClass</strong>: <a href="WireData.TWireData.html">TWireData</a> read GetWireDataClass write SetWireDataClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CNDataClass"></span><code>property <strong>CNDataClass</strong>: <a href="CNData.TCNData.html">TCNData</a> read GetCNDataClass write SetCNDataClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TSDataClass"></span><code>property <strong>TSDataClass</strong>: <a href="TSData.TTSData.html">TTSData</a> read GetTSDataClass write SetTSDataClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineGeometryClass"></span><code>property <strong>LineGeometryClass</strong>: <a href="LineGeometry.TLineGeometry.html">TLineGeometry</a> read GetLineGeometryClass write SetLineGeometryClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineSpacingClass"></span><code>property <strong>LineSpacingClass</strong>: <a href="LineSpacing.TLineSpacing.html">TLineSpacing</a> read GetLineSpacingClass write SetLineSpacingClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineCodeClass"></span><code>property <strong>LineCodeClass</strong>: <a href="LineCode.TLineCode.html">TLineCode</a> read GetLineCodeClass write SetLineCodeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageClass"></span><code>property <strong>StorageClass</strong>: <a href="Storage.TStorage.html">TStorage</a> read GetStorageClass write SetStorageClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Storage2Class"></span><code>property <strong>Storage2Class</strong>: <a href="Storage2.TStorage2.html">TStorage2</a> read GetStorage2Class write SetStorage2Class;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PVSystemClass"></span><code>property <strong>PVSystemClass</strong>: <a href="PVsystem.TPVSystem.html">TPVSystem</a> read GetPVSystemClass write SetPVSystemClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PVSystem2Class"></span><code>property <strong>PVSystem2Class</strong>: <a href="PVsystem2.TPVSystem2.html">TPVSystem2</a> read GetPVSystem2Class write SetPVSystem2Class;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InvControlClass"></span><code>property <strong>InvControlClass</strong>: <a href="InvControl.TInvControl.html">TInvControl</a> read GetInvControlClass write SetInvControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InvControl2Class"></span><code>property <strong>InvControl2Class</strong>: <a href="InvControl2.TInvControl2.html">TInvControl2</a> read GetInvControl2Class write SetInvControl2Class;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExpControlClass"></span><code>property <strong>ExpControlClass</strong>: <a href="ExpControl.TExpControl.html">TExpControl</a> read GetExpControlClass write SetExpControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineClass"></span><code>property <strong>LineClass</strong>: <a href="Line.TLine.html">TLine</a> read GetLineClass write SetLineClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VSourceClass"></span><code>property <strong>VSourceClass</strong>: <a href="VSource.TVsource.html">TVSource</a> read GetVSourceClass write SetVSourceClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ISourceClass"></span><code>property <strong>ISourceClass</strong>: <a href="Isource.TIsource.html">TISource</a> read GetISourceClass write SetISourceClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VCSSClass"></span><code>property <strong>VCSSClass</strong>: <a href="VCCS.TVCCS.html">TVCCS</a> read GetVCSSClass write SetVCSSClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadClass"></span><code>property <strong>LoadClass</strong>: <a href="Load.TLoad.html">TLoad</a> read GetLoadClass write SetLoadClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TransformerClass"></span><code>property <strong>TransformerClass</strong>: <a href="Transformer.TTransf.html">TTransf</a> read GetTransformerClass write SetTransformerClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RegControlClass"></span><code>property <strong>RegControlClass</strong>: <a href="RegControl.TRegControl.html">TRegControl</a> read GetRegControlClass write SetRegControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CapacitorClass"></span><code>property <strong>CapacitorClass</strong>: <a href="Capacitor.TCapacitor.html">TCapacitor</a> read GetCapacitorClass write SetCapacitorClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReactorClass"></span><code>property <strong>ReactorClass</strong>: <a href="Reactor.TReactor.html">TReactor</a> read GetReactorClass write SetReactorClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CapControlClass"></span><code>property <strong>CapControlClass</strong>: <a href="CapControl.TCapControl.html">TCapControl</a> read GetCapControlClass write SetCapControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FaultClass"></span><code>property <strong>FaultClass</strong>: <a href="Fault.TFault.html">TFault</a> read GetFaultClass write SetFaultClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GeneratorClass"></span><code>property <strong>GeneratorClass</strong>: <a href="generator.TGenerator.html">TGenerator</a> read GetGeneratorClass write SetGeneratorClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GenDispatcherClass"></span><code>property <strong>GenDispatcherClass</strong>: <a href="GenDispatcher.TGenDispatcher.html">TGenDispatcher</a> read GetGenDispatcherClass write SetGenDispatcherClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageControllerClass"></span><code>property <strong>StorageControllerClass</strong>: <a href="StorageController.TStorageController.html">TStorageController</a> read GetStorageControllerClass write SetStorageControllerClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageController2Class"></span><code>property <strong>StorageController2Class</strong>: <a href="StorageController2.TStorageController2.html">TStorageController2</a> read GetStorageController2Class write SetStorageController2Class;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RelayClass"></span><code>property <strong>RelayClass</strong>: <a href="Relay.TRelay.html">TRelay</a> read GetRelayClass write SetRelayClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RecloserClass"></span><code>property <strong>RecloserClass</strong>: <a href="Recloser.TRecloser.html">TRecloser</a> read GetRecloserClass write SetRecloserClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FuseClass"></span><code>property <strong>FuseClass</strong>: <a href="Fuse.TFuse.html">TFuse</a> read GetFuseClass write SetFuseClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SwtControlClass"></span><code>property <strong>SwtControlClass</strong>: <a href="SwtControl.TSwtControl.html">TSwtControl</a> read GetSwtControlClass write SetSwtControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UPFCClass"></span><code>property <strong>UPFCClass</strong>: <a href="UPFC.TUPFC.html">TUPFC</a> read GetUPFCClass write SetUPFCClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UPFCControlClass"></span><code>property <strong>UPFCControlClass</strong>: <a href="UPFCControl.TUPFCControl.html">TUPFCControl</a> read GetUPFCControlClass write SetUPFCControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ESPVLControlClass"></span><code>property <strong>ESPVLControlClass</strong>: <a href="ESPVLControl.TESPVLControl.html">TESPVLControl</a> read GetESPVLControlClass write SetESPVLControlClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndMach012Class"></span><code>property <strong>IndMach012Class</strong>: <a href="IndMach012.TIndMach012.html">TIndMach012</a> read GetIndMach012Class write SetIndMach012Class;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GICsourceClass"></span><code>property <strong>GICsourceClass</strong>: <a href="GICsource.TGICsource.html">TGICsource</a> read GetGICsourceClass write SetGICsourceClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AutoTransClass"></span><code>property <strong>AutoTransClass</strong>: <a href="AutoTrans.TAutoTrans.html">TAutoTrans</a> read GetAutoTransClass write SetAutoTransClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VSConverterClass"></span><code>property <strong>VSConverterClass</strong>: <a href="VSConverter.TVSConverter.html">TVSConverter</a> read GetVSConverterClass write SetVSConverterClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="XfmrCodeClass"></span><code>property <strong>XfmrCodeClass</strong>: <a href="XfmrCode.TXfmrCode.html">TXfmrCode</a> read GetXfmrCodeClass write SetXfmrCodeClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GICLineClass"></span><code>property <strong>GICLineClass</strong>: <a href="GICLine.TGICLine.html">TGICLine</a> read GetGICLineClass write SetGICLineClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GICTransformerClass"></span><code>property <strong>GICTransformerClass</strong>: <a href="GICTransformer.TGICTransformer.html">TGICTransformer</a> read GetGICTransformerClass write SetGICTransformerClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

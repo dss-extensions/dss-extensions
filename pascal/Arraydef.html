@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Arraydef</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Arraydef</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="CAPI_Types.html">CAPI_Types</a></li><li>UComplex</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="Arraydef.html#AllocStringArray">AllocStringArray</a></strong>(Size: Integer): <a href="Arraydef.html#pStringArray">pStringArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="Arraydef.html#FreeStringArray">FreeStringArray</a></strong>(var pS: <a href="Arraydef.html#pStringArray">pStringArray</a>; Size: Integer);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#TGeneralConnection">TGeneralConnection</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#TCBuffer24">TCBuffer24</a></strong> = array[1..24] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#PCBuffer24">PCBuffer24</a></strong> = &circ;<a href="Arraydef.html#TCBuffer24">TCBuffer24</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pSmallIntArray">pSmallIntArray</a></strong> = &circ;<a href="Arraydef.html#SmallIntArray">SmallIntArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#SmallIntArray">SmallIntArray</a></strong> = array[1..100] of Smallint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pIntegerArray">pIntegerArray</a></strong> = &circ;<a href="Arraydef.html#LongIntArray">LongIntArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pLongIntArray">pLongIntArray</a></strong> = &circ;<a href="Arraydef.html#LongIntArray">LongIntArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#LongIntArray">LongIntArray</a></strong> = array[1..100] of Longint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pDoubleArray">pDoubleArray</a></strong> = &circ;<a href="Arraydef.html#DoubleArray">DoubleArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#DoubleArray">DoubleArray</a></strong> = array[1..100] of Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pSingleArray">pSingleArray</a></strong> = &circ;<a href="Arraydef.html#SingleArray">SingleArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#SingleArray">SingleArray</a></strong> = array[1..100] of Single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pPointerArray">pPointerArray</a></strong> = &circ;<a href="Arraydef.html#PointerArray">PointerArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#PointerArray">PointerArray</a></strong> = array[1..100] of Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pStringArray">pStringArray</a></strong> = &circ;<a href="Arraydef.html#StringArray">StringArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#StringArray">StringArray</a></strong> = array[1..100] of String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#pPtrIntArray">pPtrIntArray</a></strong> = &circ;<a href="Arraydef.html#PtrIntArray">PtrIntArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#PtrIntArray">PtrIntArray</a></strong> = array[1..100] of PtrInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Arraydef.html#PDoubleArray0">PDoubleArray0</a></strong> = <a href="CAPI_Types.html#PDoubleArray0">CAPI_Types.PDoubleArray0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Arraydef.html#PSingleArray0">PSingleArray0</a></strong> = <a href="CAPI_Types.html#PSingleArray0">CAPI_Types.PSingleArray0</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AllocStringArray"></span><code>function <strong>AllocStringArray</strong>(Size: Integer): <a href="Arraydef.html#pStringArray">pStringArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FreeStringArray"></span><code>procedure <strong>FreeStringArray</strong>(var pS: <a href="Arraydef.html#pStringArray">pStringArray</a>; Size: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGeneralConnection"></span><code><strong>TGeneralConnection</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+keep enums as int32 values</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Wye">Wye = 0</span></li>
+<li>
+<span id="Y">Y = 0</span>: wye, star, line-neutral connection</li>
+<li>
+<span id="LN">LN = 0</span>: wye, star, line-neutral connection</li>
+<li>
+<span id="Delta">Delta = 1</span>: wye, star, line-neutral connection</li>
+<li>
+<span id="LL">LL = 1</span>: delta, line-line connection</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TCBuffer24"></span><code><strong>TCBuffer24</strong> = array[1..24] of <a href="DSSUcomplex.html#Complex">Complex</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+delta, line-line connection</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PCBuffer24"></span><code><strong>PCBuffer24</strong> = &circ;<a href="Arraydef.html#TCBuffer24">TCBuffer24</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pSmallIntArray"></span><code><strong>pSmallIntArray</strong> = &circ;<a href="Arraydef.html#SmallIntArray">SmallIntArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Define arrays with dummy dimension of 100 so we can hard code constants for accessing small order elements; Otherwise, always allocate arrays of these types before using</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SmallIntArray"></span><code><strong>SmallIntArray</strong> = array[1..100] of Smallint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pIntegerArray"></span><code><strong>pIntegerArray</strong> = &circ;<a href="Arraydef.html#LongIntArray">LongIntArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pLongIntArray"></span><code><strong>pLongIntArray</strong> = &circ;<a href="Arraydef.html#LongIntArray">LongIntArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LongIntArray"></span><code><strong>LongIntArray</strong> = array[1..100] of Longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pDoubleArray"></span><code><strong>pDoubleArray</strong> = &circ;<a href="Arraydef.html#DoubleArray">DoubleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoubleArray"></span><code><strong>DoubleArray</strong> = array[1..100] of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pSingleArray"></span><code><strong>pSingleArray</strong> = &circ;<a href="Arraydef.html#SingleArray">SingleArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SingleArray"></span><code><strong>SingleArray</strong> = array[1..100] of Single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pPointerArray"></span><code><strong>pPointerArray</strong> = &circ;<a href="Arraydef.html#PointerArray">PointerArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PointerArray"></span><code><strong>PointerArray</strong> = array[1..100] of Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pStringArray"></span><code><strong>pStringArray</strong> = &circ;<a href="Arraydef.html#StringArray">StringArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StringArray"></span><code><strong>StringArray</strong> = array[1..100] of String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pPtrIntArray"></span><code><strong>pPtrIntArray</strong> = &circ;<a href="Arraydef.html#PtrIntArray">PtrIntArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PtrIntArray"></span><code><strong>PtrIntArray</strong> = array[1..100] of PtrInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PDoubleArray0"></span><code><strong>PDoubleArray0</strong> = <a href="CAPI_Types.html#PDoubleArray0">CAPI_Types.PDoubleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSingleArray0"></span><code><strong>PSingleArray0</strong> = <a href="CAPI_Types.html#PSingleArray0">CAPI_Types.PSingleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

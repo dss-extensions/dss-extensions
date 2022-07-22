@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: ExecOptions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit ExecOptions</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="Command.html">Command</a></li><li><a href="DSSClass.html">DSSClass</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="ExecOptions.html#DoGetCmd">DoGetCmd</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="ExecOptions.html#DoSetCmd">DoSetCmd</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; SolveOption: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="ExecOptions.html#DoSetCmd_NoCircuit">DoSetCmd_NoCircuit</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="ExecOptions.html#DoGetCmd_NoCircuit">DoGetCmd_NoCircuit</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="ExecOptions.html#DefineOptions">DefineOptions</a></strong>(var ExecOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExecOptions.html#TExecOption">TExecOption</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="ExecOptions.html#NumExecOptions">NumExecOptions</a></strong> = ord(High(<a href="ExecOptions.html#TExecOption">TExecOption</a>));</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoGetCmd"></span><code>function <strong>DoGetCmd</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoSetCmd"></span><code>function <strong>DoSetCmd</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; SolveOption: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoSetCmd_NoCircuit"></span><code>function <strong>DoSetCmd_NoCircuit</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoGetCmd_NoCircuit"></span><code>function <strong>DoGetCmd_NoCircuit</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set Commands that do not require a circuit</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefineOptions"></span><code>procedure <strong>DefineOptions</strong>(var ExecOption: <a href="DSSClass.html#ArrayOfString">ArrayOfString</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get Commands that do not require a circuit</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TExecOption"></span><code><strong>TExecOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="typ">typ = 1</span></li>
+<li>
+<span id="element">element = 2</span></li>
+<li>
+<span id="hour">hour = 3</span></li>
+<li>
+<span id="sec">sec = 4</span></li>
+<li>
+<span id="year">year = 5</span></li>
+<li>
+<span id="frequency">frequency = 6</span></li>
+<li>
+<span id="stepsize">stepsize = 7</span></li>
+<li>
+<span id="mode">mode = 8</span></li>
+<li>
+<span id="random">random = 9</span></li>
+<li>
+<span id="number">number = 10</span></li>
+<li>
+<span id="time">time = 11</span></li>
+<li>
+<span id="cls">cls = 12</span></li>
+<li>
+<span id="obj">obj = 13</span></li>
+<li>
+<span id="circuit">circuit = 14</span></li>
+<li>
+<span id="editor">editor = 15</span></li>
+<li>
+<span id="tolerance">tolerance = 16</span></li>
+<li>
+<span id="maxiterations">maxiterations = 17</span></li>
+<li>
+<span id="h">h = 18</span></li>
+<li>
+<span id="Loadmodel">Loadmodel = 19</span></li>
+<li>
+<span id="Loadmult">Loadmult = 20</span></li>
+<li>
+<span id="normvminpu">normvminpu = 21</span></li>
+<li>
+<span id="normvmaxpu">normvmaxpu = 22</span></li>
+<li>
+<span id="emergvminpu">emergvminpu = 23</span></li>
+<li>
+<span id="emergvmaxpu">emergvmaxpu = 24</span></li>
+<li>
+<span id="pctmean">pctmean = 25</span></li>
+<li>
+<span id="pctstddev">pctstddev = 26</span>: %mean</li>
+<li>
+<span id="LDCurve">LDCurve = 27</span>: %stddev</li>
+<li>
+<span id="pctgrowth">pctgrowth = 28</span>: Load Duration Curve</li>
+<li>
+<span id="Genkw">Genkw = 29</span>: %growth &ndash; default growth rate</li>
+<li>
+<span id="Genpf">Genpf = 30</span></li>
+<li>
+<span id="CapkVAR">CapkVAR = 31</span></li>
+<li>
+<span id="Addtype">Addtype = 32</span></li>
+<li>
+<span id="Allowduplicates">Allowduplicates = 33</span></li>
+<li>
+<span id="Zonelock">Zonelock = 34</span></li>
+<li>
+<span id="UEweight">UEweight = 35</span></li>
+<li>
+<span id="Lossweight">Lossweight = 36</span></li>
+<li>
+<span id="UEregs">UEregs = 37</span></li>
+<li>
+<span id="Lossregs">Lossregs = 38</span></li>
+<li>
+<span id="Voltagebases">Voltagebases = 39</span></li>
+<li>
+<span id="Algorithm">Algorithm = 40</span>: changes the default voltage base rules</li>
+<li>
+<span id="Trapezoidal">Trapezoidal = 41</span>: changes the default voltage base rules</li>
+<li>
+<span id="Autobuslist">Autobuslist = 42</span></li>
+<li>
+<span id="Controlmode">Controlmode = 43</span>: array of bus names to include in auto add solutions</li>
+<li>
+<span id="Tracecontrol">Tracecontrol = 44</span></li>
+<li>
+<span id="Genmult">Genmult = 45</span></li>
+<li>
+<span id="Defaultdaily">Defaultdaily = 46</span></li>
+<li>
+<span id="Defaultyearly">Defaultyearly = 47</span></li>
+<li>
+<span id="Allocationfactors">Allocationfactors = 48</span></li>
+<li>
+<span id="Cktmodel">Cktmodel = 49</span></li>
+<li>
+<span id="Pricesignal">Pricesignal = 50</span></li>
+<li>
+<span id="Pricecurve">Pricecurve = 51</span></li>
+<li>
+<span id="Terminal">Terminal = 52</span></li>
+<li>
+<span id="Basefrequency">Basefrequency = 53</span></li>
+<li>
+<span id="Harmonics">Harmonics = 54</span></li>
+<li>
+<span id="Maxcontroliter">Maxcontroliter = 55</span></li>
+<li>
+<span id="Bus">Bus = 56</span></li>
+<li>
+<span id="Datapath">Datapath = 57</span></li>
+<li>
+<span id="KeepList">KeepList = 58</span></li>
+<li>
+<span id="ReduceOption">ReduceOption = 59</span></li>
+<li>
+<span id="DemandInterval">DemandInterval = 60</span></li>
+<li>
+<span id="pctNormal">pctNormal = 61</span></li>
+<li>
+<span id="DIVerbose">DIVerbose = 62</span>: %Normal</li>
+<li>
+<span id="Casename">Casename = 63</span></li>
+<li>
+<span id="Markercode">Markercode = 64</span></li>
+<li>
+<span id="Nodewidth">Nodewidth = 65</span></li>
+<li>
+<span id="Log">Log = 66</span></li>
+<li>
+<span id="Recorder">Recorder = 67</span></li>
+<li>
+<span id="Overloadreport">Overloadreport = 68</span></li>
+<li>
+<span id="Voltexceptionreport">Voltexceptionreport = 69</span></li>
+<li>
+<span id="Cfactors">Cfactors = 70</span></li>
+<li>
+<span id="Showexport">Showexport = 71</span></li>
+<li>
+<span id="Numallociterations">Numallociterations = 72</span></li>
+<li>
+<span id="DefaultBaseFrequency">DefaultBaseFrequency = 73</span></li>
+<li>
+<span id="Markswitches">Markswitches = 74</span></li>
+<li>
+<span id="Switchmarkercode">Switchmarkercode = 75</span></li>
+<li>
+<span id="Daisysize">Daisysize = 76</span></li>
+<li>
+<span id="Marktransformers">Marktransformers = 77</span></li>
+<li>
+<span id="TransMarkerCode">TransMarkerCode = 78</span></li>
+<li>
+<span id="TransMarkerSize">TransMarkerSize = 79</span></li>
+<li>
+<span id="LoadShapeClass">LoadShapeClass = 80</span></li>
+<li>
+<span id="EarthModel">EarthModel = 81</span></li>
+<li>
+<span id="QueryLog">QueryLog = 82</span></li>
+<li>
+<span id="MarkCapacitors">MarkCapacitors = 83</span></li>
+<li>
+<span id="MarkRegulators">MarkRegulators = 84</span></li>
+<li>
+<span id="MarkPVSystems">MarkPVSystems = 85</span></li>
+<li>
+<span id="MarkStorage">MarkStorage = 86</span></li>
+<li>
+<span id="CapMarkerCode">CapMarkerCode = 87</span></li>
+<li>
+<span id="RegMarkerCode">RegMarkerCode = 88</span></li>
+<li>
+<span id="PVMarkerCode">PVMarkerCode = 89</span></li>
+<li>
+<span id="StoreMarkerCode">StoreMarkerCode = 90</span></li>
+<li>
+<span id="CapMarkerSize">CapMarkerSize = 91</span></li>
+<li>
+<span id="RegMarkerSize">RegMarkerSize = 92</span></li>
+<li>
+<span id="PVMarkerSize">PVMarkerSize = 93</span></li>
+<li>
+<span id="StoreMarkerSize">StoreMarkerSize = 94</span></li>
+<li>
+<span id="NeglectLoadY">NeglectLoadY = 95</span></li>
+<li>
+<span id="MarkFuses">MarkFuses = 96</span></li>
+<li>
+<span id="FuseMarkerCode">FuseMarkerCode = 97</span></li>
+<li>
+<span id="FuseMarkerSize">FuseMarkerSize = 98</span></li>
+<li>
+<span id="MarkReclosers">MarkReclosers = 99</span></li>
+<li>
+<span id="RecloserMarkerCode">RecloserMarkerCode = 100</span></li>
+<li>
+<span id="RecloserMarkerSize">RecloserMarkerSize = 101</span></li>
+<li>
+<span id="RegistryUpdate">RegistryUpdate = 102</span></li>
+<li>
+<span id="MarkRelays">MarkRelays = 103</span></li>
+<li>
+<span id="RelayMarkerCode">RelayMarkerCode = 104</span></li>
+<li>
+<span id="RelayMarkerSize">RelayMarkerSize = 105</span></li>
+<li>
+<span id="ProcessTime">ProcessTime = 106</span></li>
+<li>
+<span id="TotalTime">TotalTime = 107</span></li>
+<li>
+<span id="StepTime">StepTime = 108</span></li>
+<li>
+<span id="SampleEnergyMeters">SampleEnergyMeters = 109</span></li>
+<li>
+<span id="MinIterations">MinIterations = 110</span></li>
+<li>
+<span id="DSSVisualizationTool">DSSVisualizationTool = 111</span>: default is 2</li>
+<li>
+<span id="KeepLoad">KeepLoad = 112</span></li>
+<li>
+<span id="Zmag">Zmag = 113</span></li>
+<li>
+<span id="SeasonRating">SeasonRating = 114</span></li>
+<li>
+<span id="SeasonSignal">SeasonSignal = 115</span></li>
+<li>
+<span id="NumCPUs">NumCPUs = 116</span></li>
+<li>
+<span id="NumCores">NumCores = 117</span></li>
+<li>
+<span id="NumActors">NumActors = 118</span></li>
+<li>
+<span id="ActiveActor">ActiveActor = 119</span></li>
+<li>
+<span id="CPU">CPU = 120</span></li>
+<li>
+<span id="ActorProgress">ActorProgress = 121</span></li>
+<li>
+<span id="Parallel">Parallel = 122</span></li>
+<li>
+<span id="ConcatenateReports">ConcatenateReports = 123</span></li>
+<li>
+<span id="NUMANodes">NUMANodes</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumExecOptions"></span><code><strong>NumExecOptions</strong> = ord(High(<a href="ExecOptions.html#TExecOption">TExecOption</a>));</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

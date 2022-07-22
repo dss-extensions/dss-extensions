@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: CAPI_Utils</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit CAPI_Utils</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>sysutils</li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="CAPI_Types.html">CAPI_Types</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#ctx_DSS_GetGRPointers">ctx_DSS_GetGRPointers</a></strong>( DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var DataPtr_PPAnsiChar: <a href="CAPI_Types.html#PPPAnsiChar">PPPAnsiChar</a>; var DataPtr_PDouble: <a href="CAPI_Types.html#PPDouble">PPDouble</a>; var DataPtr_PInteger: <a href="CAPI_Types.html#PPInteger">PPInteger</a>; var DataPtr_PByte: <a href="CAPI_Types.html#PPByte">PPByte</a>; var CountPtr_PPAnsiChar: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PDouble: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PInteger: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PByte: <a href="CAPI_Types.html#PAPISize">PAPISize</a> ); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_GetGRPointers">DSS_GetGRPointers</a></strong>( var DataPtr_PPAnsiChar: <a href="CAPI_Types.html#PPPAnsiChar">PPPAnsiChar</a>; var DataPtr_PDouble: <a href="CAPI_Types.html#PPDouble">PPDouble</a>; var DataPtr_PInteger: <a href="CAPI_Types.html#PPInteger">PPInteger</a>; var DataPtr_PByte: <a href="CAPI_Types.html#PPByte">PPByte</a>; var CountPtr_PPAnsiChar: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PDouble: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PInteger: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PByte: <a href="CAPI_Types.html#PAPISize">PAPISize</a> ); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_DataPtr_PDouble">ctx_DSS_GR_DataPtr_PDouble</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PDouble; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_DataPtr_PInteger">ctx_DSS_GR_DataPtr_PInteger</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PInteger; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_DataPtr_PByte">ctx_DSS_GR_DataPtr_PByte</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PByte; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_CountPtr_PDouble">ctx_DSS_GR_CountPtr_PDouble</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_CountPtr_PInteger">ctx_DSS_GR_CountPtr_PInteger</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#ctx_DSS_GR_CountPtr_PByte">ctx_DSS_GR_CountPtr_PByte</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_DataPtr_PDouble">DSS_GR_DataPtr_PDouble</a></strong>(): PDouble; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_DataPtr_PInteger">DSS_GR_DataPtr_PInteger</a></strong>(): PInteger; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_DataPtr_PByte">DSS_GR_DataPtr_PByte</a></strong>(): PByte; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_CountPtr_PDouble">DSS_GR_CountPtr_PDouble</a></strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_CountPtr_PInteger">DSS_GR_CountPtr_PInteger</a></strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GR_CountPtr_PByte">DSS_GR_CountPtr_PByte</a></strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#ctx_DSS_DisposeGRData">ctx_DSS_DisposeGRData</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_DisposeGRData">DSS_DisposeGRData</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_GetAsPAnsiChar">DSS_GetAsPAnsiChar</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; s: Ansistring): PAnsiChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#ctx_DSS_ResetStringBuffer">ctx_DSS_ResetStringBuffer</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_ResetStringBuffer">DSS_ResetStringBuffer</a></strong>(); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CopyStringAsPChar">DSS_CopyStringAsPChar</a></strong>(s: Ansistring): PAnsiChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PByte">DSS_Dispose_PByte</a></strong>(var p: PByte); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PSingle">DSS_Dispose_PSingle</a></strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PDouble">DSS_Dispose_PDouble</a></strong>(var p: PDouble); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PInteger">DSS_Dispose_PInteger</a></strong>(var p: PInteger); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PPAnsiChar">DSS_Dispose_PPAnsiChar</a></strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_Dispose_PPointer">DSS_Dispose_PPointer</a></strong>(var p: PPointer); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PByte">DSS_CreateArray_PByte</a></strong>(var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PByteArray;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PSingle">DSS_CreateArray_PSingle</a></strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PDouble">DSS_CreateArray_PDouble</a></strong>(var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PInteger">DSS_CreateArray_PInteger</a></strong>(var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PPAnsiChar">DSS_CreateArray_PPAnsiChar</a></strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_CreateArray_PPointer">DSS_CreateArray_PPointer</a></strong>(var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PByte">DSS_RecreateArray_PByte</a></strong>(var res: PByteArray; var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PSingle">DSS_RecreateArray_PSingle</a></strong>(var res: <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>; var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PDouble">DSS_RecreateArray_PDouble</a></strong>(var res: <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>; var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PInteger">DSS_RecreateArray_PInteger</a></strong>(var res: <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>; var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PPAnsiChar">DSS_RecreateArray_PPAnsiChar</a></strong>(var res: <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>; var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PPointer">DSS_RecreateArray_PPointer</a></strong>(var res: <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>; var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PByte">DSS_RecreateArray_PByte</a></strong>(var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PByteArray;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PSingle">DSS_RecreateArray_PSingle</a></strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PDouble">DSS_RecreateArray_PDouble</a></strong>(var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PInteger">DSS_RecreateArray_PInteger</a></strong>(var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PPAnsiChar">DSS_RecreateArray_PPAnsiChar</a></strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_RecreateArray_PPointer">DSS_RecreateArray_PPointer</a></strong>(var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_Get_PAnsiChar">DSS_Get_PAnsiChar</a></strong>(var p: Pointer; Index: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#Generic_Get_AllNames">Generic_Get_AllNames</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>; const Restore: Boolean); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#Generic_CktElement_Get_First">Generic_CktElement_Get_First</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>): Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#Generic_CktElement_Get_Next">Generic_CktElement_Get_Next</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>): Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#InvalidCircuit">InvalidCircuit</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#MissingSolution">MissingSolution</a></strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): Boolean; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DefaultResult">DefaultResult</a></strong>(var ResultPtr: PByte; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Byte = 0); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DefaultResult">DefaultResult</a></strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Integer = 0); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DefaultResult">DefaultResult</a></strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Double = 0); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DefaultResult">DefaultResult</a></strong>(var ResultPtr: <a href="CAPI_Types.html#PSingle">PSingle</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Single = 0); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DefaultResult">DefaultResult</a></strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: String = 'NONE'); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="CAPI_Utils.html#DSS_BeginPascalThread">DSS_BeginPascalThread</a></strong>(func: Pointer; paramptr: Pointer): PtrUInt; CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_WaitPascalThread">DSS_WaitPascalThread</a></strong>(handle: PtrUInt); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_SetMessagesMO">DSS_SetMessagesMO</a></strong>(Value: PChar); CDECL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_SetPropertiesMO">DSS_SetPropertiesMO</a></strong>(Value: PChar); CDECL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="CAPI_Utils.html#DSS_InitThreads">DSS_InitThreads</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="CAPI_Utils.html#TDSSContext">TDSSContext</a></strong> = <a href="DSSClass.TDSSContext.html">DSSClass.TDSSContext</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GetGRPointers"></span><code>procedure <strong>ctx_DSS_GetGRPointers</strong>( DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; var DataPtr_PPAnsiChar: <a href="CAPI_Types.html#PPPAnsiChar">PPPAnsiChar</a>; var DataPtr_PDouble: <a href="CAPI_Types.html#PPDouble">PPDouble</a>; var DataPtr_PInteger: <a href="CAPI_Types.html#PPInteger">PPInteger</a>; var DataPtr_PByte: <a href="CAPI_Types.html#PPByte">PPByte</a>; var CountPtr_PPAnsiChar: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PDouble: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PInteger: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PByte: <a href="CAPI_Types.html#PAPISize">PAPISize</a> ); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GetGRPointers"></span><code>procedure <strong>DSS_GetGRPointers</strong>( var DataPtr_PPAnsiChar: <a href="CAPI_Types.html#PPPAnsiChar">PPPAnsiChar</a>; var DataPtr_PDouble: <a href="CAPI_Types.html#PPDouble">PPDouble</a>; var DataPtr_PInteger: <a href="CAPI_Types.html#PPInteger">PPInteger</a>; var DataPtr_PByte: <a href="CAPI_Types.html#PPByte">PPByte</a>; var CountPtr_PPAnsiChar: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PDouble: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PInteger: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; var CountPtr_PByte: <a href="CAPI_Types.html#PAPISize">PAPISize</a> ); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_DataPtr_PDouble"></span><code>function <strong>ctx_DSS_GR_DataPtr_PDouble</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PDouble; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Separate simple functions for MATLAB, which return the current pointer directly, instead of a pointer to pointer.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_DataPtr_PInteger"></span><code>function <strong>ctx_DSS_GR_DataPtr_PInteger</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PInteger; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_DataPtr_PByte"></span><code>function <strong>ctx_DSS_GR_DataPtr_PByte</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): PByte; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_CountPtr_PDouble"></span><code>function <strong>ctx_DSS_GR_CountPtr_PDouble</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_CountPtr_PInteger"></span><code>function <strong>ctx_DSS_GR_CountPtr_PInteger</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_GR_CountPtr_PByte"></span><code>function <strong>ctx_DSS_GR_CountPtr_PByte</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_DataPtr_PDouble"></span><code>function <strong>DSS_GR_DataPtr_PDouble</strong>(): PDouble; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_DataPtr_PInteger"></span><code>function <strong>DSS_GR_DataPtr_PInteger</strong>(): PInteger; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_DataPtr_PByte"></span><code>function <strong>DSS_GR_DataPtr_PByte</strong>(): PByte; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_CountPtr_PDouble"></span><code>function <strong>DSS_GR_CountPtr_PDouble</strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_CountPtr_PInteger"></span><code>function <strong>DSS_GR_CountPtr_PInteger</strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GR_CountPtr_PByte"></span><code>function <strong>DSS_GR_CountPtr_PByte</strong>(): <a href="CAPI_Types.html#PAPISize">PAPISize</a>; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_DisposeGRData"></span><code>procedure <strong>ctx_DSS_DisposeGRData</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_DisposeGRData"></span><code>procedure <strong>DSS_DisposeGRData</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_GetAsPAnsiChar"></span><code>function <strong>DSS_GetAsPAnsiChar</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; s: Ansistring): PAnsiChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ctx_DSS_ResetStringBuffer"></span><code>procedure <strong>ctx_DSS_ResetStringBuffer</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_ResetStringBuffer"></span><code>procedure <strong>DSS_ResetStringBuffer</strong>(); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CopyStringAsPChar"></span><code>function <strong>DSS_CopyStringAsPChar</strong>(s: Ansistring): PAnsiChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PByte"></span><code>procedure <strong>DSS_Dispose_PByte</strong>(var p: PByte); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: check possible memory leaks for := DSS_CopyStringAsPChar('NONE')</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PSingle"></span><code>procedure <strong>DSS_Dispose_PSingle</strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PDouble"></span><code>procedure <strong>DSS_Dispose_PDouble</strong>(var p: PDouble); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PInteger"></span><code>procedure <strong>DSS_Dispose_PInteger</strong>(var p: PInteger); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PPAnsiChar"></span><code>procedure <strong>DSS_Dispose_PPAnsiChar</strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#TAPISize">TAPISize</a>); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Dispose_PPointer"></span><code>procedure <strong>DSS_Dispose_PPointer</strong>(var p: PPointer); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PByte"></span><code>function <strong>DSS_CreateArray_PByte</strong>(var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PByteArray;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PSingle"></span><code>function <strong>DSS_CreateArray_PSingle</strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PDouble"></span><code>function <strong>DSS_CreateArray_PDouble</strong>(var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PInteger"></span><code>function <strong>DSS_CreateArray_PInteger</strong>(var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PPAnsiChar"></span><code>function <strong>DSS_CreateArray_PPAnsiChar</strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CreateArray_PPointer"></span><code>function <strong>DSS_CreateArray_PPointer</strong>(var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PByte"></span><code>procedure <strong>DSS_RecreateArray_PByte</strong>(var res: PByteArray; var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+NOTE: these do not copy to copy old values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PSingle"></span><code>procedure <strong>DSS_RecreateArray_PSingle</strong>(var res: <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>; var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PDouble"></span><code>procedure <strong>DSS_RecreateArray_PDouble</strong>(var res: <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>; var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PInteger"></span><code>procedure <strong>DSS_RecreateArray_PInteger</strong>(var res: <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>; var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PPAnsiChar"></span><code>procedure <strong>DSS_RecreateArray_PPAnsiChar</strong>(var res: <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>; var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PPointer"></span><code>procedure <strong>DSS_RecreateArray_PPointer</strong>(var res: <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>; var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PByte"></span><code>function <strong>DSS_RecreateArray_PByte</strong>(var p: PByte; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PByteArray;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PSingle"></span><code>function <strong>DSS_RecreateArray_PSingle</strong>(var p: <a href="CAPI_Types.html#PSingle">PSingle</a>; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PSingleArray0">PSingleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PDouble"></span><code>function <strong>DSS_RecreateArray_PDouble</strong>(var p: PDouble; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PDoubleArray0">PDoubleArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PInteger"></span><code>function <strong>DSS_RecreateArray_PInteger</strong>(var p: PInteger; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PIntegerArray0">PIntegerArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PPAnsiChar"></span><code>function <strong>DSS_RecreateArray_PPAnsiChar</strong>(var p: PPAnsiChar; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPAnsiCharArray0">PPAnsiCharArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_RecreateArray_PPointer"></span><code>function <strong>DSS_RecreateArray_PPointer</strong>(var p: PPointer; cnt: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; const incount: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): <a href="CAPI_Types.html#PPointerArray0">PPointerArray0</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_Get_PAnsiChar"></span><code>function <strong>DSS_Get_PAnsiChar</strong>(var p: Pointer; Index: <a href="CAPI_Types.html#TAPISize">TAPISize</a>): PAnsiChar; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+MATLAB doesn't handle pointers that well, this just gets a single string from the pointer of strings</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generic_Get_AllNames"></span><code>procedure <strong>Generic_Get_AllNames</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>; const Restore: Boolean); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generic_CktElement_Get_First"></span><code>function <strong>Generic_CktElement_Get_First</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>): Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Generic_CktElement_Get_Next"></span><code>function <strong>Generic_CktElement_Get_Next</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>; pList: <a href="DSSPointerList.TDSSPointerList.html">TDSSPointerList</a>): Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InvalidCircuit"></span><code>function <strong>InvalidCircuit</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MissingSolution"></span><code>function <strong>MissingSolution</strong>(DSS: <a href="CAPI_Utils.html#TDSSContext">TDSSContext</a>): Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultResult"></span><code>procedure <strong>DefaultResult</strong>(var ResultPtr: PByte; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Byte = 0); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultResult"></span><code>procedure <strong>DefaultResult</strong>(var ResultPtr: PInteger; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Integer = 0); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultResult"></span><code>procedure <strong>DefaultResult</strong>(var ResultPtr: PDouble; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Double = 0); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultResult"></span><code>procedure <strong>DefaultResult</strong>(var ResultPtr: <a href="CAPI_Types.html#PSingle">PSingle</a>; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: Single = 0); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultResult"></span><code>procedure <strong>DefaultResult</strong>(var ResultPtr: PPAnsiChar; ResultCount: <a href="CAPI_Types.html#PAPISize">PAPISize</a>; Value: String = 'NONE'); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_BeginPascalThread"></span><code>function <strong>DSS_BeginPascalThread</strong>(func: Pointer; paramptr: Pointer): PtrUInt; CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_WaitPascalThread"></span><code>procedure <strong>DSS_WaitPascalThread</strong>(handle: PtrUInt); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_SetMessagesMO"></span><code>procedure <strong>DSS_SetMessagesMO</strong>(Value: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_SetPropertiesMO"></span><code>procedure <strong>DSS_SetPropertiesMO</strong>(Value: PChar); CDECL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_InitThreads"></span><code>procedure <strong>DSS_InitThreads</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+internal function</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDSSContext"></span><code><strong>TDSSContext</strong> = <a href="DSSClass.TDSSContext.html">DSSClass.TDSSContext</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

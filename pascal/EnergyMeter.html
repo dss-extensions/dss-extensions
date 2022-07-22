@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: EnergyMeter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit EnergyMeter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="DSSClass.html">DSSClass</a></li><li><a href="MeterClass.html">MeterClass</a></li><li><a href="MeterElement.html">MeterElement</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="PDElement.html">PDElement</a></li><li><a href="Arraydef.html">arrayDef</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li><a href="CktTree.html">CktTree</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Load.html">Load</a></li><li><a href="generator.html">Generator</a></li><li><a href="XYcurve.html">XYCurve</a></li><li><a href="Command.html">Command</a></li><li>Classes</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EnergyMeter.TFeederSection.html"><code>TFeederSection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EnergyMeter.TSystemMeter.html"><code>TSystemMeter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EnergyMeter.TEnergyMeter.html"><code>TEnergyMeter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EnergyMeter.TEnergyMeterObj.html"><code>TEnergyMeterObj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#TEnergyMeterProp">TEnergyMeterProp</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#TRegisterArray">TRegisterArray</a></strong> = array[1..<a href="EnergyMeter.html#NumEMRegisters">NumEMregisters</a>] of Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#pFeederSections">pFeederSections</a></strong> = &circ;<a href="EnergyMeter.html#FeederSectionArray">FeederSectionArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#FeederSectionArray">FeederSectionArray</a></strong> = array[0..100] of <a href="EnergyMeter.TFeederSection.html">TFeederSection</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#NumEMVbase">NumEMVbase</a></strong> = 7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#NumEMRegisters">NumEMRegisters</a></strong> = 32 + 5 * <a href="EnergyMeter.html#NumEMVbase">NumEMVbase</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_kWh">Reg_kWh</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_kvarh">Reg_kvarh</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_MaxkW">Reg_MaxkW</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_MaxkVA">Reg_MaxkVA</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZonekWh">Reg_ZonekWh</a></strong> = 5;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_Zonekvarh">Reg_Zonekvarh</a></strong> = 6;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZoneMaxkW">Reg_ZoneMaxkW</a></strong> = 7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZoneMaxkVA">Reg_ZoneMaxkVA</a></strong> = 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_OverloadkWhNorm">Reg_OverloadkWhNorm</a></strong> = 9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_OverloadkWhEmerg">Reg_OverloadkWhEmerg</a></strong> = 10;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LoadEEN">Reg_LoadEEN</a></strong> = 11;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LoadUE">Reg_LoadUE</a></strong> = 12;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZoneLosseskWh">Reg_ZoneLosseskWh</a></strong> = 13;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZoneLosseskvarh">Reg_ZoneLosseskvarh</a></strong> = 14;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LossesMaxkW">Reg_LossesMaxkW</a></strong> = 15;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LossesMaxkvar">Reg_LossesMaxkvar</a></strong> = 16;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LoadLosseskWh">Reg_LoadLosseskWh</a></strong> = 17;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LoadLosseskvarh">Reg_LoadLosseskvarh</a></strong> = 18;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_NoLoadLosseskWh">Reg_NoLoadLosseskWh</a></strong> = 19;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_NoLoadLosseskvarh">Reg_NoLoadLosseskvarh</a></strong> = 20;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_MaxLoadLosses">Reg_MaxLoadLosses</a></strong> = 21;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_MaxNoLoadLosses">Reg_MaxNoLoadLosses</a></strong> = 22;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LineLosseskWh">Reg_LineLosseskWh</a></strong> = 23;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_TransformerLosseskWh">Reg_TransformerLosseskWh</a></strong> = 24;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_LineModeLineLoss">Reg_LineModeLineLoss</a></strong> = 25;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_ZeroModeLineLoss">Reg_ZeroModeLineLoss</a></strong> = 26;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_3_phaseLineLoss">Reg_3_phaseLineLoss</a></strong> = 27;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_1_phaseLineLoss">Reg_1_phaseLineLoss</a></strong> = 28;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_GenkWh">Reg_GenkWh</a></strong> = 29;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_Genkvarh">Reg_Genkvarh</a></strong> = 30;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_GenMaxkW">Reg_GenMaxkW</a></strong> = 31;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_GenMaxkVA">Reg_GenMaxkVA</a></strong> = 32;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EnergyMeter.html#Reg_VBaseStart">Reg_VBaseStart</a></strong> = 32;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEnergyMeterProp"></span><code><strong>TEnergyMeterProp</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+anchor for the voltage base loss registers</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="element">element = 1</span></li>
+<li>
+<span id="terminal">terminal = 2</span></li>
+<li>
+<span id="action">action = 3</span></li>
+<li>
+<span id="option">option = 4</span></li>
+<li>
+<span id="kVAnormal">kVAnormal = 5</span></li>
+<li>
+<span id="kVAemerg">kVAemerg = 6</span></li>
+<li>
+<span id="peakcurrent">peakcurrent = 7</span></li>
+<li>
+<span id="Zonelist">Zonelist = 8</span></li>
+<li>
+<span id="LocalOnly">LocalOnly = 9</span></li>
+<li>
+<span id="Mask">Mask = 10</span></li>
+<li>
+<span id="Losses">Losses = 11</span></li>
+<li>
+<span id="LineLosses">LineLosses = 12</span></li>
+<li>
+<span id="XfmrLosses">XfmrLosses = 13</span></li>
+<li>
+<span id="SeqLosses">SeqLosses = 14</span></li>
+<li>
+<span id="__3phaseLosses">__3phaseLosses = 15</span></li>
+<li>
+<span id="VbaseLosses">VbaseLosses = 16</span></li>
+<li>
+<span id="PhaseVoltageReport">PhaseVoltageReport = 17</span>: segregate losses by voltage base</li>
+<li>
+<span id="Int_Rate">Int_Rate = 18</span>: Compute Avg phase voltages in zone</li>
+<li>
+<span id="Int_Duration">Int_Duration = 19</span></li>
+<li>
+<span id="SAIFI">SAIFI = 20</span></li>
+<li>
+<span id="SAIFIkW">SAIFIkW = 21</span>: Read only</li>
+<li>
+<span id="SAIDI">SAIDI = 22</span>: Read only</li>
+<li>
+<span id="CAIDI">CAIDI = 23</span>: Read only</li>
+<li>
+<span id="CustInterrupts">CustInterrupts = 24</span>: Read only</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRegisterArray"></span><code><strong>TRegisterArray</strong> = array[1..<a href="EnergyMeter.html#NumEMRegisters">NumEMregisters</a>] of Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Read only</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pFeederSections"></span><code><strong>pFeederSections</strong> = &circ;<a href="EnergyMeter.html#FeederSectionArray">FeederSectionArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FeederSectionArray"></span><code><strong>FeederSectionArray</strong> = array[0..100] of <a href="EnergyMeter.TFeederSection.html">TFeederSection</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumEMVbase"></span><code><strong>NumEMVbase</strong> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumEMRegisters"></span><code><strong>NumEMRegisters</strong> = 32 + 5 * <a href="EnergyMeter.html#NumEMVbase">NumEMVbase</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_kWh"></span><code><strong>Reg_kWh</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Total Number of energy meter registers Fixed Registers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_kvarh"></span><code><strong>Reg_kvarh</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_MaxkW"></span><code><strong>Reg_MaxkW</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_MaxkVA"></span><code><strong>Reg_MaxkVA</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZonekWh"></span><code><strong>Reg_ZonekWh</strong> = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_Zonekvarh"></span><code><strong>Reg_Zonekvarh</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZoneMaxkW"></span><code><strong>Reg_ZoneMaxkW</strong> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZoneMaxkVA"></span><code><strong>Reg_ZoneMaxkVA</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_OverloadkWhNorm"></span><code><strong>Reg_OverloadkWhNorm</strong> = 9;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_OverloadkWhEmerg"></span><code><strong>Reg_OverloadkWhEmerg</strong> = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Max overload</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LoadEEN"></span><code><strong>Reg_LoadEEN</strong> = 11;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LoadUE"></span><code><strong>Reg_LoadUE</strong> = 12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZoneLosseskWh"></span><code><strong>Reg_ZoneLosseskWh</strong> = 13;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Energy served below normal voltage</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZoneLosseskvarh"></span><code><strong>Reg_ZoneLosseskvarh</strong> = 14;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LossesMaxkW"></span><code><strong>Reg_LossesMaxkW</strong> = 15;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LossesMaxkvar"></span><code><strong>Reg_LossesMaxkvar</strong> = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LoadLosseskWh"></span><code><strong>Reg_LoadLosseskWh</strong> = 17;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LoadLosseskvarh"></span><code><strong>Reg_LoadLosseskvarh</strong> = 18;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_NoLoadLosseskWh"></span><code><strong>Reg_NoLoadLosseskWh</strong> = 19;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_NoLoadLosseskvarh"></span><code><strong>Reg_NoLoadLosseskvarh</strong> = 20;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_MaxLoadLosses"></span><code><strong>Reg_MaxLoadLosses</strong> = 21;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_MaxNoLoadLosses"></span><code><strong>Reg_MaxNoLoadLosses</strong> = 22;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LineLosseskWh"></span><code><strong>Reg_LineLosseskWh</strong> = 23;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_TransformerLosseskWh"></span><code><strong>Reg_TransformerLosseskWh</strong> = 24;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_LineModeLineLoss"></span><code><strong>Reg_LineModeLineLoss</strong> = 25;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_ZeroModeLineLoss"></span><code><strong>Reg_ZeroModeLineLoss</strong> = 26;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for 3-phase feeder lines</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_3_phaseLineLoss"></span><code><strong>Reg_3_phaseLineLoss</strong> = 27;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_1_phaseLineLoss"></span><code><strong>Reg_1_phaseLineLoss</strong> = 28;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_GenkWh"></span><code><strong>Reg_GenkWh</strong> = 29;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_Genkvarh"></span><code><strong>Reg_Genkvarh</strong> = 30;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_GenMaxkW"></span><code><strong>Reg_GenMaxkW</strong> = 31;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_GenMaxkVA"></span><code><strong>Reg_GenMaxkVA</strong> = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Reg_VBaseStart"></span><code><strong>Reg_VBaseStart</strong> = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

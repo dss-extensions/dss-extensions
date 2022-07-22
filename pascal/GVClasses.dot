@@ -1,0 +1,361 @@
+DiGraph Classes {
+  "Exception" -> "TObject"
+  "EControlProblem" -> "Exception"
+  "EControlProblem" [href="Solution.EControlProblem.html"]
+  "EEsolv32Problem" -> "Exception"
+  "EEsolv32Problem" [href="Ymatrix.EEsolv32Problem.html"]
+  "ELineGeometryProblem" -> "Exception"
+  "ELineGeometryProblem" [href="LineGeometry.ELineGeometryProblem.html"]
+  "EParserProblem" -> "Exception"
+  "EParserProblem" [href="ParserDel.EParserProblem.html"]
+  "ESolveError" -> "Exception"
+  "ESolveError" [href="Solution.ESolveError.html"]
+  "TAutoAdd" -> "TObject"
+  "TAutoAdd" [href="AutoAdd.TAutoAdd.html"]
+  "TAutoWinding" -> "TObject"
+  "TAutoWinding" [href="AutoTrans.TAutoWinding.html"]
+  "TBusMarker" -> "TObject"
+  "TBusMarker" [href="Circuit.TBusMarker.html"]
+  "TCapUserControl" -> "TObject"
+  "TCapUserControl" [href="CapUserControl.TCapUserControl.html"]
+  "TCIMExporter" -> "TObject"
+  "TCIMExporter" [href="ExportCIMXML.TCIMExporter.html"]
+  "TCktTree" -> "TObject"
+  "TCktTree" [href="CktTree.TCktTree.html"]
+  "TCktTreeNode" -> "TObject"
+  "TCktTreeNode" [href="CktTree.TCktTreeNode.html"]
+  "TcMatrix" -> "TObject"
+  "TcMatrix" [href="Ucmatrix.TcMatrix.html"]
+  "TCommandList" -> "TObject"
+  "TCommandList" [href="Command.TCommandList.html"]
+  "TControlQueue" -> "TObject"
+  "TControlQueue" [href="ControlQueue.TControlQueue.html"]
+  "TDSSClass" -> "TObject"
+  "TDSSClass" [href="DSSClass.TDSSClass.html"]
+  "TCktElementClass" -> "TDSSClass"
+  "TCktElementClass" [href="CktElementClass.TCktElementClass.html"]
+  "TControlClass" -> "TCktElementClass"
+  "TControlClass" [href="ControlClass.TControlClass.html"]
+  "TCapControl" -> "TControlClass"
+  "TCapControl" [href="CapControl.TCapControl.html"]
+  "TESPVLControl" -> "TControlClass"
+  "TESPVLControl" [href="ESPVLControl.TESPVLControl.html"]
+  "TExpControl" -> "TControlClass"
+  "TExpControl" [href="ExpControl.TExpControl.html"]
+  "TFuse" -> "TControlClass"
+  "TFuse" [href="Fuse.TFuse.html"]
+  "TGenDispatcher" -> "TControlClass"
+  "TGenDispatcher" [href="GenDispatcher.TGenDispatcher.html"]
+  "TInvControl" -> "TControlClass"
+  "TInvControl" [href="InvControl.TInvControl.html"]
+  "TInvControl2" -> "TControlClass"
+  "TInvControl2" [href="InvControl2.TInvControl2.html"]
+  "TRecloser" -> "TControlClass"
+  "TRecloser" [href="Recloser.TRecloser.html"]
+  "TRegControl" -> "TControlClass"
+  "TRegControl" [href="RegControl.TRegControl.html"]
+  "TRelay" -> "TControlClass"
+  "TRelay" [href="Relay.TRelay.html"]
+  "TStorageController" -> "TControlClass"
+  "TStorageController" [href="StorageController.TStorageController.html"]
+  "TStorageController2" -> "TControlClass"
+  "TStorageController2" [href="StorageController2.TStorageController2.html"]
+  "TSwtControl" -> "TControlClass"
+  "TSwtControl" [href="SwtControl.TSwtControl.html"]
+  "TUPFCControl" -> "TControlClass"
+  "TUPFCControl" [href="UPFCControl.TUPFCControl.html"]
+  "TMeterClass" -> "TCktElementClass"
+  "TMeterClass" [href="MeterClass.TMeterClass.html"]
+  "TDSSMonitor" -> "TMeterClass"
+  "TDSSMonitor" [href="Monitor.TDSSMonitor.html"]
+  "TEnergyMeter" -> "TMeterClass"
+  "TEnergyMeter" [href="EnergyMeter.TEnergyMeter.html"]
+  "TSensor" -> "TMeterClass"
+  "TSensor" [href="Sensor.TSensor.html"]
+  "TPCClass" -> "TCktElementClass"
+  "TPCClass" [href="PCClass.TPCClass.html"]
+  "TGenerator" -> "TPCClass"
+  "TGenerator" [href="generator.TGenerator.html"]
+  "TGICLine" -> "TPCClass"
+  "TGICLine" [href="GICLine.TGICLine.html"]
+  "TGICsource" -> "TPCClass"
+  "TGICsource" [href="GICsource.TGICsource.html"]
+  "TIndMach012" -> "TPCClass"
+  "TIndMach012" [href="IndMach012.TIndMach012.html"]
+  "TIsource" -> "TPCClass"
+  "TIsource" [href="Isource.TIsource.html"]
+  "TLoad" -> "TPCClass"
+  "TLoad" [href="Load.TLoad.html"]
+  "TPVSystem" -> "TPCClass"
+  "TPVSystem" [href="PVsystem.TPVSystem.html"]
+  "TPVSystem2" -> "TPCClass"
+  "TPVSystem2" [href="PVsystem2.TPVSystem2.html"]
+  "TStorage" -> "TPCClass"
+  "TStorage" [href="Storage.TStorage.html"]
+  "TStorage2" -> "TPCClass"
+  "TStorage2" [href="Storage2.TStorage2.html"]
+  "TUPFC" -> "TPCClass"
+  "TUPFC" [href="UPFC.TUPFC.html"]
+  "TVCCS" -> "TPCClass"
+  "TVCCS" [href="VCCS.TVCCS.html"]
+  "TVSConverter" -> "TPCClass"
+  "TVSConverter" [href="VSConverter.TVSConverter.html"]
+  "TVsource" -> "TPCClass"
+  "TVsource" [href="VSource.TVsource.html"]
+  "TPDClass" -> "TCktElementClass"
+  "TPDClass" [href="PDClass.TPDClass.html"]
+  "TAutoTrans" -> "TPDClass"
+  "TAutoTrans" [href="AutoTrans.TAutoTrans.html"]
+  "TCapacitor" -> "TPDClass"
+  "TCapacitor" [href="Capacitor.TCapacitor.html"]
+  "TFault" -> "TPDClass"
+  "TFault" [href="Fault.TFault.html"]
+  "TGICTransformer" -> "TPDClass"
+  "TGICTransformer" [href="GICTransformer.TGICTransformer.html"]
+  "TLine" -> "TPDClass"
+  "TLine" [href="Line.TLine.html"]
+  "TReactor" -> "TPDClass"
+  "TReactor" [href="Reactor.TReactor.html"]
+  "TTransf" -> "TPDClass"
+  "TTransf" [href="Transformer.TTransf.html"]
+  "TConductorData" -> "TDSSClass"
+  "TConductorData" [href="ConductorData.TConductorData.html"]
+  "TCableData" -> "TConductorData"
+  "TCableData" [href="CableData.TCableData.html"]
+  "TCNData" -> "TCableData"
+  "TCNData" [href="CNData.TCNData.html"]
+  "TTSData" -> "TCableData"
+  "TTSData" [href="TSData.TTSData.html"]
+  "TWireData" -> "TConductorData"
+  "TWireData" [href="WireData.TWireData.html"]
+  "TGrowthShape" -> "TDSSClass"
+  "TGrowthShape" [href="GrowthShape.TGrowthShape.html"]
+  "TLineCode" -> "TDSSClass"
+  "TLineCode" [href="LineCode.TLineCode.html"]
+  "TLineGeometry" -> "TDSSClass"
+  "TLineGeometry" [href="LineGeometry.TLineGeometry.html"]
+  "TLineSpacing" -> "TDSSClass"
+  "TLineSpacing" [href="LineSpacing.TLineSpacing.html"]
+  "TLoadShape" -> "TDSSClass"
+  "TLoadShape" [href="LoadShape.TLoadShape.html"]
+  "TPriceShape" -> "TDSSClass"
+  "TPriceShape" [href="PriceShape.TPriceShape.html"]
+  "TProxyClass" -> "TDSSClass"
+  "TProxyClass" [href="DSSClass.TProxyClass.html"]
+  "TSpectrum" -> "TDSSClass"
+  "TSpectrum" [href="Spectrum.TSpectrum.html"]
+  "TTCC_Curve" -> "TDSSClass"
+  "TTCC_Curve" [href="TCC_Curve.TTCC_Curve.html"]
+  "TTShape" -> "TDSSClass"
+  "TTShape" [href="TempShape.TTShape.html"]
+  "TXfmrCode" -> "TDSSClass"
+  "TXfmrCode" [href="XfmrCode.TXfmrCode.html"]
+  "TXYcurve" -> "TDSSClass"
+  "TXYcurve" [href="XYcurve.TXYcurve.html"]
+  "TDSSClassHelper" -> "TObject"
+  "TDSSClassHelper" [href="DSSObjectHelper.TDSSClassHelper.html"]
+  "TDSSContext" -> "TObject"
+  "TDSSContext" [href="DSSClass.TDSSContext.html"]
+  "TDSSEnum" -> "TObject"
+  "TDSSEnum" [href="DSSClass.TDSSEnum.html"]
+  "TDSSGlobalHelper" -> "TObject"
+  "TDSSGlobalHelper" [href="DSSHelper.TDSSGlobalHelper.html"]
+  "TDSSObjectHelper" -> "TObject"
+  "TDSSObjectHelper" [href="DSSObjectHelper.TDSSObjectHelper.html"]
+  "TDSSParser" -> "TObject"
+  "TDSSParser" [href="ParserDel.TDSSParser.html"]
+  "TDSSPointerList" -> "TObject"
+  "TDSSPointerList" [href="DSSPointerList.TDSSPointerList.html"]
+  "TExecHelper" -> "TObject"
+  "TExecHelper" [href="ExecHelper.TExecHelper.html"]
+  "TExecutive" -> "TObject"
+  "TExecutive" [href="Executive.TExecutive.html"]
+  "TFileSearchReplace" -> "TObject"
+  "TFileSearchReplace" [href="MeTIS_Exec.TFileSearchReplace.html"]
+  "TFPHashList" -> "TObject"
+  "TAltHashList" -> "TFPHashList"
+  "TAltHashList" [href="HashList.TAltHashList.html"]
+  "TGenUserModel" -> "TObject"
+  "TGenUserModel" [href="GenUserModel.TGenUserModel.html"]
+  "THashList" -> "TObject"
+  "THashList" [href="HashList.THashList.html"]
+  "TIEEE1547Controller" -> "TObject"
+  "TIEEE1547Controller" [href="ExportCIMXML.TIEEE1547Controller.html"]
+  "TLineConstants" -> "TObject"
+  "TLineConstants" [href="LineConstants.TLineConstants.html"]
+  "TCableConstants" -> "TLineConstants"
+  "TCableConstants" [href="CableConstants.TCableConstants.html"]
+  "TCNLineConstants" -> "TCableConstants"
+  "TCNLineConstants" [href="CNLineConstants.TCNLineConstants.html"]
+  "TTSLineConstants" -> "TCableConstants"
+  "TTSLineConstants" [href="TSLineConstants.TTSLineConstants.html"]
+  "TOHLineConstants" -> "TLineConstants"
+  "TOHLineConstants" [href="OHLineConstants.TOHLineConstants.html"]
+  "TNamedObject" -> "TObject"
+  "TNamedObject" [href="NamedObject.TNamedObject.html"]
+  "TCIMBankObject" -> "TNamedObject"
+  "TCIMBankObject" [href="ExportCIMXML.TCIMBankObject.html"]
+  "TCIMOpLimitObject" -> "TNamedObject"
+  "TCIMOpLimitObject" [href="ExportCIMXML.TCIMOpLimitObject.html"]
+  "TDSSBus" -> "TNamedObject"
+  "TDSSBus" [href="Bus.TDSSBus.html"]
+  "TDSSCircuit" -> "TNamedObject"
+  "TDSSCircuit" [href="Circuit.TDSSCircuit.html"]
+  "TDSSObject" -> "TNamedObject"
+  "TDSSObject" [href="DSSObject.TDSSObject.html"]
+  "TConductorDataObj" -> "TDSSObject"
+  "TConductorDataObj" [href="ConductorData.TConductorDataObj.html"]
+  "TCableDataObj" -> "TConductorDataObj"
+  "TCableDataObj" [href="CableData.TCableDataObj.html"]
+  "TCNDataObj" -> "TCableDataObj"
+  "TCNDataObj" [href="CNData.TCNDataObj.html"]
+  "TTSDataObj" -> "TCableDataObj"
+  "TTSDataObj" [href="TSData.TTSDataObj.html"]
+  "TWireDataObj" -> "TConductorDataObj"
+  "TWireDataObj" [href="WireData.TWireDataObj.html"]
+  "TDSSCktElement" -> "TDSSObject"
+  "TDSSCktElement" [href="CktElement.TDSSCktElement.html"]
+  "TControlElem" -> "TDSSCktElement"
+  "TControlElem" [href="ControlElem.TControlElem.html"]
+  "TCapControlObj" -> "TControlElem"
+  "TCapControlObj" [href="CapControl.TCapControlObj.html"]
+  "TControlProxyObj" -> "TControlElem"
+  "TControlProxyObj" [href="ControlProxy.TControlProxyObj.html"]
+  "TESPVLControlObj" -> "TControlElem"
+  "TESPVLControlObj" [href="ESPVLControl.TESPVLControlObj.html"]
+  "TExpControlObj" -> "TControlElem"
+  "TExpControlObj" [href="ExpControl.TExpControlObj.html"]
+  "TFuseObj" -> "TControlElem"
+  "TFuseObj" [href="Fuse.TFuseObj.html"]
+  "TGenDispatcherObj" -> "TControlElem"
+  "TGenDispatcherObj" [href="GenDispatcher.TGenDispatcherObj.html"]
+  "TInvControl2Obj" -> "TControlElem"
+  "TInvControl2Obj" [href="InvControl2.TInvControl2Obj.html"]
+  "TInvControlObj" -> "TControlElem"
+  "TInvControlObj" [href="InvControl.TInvControlObj.html"]
+  "TRecloserObj" -> "TControlElem"
+  "TRecloserObj" [href="Recloser.TRecloserObj.html"]
+  "TRegControlObj" -> "TControlElem"
+  "TRegControlObj" [href="RegControl.TRegControlObj.html"]
+  "TRelayObj" -> "TControlElem"
+  "TRelayObj" [href="Relay.TRelayObj.html"]
+  "TStorageController2Obj" -> "TControlElem"
+  "TStorageController2Obj" [href="StorageController2.TStorageController2Obj.html"]
+  "TStorageControllerObj" -> "TControlElem"
+  "TStorageControllerObj" [href="StorageController.TStorageControllerObj.html"]
+  "TSwtControlObj" -> "TControlElem"
+  "TSwtControlObj" [href="SwtControl.TSwtControlObj.html"]
+  "TUPFCControlObj" -> "TControlElem"
+  "TUPFCControlObj" [href="UPFCControl.TUPFCControlObj.html"]
+  "TMeterElement" -> "TDSSCktElement"
+  "TMeterElement" [href="MeterElement.TMeterElement.html"]
+  "TEnergyMeterObj" -> "TMeterElement"
+  "TEnergyMeterObj" [href="EnergyMeter.TEnergyMeterObj.html"]
+  "TMonitorObj" -> "TMeterElement"
+  "TMonitorObj" [href="Monitor.TMonitorObj.html"]
+  "TSensorObj" -> "TMeterElement"
+  "TSensorObj" [href="Sensor.TSensorObj.html"]
+  "TPCElement" -> "TDSSCktElement"
+  "TPCElement" [href="PCElement.TPCElement.html"]
+  "TGeneratorObj" -> "TPCElement"
+  "TGeneratorObj" [href="generator.TGeneratorObj.html"]
+  "TGICLineObj" -> "TPCElement"
+  "TGICLineObj" [href="GICLine.TGICLineObj.html"]
+  "TGICSourceObj" -> "TPCElement"
+  "TGICSourceObj" [href="GICsource.TGICSourceObj.html"]
+  "TIndMach012Obj" -> "TPCElement"
+  "TIndMach012Obj" [href="IndMach012.TIndMach012Obj.html"]
+  "TIsourceObj" -> "TPCElement"
+  "TIsourceObj" [href="Isource.TIsourceObj.html"]
+  "TLoadObj" -> "TPCElement"
+  "TLoadObj" [href="Load.TLoadObj.html"]
+  "TPVsystem2Obj" -> "TPCElement"
+  "TPVsystem2Obj" [href="PVsystem2.TPVsystem2Obj.html"]
+  "TPVsystemObj" -> "TPCElement"
+  "TPVsystemObj" [href="PVsystem.TPVsystemObj.html"]
+  "TStorage2Obj" -> "TPCElement"
+  "TStorage2Obj" [href="Storage2.TStorage2Obj.html"]
+  "TStorageObj" -> "TPCElement"
+  "TStorageObj" [href="Storage.TStorageObj.html"]
+  "TUPFCObj" -> "TPCElement"
+  "TUPFCObj" [href="UPFC.TUPFCObj.html"]
+  "TVCCSObj" -> "TPCElement"
+  "TVCCSObj" [href="VCCS.TVCCSObj.html"]
+  "TVSConverterObj" -> "TPCElement"
+  "TVSConverterObj" [href="VSConverter.TVSConverterObj.html"]
+  "TVsourceObj" -> "TPCElement"
+  "TVsourceObj" [href="VSource.TVsourceObj.html"]
+  "TPDElement" -> "TDSSCktElement"
+  "TPDElement" [href="PDElement.TPDElement.html"]
+  "TAutoTransObj" -> "TPDElement"
+  "TAutoTransObj" [href="AutoTrans.TAutoTransObj.html"]
+  "TCapacitorObj" -> "TPDElement"
+  "TCapacitorObj" [href="Capacitor.TCapacitorObj.html"]
+  "TFaultObj" -> "TPDElement"
+  "TFaultObj" [href="Fault.TFaultObj.html"]
+  "TGICTransformerObj" -> "TPDElement"
+  "TGICTransformerObj" [href="GICTransformer.TGICTransformerObj.html"]
+  "TLineObj" -> "TPDElement"
+  "TLineObj" [href="Line.TLineObj.html"]
+  "TReactorObj" -> "TPDElement"
+  "TReactorObj" [href="Reactor.TReactorObj.html"]
+  "TTransfObj" -> "TPDElement"
+  "TTransfObj" [href="Transformer.TTransfObj.html"]
+  "TGrowthShapeObj" -> "TDSSObject"
+  "TGrowthShapeObj" [href="GrowthShape.TGrowthShapeObj.html"]
+  "TLineCodeObj" -> "TDSSObject"
+  "TLineCodeObj" [href="LineCode.TLineCodeObj.html"]
+  "TLineGeometryObj" -> "TDSSObject"
+  "TLineGeometryObj" [href="LineGeometry.TLineGeometryObj.html"]
+  "TLineSpacingObj" -> "TDSSObject"
+  "TLineSpacingObj" [href="LineSpacing.TLineSpacingObj.html"]
+  "TLoadShapeObj" -> "TDSSObject"
+  "TLoadShapeObj" [href="LoadShape.TLoadShapeObj.html"]
+  "TPriceShapeObj" -> "TDSSObject"
+  "TPriceShapeObj" [href="PriceShape.TPriceShapeObj.html"]
+  "TSpectrumObj" -> "TDSSObject"
+  "TSpectrumObj" [href="Spectrum.TSpectrumObj.html"]
+  "TTCC_CurveObj" -> "TDSSObject"
+  "TTCC_CurveObj" [href="TCC_Curve.TTCC_CurveObj.html"]
+  "TTShapeObj" -> "TDSSObject"
+  "TTShapeObj" [href="TempShape.TTShapeObj.html"]
+  "TXfmrCodeObj" -> "TDSSObject"
+  "TXfmrCodeObj" [href="XfmrCode.TXfmrCodeObj.html"]
+  "TXYcurveObj" -> "TDSSObject"
+  "TXYcurveObj" [href="XYcurve.TXYcurveObj.html"]
+  "TRemoteSignalObject" -> "TNamedObject"
+  "TRemoteSignalObject" [href="ExportCIMXML.TRemoteSignalObject.html"]
+  "TParserVar" -> "TObject"
+  "TParserVar" [href="ParserDel.TParserVar.html"]
+  "TPowerTerminal" -> "TObject"
+  "TPowerTerminal" [href="Terminal.TPowerTerminal.html"]
+  "TPVsystemUserModel" -> "TObject"
+  "TPVsystemUserModel" [href="PVSystemUserModel.TPVsystemUserModel.html"]
+  "TRollAvgWindow" -> "TObject"
+  "TRollAvgWindow" [href="RollAvgWindow.TRollAvgWindow.html"]
+  "TRPNCalc" -> "TObject"
+  "TRPNCalc" [href="RPN.TRPNCalc.html"]
+  "TSolutionAlgs" -> "TObject"
+  "TSolutionAlgs" [href="SolutionAlgs.TSolutionAlgs.html"]
+  "TSolutionObj" -> "TObject"
+  "TSolutionObj" [href="Solution.TSolutionObj.html"]
+  "Tsparse_Complex" -> "TObject"
+  "Tsparse_Complex" [href="Sparse_Math.Tsparse_Complex.html"]
+  "Tsparse_matrix" -> "TObject"
+  "Tsparse_matrix" [href="Sparse_Math.Tsparse_matrix.html"]
+  "TStackBase" -> "TObject"
+  "TStackBase" [href="StackDef.TStackBase.html"]
+  "TPstack" -> "TStackBase"
+  "TPstack" [href="StackDef.TPstack.html"]
+  "TStoreDynaModel" -> "TObject"
+  "TStoreDynaModel" [href="StoreUserModel.TStoreDynaModel.html"]
+  "TStoreUserModel" -> "TObject"
+  "TStoreUserModel" [href="StoreUserModel.TStoreUserModel.html"]
+  "TSystemMeter" -> "TObject"
+  "TSystemMeter" [href="EnergyMeter.TSystemMeter.html"]
+  "TThread" -> "TObject"
+  "TSolver" -> "TThread"
+  "TSolver" [href="Solution.TSolver.html"]
+  "TZoneEndsList" -> "TObject"
+  "TZoneEndsList" [href="CktTree.TZoneEndsList.html"]
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: Storage2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit Storage2</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="StoreUserModel.html">StoreUserModel</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="PCClass.html">PCClass</a></li><li><a href="PCElement.html">PCElement</a></li><li><a href="Ucmatrix.html">ucmatrix</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="LoadShape.html">LoadShape</a></li><li><a href="Spectrum.html">Spectrum</a></li><li><a href="Arraydef.html">ArrayDef</a></li><li><a href="Dynamics.html">Dynamics</a></li><li><a href="XYcurve.html">XYCurve</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="Storage2.TStorage2Vars.html"><code>TStorage2Vars</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Storage2.TStorage2.html"><code>TStorage2</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Storage2.TStorage2Obj.html"><code>TStorage2Obj</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#TStorage2Prop">TStorage2Prop</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#NumStorage2Registers">NumStorage2Registers</a></strong> = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#NumStorage2Variables">NumStorage2Variables</a></strong> = 25;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#VARMODEPF">VARMODEPF</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#VARMODEKVAR">VARMODEKVAR</a></strong> = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_CHARGING">STORE_CHARGING</a></strong> = -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_IDLING">STORE_IDLING</a></strong> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_DISCHARGING">STORE_DISCHARGING</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_DEFAULT">STORE_DEFAULT</a></strong> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_LOADMODE">STORE_LOADMODE</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_PRICEMODE">STORE_PRICEMODE</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_EXTERNALMODE">STORE_EXTERNALMODE</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="Storage2.html#STORE_FOLLOW">STORE_FOLLOW</a></strong> = 4;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStorage2Prop"></span><code><strong>TStorage2Prop</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="INVALID">INVALID = 0</span></li>
+<li>
+<span id="phases">phases = 1</span></li>
+<li>
+<span id="bus1">bus1 = 2</span></li>
+<li>
+<span id="kv">kv = 3</span></li>
+<li>
+<span id="conn">conn = 4</span>: propKV</li>
+<li>
+<span id="kW">kW = 5</span>: propCONNECTION</li>
+<li>
+<span id="kvar">kvar = 6</span>: propKW</li>
+<li>
+<span id="pf">pf = 7</span>: propKVAR</li>
+<li>
+<span id="kVA">kVA = 8</span>: propPF</li>
+<li>
+<span id="pctCutin">pctCutin = 9</span>: propKVA</li>
+<li>
+<span id="pctCutout">pctCutout = 10</span>: propCutin</li>
+<li>
+<span id="EffCurve">EffCurve = 11</span>: propCutout</li>
+<li>
+<span id="VarFollowInverter">VarFollowInverter = 12</span>: propInvEffCurve</li>
+<li>
+<span id="kvarMax">kvarMax = 13</span>: propVarFollowInverter</li>
+<li>
+<span id="kvarMaxAbs">kvarMaxAbs = 14</span>: propkvarLimit</li>
+<li>
+<span id="WattPriority">WattPriority = 15</span>: propkvarLimitneg</li>
+<li>
+<span id="PFPriority">PFPriority = 16</span>: propPpriority</li>
+<li>
+<span id="pctPminNoVars">pctPminNoVars = 17</span>: propPFPriority</li>
+<li>
+<span id="pctPminkvarMax">pctPminkvarMax = 18</span>: propPminNoVars</li>
+<li>
+<span id="kWrated">kWrated = 19</span>: propPminkvarLimit</li>
+<li>
+<span id="pctkWrated">pctkWrated = 20</span>: propKWRATED</li>
+<li>
+<span id="kWhrated">kWhrated = 21</span>: proppctkWrated</li>
+<li>
+<span id="kWhstored">kWhstored = 22</span>: propKWHRATED</li>
+<li>
+<span id="pctstored">pctstored = 23</span>: propKWHSTORED</li>
+<li>
+<span id="pctreserve">pctreserve = 24</span>: propPCTSTORED</li>
+<li>
+<span id="State">State = 25</span>: propPCTRESERVE</li>
+<li>
+<span id="pctDischarge">pctDischarge = 26</span>: propSTATE</li>
+<li>
+<span id="pctCharge">pctCharge = 27</span>: propPCTKWOUT</li>
+<li>
+<span id="pctEffCharge">pctEffCharge = 28</span>: propPCTKWIN</li>
+<li>
+<span id="pctEffDischarge">pctEffDischarge = 29</span>: propCHARGEEFF</li>
+<li>
+<span id="pctIdlingkW">pctIdlingkW = 30</span>: propDISCHARGEEFF</li>
+<li>
+<span id="pctR">pctR</span>: propIDLEKW pctIdlingkvar = 31, // propIDLEKVAR &mdash; was deprecated, removed</li>
+<li>
+<span id="pctX">pctX</span>: propPCTR</li>
+<li>
+<span id="model">model</span>: propPCTX</li>
+<li>
+<span id="Vminpu">Vminpu</span>: propMODEL</li>
+<li>
+<span id="Vmaxpu">Vmaxpu</span>: propVMINPU</li>
+<li>
+<span id="Balanced">Balanced</span>: propVMAXPU</li>
+<li>
+<span id="LimitCurrent">LimitCurrent</span>: propBalanced</li>
+<li>
+<span id="yearly">yearly</span>: propLimited</li>
+<li>
+<span id="daily">daily</span>: propYEARLY</li>
+<li>
+<span id="duty">duty</span>: propDAILY</li>
+<li>
+<span id="DispMode">DispMode</span>: propDUTY</li>
+<li>
+<span id="DischargeTrigger">DischargeTrigger</span>: propDISPMODE</li>
+<li>
+<span id="ChargeTrigger">ChargeTrigger</span>: propDISPOUTTRIG</li>
+<li>
+<span id="TimeChargeTrig">TimeChargeTrig</span>: propDISPINTRIG</li>
+<li>
+<span id="cls">cls</span>: propCHARGETIME</li>
+<li>
+<span id="DynaDLL">DynaDLL</span>: propCLASS</li>
+<li>
+<span id="DynaData">DynaData</span>: propDynaDLL</li>
+<li>
+<span id="UserModel">UserModel</span>: propDynaData</li>
+<li>
+<span id="UserData">UserData</span>: propUSERMODEL</li>
+<li>
+<span id="debugtrace">debugtrace = 50</span>: propUSERDATA</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumStorage2Registers"></span><code><strong>NumStorage2Registers</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NumStorage2Variables"></span><code><strong>NumStorage2Variables</strong> = 25;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Number of energy meter registers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VARMODEPF"></span><code><strong>VARMODEPF</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+No state variables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VARMODEKVAR"></span><code><strong>VARMODEKVAR</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_CHARGING"></span><code><strong>STORE_CHARGING</strong> = -1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+= = = = = = = = = = = = = = DEFINE STATES = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_IDLING"></span><code><strong>STORE_IDLING</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_DISCHARGING"></span><code><strong>STORE_DISCHARGING</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_DEFAULT"></span><code><strong>STORE_DEFAULT</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+= = = = = = = = = = = = = = DEFINE DISPATCH MODES = = = = = = = = = = = = = = = = = = = = = = = = =</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_LOADMODE"></span><code><strong>STORE_LOADMODE</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_PRICEMODE"></span><code><strong>STORE_PRICEMODE</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_EXTERNALMODE"></span><code><strong>STORE_EXTERNALMODE</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="STORE_FOLLOW"></span><code><strong>STORE_FOLLOW</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

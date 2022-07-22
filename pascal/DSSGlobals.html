@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSGlobals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit DSSGlobals</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li><a href="DSSClassDefs.html">DSSClassDefs</a></li><li><a href="DSSObject.html">DSSObject</a></li><li><a href="DSSClass.html">DSSClass</a></li><li><a href="ParserDel.html">ParserDel</a></li><li><a href="HashList.html">Hashlist</a></li><li><a href="DSSPointerList.html">DSSPointerList</a></li><li>UComplex</li><li><a href="DSSUcomplex.html">DSSUcomplex</a></li><li><a href="Arraydef.html">Arraydef</a></li><li><a href="CktElement.html">CktElement</a></li><li><a href="Circuit.html">Circuit</a></li><li>BaseUnix</li><li>gettext</li><li><a href="cpucount.html">CpuCount</a></li><li><a href="Spectrum.html">Spectrum</a></li><li><a href="LoadShape.html">LoadShape</a></li><li><a href="TempShape.html">TempShape</a></li><li><a href="PriceShape.html">PriceShape</a></li><li><a href="XYcurve.html">XYCurve</a></li><li><a href="GrowthShape.html">GrowthShape</a></li><li><a href="Monitor.html">Monitor</a></li><li><a href="EnergyMeter.html">EnergyMeter</a></li><li><a href="Sensor.html">Sensor</a></li><li><a href="TCC_Curve.html">TCC_Curve</a></li><li><a href="WireData.html">WireData</a></li><li><a href="CNData.html">CNData</a></li><li><a href="TSData.html">TSData</a></li><li><a href="LineSpacing.html">LineSpacing</a></li><li><a href="Storage.html">Storage</a></li><li><a href="Storage2.html">Storage2</a></li><li><a href="PVsystem.html">PVSystem</a></li><li><a href="PVsystem2.html">PVSystem2</a></li><li><a href="InvControl.html">InvControl</a></li><li><a href="InvControl2.html">InvControl2</a></li><li><a href="ExpControl.html">ExpControl</a></li><li><a href="LineCode.html">LineCode</a></li><li><a href="LineGeometry.html">LineGeometry</a></li><li><a href="Line.html">Line</a></li><li><a href="VSource.html">VSource</a></li><li><a href="Isource.html">ISource</a></li><li><a href="VCCS.html">VCCS</a></li><li><a href="Load.html">Load</a></li><li><a href="Transformer.html">Transformer</a></li><li><a href="RegControl.html">RegControl</a></li><li><a href="Capacitor.html">Capacitor</a></li><li><a href="Reactor.html">Reactor</a></li><li><a href="CapControl.html">CapControl</a></li><li><a href="Fault.html">Fault</a></li><li><a href="generator.html">Generator</a></li><li><a href="GenDispatcher.html">GenDispatcher</a></li><li><a href="StorageController.html">StorageController</a></li><li><a href="StorageController2.html">StorageController2</a></li><li><a href="Relay.html">Relay</a></li><li><a href="Recloser.html">Recloser</a></li><li><a href="Fuse.html">Fuse</a></li><li><a href="SwtControl.html">SwtControl</a></li><li><a href="UPFC.html">UPFC</a></li><li><a href="UPFCControl.html">UPFCControl</a></li><li><a href="ESPVLControl.html">ESPVLControl</a></li><li><a href="IndMach012.html">IndMach012</a></li><li><a href="GICsource.html">GICsource</a></li><li><a href="AutoTrans.html">AutoTrans</a></li><li><a href="VSConverter.html">VSConverter</a></li><li><a href="XfmrCode.html">XfmrCode</a></li><li><a href="GICLine.html">GICLine</a></li><li><a href="GICTransformer.html">GICTransformer</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSGlobals.html#VersionString">VersionString</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#DoErrorMsg">DoErrorMsg</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S, Emsg, ProbCause :String; ErrNum:Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#DoSimpleMsg">DoSimpleMsg</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S :String; ErrNum:Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#DoSimpleMsg">DoSimpleMsg</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S :String; fmtArgs: Array of Const; ErrNum:Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#ClearAllCircuits_SingleContext">ClearAllCircuits_SingleContext</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#ClearAllCircuits_AllContexts">ClearAllCircuits_AllContexts</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#SetObject">SetObject</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const param :string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSGlobals.html#SetActiveBus">SetActiveBus</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const BusName:String):Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#SetDataPath">SetDataPath</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const PathName:String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#SetLastResultFile">SetLastResultFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Fname:String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#MakeNewCircuit">MakeNewCircuit</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Name:String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>PROCEDURE <strong><a href="DSSGlobals.html#AppendGlobalResult">AppendGlobalResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const s: String); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>PROCEDURE <strong><a href="DSSGlobals.html#AppendGlobalResult">AppendGlobalResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const b: Boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>PROCEDURE <strong><a href="DSSGlobals.html#AppendGlobalResult">AppendGlobalResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const d: Double); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>PROCEDURE <strong><a href="DSSGlobals.html#AppendGlobalResult">AppendGlobalResult</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const i: Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#AppendGlobalResultCRLF">AppendGlobalResultCRLF</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const S:String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#ResetQueryLogFile">ResetQueryLogFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#WriteQueryLogFile">WriteQueryLogFile</a></strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Prop, S:String);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#Wait4Actors">Wait4Actors</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; ActorOffset: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#DoClone">DoClone</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="DSSGlobals.html#New_Actor_Slot">New_Actor_Slot</a></strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="DSSGlobals.html#DSSTranslate">DSSTranslate</a></strong>(const s: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="DSSGlobals.html#DSSHelp">DSSHelp</a></strong>(const s: String): String;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CRLF">CRLF</a></strong> = sLineBreak;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#IsDLL">IsDLL</a></strong> = True;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CALPHA">CALPHA</a></strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re:-0.5; im: -0.866025);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#TwoPi">TwoPi</a></strong> = 2.0 * PI;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#RadiansToDegrees">RadiansToDegrees</a></strong> = 180.0 / PI;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#EPSILON">EPSILON</a></strong> = 1.0e-12;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#EPSILON2">EPSILON2</a></strong> = 1.0e-3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#POWERFLOW">POWERFLOW</a></strong>  = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#ADMITTANCE">ADMITTANCE</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#ALL_YPRIM">ALL_YPRIM</a></strong> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SERIES">SERIES</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SHUNT">SHUNT</a></strong>  = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CONTROLSOFF">CONTROLSOFF</a></strong> = -1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#EVENTDRIVEN">EVENTDRIVEN</a></strong> =  1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#TIMEDRIVEN">TIMEDRIVEN</a></strong>  =  2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#MULTIRATE">MULTIRATE</a></strong>   =  3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CTRLSTATIC">CTRLSTATIC</a></strong>  =  0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#GAUSSIAN">GAUSSIAN</a></strong>  = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#UNIFORM">UNIFORM</a></strong>   = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#LOGNORMAL">LOGNORMAL</a></strong> = 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#GENADD">GENADD</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CAPADD">CAPADD</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SOLUTION_ABORT">SOLUTION_ABORT</a></strong> = 99;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#USEDAILY">USEDAILY</a></strong>  = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#USEYEARLY">USEYEARLY</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#USEDUTY">USEDUTY</a></strong>   = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#USENONE">USENONE</a></strong>   =-1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SIMPLECARSON">SIMPLECARSON</a></strong>  = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#FULLCARSON">FULLCARSON</a></strong>    = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DERI">DERI</a></strong>          = 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILE3PH">PROFILE3PH</a></strong> = 9999;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILEALL">PROFILEALL</a></strong> = 9998;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILEALLPRI">PROFILEALLPRI</a></strong> = 9997;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILELLALL">PROFILELLALL</a></strong> = 9996;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILELLPRI">PROFILELLPRI</a></strong> = 9995;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILELL">PROFILELL</a></strong>    = 9994;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILEPUKM">PROFILEPUKM</a></strong> = 9993;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#PROFILE120KFT">PROFILE120KFT</a></strong> = 9992;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#ProgramName">ProgramName</a></strong> = 'dss-extensions';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#MaxCircuits">MaxCircuits</a></strong> = 2;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSSMessages">DSSMessages</a></strong>: TMOFile = NIL;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSSPropertyHelp">DSSPropertyHelp</a></strong>: TMOFile = NIL;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_INFO_SPARSE_COND">DSS_CAPI_INFO_SPARSE_COND</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_EARLY_ABORT">DSS_CAPI_EARLY_ABORT</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_ITERATE_DISABLED">DSS_CAPI_ITERATE_DISABLED</a></strong>: Integer = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_EXT_ERRORS">DSS_CAPI_EXT_ERRORS</a></strong>: Boolean = True;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_LEGACY_MODELS_PREV">DSS_CAPI_LEGACY_MODELS_PREV</a></strong>: Boolean = False;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_ALLOW_CHANGE_DIR">DSS_CAPI_ALLOW_CHANGE_DIR</a></strong>: Boolean = True;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_COM_DEFAULTS">DSS_CAPI_COM_DEFAULTS</a></strong>: Boolean = True;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_MATRIX_SIZE">DSS_CAPI_MATRIX_SIZE</a></strong>: Boolean = False;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#GlobalDefaultBaseFreq">GlobalDefaultBaseFreq</a></strong>: Double = 60.0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CPU_Freq">CPU_Freq</a></strong>: int64;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#CPU_Cores">CPU_Cores</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_ALLOW_EDITOR">DSS_CAPI_ALLOW_EDITOR</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_LOADS_TERMINAL_CHECK">DSS_CAPI_LOADS_TERMINAL_CHECK</a></strong>: Boolean = True;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_LEGACY_MODELS">DSS_CAPI_LEGACY_MODELS</a></strong>: Boolean = False;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#NoFormsAllowed">NoFormsAllowed</a></strong>: Boolean = True;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSS_CAPI_ALLOW_DOSCMD">DSS_CAPI_ALLOW_DOSCMD</a></strong>: Boolean = False;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SQRT2">SQRT2</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#SQRT3">SQRT3</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#InvSQRT3">InvSQRT3</a></strong>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#InvSQRT3x1000">InvSQRT3x1000</a></strong>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DefaultEditor">DefaultEditor</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DefaultFontSize">DefaultFontSize</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DefaultFontName">DefaultFontName</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DefaultFontStyles">DefaultFontStyles</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#DSSDirectory">DSSDirectory</a></strong>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="DSSGlobals.html#StartupDirectory">StartupDirectory</a></strong>:String;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="VersionString"></span><code>function <strong>VersionString</strong>: String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Where we started</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoErrorMsg"></span><code>procedure <strong>DoErrorMsg</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S, Emsg, ProbCause :String; ErrNum:Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoSimpleMsg"></span><code>procedure <strong>DoSimpleMsg</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S :String; ErrNum:Integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoSimpleMsg"></span><code>procedure <strong>DoSimpleMsg</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const S :String; fmtArgs: Array of Const; ErrNum:Integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearAllCircuits_SingleContext"></span><code>procedure <strong>ClearAllCircuits_SingleContext</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearAllCircuits_AllContexts"></span><code>procedure <strong>ClearAllCircuits_AllContexts</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetObject"></span><code>procedure <strong>SetObject</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const param :string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetActiveBus"></span><code>function <strong>SetActiveBus</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const BusName:String):Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetDataPath"></span><code>procedure <strong>SetDataPath</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const PathName:String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SetLastResultFile"></span><code>procedure <strong>SetLastResultFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Fname:String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MakeNewCircuit"></span><code>procedure <strong>MakeNewCircuit</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Name:String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendGlobalResult"></span><code>PROCEDURE <strong>AppendGlobalResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const s: String); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendGlobalResult"></span><code>PROCEDURE <strong>AppendGlobalResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const b: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendGlobalResult"></span><code>PROCEDURE <strong>AppendGlobalResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const d: Double); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendGlobalResult"></span><code>PROCEDURE <strong>AppendGlobalResult</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const i: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AppendGlobalResultCRLF"></span><code>procedure <strong>AppendGlobalResultCRLF</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; const S:String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ResetQueryLogFile"></span><code>procedure <strong>ResetQueryLogFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Separate by CRLF</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WriteQueryLogFile"></span><code>procedure <strong>WriteQueryLogFile</strong>(DSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; Const Prop, S:String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Wait4Actors"></span><code>procedure <strong>Wait4Actors</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>; ActorOffset: Integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoClone"></span><code>procedure <strong>DoClone</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="New_Actor_Slot"></span><code>procedure <strong>New_Actor_Slot</strong>(MainDSS: <a href="DSSClass.TDSSContext.html">TDSSContext</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSTranslate"></span><code>function <strong>DSSTranslate</strong>(const s: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSHelp"></span><code>function <strong>DSSHelp</strong>(const s: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CRLF"></span><code><strong>CRLF</strong> = sLineBreak;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Some units which have global vars defined here GIC source Auto Transformer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsDLL"></span><code><strong>IsDLL</strong> = True;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CALPHA"></span><code><strong>CALPHA</strong>: <a href="DSSUcomplex.html#Complex">Complex</a> = (re:-0.5; im: -0.866025);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: CALPHA has exceptionally bad precision here... change for v0.13</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TwoPi"></span><code><strong>TwoPi</strong> = 2.0 * PI;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-120 degrees phase shift TODO: toggle for v0.13 SQRT2 = 1.4142135623730950488; SQRT3 = 1.7320508075688772935; InvSQRT3 = 0.57735026918962576451; InvSQRT3x1000 = 577.35026918962576450914; PI = 3.1415926535897932385; TwoPi = 2.0 * PI; RadiansToDegrees = 57.2957795130823208768;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RadiansToDegrees"></span><code><strong>RadiansToDegrees</strong> = 180.0 / PI;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EPSILON"></span><code><strong>EPSILON</strong> = 1.0e-12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EPSILON2"></span><code><strong>EPSILON2</strong> = 1.0e-3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default tiny floating point</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="POWERFLOW"></span><code><strong>POWERFLOW</strong>  = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default for Real number mismatch testing TODO: move the following to scoped enums!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ADMITTANCE"></span><code><strong>ADMITTANCE</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Load model types for solution</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ALL_YPRIM"></span><code><strong>ALL_YPRIM</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+For YPrim matrices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SERIES"></span><code><strong>SERIES</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SHUNT"></span><code><strong>SHUNT</strong>  = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CONTROLSOFF"></span><code><strong>CONTROLSOFF</strong> = -1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Control Modes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EVENTDRIVEN"></span><code><strong>EVENTDRIVEN</strong> =  1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TIMEDRIVEN"></span><code><strong>TIMEDRIVEN</strong>  =  2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MULTIRATE"></span><code><strong>MULTIRATE</strong>   =  3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CTRLSTATIC"></span><code><strong>CTRLSTATIC</strong>  =  0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GAUSSIAN"></span><code><strong>GAUSSIAN</strong>  = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Randomization Constants</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNIFORM"></span><code><strong>UNIFORM</strong>   = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LOGNORMAL"></span><code><strong>LOGNORMAL</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GENADD"></span><code><strong>GENADD</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Autoadd Constants</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CAPADD"></span><code><strong>CAPADD</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SOLUTION_ABORT"></span><code><strong>SOLUTION_ABORT</strong> = 99;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+ERRORS</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="USEDAILY"></span><code><strong>USEDAILY</strong>  = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+For General Sequential Time Simulations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="USEYEARLY"></span><code><strong>USEYEARLY</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="USEDUTY"></span><code><strong>USEDUTY</strong>   = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="USENONE"></span><code><strong>USENONE</strong>   =-1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SIMPLECARSON"></span><code><strong>SIMPLECARSON</strong>  = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Earth Model</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FULLCARSON"></span><code><strong>FULLCARSON</strong>    = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DERI"></span><code><strong>DERI</strong>          = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILE3PH"></span><code><strong>PROFILE3PH</strong> = 9999;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Profile Plot Constants</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILEALL"></span><code><strong>PROFILEALL</strong> = 9998;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+some big number &gt; likely no. of phases</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILEALLPRI"></span><code><strong>PROFILEALLPRI</strong> = 9997;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILELLALL"></span><code><strong>PROFILELLALL</strong> = 9996;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILELLPRI"></span><code><strong>PROFILELLPRI</strong> = 9995;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILELL"></span><code><strong>PROFILELL</strong>    = 9994;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILEPUKM"></span><code><strong>PROFILEPUKM</strong> = 9993;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PROFILE120KFT"></span><code><strong>PROFILE120KFT</strong> = 9992;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+not mutually exclusive to the other choices 9999..9994</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ProgramName"></span><code><strong>ProgramName</strong> = 'dss-extensions';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+not mutually exclusive to the other choices 9999..9994</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MaxCircuits"></span><code><strong>MaxCircuits</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSMessages"></span><code><strong>DSSMessages</strong>: TMOFile = NIL;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: remove limit? or completely remove the concept of a separate circuit, i.e., make it so a DSSContext always contains one circuit</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSPropertyHelp"></span><code><strong>DSSPropertyHelp</strong>: TMOFile = NIL;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_INFO_SPARSE_COND"></span><code><strong>DSS_CAPI_INFO_SPARSE_COND</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_EARLY_ABORT"></span><code><strong>DSS_CAPI_EARLY_ABORT</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_ITERATE_DISABLED"></span><code><strong>DSS_CAPI_ITERATE_DISABLED</strong>: Integer = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_EXT_ERRORS"></span><code><strong>DSS_CAPI_EXT_ERRORS</strong>: Boolean = True;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+default to 0 for compatibility</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_LEGACY_MODELS_PREV"></span><code><strong>DSS_CAPI_LEGACY_MODELS_PREV</strong>: Boolean = False;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_ALLOW_CHANGE_DIR"></span><code><strong>DSS_CAPI_ALLOW_CHANGE_DIR</strong>: Boolean = True;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_COM_DEFAULTS"></span><code><strong>DSS_CAPI_COM_DEFAULTS</strong>: Boolean = True;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_MATRIX_SIZE"></span><code><strong>DSS_CAPI_MATRIX_SIZE</strong>: Boolean = False;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GlobalDefaultBaseFreq"></span><code><strong>GlobalDefaultBaseFreq</strong>: Double = 60.0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CPU_Freq"></span><code><strong>CPU_Freq</strong>: int64;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CPU_Cores"></span><code><strong>CPU_Cores</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Used to store the CPU performance counter frequency (not the actual CPU frequency)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_ALLOW_EDITOR"></span><code><strong>DSS_CAPI_ALLOW_EDITOR</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_LOADS_TERMINAL_CHECK"></span><code><strong>DSS_CAPI_LOADS_TERMINAL_CHECK</strong>: Boolean = True;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: one per context?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_LEGACY_MODELS"></span><code><strong>DSS_CAPI_LEGACY_MODELS</strong>: Boolean = False;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: one per context?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NoFormsAllowed"></span><code><strong>NoFormsAllowed</strong>: Boolean = True;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: one per context?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSS_CAPI_ALLOW_DOSCMD"></span><code><strong>DSS_CAPI_ALLOW_DOSCMD</strong>: Boolean = False;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: one per context?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SQRT2"></span><code><strong>SQRT2</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TODO: one per context?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SQRT3"></span><code><strong>SQRT3</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InvSQRT3"></span><code><strong>InvSQRT3</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InvSQRT3x1000"></span><code><strong>InvSQRT3x1000</strong>: Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultEditor"></span><code><strong>DefaultEditor</strong>: String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultFontSize"></span><code><strong>DefaultFontSize</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultFontName"></span><code><strong>DefaultFontName</strong>: String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultFontStyles"></span><code><strong>DefaultFontStyles</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSSDirectory"></span><code><strong>DSSDirectory</strong>: String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="StartupDirectory"></span><code><strong>StartupDirectory</strong>:String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+where the current exe resides</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DSS C-API Pascal Docs: DSSCallBackRoutines: Packed Record TDSSCallBacks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">DSS C-API Pascal Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDSSCallBacks"></span><h1 class="cio">Packed Record TDSSCallBacks</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section">Methods</div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="DSSCallBackRoutines.html">DSSCallBackRoutines</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDSSCallBacks = packed record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Pointer to callback structure</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#MsgCallBack">MsgCallBack</a></strong>: Procedure(S : pAnsiChar; Maxlen:UInt32); Stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetIntValue">GetIntValue</a></strong>: Procedure(var i : Int32); Stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetDblValue">GetDblValue</a></strong>: Procedure(var <a href="GICLine.html#X">x</a> : Double); Stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetStrValue">GetStrValue</a></strong>: Procedure(s : pAnsiChar; maxlen : UInt32); Stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#LoadParser">LoadParser</a></strong>:  Procedure(S : pAnsiChar; maxlen : UInt32); Stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#NextParam">NextParam</a></strong>:   Function(ParamName : pAnsiChar; Maxlen : UInt32):Int32; Stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#DoDSSCommand">DoDSSCommand</a></strong>:             Procedure(S : pAnsiChar; Maxlen : UInt32); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementBusNames">GetActiveElementBusNames</a></strong>: Procedure(Name1 : pAnsiChar; Len1 : UInt32; Name2 : pAnsiChar; Len2 : UInt32); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementVoltages">GetActiveElementVoltages</a></strong>: Procedure(Var NumVoltages : Int32; V : <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementCurrents">GetActiveElementCurrents</a></strong>: Procedure(Var NumCurrents : Int32; Curr : <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementLosses">GetActiveElementLosses</a></strong>:   Procedure(Var TotalLosses, LoadLosses, NoLoadLosses : <a href="DSSUcomplex.html#Complex">Complex</a>); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementPower">GetActiveElementPower</a></strong>:    Procedure(<a href="CapControl.html#terminal">Terminal</a> : Int32; Var TotalPower : <a href="DSSUcomplex.html#Complex">Complex</a>); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementNumCust">GetActiveElementNumCust</a></strong>:  Procedure(Var <a href="Load.html#NumCust">NumCust</a>, TotalCust : Int32); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementNodeRef">GetActiveElementNodeRef</a></strong>:  Procedure(Maxsize : Int32; NodeReferenceArray : <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementBusRef">GetActiveElementBusRef</a></strong>:   Function(<a href="CapControl.html#terminal">Terminal</a> : Int32) : Int32; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementTerminalInfo">GetActiveElementTerminalInfo</a></strong>: Procedure(Var NumTerminals, NumConds, NumPhases : Int32); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetPtrToSystemVarray">GetPtrToSystemVarray</a></strong>:     Procedure(var V : Pointer; var iNumNodes : Int32); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementIndex">GetActiveElementIndex</a></strong>:    Function() : Int32; StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#IsActiveElementEnabled">IsActiveElementEnabled</a></strong>:   Function() : Boolean; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#IsBusCoordinateDefined">IsBusCoordinateDefined</a></strong>:   Function(BusRef : Int32) : Boolean; StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetBusCoordinate">GetBusCoordinate</a></strong>:         Procedure(BusRef : Int32; Var X, Y : Double); StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetBuskVBase">GetBuskVBase</a></strong>:             Function(BusRef : Int32) : Double; StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetBusDistFromMeter">GetBusDistFromMeter</a></strong>:      Function(BusRef : Int32) : Double; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetDynamicsStruct">GetDynamicsStruct</a></strong>:        Procedure(var pDynamicsStruct : Pointer); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetStepSize">GetStepSize</a></strong>:              Function() : Double; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetTimeSec">GetTimeSec</a></strong>:               Function() : Double; StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetTimeHr">GetTimeHr</a></strong>:                Function() : Double; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetPublicDataPtr">GetPublicDataPtr</a></strong>:         Procedure(var pPublicData : Pointer; Var PublicDataBytes : Int32); StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementName">GetActiveElementName</a></strong>:     Function(FullName : pAnsiChar; MaxNameLen : UInt32) : Int32; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetActiveElementPtr">GetActiveElementPtr</a></strong>:      Function() : Pointer; StdCall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#ControlQueuePush">ControlQueuePush</a></strong>:         Function(Const <a href="ExecOptions.html#hour">Hour</a>:Int32; Const Sec:Double; Const Code, ProxyHdl:Int32; Owner:Pointer):Int32; StdCall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="DSSCallBackRoutines.TDSSCallBacks.html#GetResultStr">GetResultStr</a></strong>:             Procedure(S : pAnsiChar; Maxlen : UInt32); StdCall;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MsgCallBack"></span><code><strong>MsgCallBack</strong>: Procedure(S : pAnsiChar; Maxlen:UInt32); Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetIntValue"></span><code><strong>GetIntValue</strong>: Procedure(var i : Int32); Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Routines for using DSS Parser. This allows you to write models that accept syntax like other DSS scripts.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDblValue"></span><code><strong>GetDblValue</strong>: Procedure(var <a href="GICLine.html#X">x</a> : Double); Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get next param as an Int32</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetStrValue"></span><code><strong>GetStrValue</strong>: Procedure(s : pAnsiChar; maxlen : UInt32); Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get next param as a double</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadParser"></span><code><strong>LoadParser</strong>:  Procedure(S : pAnsiChar; maxlen : UInt32); Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get next param as a string &lt;= maxlen characters (UInt32 = 32-bit unsigned) caller must allocate space for s (Maxlen chars)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NextParam"></span><code><strong>NextParam</strong>:   Function(ParamName : pAnsiChar; Maxlen : UInt32):Int32; Stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copies a string into a special instance of the DSS parser</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoDSSCommand"></span><code><strong>DoDSSCommand</strong>:             Procedure(S : pAnsiChar; Maxlen : UInt32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Advance to the next parameter and Get name of the param just retrieved, if one was given. Returns length of parameter found. If 0, then end of string. This is to handle the syntax &quot;paramname=paramvalue&quot; commonly used in DSS scripts Copies the string to the location specified by s up to maxlen characters. Caller must allocate space (Maxlen chars)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementBusNames"></span><code><strong>GetActiveElementBusNames</strong>: Procedure(Name1 : pAnsiChar; Len1 : UInt32; Name2 : pAnsiChar; Len2 : UInt32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementVoltages"></span><code><strong>GetActiveElementVoltages</strong>: Procedure(Var NumVoltages : Int32; V : <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementCurrents"></span><code><strong>GetActiveElementCurrents</strong>: Procedure(Var NumCurrents : Int32; Curr : <a href="DSSUcomplex.html#pComplexArray">pComplexArray</a>); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementLosses"></span><code><strong>GetActiveElementLosses</strong>:   Procedure(Var TotalLosses, LoadLosses, NoLoadLosses : <a href="DSSUcomplex.html#Complex">Complex</a>); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementPower"></span><code><strong>GetActiveElementPower</strong>:    Procedure(<a href="CapControl.html#terminal">Terminal</a> : Int32; Var TotalPower : <a href="DSSUcomplex.html#Complex">Complex</a>); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementNumCust"></span><code><strong>GetActiveElementNumCust</strong>:  Procedure(Var <a href="Load.html#NumCust">NumCust</a>, TotalCust : Int32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementNodeRef"></span><code><strong>GetActiveElementNodeRef</strong>:  Procedure(Maxsize : Int32; NodeReferenceArray : <a href="Arraydef.html#pIntegerArray">pIntegerArray</a>); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementBusRef"></span><code><strong>GetActiveElementBusRef</strong>:   Function(<a href="CapControl.html#terminal">Terminal</a> : Int32) : Int32; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+calling program must allocate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementTerminalInfo"></span><code><strong>GetActiveElementTerminalInfo</strong>: Procedure(Var NumTerminals, NumConds, NumPhases : Int32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPtrToSystemVarray"></span><code><strong>GetPtrToSystemVarray</strong>:     Procedure(var V : Pointer; var iNumNodes : Int32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementIndex"></span><code><strong>GetActiveElementIndex</strong>:    Function() : Int32; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns pointer to Solution.V and size</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsActiveElementEnabled"></span><code><strong>IsActiveElementEnabled</strong>:   Function() : Boolean; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsBusCoordinateDefined"></span><code><strong>IsBusCoordinateDefined</strong>:   Function(BusRef : Int32) : Boolean; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBusCoordinate"></span><code><strong>GetBusCoordinate</strong>:         Procedure(BusRef : Int32; Var X, Y : Double); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBuskVBase"></span><code><strong>GetBuskVBase</strong>:             Function(BusRef : Int32) : Double; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBusDistFromMeter"></span><code><strong>GetBusDistFromMeter</strong>:      Function(BusRef : Int32) : Double; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDynamicsStruct"></span><code><strong>GetDynamicsStruct</strong>:        Procedure(var pDynamicsStruct : Pointer); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetStepSize"></span><code><strong>GetStepSize</strong>:              Function() : Double; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns pointer to dynamics variables structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTimeSec"></span><code><strong>GetTimeSec</strong>:               Function() : Double; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return just 'h' from dynamics record</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTimeHr"></span><code><strong>GetTimeHr</strong>:                Function() : Double; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns t in sec from top of hour</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPublicDataPtr"></span><code><strong>GetPublicDataPtr</strong>:         Procedure(var pPublicData : Pointer; Var PublicDataBytes : Int32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns time as a double in hours</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementName"></span><code><strong>GetActiveElementName</strong>:     Function(FullName : pAnsiChar; MaxNameLen : UInt32) : Int32; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetActiveElementPtr"></span><code><strong>GetActiveElementPtr</strong>:      Function() : Pointer; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ControlQueuePush"></span><code><strong>ControlQueuePush</strong>:         Function(Const <a href="ExecOptions.html#hour">Hour</a>:Int32; Const Sec:Double; Const Code, ProxyHdl:Int32; Owner:Pointer):Int32; StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns pointer to active circuit element</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetResultStr"></span><code><strong>GetResultStr</strong>:             Procedure(S : pAnsiChar; Maxlen : UInt32); StdCall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>
