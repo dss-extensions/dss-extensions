@@ -4613,6 +4613,9 @@ msgstr ""
 msgid "UPFC.kvarLimit"
 msgstr "Maximum amount of reactive power (kvar) that can be absorved by the UPFC (Default = 5)"
 
+msgid "UPFC.Element"
+msgstr "The name of the PD element monitored when operating with reactive power compensation. Normally, it should be the PD element immediately upstream the UPFC. The element must be defined including the class, e.g. Line.myline."
+
 msgid "UPFC.spectrum"
 msgstr "Name of harmonic spectrum for this source.  Default is \"defaultUPFC\", which is defined when the DSS starts."
 
