@@ -2,7 +2,7 @@
 
 **This repository will be populated throughout July-August 2022. Check back regularly or use the "Watch" feature on GitHub to keep up-to-date.**
 
-This GitHub repository will be used to concentrate documentation, discussions, benchmark results, and i18n/locale files around all projects hsoted in the DSS Extensions organization. *As a reminder, the projects hosted here are not supported by EPRI.*
+This GitHub repository will be used to concentrate documentation, discussions, benchmark results, and i18n/locale files around all projects hosted in the DSS Extensions organization. *As a reminder, the projects hosted here are not supported by EPRI.*
 
 DSS Extensions were originally meant to expose the official OpenDSS engine to multiple languages and platforms with minimal changes. 
 Since 2019, that goal has been reached and the target moved to modernize the our base library (DSS C-API) and add useful extensions and modifications to the DSS engine.
