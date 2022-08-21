@@ -4128,7 +4128,7 @@ msgid "Relay.RecloseIntervals"
 msgstr "Array of reclose intervals. If none, specify \"NONE\". Default for overcurrent relay is (0.5, 2.0, 2.0) seconds. Default for a voltage relay is (5.0). In a voltage relay, this is  seconds after restoration of voltage that the reclose occurs. Reverse power relay is one shot to lockout, so this is ignored.  A locked out relay must be closed manually (set action=close)."
 
 msgid "Relay.Delay"
-msgstr "Trip time delay (sec) for DEFINITE TIME relays. Default is 0.0 for current and voltage relays.  If >0 then this value is used instead of curves.  Used by Generic, RevPower, 46 and 47 relays. Defaults to 0.1 s for these relays."
+msgstr "Trip time delay (sec) for DEFINITE TIME relays. Default is 0.0 for current, voltage and DOC relays. If >0 then this value is used instead of curves. Used by Generic, RevPower, 46 and 47 relays. Defaults to 0.1 s for these relays."
 
 msgid "Relay.Overvoltcurve"
 msgstr "TCC Curve object to use for overvoltage relay.  Curve is assumed to be defined with per unit voltage values. Voltage base should be defined for the relay. Default is none (ignored)."
@@ -4200,31 +4200,34 @@ msgid "Relay.State"
 msgstr "{Open | Closed} Actual state of the relay. Upon setting, immediately forces state of the relay, overriding the Relay control. Simulates manual control on relay. Defaults to Closed. \"Open\" causes the controlled element to open and lock out. \"Closed\" causes the controlled element to close and the relay to reset to its first operation."
 
 msgid "Relay.DOC_TiltAngleLow"
-msgstr "Tilt angle for lower current magnitudes. Default is 90."
+msgstr "Tilt angle for low-current trip line. Default is 90."
 
 msgid "Relay.DOC_TiltAngleHigh"
-msgstr "Tilt angle for higher current magnitudes. Default is 90."
+msgstr "Tilt angle for high-current trip line. Default is 90."
 
 msgid "Relay.DOC_TripSettingLow"
-msgstr "Trip setting for lower current magnitude.  Default is 0."
+msgstr "Resistive trip setting for low-current line. Default is 0."
 
 msgid "Relay.DOC_TripSettingHigh"
-msgstr "Trip setting for higher current magnitude.  Default is -1 (deactivated). To activate, set a positive value. Must be greater than \"DOC_TripSettingLow\"."
+msgstr "Resistive trip setting for high-current line.  Default is -1 (deactivated). To activate, set a positive value. Must be greater than \"DOC_TripSettingLow\"."
 
 msgid "Relay.DOC_TripSettingMag"
-msgstr "Trip setting for current magnitude (define a circle for the relay characteristics). Default is -1 (deactivated). To activate, set a positive value."
+msgstr "Trip setting for current magnitude (defines a circle in the relay characteristics). Default is -1 (deactivated). To activate, set a positive value."
 
 msgid "Relay.DOC_DelayInner"
-msgstr "Trip time delay (sec) for operation in inner zone for DOC relay, defined when \"DOC_TripSettingMag\" or \"DOC_TripSettingHigh\" are activate. Default is -1.0 (deactivated), meaning that the relay characteristic is insensitive in the inner zone (no trip). Set to 0 for instantaneous trip and >0 for a definite time delay. If \"DOC_PhaseCurveInner\" is specified, time delay from curve is utilized instead."
+msgstr "Trip time delay (sec) for operation in inner region for DOC relay, defined when \"DOC_TripSettingMag\" or \"DOC_TripSettingHigh\" are activate. Default is -1.0 (deactivated), meaning that the relay characteristic is insensitive in the inner region (no trip). Set to 0 for instantaneous trip and >0 for a definite time delay. If \"DOC_PhaseCurveInner\" is specified, time delay from curve is utilized instead."
 
 msgid "Relay.DOC_PhaseCurveInner"
-msgstr "Name of the TCC Curve object that determines the phase trip for operation in inner zone for DOC relay. Must have been previously defined as a TCC_Curve object. Default is none (ignored). Multiplying the current values in the curve by the \"DOC_PhaseTripInner\" value gives the actual current."
+msgstr "Name of the TCC Curve object that determines the phase trip for operation in inner region for DOC relay. Must have been previously defined as a TCC_Curve object. Default is none (ignored). Multiplying the current values in the curve by the \"DOC_PhaseTripInner\" value gives the actual current."
 
 msgid "Relay.DOC_PhaseTripInner"
 msgstr "Multiplier for the \"DOC_PhaseCurveInner\" TCC curve.  Defaults to 1.0."
 
 msgid "Relay.DOC_TDPhaseInner"
 msgstr "Time dial for \"DOC_PhaseCurveInner\" TCC curve. Multiplier on time axis of specified curve. Default=1.0."
+
+msgid "Relay.DOC_P1Blocking"
+msgstr "{Yes/True* | No/False} Blocking element that impedes relay from tripping if balanced net three-phase active power is in the forward direction (i.e., flowing into the monitored terminal). For a delayed trip, if at any given time the reverse power flow condition stops, the tripping is reset. Default=True."
 
 msgid "Relay.basefreq"
 msgstr "Base Frequency for ratings."
