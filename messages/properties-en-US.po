@@ -1161,6 +1161,9 @@ msgstr "It is the name of the XY curve defining the ratings seasonal change for 
 msgid "Executive.NUMANodes"
 msgstr "Delivers the number of Non-uniform memory access nodes (NUMA Nodes) available on the machine (read Only). This information is vital when workingwith processor clusters (HPC). It will help you know the number of processors in the cluster"
 
+msgid "Executive.EventLogDefault"
+msgstr "{YES/TRUE | NO/FALSE*} Sets/gets the default for the eventlog. After changing this flags the model needs to be recompiled to take effect."
+
 msgid "Executive.GISInstalled"
 msgstr "Returns Yes/No if the OpenDSS GIS installation is detected in the local machine (Read Only)"
 
