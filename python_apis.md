@@ -21,9 +21,7 @@ When using the official COM implementation, the OpenDSS engine is used through `
 
 COM, "Component Object Model", is a Windows-specific technology available since the 1990's.
 
-Usually, the required DLLs are automatically registered for COM interaction 
-
-There are 32-bit and a 64-bit versions of the engine, both are part of the official OpenDSS installation.
+Usually, the required DLLs are automatically registered for COM interaction during the installation. If the user is manually installing, additional steps are required. There are 32-bit and a 64-bit versions of the engine, both are part of the official OpenDSS installation.
 
 In Python, there are two main packages to interact with COM modules, `win32com` (part of the [`pywin32` distribution](https://github.com/mhammond/pywin32)) and [`comtypes`](https://github.com/enthought/comtypes). Both packages are available both through `pip` ([PyPI](https://pypi.org/), the Python Package Index) or through `conda` (the Anaconda ecosystem, including the wonderful [conda-forge](https://conda-forge.org/)). Since 2021, we recommend using `comtypes` if possible, so the code snippets below will use that. This recommendation is due to both its better performance when compared to `win32com`, and better/automatic handling of early-binding code.
 
@@ -184,6 +182,8 @@ rg60 200.0 300.0
 670c 117.0
 ```
 
+Besides the iterators, a notable addition from this patch is adding the [`dss.ActiveCircuit.Monitors.AsMatrix()`](https://dss-extensions.org/dss_python/dss.html#dss.IMonitors.IMonitors.AsMatrix). This function is a utility function for performance that returns all monitor channels as a matrix, avoiding multiple round trips and redundant processing to extract the channels individually.
+
 Note that this patch doesn't change the official engine, just adjusts the Python side to provide some convenience.
 
 ## DSS Extensions: OpenDSSDirect.py
@@ -230,9 +230,9 @@ We hope this table can elucidate some common doubts.
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSElement.IDSSElement.AllPropertyNames">dss.ActiveCircuit.ActiveDSSElement.AllPropertyNames</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Element.AllPropertyNames">dss.Element.AllPropertyNames()</a></td></tr>
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSElement.IDSSElement.Name">dss.ActiveCircuit.ActiveDSSElement.Name</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Element.Name">dss.Element.Name()</a></td></tr>
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSElement.IDSSElement.NumProperties">dss.ActiveCircuit.ActiveDSSElement.NumProperties</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Element.NumProperties">dss.Element.NumProperties()</a></td></tr>
-<tr><td><span style="color:#009900">✓</span></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Description">dss.ActiveCircuit.ActiveDSSElement.Properties.Description</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Description">dss.Properties.Description()</a></td></tr>
-<tr><td><span style="color:#009900">✓</span></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Name">dss.ActiveCircuit.ActiveDSSElement.Properties.Name</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Name">dss.Properties.Name()</a></td></tr>
-<tr><td><span style="color:#009900">✓</span></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Val">dss.ActiveCircuit.ActiveDSSElement.Properties.Val</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Value">dss.Properties.Value()</a></td></tr>
+<tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Description">dss.ActiveCircuit.ActiveDSSElement.Properties.Description</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Description">dss.Properties.Description()</a></td></tr>
+<tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Name">dss.ActiveCircuit.ActiveDSSElement.Properties.Name</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Name">dss.Properties.Name()</a></td></tr>
+<tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSProperty.IDSSProperty.Val">dss.ActiveCircuit.ActiveDSSElement.Properties.Val</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Properties.Value">dss.Properties.Value()</a></td></tr>
 <tr><td><span style="color:#009900">✓</span></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IDSSElement.IDSSElement.ToJSON">dss.ActiveCircuit.ActiveDSSElement.ToJSON()</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Element.ToJSON">dss.Element.ToJSON()</a></td></tr>
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.ICktElement.ICktElement.AllPropertyNames">dss.ActiveCircuit.ActiveElement.AllPropertyNames</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.CktElement.AllPropertyNames">dss.CktElement.AllPropertyNames()</a></td></tr>
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.ICktElement.ICktElement.AllVariableNames">dss.ActiveCircuit.ActiveElement.AllVariableNames</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.CktElement.AllVariableNames">dss.CktElement.AllVariableNames()</a></td></tr>
