@@ -190,7 +190,7 @@ Note that this patch doesn't change the official engine, just adjusts the Python
 
 OpenDSSDirect.py (ODD.py for short) is a project that initially employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS Extensions.
 
-**Sidenote:** `OpenDSSDirect.DLL` still exists. which bypasses some of the COM requirements, such as DLL registration. There is no officially supported or stable/mature module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
+**Sidenote:** `OpenDSSDirect.DLL` still exists. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation -- see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported or stable/mature module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
 
 Most of the features from DSS-Python are available in ODD.py. Some newer features at Python level are under implementation and should be available in the next major release, but the engine used is up-to-date.
 
