@@ -212,7 +212,7 @@ dss.Text.Command('compile c:/my_folder/my_circuit1/master.dss')
 
 ## DSS Extensions: future?
 
-We can expect a unified and extended API in 2023. The new features will be available to both DSS-Python and OpenDSSDirect.py. More details to come closer the release.
+We can expect a unified and extended API in 2023. The new features will be available to both DSS-Python and OpenDSSDirect.py. More details to come closer the release. A preview of new features is available at https://dss-extensions.org/dss_python/obj.html
 
 
 ## General performance tips
