@@ -6,7 +6,7 @@
 TODO:
 - insert links to relevant official PDFs
 - decide when to include benchmarks, and which ones (versions and so on)
-- general tips, such as performance notes
+- performance notes: add notes about specific DSS Extensions features
 -->
 
 OpenDSS can be used and controlled through many different approaches. Using Python together with the OpenDSS allows using thousands of packages in the Python ecosystem. This was the main motivator for the inception of the DSS Extensions project.
@@ -23,7 +23,7 @@ COM, "Component Object Model", is a Windows-specific technology available since 
 
 Usually, the required DLLs are automatically registered for COM interaction during the installation. If the user is manually installing, additional steps are required. There are 32-bit and a 64-bit versions of the engine, both are part of the official OpenDSS installation.
 
-In Python, there are two main packages to interact with COM modules, `win32com` (part of the [`pywin32` distribution](https://github.com/mhammond/pywin32)) and [`comtypes`](https://github.com/enthought/comtypes). Both packages are available both through `pip` ([PyPI](https://pypi.org/), the Python Package Index) or through `conda` (the Anaconda ecosystem, including the wonderful [conda-forge](https://conda-forge.org/)). Since 2021, we recommend using `comtypes` if possible, so the code snippets below will use that. This recommendation is due to both its better performance when compared to `win32com`, and better/automatic handling of early-binding code.
+In Python, there are two main packages to interact with COM modules, `win32com` (part of the [`pywin32` distribution](https://github.com/mhammond/pywin32)) and [`comtypes`](https://github.com/enthought/comtypes). Both packages are available both through `pip` ([PyPI](https://pypi.org/), the Python Package Index) or through `conda` (the Anaconda ecosystem, including the wonderful [conda-forge](https://conda-forge.org/)). Since 2021, we recommend using `comtypes` if possible, so the code snippets below will use that. This recommendation is due to both its better performance when compared to `win32com`, and better/automatic handling of early-bindings code.
 
 A minimal sample would be:
 
@@ -42,7 +42,7 @@ dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
 
 ### Handling the working directory (a.k.a. `cd`, `cwd`)
 
-When the OpenDSS is loaded, some options stored in the Windows registry from the previous execution are loaded, including the last working directory. For example, suppose you ran a `compile` command with a file in the folder `c:\my_folder\my_circuit1` and exited OpenDSS -- either through COM or through the GUI. By default, `c:\my_folder\my_circuit1` will be saved to the registry and restored in the next execution. This can be confusing and lead to unexpected behavior for new users when running scripts from other folders.
+When the OpenDSS is loaded, some options stored in the Windows registry from the previous execution are loaded, including the last working directory. For example, suppose you ran a `compile` command with a file in the folder `c:\my_folder\my_circuit1` and exited OpenDSS — either through COM or through the GUI. By default, `c:\my_folder\my_circuit1` will be saved to the registry and restored in the next execution. This can be confusing and lead to unexpected behavior for new users when running scripts from other folders.
 
 To avoid the issue, a typical idiom is:
 
@@ -79,7 +79,7 @@ DSS-Python packages the OpenDSS engine as implemented in DSS Extensions to mimic
 
 DSS-Python is available for Windows, Linux, and macOS (including Apple M1 ARM machines, or "Apple Silicon" in marketing speak), while the official OpenDSS is official supported only on MS Windows.
 
-Assuming recent DSS Python versions (`dss_python>=0.12.1`) are installed (e.g. through `pip install dss-python`), you can use the following:
+Assuming recent DSS Python versions (`dss-python>=0.12.1`) are installed (e.g. through `pip install dss-python`), you can use the following:
 
 ```python
 from dss import dss
@@ -190,7 +190,7 @@ Note that this patch doesn't change the official engine, just adjusts the Python
 
 OpenDSSDirect.py (ODD.py for short) is a project that initially employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS Extensions.
 
-**Sidenote:** `OpenDSSDirect.DLL` still exists. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation — see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported or stable/mature module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
+**Sidenote:** `OpenDSSDirect.DLL` still exists. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation — see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
 
 Most of the features from DSS-Python are available in ODD.py. Some newer features at Python level are under implementation and should be available in the next major release, but the engine used is up-to-date.
 
@@ -217,8 +217,6 @@ We can expect a unified and extended API in 2023. The new features will be avail
 
 ## General performance tips
 
-**DRAFT, this section will be complemented later**
-
 This list is mostly API agnostic.
 
 - Avoid using strings in general. Strings can be converted multiple times through the APIs (Python implementation, internal DSS API implementation, maybe OS specific details).
@@ -230,7 +228,7 @@ This list is mostly API agnostic.
 - On Windows:
     - avoid circuits fragmented in too many files
     - try to exclude the circuit folders from your antivirus scans (especially real-time scans)
-    - avoid disk operations in general since NTFS (the most common filesystem on Windows) is usually slow; if possible, use an API to read the results in memory instead of writing a text report and reading it back. This is not always possible, but many new users don't explore the API before deciding to use the slow approach of using reports.
+    - avoid disk operations in general since NTFS (the most common file system on Windows) is usually slow; if possible, use an API to read the results in memory instead of writing a text report and reading it back. This is not always possible, but many new users don't explore the API before deciding to use the slow approach of using reports.
 
 
 ## Property and function table
@@ -239,7 +237,7 @@ A common issue for new users (especially OpenDSSDirect.py users) is that the off
 
 The following table shows how most (but not all) of the functions and properties are mapped. If the cell contains `()`, it means the field is exposed by a Python function, otherwise, it is a Python property. Each cell links to the relevant documentation page.
 
-As a complement, we added the "API extension" column. If a checkmark is present ("<span style="color:#009900">✓</span>"), that means the function/property is only available in the DSS Extensions implementation amd users should beware if cross-compatibility with the official EPRI version is required. If no checkmark is present, the COM implementation includes the function or property. That is, it there is no checkmark for a row, users can replace "DSS Python" with "COM implementation" as the API is the same for those cases.
+As a complement, we added the "API extension" column. If a check mark is present ("<span style="color:#009900">✓</span>"), that means the function/property is only available in the DSS Extensions implementation amd users should beware if cross-compatibility with the official EPRI version is required. If no check mark is present, the COM implementation includes the function or property. That is, it there is no check mark for a row, users can replace "DSS Python" with "COM implementation" as the API is the same for those cases.
 
 We hope this table can elucidate some common doubts.
 
