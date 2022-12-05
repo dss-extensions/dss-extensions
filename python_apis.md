@@ -226,6 +226,11 @@ This list is mostly API agnostic.
 - Use `idx` where possible to avoid passing strings avoid and a hashmap lookup. `idx` only passes a single integer through the APIs and activates the element directly, so it is fast. `Name` needs all the string work and a hashmap (somewhat equivalent to `dict` in Python) lookup, then activates the target element. Although the official OpenDSS implementation does not include `idx` for all component types, DSS Extensions do. See the next section for details.
 - For reading multiple channels from a single Monitor object, prefer using the `ByteStream` property/function or the `AsMatrix` extension (even with COM) as noted in a previous section.
 - If you need to mutate an object or read a result and the target DSS class has a dedicated API, prefer using that instead of feeding strings through the `Text.Command` API. The dedicated APIs can change the target fields directly (this is especially true for DSS Extensions), while `Text.Command` feeds the DSS parser first. In the end, using the dedicated APIs can avoid string formatting/interpolation and later parsing back those to integers/floats/etc. altogether.
+- If your analysis requires running multiple scenarios of the same circuit, do try to keep the circuit in memory instead of reloading it. For that, save the list of changes done in the previous analysis step to undo them later, or just restore everything to a known state. This can bring a good performance bonus with medium and large circuits. Tiny circuits may not be affected, but that depends on a lot of factors, including the processor of the machine running the DSS engine.
+- On Windows:
+    - avoid circuits fragmented in too many files
+    - try to exclude the circuit folders from your antivirus scans (especially real-time scans)
+    - avoid disk operations in general since NTFS (the most common filesystem on Windows) is usually slow; if possible, use an API to read the results in memory instead of writing a text report and reading it back. This is not always possible, but many new users don't explore the API before deciding to use the slow approach of using reports.
 
 
 ## Property and function table
