@@ -3517,7 +3517,7 @@ msgid "Generator.Refuel"
 msgstr "It is a boolean value (Yes/True, No/False) that can be used to manually refuel the generator when needed. It only applies if UseFuel = Yes/True"
 
 msgid "Generator.DynamicEq"
-msgstr "The name of the dynamic equation (DinamicExp) that will be used for defining the dynamic behavior of the generator. if not defined, the generator dynamics will follow the built-in dynamic equation."
+msgstr "The name of the dynamic equation (DynamicExp) that will be used for defining the dynamic behavior of the generator. if not defined, the generator dynamics will follow the built-in dynamic equation."
 
 msgid "Generator.DynOut"
 msgstr ""
@@ -3866,21 +3866,21 @@ msgstr ""
 "\n"
 "In FOLLOW mode the kW output of the Storage element follows the active loadshape multiplier until Storage is either exhausted or full. The element discharges for positive values and charges for negative values.  The loadshape is based on rated kW. \n"
 "\n"
-"In EXTERNAL mode, Storage element state is controlled by an external Storagecontroller2. This mode is automatically set if this Storage element is included in the element list of a StorageController element. \n"
+"In EXTERNAL mode, Storage element state is controlled by an external Storagecontroller. This mode is automatically set if this Storage element is included in the element list of a StorageController element. \n"
 "\n"
 "For the other two dispatch modes, the Storage element state is controlled by either the global default Loadlevel value or the price level. "
 
 msgid "Storage.DischargeTrigger"
 msgstr ""
 "Dispatch trigger value for discharging the Storage. \n"
-"If = 0.0 the Storage element state is changed by the State command or by a StorageController2 object. \n"
+"If = 0.0 the Storage element state is changed by the State command or by a StorageController object. \n"
 "If <> 0  the Storage element state is set to DISCHARGING when this trigger level is EXCEEDED by either the specified Loadshape curve value or the price signal or global Loadlevel value, depending on dispatch mode. See State property."
 
 msgid "Storage.ChargeTrigger"
 msgstr ""
 "Dispatch trigger value for charging the Storage. \n"
 "\n"
-"If = 0.0 the Storage element state is changed by the State command or StorageController2 object.  \n"
+"If = 0.0 the Storage element state is changed by the State command or StorageController object.  \n"
 "\n"
 "If <> 0  the Storage element state is set to CHARGING when this trigger level is GREATER than either the specified Loadshape curve value or the price signal or global Loadlevel value, depending on dispatch mode. See State property."
 
@@ -3905,6 +3905,43 @@ msgstr "String (in quotes or parentheses) that gets passed to user-written model
 msgid "Storage.debugtrace"
 msgstr "{Yes | No }  Default is no.  Turn this on to capture the progress of the Storage model for each iteration.  Creates a separate file for each Storage element named \"Storage_name.CSV\"."
 
+msgid "Storage.kVDC"
+msgstr "Indicates the rated voltage (kV) at the input of the inverter while the storage is discharging. The value is normally greater or equal to the kV base of the Storage device. It is used for dynamics simulation ONLY."
+
+msgid "Storage.Kp"
+msgstr "It is the proportional gain for the PI controller within the inverter. Use it to modify the controller response in dynamics simulation mode."
+
+msgid "Storage.PITol"
+msgstr "It is the tolerance (%) for the closed loop controller of the inverter. For dynamics simulation mode."
+
+msgid "Storage.SafeVoltage"
+msgstr "Indicates the voltage level (%) respect to the base voltage level for which the Inverter will operate. If this threshold is violated, the Inverter will enter safe mode (OFF). For dynamic simulation. By default is 80%."
+
+msgid "Storage.SafeMode"
+msgstr "(Read only) Indicates whether the inverter entered (Yes) or not (No) into Safe Mode."
+
+msgid "Storage.DynamicEq"
+msgstr "The name of the dynamic equation (DynamicExp) that will be used for defining the dynamic behavior of the generator. If not defined, the generator dynamics will follow the built-in dynamic equation."
+
+msgid "Storage.DynOut"
+msgstr "The name of the variables within the Dynamic equation that will be used to govern the Storage dynamics. This Storage model requires 1 output from the dynamic equation:\n"
+"\n"
+"    1. Current.\n"
+"\n"
+"The output variables need to be defined in the same order."
+
+msgid "Storage.ControlMode"
+msgstr "Defines the control mode for the inverter. It can be one of {GFM | GFL*}. By default it is GFL (Grid Following Inverter). Use GFM (Grid Forming Inverter) for energizing islanded microgrids, but, if the device is conencted to the grid, it is highly recommended to use GFL.\n"
+"\n"
+"GFM control mode disables any control action set by the InvControl device."
+
+msgid "Storage.AmpLimit"
+msgstr "The current limiter per phase for the IBR when operating in GFM mode. This limit is imposed to prevent the IBR to enter into Safe Mode when reaching the IBR power ratings.\n"
+"Once the IBR reaches this value, it remains there without moving into Safe Mode. This value needs to be set lower than the IBR Amps rating."
+
+msgid "Storage.AmpLimitGain"
+msgstr "Use it for fine tunning the current limiter when active, by default is 0.8, it has to be a value between 0.1 and 1. This value allows users to fine tune the IBRs current limiter to match with the user requirements."
+
 msgid "Storage.spectrum"
 msgstr "Name of harmonic voltage or current spectrum for this Storage element. Current injection is assumed for inverter. Default value is \"default\", which is defined when the DSS starts."
 
@@ -3924,7 +3961,7 @@ msgid "StorageController.Element"
 msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; Must be specified."
 
 msgid "StorageController.Terminal"
-msgstr "Number of the terminal of the circuit element to which the StorageController2 control is connected. 1 or 2, typically.  Default is 1. Make sure to select the proper direction on the power for the respective dispatch mode."
+msgstr "Number of the terminal of the circuit element to which the StorageController control is connected. 1 or 2, typically.  Default is 1. Make sure to select the proper direction on the power for the respective dispatch mode."
 
 msgid "StorageController.MonPhase"
 msgstr "Number of the phase being monitored or one of {AVG | MAX | MIN} for all phases. Default=MAX. Must be less than the number of phases. Used in PeakShave, Follow, Support and I-PeakShave discharging modes and in PeakShaveLow, I-PeakShaveLow charging modes. For modes based on active power measurements, the value used by the control is the monitored one multiplied by the number of phases of the monitored element."
@@ -4534,6 +4571,43 @@ msgstr "Indicates the maximum reactive power GENERATION (un-signed numerical var
 msgid "PVSystem.kvarMaxAbs"
 msgstr "Indicates the maximum reactive power ABSORPTION (un-signed numerical variable in kvar) for the inverter (as an un-signed value). Defaults to kVA rating of the inverter."
 
+msgid "PVSystem.kVDC"
+msgstr "Indicates the rated voltage (kV) at the input of the inverter at the peak of PV energy production. The value is normally greater or equal to the kV base of the PV system. It is used for dynamics simulation ONLY."
+
+msgid "PVSystem.Kp"
+msgstr "It is the proportional gain for the PI controller within the inverter. Use it to modify the controller response in dynamics simulation mode."
+
+msgid "PVSystem.PITol"
+msgstr "It is the tolerance (%) for the closed loop controller of the inverter. For dynamics simulation mode."
+
+msgid "PVSystem.SafeVoltage"
+msgstr "Indicates the voltage level (%) respect to the base voltage level for which the Inverter will operate. If this threshold is violated, the Inverter will enter safe mode (OFF). For dynamic simulation. By default is 80%"
+
+msgid "PVSystem.SafeMode"
+msgstr "(Read only) Indicates whether the inverter entered (Yes) or not (No) into Safe Mode."
+
+msgid "PVSystem.DynamicEq"
+msgstr "The name of the dynamic equation (DynamicExp) that will be used for defining the dynamic behavior of the generator. If not defined, the generator dynamics will follow the built-in dynamic equation."
+
+msgid "PVSystem.DynOut"
+msgstr "The name of the variables within the Dynamic equation that will be used to govern the PVSystem dynamics. This PVsystem model requires 1 output from the dynamic equation:\n"
+"\n"
+"    1. Current.\n"
+"\n"
+"The output variables need to be defined in the same order."
+
+msgid "PVSystem.ControlMode"
+msgstr "Defines the control mode for the inverter. It can be one of {GFM | GFL*}. By default it is GFL (Grid Following Inverter). Use GFM (Grid Forming Inverter) for energizing islanded microgrids, but, if the device is conencted to the grid, it is highly recommended to use GFL.\n"
+"\n"
+"GFM control mode disables any control action set by the InvControl device."
+
+msgid "PVSystem.AmpLimit"
+msgstr "The current limiter per phase for the IBR when operating in GFM mode. This limit is imposed to prevent the IBR to enter into Safe Mode when reaching the IBR power ratings.\n"
+"Once the IBR reaches this value, it remains there without moving into Safe Mode. This value needs to be set lower than the IBR Amps rating."
+
+msgid "PVSystem.AmpLimitGain"
+msgstr "Use it for fine tunning the current limiter when active, by default is 0.8, it has to be a value between 0.1 and 1. This value allows users to fine tune the IBRs current limiter to match with the user requirements."
+
 msgid "PVSystem.spectrum"
 msgstr "Name of harmonic voltage or current spectrum for this PVSystem element. A harmonic voltage source is assumed for the inverter. Default value is \"default\", which is defined when the DSS starts."
 
@@ -4973,7 +5047,7 @@ msgid "InvControl.Mode"
 msgstr ""
 "Smart inverter function in which the InvControl will control the PC elements specified in DERList, according to the options below:\n"
 "\n"
-"Must be one of: {VOLTVAR* | VOLTWATT | DYNAMICREACCURR | WATTPF | WATTVAR} \n"
+"Must be one of: {VOLTVAR* | VOLTWATT | DYNAMICREACCURR | WATTPF | WATTVAR | GFM} \n"
 "if the user desires to use modes simultaneously, then set the CombiMode property. Setting the Mode to any valid value disables combination mode.\n"
 "\n"
 "In volt-var mode (Default). This mode attempts to CONTROL the vars, according to one or two volt-var curves, depending on the monitored voltages, present active power output, and the capabilities of the PVSystem/Storage. \n"
@@ -4984,7 +5058,9 @@ msgstr ""
 "\n"
 "In watt-pf mode. This mode attempts to CONTROL the vars, according to a watt-pf curve, depending on the present active power output, and the capabilities of the PVSystem/Storage. \n"
 "\n"
-"In watt-var mode. This mode attempts to CONTROL the vars, according to a watt-var curve, depending on the present active power output, and the capabilities of the PVSystem/Storage. "
+"In watt-var mode. This mode attempts to CONTROL the vars, according to a watt-var curve, depending on the present active power output, and the capabilities of the PVSystem/Storage. \n"
+"\n"
+"In GFM mode this control will trigger the GFM control routine for the DERs within the DERList. The GFM actiosn will only take place if the pointed DERs are in GFM mode. The controller parameters are locally setup at the DER."
 
 msgid "InvControl.CombiMode"
 msgstr ""
@@ -5111,7 +5187,9 @@ msgstr ""
 "\n"
 "if numerical instability is noticed in solutions such as var sign changing from one control iteration to the next and voltages oscillating between two values with some separation, this is an indication of numerical instability (use the EventLog to diagnose). \n"
 "\n"
-"if the maximum control iterations are exceeded, and no numerical instability is seen in the EventLog of via monitors, then try increasing the value of this parameter to reduce the number of control iterations needed to achieve the control criteria, and move to the power flow solution."
+"if the maximum control iterations are exceeded, and no numerical instability is seen in the EventLog of via monitors, then try increasing the value of this parameter to reduce the number of control iterations needed to achieve the control criteria, and move to the power flow solution. \n"
+"\n"
+"When operating the controller using expoenential control model (see CtrlModel), this parameter represents the sampling time gain of the controller, which is used for accelrating the controller response in terms of control iterations required."
 
 msgid "InvControl.VoltageChangeTolerance"
 msgstr ""
@@ -5185,7 +5263,7 @@ msgstr ""
 "If the maximum control iterations are exceeded, and no numerical instability is seen in the EventLog of via monitors, then try increasing the value of this parameter to reduce the number of control iterations needed to achieve the control criteria, and move to the power flow solution."
 
 msgid "InvControl.EventLog"
-msgstr "{Yes/True* | No/False} Default is YES for InvControl. Log control actions to Eventlog."
+msgstr "{Yes/True | No/False*} Default is NO for InvControl. Log control actions to Eventlog."
 
 msgid "InvControl.RefReactivePower"
 msgstr ""
@@ -5262,6 +5340,15 @@ msgstr "Deprecated, use DERList instead."
 
 msgid "InvControl.Vsetpoint"
 msgstr "Required for Active Voltage Regulation (AVR)."
+
+msgid "InvControl.ControlModel"
+msgstr "Integer defining the method for moving across the control curve. It can be one of the following:\n"
+"\n"
+"0 = Linear mode (default)\n"
+"1 = Exponential\n"
+"\n"
+"Use this property for better tunning your controller and improve the controller response in terms of control iterations needed to reach the target.\n"
+"This property alters the meaning of deltaQ_factor and deltaP_factor properties accroding to its value (Check help). The method can also be combined with the controller tolerance for improving performance."
 
 msgid "InvControl.basefreq"
 msgstr "Base Frequency for ratings."
@@ -6191,29 +6278,26 @@ msgstr ""
 "\n"
 "New Capacitor.C2 like=c1  ..."
 
-msgid "DynamicExp.nvariables"
+msgid "DynamicExp.NVariables"
 msgstr "(Int) Number of state variables to be considered in the differential equation."
 
-msgid "DynamicExp.varnames"
+msgid "DynamicExp.VarNames"
 msgstr "([String]) Array of strings with the names of the state variables."
 
 msgid "DynamicExp.var"
 msgstr "(String) Activates the state variable using the given name."
 
-msgid "DynamicExp.varidx"
+msgid "DynamicExp.VarIdx"
 msgstr "(Int) read-only, returns the index of the active state variable."
 
-msgid "DynamicExp.expression"
+msgid "DynamicExp.Expression"
 msgstr ""
 "It is the differential expression using OpenDSS RPN syntax. The expression must be contained within brackets in case of having multiple equations, for example:\n"
 "\n"
-"expression = \"[w dt = 1 M / (P_m D*w - P_e -) *]\""
+"expression=\"[w dt = 1 M / (P_m D*w - P_e -) *]\""
 
-msgid "DynamicExp.like"
-msgstr ""
-"Make like another object, e.g.:\n"
-"\n"
-"New Capacitor.C2 like=c1  ..."
+msgid "DynamicExp.Domain"
+msgstr "It is the domain for which the equation is defined, it can be one of [time*, dq]. By deafult, dynamic epxressions are defined in the time domain."
 
 msgid "ShowOption.autoadded"
 msgstr "Shows auto added capacitors or generators. See AutoAdd solution mode."
