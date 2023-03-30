@@ -98,6 +98,42 @@ Note that only the first two lines changed. Most of the official COM implementat
 There are also a lot of extra features, some under development. These include multiple DSS engines in the same process, handling of ZIP files, and more. Please check [https://dss-extensions.org/dss_python/](https://dss-extensions.org/dss_python/). 
 
 
+### More friendly types
+
+Since DSS-Python v0.13, we added an option to toggle "advanced types". This feature will also be ported to OpenDSSDirect.py in the near future.
+
+Generally, the OpenDSS APIs return plain arrays. This happens even for data that represents matrices. Moreover, typically complex numbers are represented by pairs of floats. Since NumPy has good support for multi-dimensional arrays and complex numbers are simple in Python, we can use some new features of our DSS C-API library to provide user-friendly types with very low performance impact.
+
+```python
+from dss import dss
+
+# Check the engine version
+print(dss.Version)
+
+# Load a circuit
+dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
+
+dss.ActiveCircuit.Solution.Solve()
+
+# Let's activate a CktElement
+dss.ActiveCircuit.Vsources.First
+CktElement = dss.ActiveCircuit.ActiveCktElement
+
+# By default, for compatibility, these return a NumPy array with dtype=float64
+volts_as_floats = dss.ActiveCircuit.AllBusVolts
+yprim_as_floats = CktElement.Yprim
+
+# It's simple to toggle the advanced types
+dss.AdvancedTypes = True
+
+# Now, this returns a NumPy array with dtype=complex128
+volts = dss.ActiveCircuit.AllBusVolts
+
+# And this returns a square complex matrix
+yprim = CktElement.Yprim
+
+```
+
 ### Patching and Pythonizing the official COM module
 
 DSS-Python also ships with a small utility function to patch the COM implementations to provide some Pythonic extras and a few additional properties/functions. This patch works with both `comtypes` and `win32com`.
