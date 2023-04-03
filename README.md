@@ -79,15 +79,23 @@ See also https://sourceforge.net/p/electricdss/discussion/beginners/thread/8031c
 
 There is a document at [known_differences](https://github.com/dss-extensions/dss_capi/blob/master/docs/known_differences.md) listing more. Notably:
 
-- DSS Extensions do not integrate with some of EPRI's Windows-only software, like the plotting tools ("OpenDSS Viewer" and the old `DSSView.exe`), OpenDSS-GIS and others. It seems most of these are also closed-source software.
+- DSS Extensions do not integrate with some of EPRI's Windows-only software, like the plotting tools ("OpenDSS Viewer" and the old `DSSView.exe`), OpenDSS-GIS and others. It seems most of these are also closed-source software and/or not freely available for the general community.
 
 - A few components were not ported (yet) or removed due to lack of test cases and other concerns. We are always open to revisit those if there are enough requests from users.
 
-- Plotting is not available for all DSS Extensions. We are implementing a plotting backend under DSS-Python as a proof of concept.
+- Plotting is not available for all DSS Extensions. We are implementing a plotting backend under DSS-Python as a proof of concept. Introducing plotting to every project is not a goal, but we may add at least some plotting to DSS_MATLAB, and potentially add examples of how it would be implemented to DSS_Sharp and OpenDSSDirect.jl.
 
 - The diakoptics features are currently disabled. The plan is to reintroduce them soon after some internal changes. Check the issues on the DSS C-API repository for details.
 
-**5. What are some features from DSS Extensions not available in EPRI's OpenDSS?**
+**6. Is this open-source?**
+
+**Yes,** every single package available on DSS Extensions is open-source. Most are even built openly on the cloud.
+
+We have seen some confusing statements asserting that DSS Extensions is not open-source. There is nothing inheritly wrong with closed-source software, but DSS Extensions is an open-source effort which can be fully built using only open-source (Free Pascal, Clang, GCC, etc.) and/or free tools (Visual Studio Dev Tools can be used for some DLLs).
+
+Although some of the development was achieved by using DSS Extensions on financially supported research projects, most of the effort to maintain and improve our DSS engine beyond the original OpenDSS version has been done in a voluntary basis, in hopes that the effort helps making the tools more accessible to various users.
+
+**7. What are some features from DSS Extensions not available in EPRI's OpenDSS?**
 
 Again, more at [known_differences](https://github.com/dss-extensions/dss_capi/blob/master/docs/known_differences.md). 
 
@@ -107,16 +115,18 @@ At lot of the features below are still being documented.
 
 - Experimental functions to access all DSS data classes, including initial support for exporting JSON-encoded data.
 
-- A lot of feature and configuration toggles, some for maintaining backwards compatibility with older versions or with the official OpenDSS APIs.
+- A lot of feature and configuration toggles, some for maintaining backwards compatibility with older versions or with the official OpenDSS APIs and internal implementation.
 
 - Many new functions to expose some of the missing classes from the COM API, and many functions that were added to due requests from various users.
 
 - More of the engine internals are exposed through APIs. This is required for experts to achieve high performance on some tasks.
 
-**6. Can I please get some examples/documentation?**
+- More error-checking in general, including small features like error backtraces to save the users some time.
+
+**8. Can I please get some examples/documentation?**
 
 Soon! This is one of our priorities.
 
-**7. Why doesn't `<insert feature>` work?**
+**9. Why doesn't `<insert feature>` work?**
 
 Some features are constrained to mirror the official implementation. For everything else, please consider reporting. If you can provide a simple test case, even better.
