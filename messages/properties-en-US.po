@@ -1369,6 +1369,13 @@ msgstr ""
 "{Yes | No* | True | False*} Enables the memory mapping functionality for dealing with large amounts of load shapes. \n"
 "By defaul is False. Use it to accelerate the model loading when the containing a large number of load shapes."
 
+msgid "LoadShape.Interpolation"
+msgstr ""
+"{AVG* | EDGE} Defines the interpolation method used for connecting distant dots within the load shape.\n"
+"\n"
+"By defaul is AVG (average), which will return a multiplier for missing intervals based on the closest multiplier in time.\n"
+"EDGE interpolation keeps the last known value for missing intervals until the next defined multiplier arrives."
+
 msgid "LoadShape.like"
 msgstr ""
 "Make like another object, e.g.:\n"
