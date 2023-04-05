@@ -41,6 +41,8 @@ As a group, most of the projects were consolidated in 2018 and 2019.
 
 Remember that version numbers are arbitrary. It is more important to check a project's history than just consider a version tag. For example, most of the initial goals for DSS C-API were reached by version 0.10; since the opportunity to add and complement the library was available, the plan is to release v1.0 when most planned features are integrated and the API is stable.
 
+To illustrate the maturity of the projects, see the growing list of works that used this project tools on ["DSS Extensions: citations"](https://htmlpreview.github.io/?https://github.com/dss-extensions/dss-extensions/blob/main/citations/citations.html).
+
 **2. Is this supported by EPRI?**
 
 **No.** Consider contacting EPRI's team if you need official EPRI support for OpenDSS.
