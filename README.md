@@ -1,6 +1,6 @@
 # DSS Extensions: hub repository
 
-**This repository will be populated throughout July-August 2022. Check back regularly or use the "Watch" feature on GitHub to keep up-to-date.**
+**This repository will be slowly populated. Check back regularly or use the "Watch" feature on GitHub to keep up-to-date.**
 
 This GitHub repository will be used to concentrate documentation, discussions, benchmark results, and i18n/locale files around all projects hosted in the DSS Extensions organization. *As a reminder, the projects hosted here are not supported by EPRI.*
 
@@ -12,11 +12,11 @@ To avoid upsetting one of the language bindings when updating the base library, 
 
 Several pre-2022 issues from the other projects were transferred to the issue tracker here. Even though the wording on those may suggest the original project/language, they present challenges or tasks shared across all projects.
 
-Although we have the Discussions feature is enabled, there is no intention in fragmenting the OpenDSS community. We recommend checking and considering posting to the official OpenDSS forum if it's a general OpenDSS question or issue (if possible, test with the official OpenDSS GUI or using the official COM version).
+Although we have the Discussions feature is enabled, there is no intention in fragmenting the OpenDSS community. We recommend checking and considering posting to the official OpenDSS forum if it's a general OpenDSS question or issue (if possible, test with the official OpenDSS GUI or using the official COM version), but otherwise feel free to post here. 
 - Official OpenDSS discussions: https://sourceforge.net/p/electricdss/discussion/
 - Official OpenDSS docs at https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Version8/Distrib/Doc/ and [OpenDSS_COM.chm](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Version8/Distrib/x64/OpenDSS_COM.chm?format=raw)
 - Better search: use a search engine such as Google with `inurl:https://sourceforge.net/p/electricdss/discussion/` and your keywords; [example](https://www.google.com/search?q=inurl%3Ahttps%3A%2F%2Fsourceforge.net%2Fp%2Felectricdss%2Fdiscussion%2F+DSS+Extensions).
-
+- Our reference page for OpenDSS commands and properties: https://dss-extensions.org/dss_properties.html
 
 ## API Documentation
 
@@ -41,7 +41,7 @@ As a group, most of the projects were consolidated in 2018 and 2019.
 
 Remember that version numbers are arbitrary. It is more important to check a project's history than just consider a version tag. For example, most of the initial goals for DSS C-API were reached by version 0.10; since the opportunity to add and complement the library was available, the plan is to release v1.0 when most planned features are integrated and the API is stable.
 
-To illustrate the maturity of the projects, see the growing list of works that used this project tools at [https://dss-extensions.org/citations.html](https://dss-extensions.org/citations.html)
+To illustrate the maturity of the projects, see the growing list of works that used this project tools at [our Citations page](https://dss-extensions.org/citations.html), as well as [the GitHub repository listing](https://dss-extensions.org/repositories.html) for projects that directly depend on one of the projects on DSS Extensions.
 
 **2. Is this supported by EPRI?**
 
