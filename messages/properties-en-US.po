@@ -3311,6 +3311,9 @@ msgstr "For PF control option, min percent of total bank kvar at which control w
 msgid "CapControl.Reset"
 msgstr "{Yes | No} If Yes, forces Reset of this CapControl."
 
+msgid "CapControl.ControlSignal"
+msgstr "Load shape used for controlling the connection/disconnection of the capacitor to the grid, when the load shape is DIFFERENT than ZERO (0) the capacitor will be ON and conencted to the grid. Otherwise, if the load shape value is EQUAL to ZERO (0) the capacitor bank will be OFF and disconnected from the grid."
+
 msgid "CapControl.basefreq"
 msgstr "Base Frequency for ratings."
 
