@@ -1,10 +1,10 @@
-# DSS Extensions: hub repository
+# DSS-Extensions: hub repository
 
 **This repository will be slowly populated. Check back regularly or use the "Watch" feature on GitHub to keep up-to-date.**
 
-This GitHub repository will be used to concentrate documentation, discussions, benchmark results, and i18n/locale files around all projects hosted in the DSS Extensions organization. *As a reminder, the projects hosted here are not supported by EPRI.*
+This GitHub repository will be used to concentrate documentation, discussions, benchmark results, and i18n/locale files around all projects hosted in the DSS-Extensions organization. *As a reminder, the projects hosted here are not supported by EPRI.*
 
-DSS Extensions were originally meant to expose the official OpenDSS engine to multiple languages and platforms with minimal changes. 
+DSS-Extensions were originally meant to expose the official OpenDSS engine to multiple languages and platforms with minimal changes. 
 Since 2019, that goal has been reached and the target moved to modernize the our base library (DSS C-API) and add useful extensions and modifications to the DSS engine.
 
 Projects currently hosted on this organization use several languages (Pascal, C, C++, Python, Julia, C#, MATLAB) and there have been requests and comments from users interested language bindings for other languages like Java, Go, and Rust. 
@@ -41,7 +41,7 @@ As a group, most of the projects were consolidated in 2018 and 2019.
 
 Remember that version numbers are arbitrary. It is more important to check a project's history than just consider a version tag. For example, most of the initial goals for DSS C-API were reached by version 0.10; since the opportunity to add and complement the library was available, the plan is to release v1.0 when most planned features are integrated and the API is stable.
 
-To illustrate the maturity of the projects, see the growing list of works that used this project tools at [our Citations page](https://dss-extensions.org/citations.html), as well as [the GitHub repository listing](https://dss-extensions.org/repositories.html) for projects that directly depend on one of the projects on DSS Extensions.
+To illustrate the maturity of the projects, see the growing list of works that used this project tools at [our Citations page](https://dss-extensions.org/citations.html), as well as [the GitHub repository listing](https://dss-extensions.org/repositories.html) for projects that directly depend on one of the projects on DSS-Extensions.
 
 **2. Is this supported by EPRI?**
 
@@ -51,13 +51,13 @@ To illustrate the maturity of the projects, see the growing list of works that u
 
 **No.** This is a common misconception. 
 
-You also don't need to install the official OpenDSS binaries to use DSS Extensions. We do recommend that new users try following the official guides and use the official version, at least to get an idea of how OpenDSS works.
+You also don't need to install the official OpenDSS binaries to use DSS-Extensions. We do recommend that new users try following the official guides and use the official version, at least to get an idea of how OpenDSS works.
 
-The base library from DSS Extensions is DSS C-API. It uses an interface developed independently, with high performance in mind, within the limitations of the given Pascal framework. Neither DSS C-API nor the DSS Extensions group was ever based on OpenDSSDirect.DLL/DCSL.
+The base library from DSS-Extensions is DSS C-API. It uses an interface developed independently, with high performance in mind, within the limitations of the given Pascal framework. Neither DSS C-API nor the DSS-Extensions group was ever based on OpenDSSDirect.DLL/DCSL.
 
 At first, the code was heavily based on the original code from the OpenDSS COM DLL (`OpenDSSengine.DLL`), with many modifications to achieve the initial goals. By doing that, we managed to reach the goal of good compatibility with the COM implementation, sidestepping the many issues we found when trying to do the same using the official `OpenDSSDirect.DLL`. For public data points, consider that several bugs in the projects OpenDSSDirect.py and OpenDSSDirect.jl were automatically addressed when they were migrated from the official OpenDSSDirect.DLL to DSS C-API.
 
-Through the years, most of the code of the **API** was slowly rewritten or refactored to include more error checks, more messages, and reduce code duplication. As of DSS C-API v0.12.x series, a lot of the OpenDSS **engine internals** has been replaced or refactored, so the work that goes into DSS Extensions is much more than "copy code from EPRI and recompile with Free Pascal". Even the KLUSolve library was rewritten to address our needs, hence the library file is `libklusolvex` in the past few years.
+Through the years, most of the code of the **API** was slowly rewritten or refactored to include more error checks, more messages, and reduce code duplication. As of DSS C-API v0.12.x series, a lot of the OpenDSS **engine internals** has been replaced or refactored, so the work that goes into DSS-Extensions is much more than "copy code from EPRI and recompile with Free Pascal". Even the KLUSolve library was rewritten to address our needs, hence the library file is `libklusolvex` in the past few years.
 
 Some historical context is available in https://sourceforge.net/p/electricdss/discussion/861976/thread/525c13df/ and other posts in the official OpenDSS forum.
 
@@ -73,31 +73,31 @@ Implementation-wise, there are different set of conventions between the two modu
 
 Since 2018 we accrued many users, which can be seen from the PyPI download numbers. In the long term, we plan to keep at least minimal maintenance of the two packages, while providing an alternative, clean-slate package to expose more interesting and modern approaches.
 
-Further comments and a table mapping OpenDSSDirect.py and DSS-Python/COM API functions is available on [DSS Extensions — OpenDSS: Overview of Python APIs](https://github.com/dss-extensions/dss-extensions/blob/main/python_apis.md).
+Further comments and a table mapping OpenDSSDirect.py and DSS-Python/COM API functions is available on [DSS-Extensions — OpenDSS: Overview of Python APIs](https://github.com/dss-extensions/dss-extensions/blob/main/python_apis.md).
 
 See also https://sourceforge.net/p/electricdss/discussion/beginners/thread/8031cde60e/?limit=25#4aca/5791/8bbb
 
-**5. What are some features from EPRI's OpenDSS not available under DSS Extensions?**
+**5. What are some features from EPRI's OpenDSS not available under DSS-Extensions?**
 
 There is a document at [known_differences](https://github.com/dss-extensions/dss_capi/blob/master/docs/known_differences.md) listing more. Notably:
 
-- DSS Extensions do not integrate with some of EPRI's Windows-only software, like the plotting tools ("OpenDSS Viewer" and the old `DSSView.exe`), OpenDSS-GIS and others. It seems most of these are also closed-source software and/or not freely available for the general community.
+- DSS-Extensions do not integrate with some of EPRI's Windows-only software, like the plotting tools ("OpenDSS Viewer" and the old `DSSView.exe`), OpenDSS-GIS and others. It seems most of these are also closed-source software and/or not freely available for the general community.
 
 - A few components were not ported (yet) or removed due to lack of test cases and other concerns. We are always open to revisit those if there are enough requests from users.
 
-- Plotting is not available for all DSS Extensions. We are implementing a plotting backend under DSS-Python as a proof of concept. Introducing plotting to every project is not a goal, but we may add at least some plotting to DSS_MATLAB, and potentially add examples of how it would be implemented to DSS_Sharp and OpenDSSDirect.jl.
+- Plotting is not available for all DSS-Extensions. We are implementing a plotting backend under DSS-Python as a proof of concept. Introducing plotting to every project is not a goal, but we may add at least some plotting to DSS_MATLAB, and potentially add examples of how it would be implemented to DSS_Sharp and OpenDSSDirect.jl.
 
 - The diakoptics features are currently disabled. The plan is to reintroduce them soon after some internal changes. Check the issues on the DSS C-API repository for details.
 
 **6. Is this open-source?**
 
-**Yes,** every single package available on DSS Extensions is open-source. Most are even built openly on the cloud.
+**Yes,** every single package available on DSS-Extensions is open-source. Most are even built openly on the cloud.
 
-We have seen some confusing statements asserting that DSS Extensions is not open-source. There is nothing inheritly wrong with closed-source software, but DSS Extensions is an open-source effort which can be fully built using only open-source (Free Pascal, Clang, GCC, etc.) and/or free tools (Visual Studio Dev Tools can be used for some DLLs).
+We have seen some confusing statements asserting that DSS-Extensions is not open-source. There is nothing inherently wrong with closed-source software, but DSS-Extensions is an open-source effort which can be fully built using only open-source (Free Pascal, Clang, GCC, etc.) and/or free tools (Visual Studio Dev Tools can be used for some DLLs).
 
-Although some of the development was achieved by using DSS Extensions on financially supported research projects, most of the effort to maintain and improve our DSS engine beyond the original OpenDSS version has been done in a voluntary basis, in hopes that the effort helps making the tools more accessible to various users.
+Although some of the development was achieved by using DSS-Extensions on financially supported research projects, most of the effort to maintain and improve our DSS engine beyond the original OpenDSS version has been done in a voluntary basis, in hopes that the effort helps making the tools more accessible to various users.
 
-**7. What are some features from DSS Extensions not available in EPRI's OpenDSS?**
+**7. What are some features from DSS-Extensions not available in EPRI's OpenDSS?**
 
 Again, more at [known_differences](https://github.com/dss-extensions/dss_capi/blob/master/docs/known_differences.md). 
 

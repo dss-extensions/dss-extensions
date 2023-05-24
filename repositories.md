@@ -1,6 +1,6 @@
-# DSS Extensions — Repositories
+# DSS-Extensions — Repositories
 
-This is a collection of links to repositories that either use one of the projects under DSS Extensions, or list them as working alternatives. [Follow here](https://dss-extensions.org/citations.html) for a list of papers that reference DSS Extensions.
+This is a collection of links to repositories that either use one of the projects under DSS-Extensions, or list them as working alternatives. [Follow here](https://dss-extensions.org/citations.html) for a list of papers that reference DSS-Extensions.
 
 No extensive curation has been done. Licenses, state of development, maturity and support vary. When in doubt, please contact the authors of each repository.
 

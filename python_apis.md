@@ -1,4 +1,4 @@
-# DSS Extensions — OpenDSS: Overview of Python APIs
+# DSS-Extensions — OpenDSS: Overview of Python APIs
 
 **DRAFT**
 
@@ -6,12 +6,12 @@
 TODO:
 - insert links to relevant official PDFs
 - decide when to include benchmarks, and which ones (versions and so on)
-- performance notes: add notes about specific DSS Extensions features
+- performance notes: add notes about specific DSS-Extensions features
 -->
 
-OpenDSS can be used and controlled through many different approaches. Using Python together with the OpenDSS allows using thousands of packages in the Python ecosystem. This was the main motivator for the inception of the DSS Extensions project.
+OpenDSS can be used and controlled through many different approaches. Using Python together with the OpenDSS allows using thousands of packages in the Python ecosystem. This was the main motivator for the inception of the DSS-Extensions project.
 
-This document provides an overview of typical usage with the official implementation and the two options available in DSS Python.
+This document provides an overview of typical usage with the official implementation and the two options available in DSS-Python.
 
 See also [the FAQ](https://github.com/dss-extensions/dss-extensions#faq) for more context.
 
@@ -71,15 +71,15 @@ dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
 # ...
 ```
 
-## DSS Extensions: DSS-Python 
+## DSS-Extensions: DSS-Python 
 
-For DSS Extensions, users are not required to install the official OpenDSS, although we recommend new users to do so, especially to make it easier to follow legacy training material. DSS Extensions use a customized engine with very good compatibility with the official OpenDSS engine, but better performance in some scenarios and a lot of extra features.
+For DSS-Extensions, users are not required to install the official OpenDSS, although we recommend new users to do so, especially to make it easier to follow legacy training material. DSS-Extensions use a customized engine with very good compatibility with the official OpenDSS engine, but better performance in some scenarios and a lot of extra features.
 
-DSS-Python packages the OpenDSS engine as implemented in DSS Extensions to mimic the organization of the COM implementation. As such, users can easily migrate from the official COM implementation to DSS-Python without rewriting all the code. In fact, some users keep a toggle to use both implementations.
+DSS-Python packages the OpenDSS engine as implemented in DSS-Extensions to mimic the organization of the COM implementation. As such, users can easily migrate from the official COM implementation to DSS-Python without rewriting all the code. In fact, some users keep a toggle to use both implementations.
 
 DSS-Python is available for Windows, Linux, and macOS (including Apple M1 ARM machines, or "Apple Silicon" in marketing speak), while the official OpenDSS is official supported only on MS Windows.
 
-Assuming recent DSS Python versions (`dss-python>=0.12.1`) are installed (e.g. through `pip install dss-python`), you can use the following:
+Assuming recent DSS-Python versions (`dss-python>=0.12.1`) are installed (e.g. through `pip install dss-python`), you can use the following:
 
 ```python
 from dss import dss
@@ -222,9 +222,9 @@ Besides the iterators, a notable addition from this patch is adding the [`dss.Ac
 
 Note that this patch doesn't change the official engine, just adjusts the Python side to provide some convenience.
 
-## DSS Extensions: OpenDSSDirect.py
+## DSS-Extensions: OpenDSSDirect.py
 
-OpenDSSDirect.py (ODD.py for short) is a project that initially employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS Extensions.
+OpenDSSDirect.py (ODD.py for short) is a project that initially employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS-Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS-Extensions.
 
 **Sidenote:** `OpenDSSDirect.DLL` still exists. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation — see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
 
@@ -246,7 +246,7 @@ dss.Text.Command('compile c:/my_folder/my_circuit1/master.dss')
 # ...
 ```
 
-## DSS Extensions: future?
+## DSS-Extensions: future?
 
 We can expect a unified and extended API in 2023. The new features will be available to both DSS-Python and OpenDSSDirect.py. More details to come closer the release. A preview of new features is available at https://dss-extensions.org/dss_python/obj.html
 
@@ -257,9 +257,9 @@ This list is mostly API agnostic.
 
 - Avoid using strings in general. Strings can be converted multiple times through the APIs (Python implementation, internal DSS API implementation, maybe OS specific details).
 - If something is known to be static — e.g. list of line names — try caching (keeping a copy) at Python level to avoid the API overhead. Lists of strings (like `All...Names`) and arrays are especially heavy since a lot of processing may be required in the interface between languages.
-- Use `idx` where possible to avoid passing strings avoid and a hashmap lookup. `idx` only passes a single integer through the APIs and activates the element directly, so it is fast. `Name` needs all the string work and a hashmap (somewhat equivalent to `dict` in Python) lookup, then activates the target element. Although the official OpenDSS implementation does not include `idx` for all component types, DSS Extensions do. See the next section for details.
+- Use `idx` where possible to avoid passing strings avoid and a hashmap lookup. `idx` only passes a single integer through the APIs and activates the element directly, so it is fast. `Name` needs all the string work and a hashmap (somewhat equivalent to `dict` in Python) lookup, then activates the target element. Although the official OpenDSS implementation does not include `idx` for all component types, DSS-Extensions do. See the next section for details.
 - For reading multiple channels from a single Monitor object, prefer using the `ByteStream` property/function or the `AsMatrix` extension (even with COM) as noted in a previous section.
-- If you need to mutate an object or read a result and the target DSS class has a dedicated API, prefer using that instead of feeding strings through the `Text.Command` API. The dedicated APIs can change the target fields directly (this is especially true for DSS Extensions), while `Text.Command` feeds the DSS parser first. In the end, using the dedicated APIs can avoid string formatting/interpolation and later parsing back those to integers/floats/etc. altogether.
+- If you need to mutate an object or read a result and the target DSS class has a dedicated API, prefer using that instead of feeding strings through the `Text.Command` API. The dedicated APIs can change the target fields directly (this is especially true for DSS-Extensions), while `Text.Command` feeds the DSS parser first. In the end, using the dedicated APIs can avoid string formatting/interpolation and later parsing back those to integers/floats/etc. altogether.
 - If your analysis requires running multiple scenarios of the same circuit, do try to keep the circuit in memory instead of reloading it. For that, save the list of changes done in the previous analysis step to undo them later, or just restore everything to a known state. This can bring a good performance bonus with medium and large circuits. Tiny circuits may not be affected, but that depends on a lot of factors, including the processor of the machine running the DSS engine.
 - On Windows:
     - avoid circuits fragmented in too many files
@@ -273,13 +273,13 @@ A common issue for new users (especially OpenDSSDirect.py users) is that the off
 
 The following table shows how most (but not all) of the functions and properties are mapped. If the cell contains `()`, it means the field is exposed by a Python function, otherwise, it is a Python property. Each cell links to the relevant documentation page.
 
-As a complement, we added the "API extension" column. If a check mark is present ("<span style="color:#009900">✓</span>"), that means the function/property is only available in the DSS Extensions implementation amd users should beware if cross-compatibility with the official EPRI version is required. If no check mark is present, the COM implementation includes the function or property. That is, it there is no check mark for a row, users can replace "DSS Python" with "COM implementation" as the API is the same for those cases.
+As a complement, we added the "API extension" column. If a check mark is present ("<span style="color:#009900">✓</span>"), that means the function/property is only available in the DSS-Extensions implementation amd users should beware if cross-compatibility with the official EPRI version is required. If no check mark is present, the COM implementation includes the function or property. That is, it there is no check mark for a row, users can replace "DSS-Python" with "COM implementation" as the API is the same for those cases.
 
 We hope this table can elucidate some common doubts.
 
 **Note:** As of OpenDSS v9.6.1.1, the `Storages` API is implemented, but it's not exposed for the user (in `dss.ActiveCircuit.Storages`), so it's marked as an extension below.
 
-<table><thead><tr><th>API extension</th><th>DSS Python</th><th>OpenDSSDirect.py</th></tr></thead>
+<table><thead><tr><th>API extension</th><th>DSS-Python</th><th>OpenDSSDirect.py</th></tr></thead>
 <!--MAPPING_TABLE.BEGIN-->
 <tbody>
 <tr><td></td><td><a href="https://dss-extensions.org/dss_python/dss.html#dss.IBus.IBus.AllPCEatBus">dss.ActiveCircuit.ActiveBus.AllPCEatBus</a></td><td><a href="https://dss-extensions.org/OpenDSSDirect.py/opendssdirect.html#opendssdirect.Bus.AllPCEatBus">dss.Bus.AllPCEatBus()</a></td></tr>

@@ -1,4 +1,4 @@
-# DSS Extensions: multiple DSS engines and multi-threading
+# DSS-Extensions: multiple DSS engines and multi-threading
 
 **DRAFT**
 
