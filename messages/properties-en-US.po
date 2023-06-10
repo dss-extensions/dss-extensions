@@ -2875,8 +2875,10 @@ msgid "Transformer.LeadLag"
 msgstr "{Lead | Lag (default) | ANSI (default) | Euro } Designation in mixed Delta-wye connections the relationship between HV to LV winding. Default is ANSI 30 deg lag, e.g., Dy1 of Yd1 vector group. To get typical European Dy11 connection, specify either \"lead\" or \"Euro\""
 
 msgid "Transformer.WdgCurrents"
-msgstr "(Read only) Makes winding currents available via return on query (? Transformer.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ..."
-
+msgstr ""
+"(Read only) Makes winding currents available via return on query (? Transformer.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ...\n"
+"\n"
+"WARNING: If the transformer has open terminal(s), results may be wrong, i.e. avoid using this in those situations. For more information, see https://github.com/dss-extensions/dss-extensions/issues/24"
 msgid "Transformer.Core"
 msgstr "{Shell*|5-leg|3-Leg|1-phase|core-1-phase|4-leg} Core Type. Used for GIC analysis"
 
@@ -5031,7 +5033,10 @@ msgid "AutoTrans.LeadLag"
 msgstr "{Lead | Lag (default) | ANSI (default) | Euro } Designation in mixed Delta-wye connections the relationship between HV to LV winding. Default is ANSI 30 deg lag, e.g., Dy1 of Yd1 vector group. To get typical European Dy11 connection, specify either \"lead\" or \"Euro\""
 
 msgid "AutoTrans.WdgCurrents"
-msgstr "(Read only) Makes winding currents available via return on query (? AutoTrans.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ..."
+msgstr ""
+"(Read only) Makes winding currents available via return on query (? AutoTrans.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ...\n"
+"\n"
+"WARNING: If the transformer has open terminal(s), results may be wrong, i.e. avoid using this in those situations. For more information, see https://github.com/dss-extensions/dss-extensions/issues/24"
 
 msgid "AutoTrans.normamps"
 msgstr "Normal rated current."
