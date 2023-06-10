@@ -85,7 +85,7 @@ There is a document at [known_differences](https://github.com/dss-extensions/dss
 
 - A few components were not ported (yet) or removed due to lack of test cases and other concerns. We are always open to revisit those if there are enough requests from users.
 
-- Plotting is not available for all DSS-Extensions. We are implementing a plotting backend under DSS-Python as a proof of concept. Introducing plotting to every project is not a goal, but we may add at least some plotting to DSS_MATLAB, and potentially add examples of how it would be implemented to DSS_Sharp and OpenDSSDirect.jl.
+- Plotting is not available for all DSS-Extensions. We have implemented a plotting backend under DSS-Python as a proof of concept (it can also be used with OpenDSSDirect.py). Introducing plotting to every project is not a goal, but we may add at least some plotting to DSS_MATLAB, and potentially add examples of how it would be implemented to DSS_Sharp and OpenDSSDirect.jl.
 
 - The diakoptics features are currently disabled. The plan is to reintroduce them soon after some internal changes. Check the issues on the DSS C-API repository for details.
 
@@ -101,17 +101,17 @@ Although some of the development was achieved by using DSS-Extensions on financi
 
 Again, more at [known_differences](https://github.com/dss-extensions/dss_capi/blob/master/docs/known_differences.md). 
 
-At lot of the features below are still being documented.
+A lot of the features below are still being documented.
 
 - Consistent support for Windows, macOS and Linux.
 
 - Consistent support for Intel x86, x86-64, ARM32 (currently armv7) and ARM64 (aarch64).
 
-- Besides the parallel-machine mechanism based on actors from the official OpenDSS, we also allow multiple independent DSS engines in a single process. This enables user-controlled threads and other interest use-cases. Since our PM implementation is based on this concept of independent engines, it tends to present less errors and is more flexible than the official implementation.
+- Besides the parallel-machine mechanism based on actors from the official OpenDSS, we also allow multiple independent DSS engines in a single process. This enables user-controlled threads and other interest use-cases. Since our PM implementation is based on this concept of independent engines, it tends to be more friendly to languages with good threading support such as C#, Julia, and even Python.
 
 - For some components, our engine allows incremental updates to the system Y matrix, which can result in good performance gains.
 
-- A more flexible system for loading load-shape data, which also allows using float32 loadshapes for saving memory.
+- A more flexible system for loading load-shape data, which also allows using float32 load shapes for saving memory.
 
 - A new set of functions to load circuits from ZIP archives.
 
