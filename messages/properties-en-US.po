@@ -3092,10 +3092,10 @@ msgid "Capacitor.states"
 msgstr "ARRAY of integers {1|0} states representing the state of each step (on|off). Defaults to 1 when reallocated (on). Capcontrol will modify this array as it turns steps on or off."
 
 msgid "Capacitor.normamps"
-msgstr "Normal rated current."
+msgstr "Normal rated current. Defaults to 180% of per-phase rated current."
 
 msgid "Capacitor.emergamps"
-msgstr "Maximum or emerg current."
+msgstr "Maximum or emerg current. Defaults to 180% of per-phase rated current."
 
 msgid "Capacitor.faultrate"
 msgstr "Failure rate per year."
@@ -3208,10 +3208,10 @@ msgid "Reactor.LmH"
 msgstr "Inductance, mH. Alternate way to define the reactance, X, property."
 
 msgid "Reactor.normamps"
-msgstr "Normal rated current."
+msgstr "Normal rated current. Defaults to per-phase rated current when reactor is specified with rated power and voltage."
 
 msgid "Reactor.emergamps"
-msgstr "Maximum or emerg current."
+msgstr "Maximum or emerg current. Defaults to 135% of per-phase rated current when reactor is specified with rated power and voltage."
 
 msgid "Reactor.faultrate"
 msgstr "Failure rate per year."
@@ -3314,7 +3314,7 @@ msgid "CapControl.Reset"
 msgstr "{Yes | No} If Yes, forces Reset of this CapControl."
 
 msgid "CapControl.ControlSignal"
-msgstr "Load shape used for controlling the connection/disconnection of the capacitor to the grid, when the load shape is DIFFERENT than ZERO (0) the capacitor will be ON and conencted to the grid. Otherwise, if the load shape value is EQUAL to ZERO (0) the capacitor bank will be OFF and disconnected from the grid."
+msgstr "Load shape used for controlling the connection/disconnection of the capacitor to the grid, when the load shape is DIFFERENT than ZERO (0) the capacitor will be ON and connected to the grid. Otherwise, if the load shape value is EQUAL to ZERO (0) the capacitor bank will be OFF and disconnected from the grid."
 
 msgid "CapControl.basefreq"
 msgstr "Base Frequency for ratings."
@@ -3983,7 +3983,9 @@ msgstr ""
 "New Capacitor.C2 like=c1  ..."
 
 msgid "StorageController.Element"
-msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; Must be specified."
+msgstr ""
+"Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; Must be specified."
+"In \"Local\" control mode, is the name of the load that will be managed by the storage device, which should be installed at the same bus."
 
 msgid "StorageController.Terminal"
 msgstr "Number of the terminal of the circuit element to which the StorageController control is connected. 1 or 2, typically.  Default is 1. Make sure to select the proper direction on the power for the respective dispatch mode."
