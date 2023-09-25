@@ -2252,7 +2252,7 @@ msgstr ""
 "bus1=busname\n"
 "bus1=busname.1.2.3\n"
 "\n"
-"The VSOURCE object is a two-terminal voltage source (thevenin equivalent). Bus2 defaults to Bus1 with all phases connected to ground (node 0) unless previously specified. This is a Yg connection. If you want something different, define the Bus2 property ezplicitly."
+"The VSOURCE object is a two-terminal voltage source (thevenin equivalent). Bus2 defaults to Bus1 with all phases connected to ground (node 0) unless previously specified. This is a Yg connection. If you want something different, define the Bus2 property explicitly."
 
 msgid "Vsource.basekv"
 msgstr "Base Source kV, usually phase-phase (L-L) unless you are making a positive-sequence model or 1-phase modelin which case, it will be phase-neutral (L-N) kV."
@@ -3005,7 +3005,7 @@ msgid "RegControl.revNeutral"
 msgstr "{Yes | No*} Default is no. Set this to Yes if you want the regulator to go to neutral in the reverse direction or in cogen operation."
 
 msgid "RegControl.EventLog"
-msgstr "{Yes/True* | No/False} Default is YES for regulator control. Log control actions to Eventlog."
+msgstr "{Yes/True | No/False*} Default is NO for regulator control. Log control actions to Eventlog."
 
 msgid "RegControl.RemotePTRatio"
 msgstr "When regulating a bus (the Bus= property is set), the PT ratio required to convert actual voltage at the remote bus to control voltage. Is initialized to PTratio property. Set this property after setting PTratio."
@@ -3299,7 +3299,7 @@ msgid "CapControl.VBus"
 msgstr "Name of bus to use for voltage override function. Default is bus at monitored terminal. Sometimes it is useful to monitor a bus in another location to emulate various DMS control algorithms."
 
 msgid "CapControl.EventLog"
-msgstr "{Yes/True* | No/False} Default is YES for CapControl. Log control actions to Eventlog."
+msgstr "{Yes/True | No/False*} Default is NO for CapControl. Log control actions to Eventlog."
 
 msgid "CapControl.UserModel"
 msgstr "Name of DLL containing user-written CapControl model, overriding the default model.  Set to \"none\" to negate previous setting. "
@@ -4252,10 +4252,10 @@ msgid "Relay.Mground"
 msgstr "Ground reach multiplier in per-unit for Distance and TD21 functions. Default=0.7"
 
 msgid "Relay.EventLog"
-msgstr "{Yes/True* | No/False} Default is Yes for Relay. Write trips, reclose and reset events to EventLog."
+msgstr "{Yes/True | No/False* } Default is No for Relay. Write trips, reclose and reset events to EventLog."
 
 msgid "Relay.DebugTrace"
-msgstr "{Yes/True* | No/False} Default is No for Relay. Write extra details to Eventlog."
+msgstr "{Yes/True* | No/False* } Default is No for Relay. Write extra details to Eventlog."
 
 msgid "Relay.DistReverse"
 msgstr "{Yes/True* | No/False} Default is No; reverse direction for distance and td21 types."
