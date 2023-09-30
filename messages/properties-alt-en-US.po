@@ -850,7 +850,7 @@ msgstr ""
 "Default is false. Specifies whether to use trapezoidal integration for accumulating energy meter registers. Applies to EnergyMeter and Generator objects.  Default method simply multiplies the present value of the registers times the width of the interval (Euler). Trapezoidal is more accurate when there are sharp changes in a load shape or unequal intervals. Trapezoidal is automatically used for some load-duration curve simulations where the interval size varies considerably. Keep in mind that for Trapezoidal, you have to solve one more point than the number of intervals. That is, to do a Daily simulation on a 24-hr load shape, you would "
 "set Number=25 to force a solution at the first point again to establish the last (24th) interval.\n"
 "\n"
-"Note: Set Mode= resets Trapezoidal to No/False. Set this to Yes/True AFTER setting the Mode option."
+"Note: Set Mode= resets Trapezoidal to No/False. Set this to True AFTER setting the Mode option."
 
 msgid "Executive.Autobuslist"
 msgstr ""
@@ -892,7 +892,7 @@ msgid "Executive.Cktmodel"
 msgstr "{Multiphase | Positive}  Default = Multiphase.  Designates whether circuit model is to interpreted as a normal multi-phase model or a positive-sequence only model"
 
 msgid "Executive.Pricesignal"
-msgstr "Sets the present price signal ($/MWh) for the circuit.  Default value is 25."
+msgstr "Sets the present price signal ($/MWh) for the circuit."
 
 msgid "Executive.Pricecurve"
 msgstr "Sets the PRICESHAPE object to use to obtain for price signal. Default is none (null string). If none, price signal either remains constant or is set by an external process using Set Price= option. Curve is defined as a PRICESHAPE  in actual values (not normalized) and should be defined to correspond to the type of analysis being performed (daily, yearly, etc.)."
@@ -952,7 +952,7 @@ msgid "Executive.%Normal"
 msgstr "Sets the Normal rating of all lines to a specified percent of the emergency rating.  Note: This action takes place immediately. Only the in-memory value is changed for the duration of the run."
 
 msgid "Executive.DIVerbose"
-msgstr "Set to Yes/True if you wish a separate demand interval (DI) file written for each meter.  Otherwise, only the totalizing meters are written."
+msgstr "Set to True if you wish a separate demand interval (DI) file written for each meter.  Otherwise, only the totalizing meters are written."
 
 msgid "Executive.Casename"
 msgstr ""
@@ -982,7 +982,7 @@ msgid "Executive.Cfactors"
 msgstr "Sets the CFactors for for all loads in the active circuit to the value given."
 
 msgid "Executive.Showexport"
-msgstr "If YES/TRUE will automatically show the results of an Export Command after it is written."
+msgstr "If True will automatically show the results of an Export Command after it is written."
 
 msgid "Executive.Numallociterations"
 msgstr "Default is 2. Maximum number of iterations for load allocations for each time the AllocateLoads or Estimate command is given."
@@ -1976,16 +1976,16 @@ msgid "XfmrCode.emerghkVA"
 msgstr "Emergency (contingency)  kVA rating of H winding (winding 1).  Usually 140% - 150% of maximum nameplate rating, depending on load shape. Defaults to 150% of kVA rating of Winding 1."
 
 msgid "XfmrCode.MaxTap"
-msgstr "Max per unit tap for the active winding.  Default is 1.10"
+msgstr "Max per unit tap for the active winding."
 
 msgid "XfmrCode.MinTap"
-msgstr "Min per unit tap for the active winding.  Default is 0.90"
+msgstr "Min per unit tap for the active winding."
 
 msgid "XfmrCode.NumTaps"
 msgstr "Total number of taps between min and max tap.  Default is 32."
 
 msgid "XfmrCode.%imag"
-msgstr "Percent magnetizing current. Default=0.0. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
+msgstr "Percent magnetizing current. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
 
 msgid "XfmrCode.ppm_antifloat"
 msgstr "Default=1 ppm.  Parts per million of transformer winding VA rating connected to ground to protect against accidentally floating a winding without a reference. If positive then the effect is adding a very large reactance to ground.  If negative, then a capacitor."
@@ -2176,7 +2176,7 @@ msgid "Vsource.frequency"
 msgstr "Source frequency.  Defaults to system default base frequency."
 
 msgid "Vsource.phases"
-msgstr "Number of phases.  Defaults to 3."
+msgstr "Number of phases."
 
 msgid "Vsource.MVAsc3"
 msgstr "MVA Short circuit, 3-phase fault. Default = 2000. Z1 is determined by squaring the base kv and dividing by this value. For single-phase source, this value is not used."
@@ -2330,7 +2330,7 @@ msgid "Isource.frequency"
 msgstr "Source frequency.  Defaults to  circuit fundamental frequency."
 
 msgid "Isource.phases"
-msgstr "Number of phases.  Defaults to 3. For 3 or less, phase shift is 120 degrees."
+msgstr "Number of phases. For 3 or less, phase shift is 120 degrees."
 
 msgid "Isource.scantype"
 msgstr "{pos*| zero | none} Maintain specified sequence for harmonic solution. Default is positive sequence. Otherwise, angle between phases rotates with harmonic."
@@ -2701,10 +2701,10 @@ msgid "Transformer.sub"
 msgstr "Designates whether this transformer is to be considered a substation.Default is No."
 
 msgid "Transformer.MaxTap"
-msgstr "Max per unit tap for the active winding.  Default is 1.10"
+msgstr "Max per unit tap for the active winding."
 
 msgid "Transformer.MinTap"
-msgstr "Min per unit tap for the active winding.  Default is 0.90"
+msgstr "Min per unit tap for the active winding."
 
 msgid "Transformer.NumTaps"
 msgstr "Total number of taps between min and max tap.  Default is 32 (16 raise and 16 lower taps about the neutral position). The neutral position is not counted."
@@ -2713,7 +2713,7 @@ msgid "Transformer.subname"
 msgstr "Substation Name. Optional. Default is null. If specified, printed on plots"
 
 msgid "Transformer.%imag"
-msgstr "Percent magnetizing current. Default=0.0. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
+msgstr "Percent magnetizing current. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
 
 msgid "Transformer.ppm_antifloat"
 msgstr "Default=1 ppm.  Parts per million of transformer winding VA rating connected to ground to protect against accidentally floating a winding without a reference. If positive then the effect is adding a very large reactance to ground.  If negative, then a capacitor."
@@ -3347,16 +3347,16 @@ msgid "Generator.UseFuel"
 msgstr "Activates the use of fuel for the operation of the generator. When the fuel level reaches the reserve level, the generator stops until it gets refueled. By default, the generator is connected to a continuous fuel supply, Use this mode to mimic dependency on fuel level for different generation technologies."
 
 msgid "Generator.FuelkWh"
-msgstr "{*0}Is the nominal level of fuel for the generator (kWh). It only applies if UseFuel = Yes/True"
+msgstr "{*0}Is the nominal level of fuel for the generator (kWh). It only applies if UseFuel = True"
 
 msgid "Generator.%Fuel"
-msgstr "It is a number between 0 and 100 representing the current amount of fuel available in percentage of FuelkWh. It only applies if UseFuel = Yes/True"
+msgstr "It is a number between 0 and 100 representing the current amount of fuel available in percentage of FuelkWh. It only applies if UseFuel = True"
 
 msgid "Generator.%Reserve"
-msgstr "It is a number between 0 and 100 representing the reserve level in percentage of FuelkWh. It only applies if UseFuel = Yes/True"
+msgstr "It is a number between 0 and 100 representing the reserve level in percentage of FuelkWh. It only applies if UseFuel = True"
 
 msgid "Generator.Refuel"
-msgstr "Setting a true value manually refuels the generator when needed. It only applies if UseFuel = Yes/True"
+msgstr "Setting a true value manually refuels the generator when needed. It only applies if UseFuel = True"
 
 msgid "Generator.DynamicEq"
 msgstr "The name of the dynamic equation (DynamicExp) that will be used for defining the dynamic behavior of the generator. if not defined, the generator dynamics will follow the built-in dynamic equation."
@@ -4415,13 +4415,13 @@ msgstr ""
 "Not both!!  Last one entered will take precedence. Assumed identical in each phase of the Line object."
 
 msgid "GICsource.angle"
-msgstr "Phase angle in degrees of first phase. Default=0.0.  See Voltage property"
+msgstr "Phase angle in degrees of first phase. See Voltage property"
 
 msgid "GICsource.frequency"
 msgstr "Source frequency.  Defaults to  0.1 Hz. So GICSource=0 at power frequency."
 
 msgid "GICsource.phases"
-msgstr "Number of phases.  Defaults to 3. All three phases are assumed in phase (zero sequence)"
+msgstr "Number of phases. All three phases are assumed in phase (zero sequence)"
 
 msgid "GICsource.EN"
 msgstr "Northward Electric field (V/km). If specified, Voltage and Angle are computed from EN, EE, lat and lon values."
@@ -4559,19 +4559,19 @@ msgid "AutoTrans.sub"
 msgstr "Designates whether this AutoTrans is to be considered a substation.Default is No."
 
 msgid "AutoTrans.MaxTap"
-msgstr "Max per unit tap for the active winding.  Default is 1.10"
+msgstr "Max per unit tap for the active winding."
 
 msgid "AutoTrans.MinTap"
-msgstr "Min per unit tap for the active winding.  Default is 0.90"
+msgstr "Min per unit tap for the active winding."
 
 msgid "AutoTrans.NumTaps"
 msgstr "Total number of taps between min and max tap.  Default is 32 (16 raise and 16 lower taps about the neutral position). The neutral position is not counted."
 
 msgid "AutoTrans.subname"
-msgstr "Substation Name. Optional. Default is null. If specified, printed on plots"
+msgstr "Substation Name. Optional. If specified, printed on plots"
 
 msgid "AutoTrans.%imag"
-msgstr "Percent magnetizing current. Default=0.0. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
+msgstr "Percent magnetizing current. Magnetizing branch is in parallel with windings in each phase. Also, see \"ppm_antifloat\"."
 
 msgid "AutoTrans.ppm_antifloat"
 msgstr "Default=1 ppm.  Parts per million of AutoTrans winding VA rating connected to ground to protect against accidentally floating a winding without a reference. If positive then the effect is adding a very large reactance to ground.  If negative, then a capacitor."
@@ -4847,7 +4847,7 @@ msgstr ""
 "If the maximum control iterations are exceeded, and no numerical instability is seen in the EventLog of via monitors, then try increasing the value of this parameter to reduce the number of control iterations needed to achieve the control criteria, and move to the power flow solution."
 
 msgid "InvControl.EventLog"
-msgstr "Default is NO for InvControl. Log control actions to Eventlog."
+msgstr "Log control actions to Eventlog."
 
 msgid "InvControl.RefReactivePower"
 msgstr ""
@@ -5040,13 +5040,13 @@ msgstr ""
 "Not both!!  Last one entered will take precedence. Assumed identical in each phase of the Line object."
 
 msgid "GICLine.Angle"
-msgstr "Phase angle in degrees of first phase. Default=0.0.  See Voltage property"
+msgstr "Phase angle in degrees of first phase. See Voltage property"
 
 msgid "GICLine.frequency"
-msgstr "Source frequency.  Defaults to 0.1 Hz."
+msgstr "Source frequency."
 
 msgid "GICLine.phases"
-msgstr "Number of phases.  Defaults to 3."
+msgstr "Number of phases."
 
 msgid "GICLine.R"
 msgstr "Resistance of line, ohms of impedance in series with GIC voltage source. "
@@ -5076,7 +5076,7 @@ msgid "GICLine.Lon2"
 msgstr "Longitude of Bus2 (degrees)"
 
 msgid "GICLine.spectrum"
-msgstr "Inherited Property for all PCElements. Name of harmonic spectrum for this source.  Default is \"defaultvsource\", which is defined when the DSS starts."
+msgstr "Inherited Property for all PCElements. Name of harmonic spectrum for this source."
 
 msgid "GICLine.basefreq"
 msgstr "Inherited Property for all PCElements. Base frequency for specification of reactance value."
@@ -5112,23 +5112,23 @@ msgid "GICTransformer.KVLL1"
 msgstr "Optional. kV LL rating for H winding (winding 1). Default is 500. Required if you are going to export vars for power flow analysis or enter winding resistances in percent."
 
 msgid "GICTransformer.KVLL2"
-msgstr "Optional. kV LL rating for X winding (winding 2). Default is 138. Required if you are going to export vars for power flow analysis or enter winding resistances in percent.."
+msgstr "Optional. kV LL rating for X winding (winding 2). Required if you are going to export vars for power flow analysis or enter winding resistances in percent.."
 
 msgid "GICTransformer.MVA"
-msgstr "Optional. MVA Rating assumed Transformer. Default is 100. Used for computing vars due to GIC and winding resistances if kV and MVA ratings are specified."
+msgstr "Optional. MVA Rating assumed Transformer. Used for computing vars due to GIC and winding resistances if kV and MVA ratings are specified."
 
 msgid "GICTransformer.VarCurve"
 msgstr "Optional. XYCurve object name. Curve is expected as TOTAL pu vars vs pu GIC amps/phase. Vars are in pu of the MVA property. No Default value. Required only if you are going to export vars for power flow analysis. See K property."
 
 msgid "GICTransformer.%R1"
 msgstr ""
-"Optional. Percent Resistance, each phase, for H winding (1), (Series winding, if Auto). Default is 0.2. \n"
+"Optional. Percent Resistance, each phase, for H winding (1), (Series winding, if Auto).\n"
 "\n"
 "Alternative way to enter R1 value. It is the actual resistances in ohmns that matter. MVA and kV should be specified."
 
 msgid "GICTransformer.%R2"
 msgstr ""
-"Optional. Percent Resistance, each phase, for X winding (2), (Common winding, if Auto). Default is 0.2. \n"
+"Optional. Percent Resistance, each phase, for X winding (2), (Common winding, if Auto).\n"
 "\n"
 "Alternative way to enter R2 value. It is the actual resistances in ohms that matter. MVA and kV should be specified."
 
@@ -5159,7 +5159,7 @@ msgid "GICTransformer.basefreq"
 msgstr "Base Frequency for ratings."
 
 msgid "VSConverter.phases"
-msgstr "Number of AC plus DC conductors. Default is 4. AC phases numbered before DC conductors."
+msgstr "Number of AC plus DC conductors. AC phases numbered before DC conductors."
 
 msgid "VSConverter.Bus1"
 msgstr "Name of converter bus, containing both AC and DC conductors. Bus2 is always ground."
@@ -5174,58 +5174,58 @@ msgid "VSConverter.kW"
 msgstr "Nominal converter power in kW. Must be specified > 0."
 
 msgid "VSConverter.Ndc"
-msgstr "Number of DC conductors. Default is 1. DC conductors numbered after AC phases."
+msgstr "Number of DC conductors. DC conductors numbered after AC phases."
 
 msgid "VSConverter.Rac"
 msgstr ""
-"AC resistance (ohms) for the converter transformer, plus any series reactors. Default is 0.\n"
+"AC resistance (ohms) for the converter transformer, plus any series reactors.\n"
 "Must be 0 for Vac control mode."
 
 msgid "VSConverter.Xac"
 msgstr ""
-"AC reactance (ohms) for the converter transformer, plus any series reactors. Default is 0.\n"
+"AC reactance (ohms) for the converter transformer, plus any series reactors.\n"
 "Must be 0 for Vac control mode. Must be >0 for PacVac, PacQac or VacVdc control mode."
 
 msgid "VSConverter.m0"
-msgstr "Fixed or initial value of the modulation index. Default is 0.5."
+msgstr "Fixed or initial value of the modulation index."
 
 msgid "VSConverter.d0"
-msgstr "Fixed or initial value of the power angle in degrees. Default is 0."
+msgstr "Fixed or initial value of the power angle in degrees."
 
 msgid "VSConverter.Mmin"
-msgstr "Minimum value of modulation index. Default is 0.1."
+msgstr "Minimum value of modulation index."
 
 msgid "VSConverter.Mmax"
-msgstr "Maximum value of modulation index. Default is 0.9."
+msgstr "Maximum value of modulation index."
 
 msgid "VSConverter.Iacmax"
-msgstr "Maximum value of AC line current, per-unit of nominal. Default is 2."
+msgstr "Maximum value of AC line current, per-unit of nominal."
 
 msgid "VSConverter.Idcmax"
-msgstr "Maximum value of DC current, per-unit of nominal. Default is 2."
+msgstr "Maximum value of DC current, per-unit of nominal."
 
 msgid "VSConverter.Vacref"
 msgstr ""
-"Reference AC line-to-neutral voltage, RMS Volts. Default is 0.\n"
+"Reference AC line-to-neutral voltage, RMS Volts.\n"
 "Applies to PacVac and VdcVac control modes, influencing m."
 
 msgid "VSConverter.Pacref"
 msgstr ""
-"Reference total AC real power, Watts. Default is 0.\n"
+"Reference total AC real power, Watts.\n"
 "Applies to PacVac and PacQac control modes, influencing d."
 
 msgid "VSConverter.Qacref"
 msgstr ""
-"Reference total AC reactive power, Vars. Default is 0.\n"
+"Reference total AC reactive power, Vars.\n"
 "Applies to PacQac and VdcQac control modes, influencing m."
 
 msgid "VSConverter.Vdcref"
 msgstr ""
-"Reference DC voltage, Volts. Default is 0.\n"
+"Reference DC voltage, Volts.\n"
 "Applies to VdcVac control mode, influencing d."
 
 msgid "VSConverter.VscMode"
-msgstr "Control Mode (Fixed|PacVac|PacQac|VdcVac|VdcQac). Default is Fixed."
+msgstr "Control Mode"
 
 msgid "VSConverter.spectrum"
 msgstr "Name of harmonic spectrum for this device."
@@ -5311,11 +5311,11 @@ msgid "EnergyMeter.option"
 msgstr ""
 "Enter a string ARRAY of any combination of the following. Options processed left-to-right:\n"
 "\n"
-"(E)xcess : (default) UE/EEN is estimate of energy over capacity \n"
+"(E)xcess : UE/EEN is estimate of energy over capacity \n"
 "(T)otal : UE/EEN is total energy after capacity exceeded\n"
-"(R)adial : (default) Treats zone as a radial circuit\n"
+"(R)adial : Treats zone as a radial circuit\n"
 "(M)esh : Treats zone as meshed network (not radial).\n"
-"(C)ombined : (default) Load UE/EEN computed from combination of overload and undervoltage.\n"
+"(C)ombined : Load UE/EEN computed from combination of overload and undervoltage.\n"
 "(V)oltage : Load UE/EEN computed based on voltage only.\n"
 "\n"
 "Example: option=(E, R)"
@@ -5327,7 +5327,7 @@ msgid "EnergyMeter.kVAemerg"
 msgstr "Upper limit on kVA load in the zone, Emergency configuration. Default is 0.0 (ignored). Overrides limits on individual lines for overload UE. With \"LocalOnly=Yes\" option, uses only load in metered branch."
 
 msgid "EnergyMeter.peakcurrent"
-msgstr "ARRAY of current magnitudes representing the peak currents measured at this location for the load allocation function.  Default is (400, 400, 400). Enter one current for each phase"
+msgstr "ARRAY of current magnitudes representing the peak currents measured at this location for the load allocation function. Enter one current for each phase"
 
 msgid "EnergyMeter.Zonelist"
 msgstr ""
@@ -5391,12 +5391,12 @@ msgid "Sensor.element"
 msgstr "Name (Full Object name) of element to which the Sensor is connected."
 
 msgid "Sensor.terminal"
-msgstr "Number of the terminal of the circuit element to which the Sensor is connected. 1 or 2, typically. Default is 1."
+msgstr "Number of the terminal of the circuit element to which the Sensor is connected. 1 or 2, typically."
 
 msgid "Sensor.kvbase"
 msgstr ""
 "Voltage base for the sensor, in kV. If connected to a 2- or 3-phase terminal, \n"
-"specify L-L voltage. For 1-phase devices specify L-N or actual 1-phase voltage. Like many other DSS devices, default is 12.47kV."
+"specify L-L voltage. For 1-phase devices specify L-N or actual 1-phase voltage."
 
 msgid "Sensor.clear"
 msgstr "Clear=Yes clears sensor values. Should be issued before putting in a new set of measurements."
@@ -5417,18 +5417,18 @@ msgstr "Array of Reactive power (kvar) measurements at the sensor. Is converted 
 
 msgid "Sensor.conn"
 msgstr ""
-"Voltage sensor Connection: { wye | delta | LN | LL }.  Default is wye. Applies to voltage measurement only. \n"
+"Voltage sensor connection. Applies to voltage measurement only. \n"
 "Currents are always assumed to be line currents.\n"
 "If wye or LN, voltage is assumed measured line-neutral; otherwise, line-line."
 
 msgid "Sensor.Deltadirection"
-msgstr "{1 or -1}  Default is 1:  1-2, 2-3, 3-1.  For reverse rotation, enter -1. Any positive or negative entry will suffice."
+msgstr "Default is 1: 1-2, 2-3, 3-1. For reverse rotation, enter -1."
 
 msgid "Sensor.%Error"
-msgstr "Assumed percent error in the measurement. Default is 1."
+msgstr "Assumed percent error in the measurement."
 
 msgid "Sensor.Weight"
-msgstr "Weighting factor: Default is 1."
+msgstr "Weighting factor."
 
 msgid "Sensor.action"
 msgstr ""
@@ -6090,10 +6090,10 @@ msgid "PlotOption.max"
 msgstr "Enter 0 (the default value) or the value corresponding to max scale or line thickness in the circuit plots. Power and Losses in kW. Also, use this to specify the max value corresponding to color C2 in General plots."
 
 msgid "PlotOption.dots"
-msgstr "Yes or No*. Places a marker on the circuit plot at the bus location. See Set Markercode under options."
+msgstr "Places a marker on the circuit plot at the bus location. See Set Markercode under options."
 
 msgid "PlotOption.labels"
-msgstr "Yes or No*. If yes, bus labels (abbreviated) are printed on the circuit plot."
+msgstr "If yes, bus labels (abbreviated) are printed on the circuit plot."
 
 msgid "PlotOption.object"
 msgstr "Object to be plotted. One of [Meter Name (zones plot) | Monitor Name | LoadShape Name | File Name for General bus data | File Name Circuit branch data]"
@@ -6165,10 +6165,10 @@ msgstr ""
 "plot scatter PlotID=plotA  !Updates the data in plotA"
 
 msgid "ESPVLControl.Element"
-msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring. There is no default; must be specified."
+msgstr "Full object name of the circuit element, typically a line or transformer, which the control is monitoring."
 
 msgid "ESPVLControl.Terminal"
-msgstr "Number of the terminal of the circuit element to which the ESPVLControl control is connected. 1 or 2, typically.  Default is 1. Make sure you have the direction on the power matching the sign of kWLimit."
+msgstr "Number of the terminal of the circuit element to which the ESPVLControl control is connected. 1 or 2, typically. Make sure you have the direction on the power matching the sign of kWLimit."
 
 msgid "ESPVLControl.Type"
 msgstr "Type of controller.  1= System Controller; 2= Local controller. "
