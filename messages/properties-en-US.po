@@ -5158,6 +5158,12 @@ msgstr ""
 "Array list of generators to be dispatched.  If not specified, all generators"
 " in the circuit are assumed dispatchable."
 
+msgid "GenDispatcher.weights"
+msgstr "Array of proportional weights corresponding to each generator in the"
+" GenList. The needed kW to get back to center band is dispatched to each"
+" generator according to these weights. Default is to set all weights to"
+" 1.0."
+
 msgid "GenDispatcher.basefreq"
 msgstr "Base Frequency for ratings."
 
