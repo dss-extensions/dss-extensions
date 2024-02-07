@@ -1,0 +1,7 @@
+sphinx
+sphinxcontrib-mermaid
+myst_nb
+sphinx-design
+sphinx-book-theme
+pydata_sphinx_theme
+

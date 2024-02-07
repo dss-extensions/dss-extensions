@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="33.542763cm"
+   height="34.484936cm"
+   viewBox="0 0 335.42762 344.84937"
+   version="1.1"
+   id="svg2403"
+   sodipodi:docname="logo_dss_alt.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="/home/meira/projects/dss/projects/dss/logo_dssx.png"
+   inkscape:export-xdpi="200.00604"
+   inkscape:export-ydpi="200.00604">
+  <defs
+     id="defs2397">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1793"
+       id="radialGradient1899"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.52170277,0.5208458,-0.39516264,0.3958131,-345.45334,473.6049)"
+       cx="-131.18535"
+       cy="67.299812"
+       fx="-131.18535"
+       fy="67.299812"
+       r="73.306824" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1793">
+      <stop
+         style="stop-color:#467f03;stop-opacity:1"
+         offset="0"
+         id="stop1789" />
+      <stop
+         style="stop-color:#c0ff72;stop-opacity:1"
+         offset="1"
+         id="stop1791" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter2077"
+       x="-0.010334873"
+       width="1.0206697"
+       y="-0.024414808"
+       height="1.0488296">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.2894225"
+         id="feGaussianBlur2079" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1793"
+       id="radialGradient2306"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78630663,0.78501501,-0.59558627,0.59656663,147.77038,130.58585)"
+       cx="-131.18535"
+       cy="67.299812"
+       fx="-131.18535"
+       fy="67.299812"
+       r="73.306824" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1701"
+       x="-0.04875185"
+       width="1.0975037"
+       y="-0.11937424"
+       height="1.2387486">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.3192596"
+         id="feGaussianBlur1703" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1793"
+       id="radialGradient2136"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78630663,0.78501501,-0.59558627,0.59656663,147.77038,130.58585)"
+       cx="-131.18535"
+       cy="67.299812"
+       fx="-131.18535"
+       fy="67.299812"
+       r="73.306824" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4370466"
+     inkscape:cx="713.56731"
+     inkscape:cy="320.11932"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g2158"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="cm" />
+  <metadata
+     id="metadata2400">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(61.880478,24.258011)">
+    <ellipse
+       style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.608831"
+       id="ellipse2334"
+       cx="105.83334"
+       cy="229.14693"
+       rx="157.71382"
+       ry="78.248825" />
+    <ellipse
+       style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.327528"
+       id="circle1887"
+       cx="28.623739"
+       cy="230.5394"
+       rx="62.429348"
+       ry="57.208431" />
+    <g
+       id="g2116"
+       transform="translate(536.28619,-199.57132)">
+      <path
+         id="path1889"
+         style="fill:url(#radialGradient1899);fill-opacity:1;stroke:#e4ffc4;stroke-width:0.986546;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -467.39129,392.3889 -11.34056,1.34526 -0.9879,11.69724 26.54645,26.49646 -26.84083,26.89182 1.34491,11.34022 11.69761,0.98824 26.49612,-26.54643 26.89183,26.8408 11.34057,-1.34526 0.98789,-11.69724 -26.54644,-26.49646 26.84083,-26.89182 -1.34493,-11.34022 -11.69723,-0.98824 -26.49648,26.54679 z" />
+      <circle
+         style="fill:#b1ff53;fill-opacity:1;stroke-width:0.167074"
+         id="circle1891"
+         cx="-440.48746"
+         cy="431.91571"
+         r="30.485048" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.5125px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:start;text-anchor:start;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.987823;filter:url(#filter2077)"
+       x="-548.6283"
+       y="442.99921"
+       id="text1911"
+       transform="matrix(0.95334757,0,0,0.95334757,509.78116,-178.49115)"><tspan
+         sodipodi:role="line"
+         x="-548.6283"
+         y="442.99921"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Medium';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.987823"
+         id="tspan1909">DSS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:start;text-anchor:start;fill:#3c2d1e;fill-opacity:1;stroke:none;stroke-width:0.920964"
+       x="-12.467448"
+       y="243.02107"
+       id="text1897"><tspan
+         sodipodi:role="line"
+         x="-12.467448"
+         y="243.02107"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';text-align:start;text-anchor:start;fill:#3c2d1e;fill-opacity:1;stroke-width:0.920964"
+         id="tspan1895"><tspan
+           style="font-weight:normal;fill:#3c2d1e;fill-opacity:1;stroke-width:0.920964"
+           id="tspan1905"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Medium';stroke-width:0.920964"
+   id="tspan2286">DSS</tspan> Extensions</tspan></tspan></text>
+    <g
+       id="g2234"
+       transform="translate(969.20751,-177.03783)"
+       inkscape:export-filename="/home/meira/projects/dss/dss_sharp/docs/dss_sharp.png"
+       inkscape:export-xdpi="26.933865"
+       inkscape:export-ydpi="26.933865">
+      <circle
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.313251"
+         id="circle2118"
+         cx="-858.26404"
+         cy="223.13507"
+         r="57.156979" />
+      <g
+         id="g2132"
+         transform="translate(-862.79966,155.38287)">
+        <path
+           id="path2120"
+           style="fill:url(#radialGradient2306);fill-opacity:1;stroke:#e4ffc4;stroke-width:1.48692;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -36.013607,8.1776745 -17.092421,2.0275635 -1.488949,17.630006 40.010633,39.935274 -40.454316,40.531152 2.027037,17.09191 17.630543,1.48945 39.934772,-40.010587 40.531169,40.454277 17.09242,-2.02757 1.48894,-17.63 L 23.655624,67.733886 64.109921,27.202727 62.082851,10.110825 44.452871,8.6213658 4.517588,48.632478 Z" />
+        <circle
+           style="fill:#b1ff53;fill-opacity:1;stroke-width:0.205754"
+           id="circle2122"
+           cx="4.5356307"
+           cy="67.752197"
+           r="37.542652" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.920964;filter:url(#filter1701)"
+           x="-30.741743"
+           y="80.414429"
+           id="text2126"
+           transform="matrix(1.0500277,0,0,1.0500277,-0.23588061,-3.3779231)"><tspan
+             sodipodi:role="line"
+             id="tspan2124"
+             x="-30.741743"
+             y="80.414429"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.920964">DSS</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#2d2d2d;fill-opacity:1;stroke:none;stroke-width:0.920964"
+           x="-30.741743"
+           y="80.414429"
+           id="text2130"><tspan
+             sodipodi:role="line"
+             id="tspan2128"
+             x="-30.741743"
+             y="80.414429"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';fill:#2d2d2d;fill-opacity:1;stroke-width:0.920964">DSS</tspan></text>
+      </g>
+      <g
+         id="g2158"
+         transform="translate(-862.79966,155.38287)">
+        <path
+           id="path2146"
+           style="fill:url(#radialGradient2136);fill-opacity:1;stroke:#e4ffc4;stroke-width:1.48692;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -36.013607,8.1776745 -17.092421,2.0275635 -1.488949,17.630006 40.010633,39.935274 -40.454316,40.531152 2.027037,17.09191 17.630543,1.48945 39.934772,-40.010587 40.531169,40.454277 17.09242,-2.02757 1.48894,-17.63 L 23.655624,67.733886 64.109921,27.202727 62.082851,10.110825 44.452871,8.6213658 4.517588,48.632478 Z" />
+        <circle
+           style="fill:#b1ff53;fill-opacity:1;stroke-width:0.205754"
+           id="circle2148"
+           cx="4.5356307"
+           cy="67.752197"
+           r="37.542652" />
+        <g
+           id="g874">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.920964;filter:url(#filter1701)"
+             x="-30.741743"
+             y="80.414429"
+             id="text2152"
+             transform="matrix(1.0500277,0,0,1.0500277,-0.23588061,-3.3779231)"><tspan
+               sodipodi:role="line"
+               id="tspan2150"
+               x="-30.741743"
+               y="80.414429"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.920964">DSS</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#2d2d2d;fill-opacity:1;stroke:none;stroke-width:0.920964"
+             x="-30.741743"
+             y="80.414429"
+             id="text2156"><tspan
+               sodipodi:role="line"
+               id="tspan2154"
+               x="-30.741743"
+               y="80.414429"
+               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Medium';fill:#2d2d2d;fill-opacity:1;stroke-width:0.920964">DSS</tspan></text>
+        </g>
+        <g
+           id="g894"
+           transform="matrix(0.72249662,-0.58361282,0.58361282,0.72249662,-91.835097,19.009471)">
+          <path
+             sodipodi:type="star"
+             style="fill:#ff0000;stroke:#000000;stroke-width:5.91496;stroke-linecap:round"
+             id="path876"
+             sodipodi:sides="15"
+             sodipodi:cx="244.42526"
+             sodipodi:cy="-213.35246"
+             sodipodi:r1="134.99155"
+             sodipodi:r2="109.21046"
+             sodipodi:arg1="0.7159816"
+             sodipodi:arg2="0.92542111"
+             inkscape:flatsided="false"
+             inkscape:rounded="0"
+             inkscape:randomized="0"
+             d="m 346.26954,-124.74964 -36.15438,-1.35741 -8.68853,35.121094 -32.47657,-15.945374 -22.2224,28.550778 -23.18325,-27.776228 -31.91383,17.043762 -9.88134,-34.804322 -36.08705,2.58973 5.12914,-35.81444 -34.0205,-12.31209 19.25274,-30.63191 -26.07149,-25.08504 30.04738,-20.15284 -13.6145,-33.52055 35.64655,-6.18917 1.19658,-36.16007 35.0821,8.84467 15.80075,-32.54717 28.45164,22.34919 27.67284,-23.30658 16.90163,31.98932 34.76003,-10.03606 2.42919,36.09822 35.8369,4.96978 -12.4633,33.9654 30.71725,19.1163 -25.20076,25.95965 20.2863,29.95744 -33.58079,13.46526 z"
+             transform="matrix(0.13826897,0.11168986,-0.11168986,0.13826897,-52.425097,57.869659)"
+             inkscape:transform-center-x="2.4785207"
+             inkscape:transform-center-y="-0.96629748" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1709px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.704278"
+             x="-13.877496"
+             y="62.976742"
+             id="text882"><tspan
+               sodipodi:role="line"
+               id="tspan880"
+               x="-13.877496"
+               y="62.976742"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1709px;font-family:Acathist;-inkscape-font-specification:Acathist;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.704278">Alt</tspan></text>
+        </g>
+      </g>
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g2234"
+       id="use3090"
+       transform="matrix(0.5,0,0,0.5,165.11713,-11.728365)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g2234"
+       id="use3092"
+       transform="matrix(0.25,0,0,0.25,176.9048,54.270696)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g2234"
+       id="use3094"
+       transform="matrix(0.125,0,0,0.125,221.18688,52.515853)"
+       width="100%"
+       height="100%" />
+  </g>
+</svg>
