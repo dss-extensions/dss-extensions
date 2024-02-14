@@ -46,6 +46,7 @@ myst_enable_extensions = [
     "dollarmath",
     "fieldlist",
     "strikethrough",
+    "attrs_block",
 
     # "amsmath",
     # "deflist",

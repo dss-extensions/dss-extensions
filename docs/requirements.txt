@@ -4,4 +4,6 @@ myst_nb
 sphinx-design
 sphinx-book-theme
 pydata_sphinx_theme
-
+linkify-it-py
+sphinx-autodoc2
+mako

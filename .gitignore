@@ -117,3 +117,6 @@ ENV/
 *.sng
 *.pdb
 
+electricdss-tst
+.vscode
+docs/dss-format/
