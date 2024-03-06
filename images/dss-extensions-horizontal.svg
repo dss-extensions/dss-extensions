@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="282.94165mm"
+   height="76.45137mm"
+   viewBox="0 0 282.94165 76.45137"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter2077-6-3"
+       x="-0.010149887"
+       width="1.0202998"
+       y="-0.024416114"
+       height="1.0488322">
+      <feGaussianBlur
+         stdDeviation="0.2894225"
+         id="feGaussianBlur2079-1-6" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(47.025763,-109.77397)">
+    <g
+       id="g287"
+       transform="translate(-236.4299,83.42083)">
+      <path
+         id="path271"
+         d="m 227.79521,26.353329 h 214.4314 l 30.11917,38.225458 -32.2706,38.225533 H 227.79521 l 25.58261,-38.225533 z"
+         style="fill:#d5ffa2;fill-opacity:1;stroke:none;stroke-width:7.431;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.5125px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:start;text-anchor:start;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.987823;filter:url(#filter2077-6-3)"
+         x="-548.6283"
+         y="442.99921"
+         id="text275"
+         transform="matrix(0.95334757,0,0,0.95334757,714.69287,-344.2098)"><tspan
+           x="-548.6283"
+           y="442.99921"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Medium';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.987823"
+           id="tspan273">DSS</tspan></text>
+      <circle
+         style="fill:#b1ff53;fill-opacity:1;stroke-width:0.209497"
+         id="circle277"
+         cx="227.62982"
+         cy="64.578827"
+         r="38.225685" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.8382px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:start;text-anchor:start;fill:#3c2d1e;fill-opacity:1;stroke:none;stroke-width:0.920964"
+         x="192.50395"
+         y="77.472191"
+         id="text285"><tspan
+           x="192.50395"
+           y="77.472191"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';text-align:start;text-anchor:start;fill:#3c2d1e;fill-opacity:1;stroke-width:0.920964"
+           id="tspan283"><tspan
+             style="font-weight:normal;fill:#3c2d1e;fill-opacity:1;stroke-width:0.920964"
+             id="tspan281"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Quicksand;-inkscape-font-specification:'Quicksand Medium';stroke-width:0.920964"
+   id="tspan279">DSS</tspan> Extensions</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

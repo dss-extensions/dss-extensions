@@ -1,4 +1,6 @@
-# OpenDSS: Overview of Python APIs
+# OpenDSS: Python APIs
+
+*An overview of Python APIs used to interact with the OpenDSS engine*
 
 <!--
 TODO:
@@ -11,15 +13,21 @@ OpenDSS can be used and controlled through many different approaches. Using Pyth
 
 This document provides an overview of typical usage with the official implementation and the three options available on DSS-Extensions:
 
+<center>
+
 ```mermaid
 flowchart TD
     C["AltDSS engine/DSS C-API\n(libdss_capi)"] --> P["DSS-Python: Backend"]
     P --- DSSPY["<a href='https://dss-extensions.org/DSS-Python/'>DSS-Python\n(dss package)<a/>"]
-    P --- ODDPY["<a href='https://dss-extensions.org/OpenDSSDirect.py'>OpenDSSDirect.py\n(opendssdirect package)</a>"]
+    P --- ODDPY["<a href='https://dss-extensions.org/OpenDSSDirect.py/'>OpenDSSDirect.py\n(opendssdirect package)</a>"]
     P --- ALTDSSPY["<a href='https://dss-extensions.org/AltDSS-Python/'>AltDSS-Python\n(altdss package)</a>"]
 ```
 
-See also [the FAQ](https://github.com/dss-extensions/dss-extensions#faq) for more context.
+</center>
+
+See also [the FAQ](https://dss-extensions.org/faq) for more context.
+
+If you are new to some classic OpenDSS API concepts, please check [OpenDSS COM/classic APIs](https://dss-extensions.org/classic_api).
 
 ## Official OpenDSS COM API (`OpenDSSEngine.DLL`)
 
@@ -31,6 +39,15 @@ Usually, the required DLLs are automatically registered for COM interaction duri
 
 In Python, there are two main packages to interact with COM modules, `win32com` (part of the [`pywin32` distribution](https://github.com/mhammond/pywin32)) and [`comtypes`](https://github.com/enthought/comtypes). Both packages are available both through `pip` ([PyPI](https://pypi.org/), the Python Package Index) or through `conda` (the Anaconda ecosystem, including the wonderful [conda-forge](https://conda-forge.org/)). Since 2021, we recommend using `comtypes` if possible, so the code snippets below will use that. This recommendation is due to both its better performance when compared to `win32com`, and better/automatic handling of early-bindings code.
 
+### Installation
+
+To install it:
+
+- Install OpenDSS as an administrator. It will register the COM DLLs (both 32- and 64-bit versions) during installation.
+- Ensure either `comtypes` or `pywin32` (`win32com` is part of the `pywin32` package) is installed. If required, both can be installed using either `pip` (e.g. `pip install comtypes`) or `conda` (e.g. `conda install comtypes`).
+
+### Minimal usage
+
 A minimal sample would be:
 
 ```python
@@ -41,14 +58,19 @@ dss = comtypes.client.CreateObject('OpenDSSEngine.DSS')
 print(dss.Version)
 
 # Load a circuit
-dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
+dss.Text.Command = 'redirect "c:/my_folder/my_circuit1/master.dss"'
+
+# Get the circuit voltages
+vmag = dss.ActiveCircuit.AllBusVmag
 
 # ...
 ```
 
+By default, both `win32com` and `comtypes` modules return tuples or lists, but `comtypes` has optional NumPy interop. [Check the `comtypes` docs for details](https://pythonhosted.org/comtypes/#numpy-interop); this feature has some overhead but simplifies the final code, since in many scenarios the users would convert the data to NumPy anyway.
+
 ### Handling the working directory (a.k.a. `cd`, `cwd`)
 
-When the OpenDSS is loaded, some options stored in the Windows registry from the previous execution are loaded, including the last working directory. For example, suppose you ran a `compile` command with a file in the folder `c:\my_folder\my_circuit1` and exited OpenDSS — either through COM or through the GUI. By default, `c:\my_folder\my_circuit1` will be saved to the registry and restored in the next execution. This can be confusing and lead to unexpected behavior for new users when running scripts from other folders.
+When the OpenDSS is loaded, some options stored in the Windows registry from the previous execution are loaded, including the last working directory. For example, suppose you ran a `redirect` command with a file in the folder `c:\my_folder\my_circuit1` and exited OpenDSS — either through COM or through the GUI. By default, `c:\my_folder\my_circuit1` will be saved to the registry and restored in the next execution. This can be confusing and lead to unexpected behavior for new users when running scripts from other folders.
 
 To avoid the issue, a typical idiom is:
 
@@ -72,7 +94,7 @@ os.chdir(old_cd)
 print(dss.Version)
 
 # Load a circuit
-dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
+dss.Text.Command = 'redirect "c:/my_folder/my_circuit1/master.dss"'
 
 # ...
 ```
@@ -85,6 +107,12 @@ DSS-Python packages the OpenDSS engine as implemented in DSS-Extensions to mimic
 
 DSS-Python is available for Windows, Linux, and macOS (including Apple M1 ARM machines, or "Apple Silicon" in marketing speak), while the official OpenDSS is official supported only on MS Windows.
 
+### Installation
+
+Typically, using `pip install dss-python` is enough for basic usage. To install recommended optional dependencies, including `OpenDSSDirect.py` and `AltDSS-Python`, use `pip install dss-python[all]`.
+
+### Minimal usage
+
 Assuming recent DSS-Python versions (`dss-python>=0.12.1`) are installed (e.g. through `pip install dss-python`), you can use the following:
 
 ```python
@@ -94,10 +122,13 @@ from dss import dss
 print(dss.Version)
 
 # Load a circuit
-dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
+dss.Text.Command = 'redirect "c:/my_folder/my_circuit1/master.dss"'
 
 # For modern DSS-Python versions, you can use this shortcut for Text.Command
-dss('compile c:/my_folder/my_circuit1/master.dss')
+dss('redirect "c:/my_folder/my_circuit1/master.dss"')
+
+# Get the circuit voltages
+vmag = dss.ActiveCircuit.AllBusVmag
 
 # ...
 ```
@@ -106,12 +137,11 @@ Note that only the first two lines changed. Most of the official COM implementat
 
 There are also a lot of extra features, some under development. These include multiple DSS engines in the same process, handling of ZIP files, and more. Please check [https://dss-extensions.org/DSS-Python/](https://dss-extensions.org/DSS-Python/). 
 
-
 ### More friendly types
 
 Since DSS-Python v0.13, we added an option to toggle "advanced types". This feature is also available in OpenDSSDirect.py when the option to use NumPy arrays is enabled (check the docs).
 
-Generally, the OpenDSS APIs return plain arrays. This happens even for data that represents matrices. Moreover, typically complex numbers are represented by pairs of floats. Since NumPy has good support for multi-dimensional arrays and complex numbers are simple in Python, we can use some new features of our DSS C-API library to provide user-friendly types with very low performance impact.
+Generally, the OpenDSS APIs return plain arrays. This happens even for data that represents matrices. Moreover, typically complex numbers are represented by pairs of floats, represented sequentially in a plain array. Since NumPy has good support for multi-dimensional arrays and complex numbers are simple in Python, we can use some new features of our DSS C-API library to provide user-friendly types with very low performance impact.
 
 ```python
 from dss import dss
@@ -120,7 +150,7 @@ from dss import dss
 print(dss.Version)
 
 # Load a circuit
-dss.Text.Command = 'compile c:/my_folder/my_circuit1/master.dss'
+dss.Text.Command = 'redirect "c:/my_folder/my_circuit1/master.dss"'
 
 dss.ActiveCircuit.Solution.Solve()
 
@@ -191,6 +221,7 @@ for b in dss.ActiveCircuit.ActiveBus:
 for l in dss.ActiveCircuit.Loads:
     print(l.Name, l.kW)
 ```
+
 The output is what we expect:
 
 ```
@@ -233,15 +264,26 @@ Note that this patch doesn't change the official engine, just adjusts the Python
 
 ## DSS-Extensions: OpenDSSDirect.py
 
-OpenDSSDirect.py (ODD.py for short) is a project that initially employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS-Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS-Extensions.
+OpenDSSDirect.py (ODD.py for short) is a project that *initially* employed the official `OpenDSSDirect.DLL` (a.k.a. "Direct Connection Shared Library"/DCSL or "Direct DLL") to expose OpenDSS to Python users. When the DSS-Extensions project was created, ODD.py was migrated to use the lower-level tools from DSS-Python to expose the same Python API as before, but using the engine from DSS-Extensions, which employs a completely different low-level API.
 
-**Sidenote:** `OpenDSSDirect.DLL` still exists. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation — see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
+:::{note}
+`OpenDSSDirect.DLL` still exists and has been reworked in 2023 to remove COM-based variants. It bypasses some of the COM requirements, such as DLL registration, but the general performance should be the same as the COM DLL implementation — see, e.g., [page 27 here (under "Myths and legends about user interfaces")](https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Training/Virtual-2022/session2/Session_2_2022_DMCR_v3.pdf?format=raw), from Session 2 of the OpenDSS Virtual Training 2022. There is no officially supported module for Python that uses `OpenDSSDirect.DLL` as of November 2022. Besides that, we only compare to the official COM implementation for conciseness.
 
-Most of the features from DSS-Python are available in ODD.py, and it has a few extra utility functions.
+DSS-Extensions plans to support `OpenDSSDirect.DLL` usage in a limited capacity in the future.
+:::
+
+Most of the features from DSS-Python are available in ODD.py, and it has extra utility functions.
 
 Style-wise, the main difference from ODD.py and DSS-Python is that instead of Python properties, most access is done through plain function calls and the module/class organization is flatter.
 
 More notes and API docs are available at [https://dss-extensions.org/OpenDSSDirect.py/](https://dss-extensions.org/OpenDSSDirect.py/).
+
+
+### Installation
+
+Typically, using `pip install opendssdirect.py` is enough for basic usage. To install recommended optional dependencies, including `AltDSS-Python` and `pandas`, use `pip install opendssdirect.py[extras]`.
+
+### Minimal usage
 
 ```python
 from opendssdirect import dss
@@ -250,26 +292,86 @@ from opendssdirect import dss
 print(dss.Basic.Version())
 
 # Load a circuit
-dss.Text.Command('compile c:/my_folder/my_circuit1/master.dss')
+dss.Text.Command('redirect "c:/my_folder/my_circuit1/master.dss"')
 
 # You can also use the shortcut to achieve the same
-dss('compile c:/my_folder/my_circuit1/master.dss')
+dss('redirect "c:/my_folder/my_circuit1/master.dss"')
+
+# Get the circuit voltages
+vmag = dss.Circuit.AllBusVMag()
 
 # ...
 ```
 
-## DSS-Extensions: AltDSS-Python
+## DSS-Extensions: the new AltDSS-Python
 
-AltDSS-Python provides a new approach, representing a unified and extended API that allows manipulating directly in Python nearly all OpenDSS object types. Moreover, it encapsulates all separate concepts in a simple class.
+AltDSS-Python provides a new approach, representing a unified and extended API that allows manipulating directly in Python nearly all OpenDSS object types. Furthermore, it encapsulates all separate concepts in simple objects.
 
 The new features can be used together with both DSS-Python and OpenDSSDirect.py, allowing users to complement existing code instead of having to rewrite everything. 
 
+Visit https://dss-extensions.org/AltDSS-Python/ for more information.
+
+### Installation
+
+Similar to DSS-Python, use either `pip install altdss` or `pip install altdss[all]`, depending whether you want all recommended packages or not.
+
+### Minimal usage
+
+```python
+from altdss import altdss
+
+# Check the engine version
+print(altdss.Version())
+
+# Load a circuit
+altdss('redirect "c:/my_folder/my_circuit1/master.dss"')
+
+# Get the circuit voltages
+vmag = dss.BusVMag()
 ```
 
+### Direct object and batch manipulation
+
+Most of the basic methods from the other APIs are available, but you can manipulate objects more efficiently without dropping down to the text interface, and can keep the objects for later use without worrying about what object is active.
+
+```python
+# Get the default loadshape
+ls_default = altdss.LoadShape['default']
+
+# Get a batch object representing all 2-phase loads
+loads_2ph = altdss.Load.batch(Phases=2)
+
+# Set the Daily shape for these 2-phases loads to the default shape
+loads_2ph.Daily = ls_default
+
+# Grab a single load object
+load = altdss.Load['load_name']
+load.kW *= 1.5
+
+# Run a snapshot solution
+from dss import SolveModes
+altdss.Solution.Mode = SolveModes.SnapShot
+altdss.Solution.Solve()
+
+# You can now inspect the load powers, using the same load object above
+print(load.TotalPowers())
+
+# Get a bus; most of the classic Bus interface methods are generalized and
+# have similar implementations here
+bus = altdss.Bus[2]
+another_bus = altdss.Bus[3]
+print(bus.puVMagAngle, another_bus.puVMagAngle)
+
+# Run a daily solution
+altdss.Solution.Mode = SolveModes.Daily
+altdss.Solution.Solve()
 ```
 
+All DSS objects and (non-redundant) properties are exposed, with the same names as used in the .DSS scripts, when possible.
 
-Visit https://dss-extensions.org/AltDSS-Python/ for more information and a growing number of examples.
+This is just short sample, [check the docs for more](https://dss-extensions.org/AltDSS-Python/).
+
+The commands and other default are also being refactored and will be exposed in a more Pythonic way in a future release.
 
 ## General performance tips
 
@@ -282,10 +384,10 @@ This list is mostly API agnostic.
 - If you need to mutate an object or read a result and the target DSS class has a dedicated API, prefer using that instead of feeding strings through the `Text.Command` API. The dedicated APIs can change the target fields directly (this is especially true for DSS-Extensions), while `Text.Command` feeds the DSS parser first. In the end, using the dedicated APIs can avoid string formatting/interpolation and later parsing back those to integers/floats/etc. altogether.
 - If your analysis requires running multiple scenarios of the same circuit, do try to keep the circuit in memory instead of reloading it. For that, save the list of changes done in the previous analysis step to undo them later, or just restore everything to a known state. This can bring a good performance bonus with medium and large circuits. Tiny circuits may not be affected, but that depends on a lot of factors, including the processor of the machine running the DSS engine.
 - On Windows:
-    - avoid circuits fragmented in too many files
-    - try to exclude the circuit folders from your antivirus scans (especially real-time scans)
-    - avoid disk operations in general since NTFS (the most common file system on Windows) is usually slow; if possible, use an API to read the results in memory instead of writing a text report and reading it back. This is not always possible, but many new users don't explore the API before deciding to use the slow approach of using reports.
-
+    - Avoid circuits fragmented in too many files.
+    - Try to exclude the circuit folders from your antivirus scans (especially real-time scans).
+    - Avoid disk operations in general since NTFS (the most common file system on Windows) is usually slow; if possible, use an API to read the results in memory instead of writing a text report and reading it back. This is not always possible, but many new users don't explore the API before deciding to use the slow approach of using reports.
+    - If you are analyzing thousands of circuits on DSS-Extensions, you can use the ZIP interface to load circuits from .ZIP-compressed files without requiring extraction.
 
 ## Property and function table
 
