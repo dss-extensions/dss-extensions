@@ -285,7 +285,7 @@ html_theme.sidebar_secondary.remove: true
 :::{list-table}
 :header-rows: 1
 :align: center
-*   - Index
+*   - \#
     - Name
     - Type
     - Default
@@ -327,7 +327,7 @@ ${"###"} ${e['name']}
 :::
 
 %  if e['hybrid']:
-**This is a "hybrid" enumeration.** The related input properties accepts the values listed in this table and integer numbers greater than 1.
+**This is a "hybrid" enumeration.** The related input properties accepts the values listed in this table and integer numbers greater than 0.
 %  endif
 
 % endfor
@@ -403,7 +403,7 @@ ${"##"} ${e['name']}
 :::
 
 %  if e['hybrid']:
-**This is a "hybrid" enumeration.** The related input properties accepts the values listed in this table and integer numbers greater than 1.
+**This is a "hybrid" enumeration.** The related input properties accepts the values listed in this table and integer numbers greater than 0.
 %  endif
 
 % endfor
