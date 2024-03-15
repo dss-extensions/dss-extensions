@@ -13,6 +13,60 @@ out_path.mkdir(exist_ok=True)
 
 escape = html.escape
 
+epri_links = [
+    'AutoTrans',
+    'CapacitorObject',
+    'GICTransformerObject',
+    'Line',
+    'Reactor',
+    'Transformer1',
+    'Generator',
+    'GICLineObject',
+    'IndMach012',
+    'Load1',
+    'PVSystem',
+    'Storage',
+    'VSCCSVoltage-Controlled-Current-',
+    'UPFCdevice',
+    'CapControl1',
+    'ExpControl',
+    'Fuse',
+    'InvControl',
+    'Recloser',
+    'RegControl',
+    'Relay',
+    'StorageController',
+    'SwtControl',
+    'UPFCControl',
+    'EnergyMeter2',
+    'Monitor',
+    'Fault',
+    'Isource1',
+    'Vsource',
+    'CNData',
+    'DynamicExp',
+    'GrowthShape',
+    'LineCode1',
+    'LineGeometry',
+    'LineSpacing',
+    'LoadShape',
+    'TCC_Curve',
+    'WireData',
+    'XfmrCode',
+    'XYCurveObject',
+]
+
+def fix_link_key(x: str):
+    x = x.replace('Object', '').replace('device', '').replace('VSCCSVoltage-Controlled-Current-', 'VCCS')
+    if x.endswith(('1', '2')) and not x.endswith('012'):
+        x = x[:-1]
+
+    return x.lower()
+
+epri_obj_links = {
+    fix_link_key(x): f'https://opendss.epri.com/{x}.html' for x in epri_links
+}
+
 numeric_enums = ['InvControl: Control Model', 'Generator: Model', 'Load: Model', 'PVSystem: Model', 'UPFC: Mode'] # TODO: extract from JSON Schema
 mo = Path('../messages/messages/properties-alt-en-US.mo')
 assert mo.exists()
@@ -282,6 +336,10 @@ html_theme.sidebar_secondary.remove: true
 % endif        
 )
 
+%if epri_obj_links.get(cls['name'].lower()):
+EPRI's OpenDSS Documentation: ${epri_obj_links.get(cls['name'].lower())}
+%endif
+
 :::{list-table}
 :header-rows: 1
 :align: center
@@ -341,6 +399,7 @@ ${"###"} ${e['name']}
         enums=class_enums,
         get_slug=get_slug,
         numeric_enums=numeric_enums,
+        epri_obj_links=epri_obj_links
         # preamble=markdown(preamble, extensions=['tables', 'md_in_html']), 
         # show_export=markdown(show_export, extensions=['tables', 'md_in_html'])
     ))
