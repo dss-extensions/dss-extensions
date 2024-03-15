@@ -8,6 +8,7 @@ from mako.template import Template
 import textwrap
 from pathlib import Path
 
+dss_sample_links = json.loads(Path('./dss-sample-links.json').read_bytes())
 out_path = Path('./dss-format')
 out_path.mkdir(exist_ok=True)
 
@@ -114,6 +115,16 @@ def notes(p, cls):
         res += f'<br>***Not used***'
 
     return res
+
+def get_name_from_link(s):
+    s = s[len('https://github.com/dss-extensions/electricdss-tst/blob/master/'):]
+    return '/'.join(s.split('/')[-3:])
+
+def fix_url(s):
+    if ' ' in s:
+        return f'<{s}>'
+    
+    return s
 
 #TODO: legend explaining how each is codified in the DSS text format
 # preamble = open('/home/meira/projects/dss/dss_gen/properties_preamble.md', 'r').read()
@@ -275,6 +286,7 @@ def get_default(jcls, p, cls):
 
 for cls in schema['classes']:
     cls_name = cls['name']
+    cls_sample_links = dss_sample_links.get(cls['name'].lower(), [])
     class_enums = cls.get('classEnums', [])
     id_to_enum.update({e['id']: e for e in class_enums})
     for e in class_enums:
@@ -336,9 +348,9 @@ html_theme.sidebar_secondary.remove: true
 % endif        
 )
 
-%if epri_obj_links.get(cls['name'].lower()):
-EPRI's OpenDSS Documentation: ${epri_obj_links.get(cls['name'].lower())}
-%endif
+% if epri_obj_links.get(cls['name'].lower()):
+EPRI's OpenDSS Documentation for this component: ${epri_obj_links.get(cls['name'].lower())}
+% endif
 
 :::{list-table}
 :header-rows: 1
@@ -359,7 +371,6 @@ EPRI's OpenDSS Documentation: ${epri_obj_links.get(cls['name'].lower())}
 % endfor
 :::
 % if enums:
-
 ${'##'} Enumerations
 
 % for e in sorted(enums, key=lambda e: e['name']):
@@ -390,6 +401,27 @@ ${"###"} ${e['name']}
 
 % endfor
 % endif
+% if dss_sample_links:
+${'##'} Sample links
+                        
+${'These are' if len(dss_sample_links) > 1 else 'This is'} the ${(len(dss_sample_links) if len(dss_sample_links) != 1 else 'single') if len(dss_sample_links) <= 20 else "top 20"} sample ${'files' if len(dss_sample_links) > 1 else 'file'} with occurrences of this DSS object.
+                 
+:::{list-table}
+:header-rows: 1
+:align: center
+*   - \# of occurrences
+    - Link
+% for link, cnt in dss_sample_links[:20]:
+*   - ${cnt}
+    - [`${get_name_from_link(link)}`](${fix_url(link)})
+% endfor
+:::
+
+Links are provided to the https://github.com/dss-extensions/electricdss-src repository since there are some edits and fixes. Otherwise, these
+files should be available on the [official OpenDSS SVN](https://sourceforge.net/p/electricdss/code/HEAD/tree/) or in the OpenDSS application
+folder if your have a local installation.
+                        
+% endif
 ''')).render(
         types=ptypes,
         cls=cls,
@@ -399,7 +431,10 @@ ${"###"} ${e['name']}
         enums=class_enums,
         get_slug=get_slug,
         numeric_enums=numeric_enums,
-        epri_obj_links=epri_obj_links
+        epri_obj_links=epri_obj_links,
+        dss_sample_links=cls_sample_links,
+        get_name_from_link=get_name_from_link,
+        fix_url=fix_url,
         # preamble=markdown(preamble, extensions=['tables', 'md_in_html']), 
         # show_export=markdown(show_export, extensions=['tables', 'md_in_html'])
     ))
