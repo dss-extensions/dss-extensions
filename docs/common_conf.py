@@ -15,7 +15,7 @@ extensions = [
 templates_path = ['_templates']
 source_suffix = ['.md']
 language = 'en'
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints', 'docs/README.md']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints', 'docs/README.md', '**.virtual_documents']
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "footer_content_items": ["copyright", "last-updated", "extra-footer"],
