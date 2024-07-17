@@ -4904,230 +4904,6 @@ msgstr ""
 "\n"
 "New Capacitor.C2 like=c1  ..."
 
-msgid "WindGen.phases"
-msgstr ""
-"Number of Phases, this WindGen.  Power is evenly divided among phases."
-
-msgid "WindGen.bus1"
-msgstr ""
-"Bus to which the WindGen is connected.  May include specific node "
-"specification."
-
-msgid "WindGen.kv"
-msgstr ""
-"Nominal rated (1.0 per unit) voltage, kV, for WindGen. For 2- and 3-phase "
-"WindGens, specify phase-phase kV. Otherwise, for phases=1 or phases>3, "
-"specify actual kV across each branch of the WindGen. If wye (star), specify "
-"phase-neutral kV. If delta or phase-phase connected, specify phase-phase kV."
-
-msgid "WindGen.kw"
-msgstr ""
-"Total base kW for the WindGen.  A positive value denotes power coming OUT of the element, \n"
-"which is the opposite of a load. This value is modified depending on the dispatch mode. Unaffected by the global load multiplier and growth curves. If you want there to be more generation, you must add more WindGens or change this value."
-
-msgid "WindGen.pf"
-msgstr ""
-"WindGen power factor. Default is 0.80. Enter negative for leading powerfactor (when kW and kvar have opposite signs.)\n"
-"A positive power factor for a WindGen signifies that the WindGen produces vars \n"
-"as is typical for a synchronous WindGen.  Induction machines would be \n"
-"generally specified with a negative power factor."
-
-msgid "WindGen.model"
-msgstr ""
-"Integer code for the model to use for generation variation with voltage. Valid values are:\n"
-"\n"
-"1:WindGen injects a constant kW at specified power factor.\n"
-"2:WindGen is modeled as a constant admittance.\n"
-"3:Const kW, constant kV.  Voltage-regulated model.\n"
-"4:Const kW, Fixed Q (Q never varies)\n"
-"5:Const kW, Fixed Q(as a constant reactance)\n"
-"6:Compute load injection from User-written Model.(see usage of Xd, Xdp)"
-
-msgid "WindGen.yearly"
-msgstr ""
-"Dispatch shape to use for yearly-mode simulations.  Must be previously "
-"defined as a Loadshape object. If this is not specified, a constant value is"
-" assumed (no variation). Set to NONE to reset to no loadshape. Nominally for"
-" 8760 simulations.  If there are fewer points in the designated shape than "
-"the number of points in the solution, the curve is repeated."
-
-msgid "WindGen.daily"
-msgstr ""
-"Dispatch shape to use for daily-mode simulations.  Must be previously "
-"defined as a Loadshape object of 24 hrs, typically.Set to NONE to reset to "
-"no loadshape. "
-
-msgid "WindGen.duty"
-msgstr ""
-"Load shape to use for duty cycle dispatch simulations such as for wind or "
-"solar generation. Must be previously defined as a Loadshape object. "
-"Typically would have time intervals less than 1 hr -- perhaps, in seconds. "
-"Set to NONE to reset to no loadshape. Designate the number of points to "
-"solve using the Set Number=xxxx command. If there are fewer points in the "
-"actual shape, the shape is assumed to repeat."
-
-msgid "WindGen. "
-msgstr " "
-
-msgid "WindGen.conn"
-msgstr "={wye|LN|delta|LL}.  Default is wye."
-
-msgid "WindGen.kvar"
-msgstr ""
-"Specify the base kvar.  Alternative to specifying the power factor.  Side "
-"effect:  the power factor value is altered to agree based on present value "
-"of kW."
-
-msgid "WindGen."
-msgstr ""
-
-msgid "WindGen.status"
-msgstr ""
-"={Fixed | Variable*}.  If Fixed, then dispatch multipliers do not apply. The"
-" WindGen is always at full power when it is ON.  Default is Variable  "
-"(follows curves or windspeed)."
-
-msgid "WindGen.class"
-msgstr ""
-"An arbitrary integer number representing the class of WindGen so that "
-"WindGen values may be segregated by class."
-
-msgid "WindGen.vpu"
-msgstr ""
-"Per Unit voltage set point for Model = 3  (Regulated voltage model).  "
-"Default is 1.0 pu. "
-
-msgid "WindGen.maxkvar"
-msgstr ""
-"Maximum kvar limit for Model = 3.  Defaults to twice the specified load "
-"kvar.  Always reset this if you change PF or kvar properties."
-
-msgid "WindGen.minkvar"
-msgstr ""
-"Minimum kvar limit for Model = 3. Enter a negative number if WindGen can "
-"absorb vars. Defaults to negative of Maxkvar.  Always reset this if you "
-"change PF or kvar properties."
-
-msgid "WindGen.pvfactor"
-msgstr ""
-"Deceleration factor for P-V WindGen model (Model=3).  Default is 0.1. If the"
-" circuit converges easily, you may want to use a higher number such as 1.0. "
-"Use a lower number if solution diverges. Use Debugtrace=yes to create a file"
-" that will trace the convergence of a WindGen model."
-
-msgid "WindGen.debugtrace"
-msgstr ""
-"{Yes | No }  Default is no.  Turn this on to capture the progress of the "
-"WindGen model for each iteration.  Creates a separate file for each WindGen "
-"named \"GEN_name.csv\"."
-
-msgid "WindGen.vminpu"
-msgstr ""
-"Default = 0.90.  Minimum per unit voltage for which the Model is assumed to "
-"apply. Below this value, the Windgen model reverts to a constant impedance "
-"model. For model 7, the current is limited to the value computed for "
-"constant power at Vminpu."
-
-msgid "WindGen.vmaxpu"
-msgstr ""
-"Default = 1.10.  Maximum per unit voltage for which the Model is assumed to "
-"apply. Above this value, the Windgen model reverts to a constant impedance "
-"model."
-
-msgid "WindGen.forceon"
-msgstr ""
-"{Yes | No}  Forces WindGen ON despite requirements of other dispatch modes. "
-"Stays ON until this property is set to NO, or an internal algorithm cancels "
-"the forced ON state."
-
-msgid "WindGen.kva"
-msgstr ""
-"kVA rating of electrical machine. Defaults to 1.2* kW if not specified. "
-"Applied to machine or inverter definition for Dynamics mode solutions. "
-
-msgid "WindGen.mva"
-msgstr "MVA rating of electrical machine.  Alternative to using kVA=."
-
-msgid "WindGen.xd"
-msgstr ""
-"Per unit synchronous reactance of machine. Presently used only for Thevenin "
-"impedance for power flow calcs of user models (model=6). Typically use a "
-"value 0.4 to 1.0. Default is 1.0"
-
-msgid "WindGen.xdp"
-msgstr ""
-"Per unit transient reactance of the machine.  Used for Dynamics mode and "
-"Fault studies.  Default is 0.27.For user models, this value is used for the "
-"Thevenin/Norton impedance for Dynamics Mode."
-
-msgid "WindGen.xdpp"
-msgstr ""
-"Per unit subtransient reactance of the machine.  Used for Harmonics. Default"
-" is 0.20."
-
-msgid "WindGen.h"
-msgstr "Per unit mass constant of the machine.  MW-sec/MVA.  Default is 1.0."
-
-msgid "WindGen.d"
-msgstr ""
-"Damping constant.  Usual range is 0 to 4. Default is 1.0.  Adjust to get "
-"damping"
-
-msgid "WindGen.usermodel"
-msgstr ""
-"Name of DLL containing user-written model, which computes the terminal "
-"currents for Dynamics studies, overriding the default model.  Set to "
-"\"none\" to negate previous setting."
-
-msgid "WindGen.userdata"
-msgstr ""
-"String (in quotes or parentheses) that gets passed to user-written model for"
-" defining the data required for that model."
-
-msgid "WindGen.shaftmodel"
-msgstr ""
-"Name of user-written DLL containing a Shaft model, which models the prime "
-"mover and determines the power on the shaft for Dynamics studies. Models "
-"additional mass elements other than the single-mass model in the DSS default"
-" model. Set to \"none\" to negate previous setting."
-
-msgid "WindGen.shaftdata"
-msgstr ""
-"String (in quotes or parentheses) that gets passed to user-written shaft "
-"dynamic model for defining the data for that model."
-
-msgid "WindGen.dutystart"
-msgstr ""
-"Starting time offset [hours] into the duty cycle shape for this WindGen, "
-"defaults to 0"
-
-msgid "WindGen.balanced"
-msgstr ""
-"{Yes | No*} Default is No.  For Model=7, force balanced current only for "
-"3-phase WindGens. Force zero- and negative-sequence to zero."
-
-msgid "WindGen.xrdp"
-msgstr ""
-"Default is 20. X/R ratio for Xdp property for FaultStudy and Dynamic modes."
-
-msgid "WindGen.spectrum"
-msgstr ""
-"Name of harmonic voltage or current spectrum for this WindGen. Voltage "
-"behind Xd\" for machine - default. Current injection for inverter. Default "
-"value is \"default\", which is defined when the DSS starts."
-
-msgid "WindGen.basefreq"
-msgstr "Base Frequency for ratings."
-
-msgid "WindGen.enabled"
-msgstr "{Yes|No or True|False} Indicates whether this element is enabled."
-
-msgid "WindGen.like"
-msgstr ""
-"Make like another object, e.g.:\n"
-"\n"
-"New Capacitor.C2 like=c1  ..."
-
 msgid "GenDispatcher.element"
 msgstr ""
 "Full object name of the circuit element, typically a line or transformer, "
@@ -9400,3 +9176,190 @@ msgstr ""
 "Make like another object, e.g.:\n"
 "\n"
 "New Capacitor.C2 like=c1  ..."
+
+msgid "WindGen.phases"
+msgstr "Number of Phases, this WindGen.  Power is evenly divided among phases."
+
+msgid "WindGen.bus1"
+msgstr "Bus to which the WindGen is connected.  May include specific node specification."
+
+msgid "WindGen.kv"
+msgstr ""
+"Nominal rated (1.0 per unit) voltage, kV, for WindGen. For 2- and 3-phase WindGens, specify phase-phase kV.\n"
+"Otherwise, for phases=1 or phases>3, specify actual kV across each branch of the WindGen.\n"
+"If wye (star), specify phase-neutral kV.\n"
+"If delta or phase-phase connected, specify phase-phase kV."
+
+msgid "WindGen.kw"
+msgstr ""
+"Total base kW for the WindGen.\n"
+"A positive value denotes power coming OUT of the element, which is the opposite of a load. This value is modified depending on the dispatch mode.\n"
+"Unaffected by the global load multiplier and growth curves.\n"
+"If you want there to be more generation, you must add more WindGens or change this value."
+
+msgid "WindGen.pf"
+msgstr ""
+"WindGen power factor. Default is 0.80. Enter negative for leading powerfactor (when kW and kvar have opposite signs.)\n"
+"A positive power factor for a WindGen signifies that the WindGen produces vars as is typical for a synchronous WindGen.\n"
+"Induction machines would be generally specified with a negative power factor."
+
+msgid "WindGen.model"
+msgstr ""
+"Integer code for the model to use for generation variation with voltage.\n"
+"Valid values are (**NOTE:** this is under review):\n"
+"1:WindGen injects a constant kW at specified power factor.\n"
+"2:WindGen is modeled as a constant admittance.\n"
+"4:Const kW, Fixed Q (Q never varies)\n"
+"5:Const kW, Fixed Q (as a constant reactance)"
+
+msgid "WindGen.yearly"
+msgstr ""
+"Wind speed shape to use for yearly-mode simulations.  Must be previously defined as a LoadShape object.\n"
+"If this is not specified, a constant value is assumed (no variation).\n"
+"Set to NONE to reset to no LoadShape.\n"
+"Nominally for 8760 simulations. If there are fewer points in the designated shape than the number of points in the solution, the curve is repeated."
+
+msgid "WindGen.daily"
+msgstr ""
+"Wind speed shape to use for daily-mode simulations. Must be previously defined as a LoadShape object of 24 hrs, typically.\n"
+"Set to NONE to reset to no LoadShape."
+
+msgid "WindGen.duty"
+msgstr ""
+"Load shape to use for duty cycle dispatch simulations such as for wind or solar generation.\n"
+"Must be previously defined as a LoadShape object.\n"
+"Typically would have time intervals less than 1 hr -- perhaps, in seconds.\n"
+"Set to NONE to reset to no LoadShape.\n"
+"Designate the number of points to solve using the Set Number=xxxx command.\n"
+"If there are fewer points in the actual shape, the shape is assumed to repeat."
+
+msgid "WindGen.conn"
+msgstr "={wye|LN|delta|LL}.  Default is wye."
+
+msgid "WindGen.kvar"
+msgstr ""
+"Specify the base kvar. Alternative to specifying the power factor.\n"
+"Side effect: the power factor value is altered to agree based on present value of kW."
+
+msgid "WindGen.class"
+msgstr ""
+"An arbitrary integer number representing the class of WindGen so that WindGen values may be segregated by class."
+
+msgid "WindGen.debugtrace"
+msgstr ""
+"{Yes | No }  Default is no.  Turn this on to capture the progress of the WindGen model for each iteration.\n"
+"Creates a separate file for each WindGen named \"GEN_name.CSV\"."
+
+msgid "WindGen.vminpu"
+msgstr ""
+"Default = 0.90.  Minimum per unit voltage for which the Model is assumed to apply. "
+"Below this value, the WindGen model reverts to a constant impedance model. For model 7, the current is "
+"limited to the value computed for constant power at VMinPU."
+
+msgid "WindGen.vmaxpu"
+msgstr ""
+"Default = 1.10.  Maximum per unit voltage for which the Model is assumed to apply.\n"
+"Above this value, the WindGen model reverts to a constant impedance model."
+
+msgid "WindGen.kva"
+msgstr "kVA rating of electrical machine. Defaults to 1.2* kW if not specified. Applied to machine or inverter definition for Dynamics mode solutions. "
+
+msgid "WindGen.mva"
+msgstr "MVA rating of electrical machine.  Alternative to using the \"kVA\" property."
+
+msgid "WindGen.usermodel"
+msgstr ""
+"Name of DLL containing user-written model, which computes the terminal currents for Dynamics studies,\n"
+"overriding the default model.  Set to \"none\" to negate previous setting."
+
+msgid "WindGen.userdata"
+msgstr "String (in quotes or parentheses) that gets passed to user-written model for defining the data required for that model."
+
+msgid "WindGen.dutystart"
+msgstr "Starting time offset [hours] into the duty cycle shape for this WindGen, defaults to 0"
+
+msgid "WindGen.dynamiceq"
+msgstr ""
+"The name of the dynamic equation (DynamicExp) that will be used for defining the dynamic behavior of the generator.\n"
+"if not defined, the generator dynamics will follow the built-in dynamic equation."
+
+msgid "WindGen.dynout"
+msgstr ""
+"The name of the variables within the Dynamic equation that will be used to govern the generator dynamics.\n"
+"This generator model requires 2 outputs from the dynamic equation: \n"
+"1. Shaft speed (velocity) relative to synchronous speed.\n"
+"2. Shaft, or power, angle (relative to synchronous reference frame).\n"
+"The output variables need to be defined in the same order."
+
+msgid "WindGen.rthev"
+msgstr "per unit Thévenin equivalent R."
+
+msgid "WindGen.xthev"
+msgstr "per unit Thévenin equivalent X."
+
+msgid "WindGen.vss"
+msgstr "Steady state voltage magnitude."
+
+msgid "WindGen.pss"
+msgstr "Steady state output real power."
+
+msgid "WindGen.qss"
+msgstr "Steady state output reactive power."
+
+msgid "WindGen.vwind"
+msgstr "Wind speed in m/s"
+
+msgid "WindGen.qmode"
+msgstr "Q control mode (0:Q, 1:PF, 2:VV)."
+
+msgid "WindGen.simmechflg"
+msgstr "1 to simulate mechanical system. Otherwise (0) only uses the electrical system. For dynamics simulation purposes."
+
+msgid "WindGen.apcflg"
+msgstr "1 to enable active power control."
+
+msgid "WindGen.qflg"
+msgstr "1 to enable reactive power and voltage control."
+
+msgid "WindGen.delt0"
+msgstr "User defined internal simulation step."
+
+msgid "WindGen.n_wtg"
+msgstr "Number of WTG in aggregation."
+
+msgid "WindGen.vv_curve"
+msgstr "Name of the XY curve defining the control curve for implementing volt-var (VV) control with this inverter."
+
+msgid "WindGen.ag"
+msgstr "Gearbox ratio (Default 1/90)."
+
+msgid "WindGen.cp"
+msgstr "Turbine performance coefficient (default 0.41)."
+
+msgid "WindGen.lamda"
+msgstr "Tip speed ratio (Default 7.95)."
+
+msgid "WindGen.P"
+msgstr "Number of pole pairs of the induction generator (Default 2)."
+
+msgid "WindGen.pd"
+msgstr "Air density in kg/m3 (Default 1.225)."
+
+msgid "WindGen.ploss"
+msgstr "Name of the XYCurve object describing the active power losses in pct versus the wind speed."
+
+msgid "WindGen.rad"
+msgstr "Rotor radius in meters (Default 40)."
+
+msgid "WindGen.vcutin"
+msgstr "Cut-in speed for the wind generator (m/s - default 5)."
+
+msgid "WindGen.vcutout"
+msgstr "Cut-out speed for the wind generator (m/s - default 23)."
+
+msgid "WindGen.spectrum"
+msgstr ""
+"Name of harmonic voltage or current spectrum for this WindGen.\n"
+"Voltage behind Xd\" for machine - default. Current injection for inverter.\n"
+"Default value is \"default\", which is defined when the DSS starts."
+
