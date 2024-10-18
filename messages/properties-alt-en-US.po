@@ -2198,6 +2198,10 @@ msgstr ""
 "Resistance at 60 Hz per unit length. Defaults to $1.02 × Rdc$ if not "
 "specified."
 
+msgid "ConductorData.rdc"
+msgstr ""
+"DC resistance, ohms per unit length (see `Runits`). Defaults to $Rac/1.02$ if not specified."
+
 msgid "ConductorData.runits"
 msgstr ""
 "Length units for resistance: ohms per {mi|kft|km|m|Ft|in|cm|mm} "
@@ -2786,11 +2790,19 @@ msgstr ""
 "Code designating the type of line.\n"
 "OpenDSS currently does not use this internally. For whatever purpose the user defines."
 
+msgid "Line.epsrmedium"
+msgstr ""
+"Relative permittivity of the medium. Used by lines with a geometry definition.\n"
+"Defaults to 1.0 for air."
+
 msgid "PDClass.normamps"
 msgstr "Normal rated current."
 
 msgid "PDClass.emergamps"
 msgstr "Maximum or emergency current rating."
+
+msgid "PDClass.faultrate"
+msgstr "Failure rate per year."
 
 msgid "Line.faultrate"
 msgstr ""
@@ -7366,7 +7378,7 @@ msgstr ""
 "(4) attack is on node 1;\n"
 "(5) initial value of attack: `d_0 = 0.1`;\n"
 "(6) `beta = 5`;\n"
-"(7) `D_beta` is used as a multiplier on \\phi;\n"
+"(7) `D_beta` is used as a multiplier on $\\phi$;\n"
 "(8) `D_p` is used as the attack on gradient control: `D_p = 1`, which is normal; `D_p=-1`, gradient control work on the opposite."
 
 msgid "FMonitor.comm_hide"
@@ -8492,7 +8504,7 @@ msgstr "Turbine performance coefficient."
 msgid "WindGen.lamda"
 msgstr "Tip speed ratio."
 
-msgid "WindGen.P"
+msgid "WindGen.p"
 msgstr "Number of pole pairs of the induction generator."
 
 msgid "WindGen.pd"
