@@ -8575,3 +8575,15 @@ msgid "Executive.showreports"
 msgstr ""
 "{YES/TRUE | NO/FALSE} Default = TRUE. If YES/TRUE will automatically show the results of a Show Command after it is written.\n"
 "On the DSS-Extensions/AltDSS engine, see also the \"AllowEditor\" setting."
+
+msgid "Transformer.normamps"
+msgstr "Normal rated current. For transformers, this is a read-only value, calculated from the kVA rating of the first winding."
+
+msgid "AutoTrans.normamps"
+msgstr "Normal rated current. For transformers, this is a read-only value, calculated from the kVA rating of the first winding."
+
+msgid "Transformer.emergamps"
+msgstr "Maximum or emergency current. For transformers, this is a read-only value, calculated from the kVA rating of the first winding."
+
+msgid "AutoTrans.emergamps"
+msgstr "Maximum or emergency current. For transformers, this is a read-only value, calculated from the kVA rating of the first winding."
