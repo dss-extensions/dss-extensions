@@ -1017,7 +1017,7 @@ msgstr ""
 
 msgid "Executive.capkvar"
 msgstr ""
-"Size of capacitor, kVAR, to automatically add to system.  Default is 600.0."
+"Size of capacitor, kvar, to automatically add to system.  Default is 600.0."
 
 msgid "Executive.addtype"
 msgstr ""
@@ -4946,7 +4946,7 @@ msgstr ""
 "\n"
 "In Time mode, the Storage charging FUNCTION is triggered at the specified %RateCharge at the specified charge trigger time in fractional hours.\n"
 "\n"
-"In PeakShaveLow mode, the charging operation will charge the Storage fleet when the power at a monitored element is below a specified KW target (kWTarget_low). The Storage will charge as much power as necessary to keep the power within the deadband around kWTarget_low.\n"
+"In PeakShaveLow mode, the charging operation will charge the Storage fleet when the power at a monitored element is below a specified kW target (kWTarget_low). The Storage will charge as much power as necessary to keep the power within the deadband around kWTarget_low.\n"
 "\n"
 "In I-PeakShaveLow mode, the charging operation will charge the Storage fleet when the current (Amps) at a monitored element is below a specified amps target (kWTarget_low). The Storage will charge as much power as necessary to keep the amps within the deadband around kWTarget_low. When this control mode is active, the property kWTarget_low will be expressed in k-amps and all the other parameters will be adjusted to match the amps (current) control criteria."
 
@@ -4989,22 +4989,22 @@ msgstr ""
 
 msgid "StorageController.kwhtotal"
 msgstr ""
-"(Read only). Total rated kWh energy Storage capacity of Storage elements "
+"Total rated kWh energy Storage capacity of Storage elements "
 "controlled by this controller."
 
 msgid "StorageController.kwtotal"
 msgstr ""
-"(Read only). Total rated kW power capacity of Storage elements controlled by"
+"Total rated kW power capacity of Storage elements controlled by"
 " this controller."
 
 msgid "StorageController.kwhactual"
-msgstr "(Read only). Actual kWh stored of all controlled Storage elements. "
+msgstr "Actual kWh stored of all controlled Storage elements. "
 
 msgid "StorageController.kwactual"
-msgstr "(Read only). Actual kW output of all controlled Storage elements. "
+msgstr "Actual kW output of all controlled Storage elements. "
 
 msgid "StorageController.kwneed"
-msgstr "(Read only). KW needed to meet target."
+msgstr "kW needed to meet target."
 
 msgid "StorageController.yearly"
 msgstr "Dispatch loadshape object, If any, for Yearly solution Mode."
@@ -5828,8 +5828,7 @@ msgstr ""
 
 msgid "PVSystem.safemode"
 msgstr ""
-"(Read only) Indicates whether the inverter entered (Yes) or not (No) into "
-"Safe Mode."
+"Indicates whether the inverter entered or not into Safe Mode."
 
 msgid "PVSystem.dynamiceq"
 msgstr ""
@@ -5988,7 +5987,7 @@ msgstr ""
 "Negative value denotes an induction generator. "
 
 msgid "IndMach012.pf"
-msgstr "[Read Only] Present power factor for the machine. "
+msgstr "Present power factor for the machine. "
 
 msgid "IndMach012.conn"
 msgstr "Connection of stator: Delta or Wye. Default is Delta."
@@ -6320,7 +6319,7 @@ msgstr ""
 
 msgid "AutoTrans.wdgcurrents"
 msgstr ""
-"(Read only) Makes winding currents available via return on query (? AutoTrans.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ...\n"
+"Makes winding currents available via return on query (? AutoTrans.TX.WdgCurrents). Order: Phase 1, Wdg 1, Wdg 2, ..., Phase 2 ...\n"
 "\n"
 "WARNING: If the transformer has open terminal(s), results may be wrong, i.e. avoid using this in those situations. For more information, see https://github.com/dss-extensions/dss-extensions/issues/24"
 
@@ -7138,27 +7137,27 @@ msgstr ""
 
 msgid "EnergyMeter.saifi"
 msgstr ""
-"(Read only) Makes SAIFI result available via return on query (? "
+"Makes SAIFI result available via return on query (? "
 "energymeter.myMeter.SAIFI."
 
 msgid "EnergyMeter.saifikw"
 msgstr ""
-"(Read only) Makes SAIFIkW result available via return on query (? "
+"Makes SAIFIkW result available via return on query (? "
 "energymeter.myMeter.SAIFIkW."
 
 msgid "EnergyMeter.saidi"
 msgstr ""
-"(Read only) Makes SAIDI result available via return on query (? "
+"Makes SAIDI result available via return on query (? "
 "energymeter.myMeter.SAIDI."
 
 msgid "EnergyMeter.caidi"
 msgstr ""
-"(Read only) Makes CAIDI result available via return on query (? "
+"Makes CAIDI result available via return on query (? "
 "energymeter.myMeter.CAIDI."
 
 msgid "EnergyMeter.custinterrupts"
 msgstr ""
-"(Read only) Makes Total Customer Interrupts value result available via "
+"Makes Total Customer Interrupts value result available via "
 "return on query (? energymeter.myMeter.CustInterrupts."
 
 msgid "Sensor.element"
@@ -7406,7 +7405,7 @@ msgid "Generic5.kw"
 msgstr "Shaft Power, kW, for the Induction Machine. Output limit of a DG"
 
 msgid "Generic5.pf"
-msgstr "[Read Only] Present power factor for the machine. "
+msgstr "Present power factor for the machine. "
 
 msgid "Generic5.conn"
 msgstr "Connection of stator: Delta or Wye. Default is Delta."
