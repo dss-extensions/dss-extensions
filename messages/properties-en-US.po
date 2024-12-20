@@ -86,7 +86,12 @@ msgstr ""
 "Perform the solution of the present solution mode. You can set any option "
 "that you can set with the Set command (see Set). The Solve command is "
 "virtually synonymous with the Set command except that a solution is "
-"performed after the options are processed."
+"performed after the options are processed.\n"
+"\n"
+"If accompanied by the argument \"all\" will start a simulation "
+"job for all the circuits in memory (Solve all). Same as \"SolveAll\". " 
+"Otherwise, it will start the simulation for the active circuit only "
+"(see \"set ActiveCircuit\")."
 
 msgid "Command.enable"
 msgstr ""
@@ -200,7 +205,9 @@ msgstr ""
 " Keep in mind that meters will perform integration."
 
 msgid "Command.clear"
-msgstr "Clear all circuits currently in memory."
+msgstr "Clears the active circuit in memory. By using the argument \"all\", "
+"it will clear all the circuits in memory (\"clear all\") in the current DSS engine, "
+"just like the \"ClearAll\" command."
 
 msgid "Command.about"
 msgstr "Display \"About Box\".  (Result string set to Version string.)"
@@ -2356,6 +2363,9 @@ msgstr ""
 msgid "CNData.diacable"
 msgstr "Diameter over cable; same units as radius; no default."
 
+msgid "CNData.semiconlayer"
+msgstr "{Yes/True | No/False}  Default is Yes. Existence of a semicon layer between the insulation layer and the concentric neutral strands. Affects calculation of shunt self admittances."
+
 msgid "CNData.rdc"
 msgstr ""
 "dc Resistance, ohms per unit length (see Runits). Defaults to Rac/1.02 if "
@@ -2598,6 +2608,14 @@ msgstr ""
 "\n"
 "OpenDSS currently does not use this internally. For whatever purpose the user defines. Default is OH."
 
+msgid "LineGeometry.conductors"
+msgstr ""
+"Array of conductor names for use in line constants calculation.\n"
+"Must be used in conjunction with the Spacing property.\n"
+"Specify the Spacing first, and `ncond` wires.\n"
+"Specify the conductor type followed by the conductor name. e.g., \"conductors=[cndata.cncablename, tsdata.tscablename, wiredata.wirename]\"\n"
+"If a given position in the spacing is not to be used in the line, use \"none\" in the entry of the conductors array."
+
 msgid "LineGeometry.like"
 msgstr ""
 "Make like another object, e.g.:\n"
@@ -2624,6 +2642,21 @@ msgid "LineSpacing.units"
 msgstr ""
 "Units for x and h: {mi|kft|km|m|Ft|in|cm } Initial default is \"ft\", but "
 "defaults to last unit defined"
+
+msgid "LineSpacing.detailed"
+msgstr "{Yes/True | No/False} Default = Yes. Determines whether the spacing uses a detailed cross-section coordinates with x and h arrays (Yes/True), or uses equivalent spacing fields (No/False). The equivalent spacing fields are EqDistPhPh, EqDistPhN, AvgPhaseHeight and AvgNeutralHeight."
+
+msgid "LineSpacing.eqdistphph"
+msgstr "Equivalent distance between phase conductors. Used for equivalent distance modeling (detailed=yes) as opposed to detailed cross-section coordinates."
+
+msgid "LineSpacing.eqdistphn"
+msgstr "Equivalent distance between phase and neutral conductors. Used for equivalent distance modeling (detailed=yes) as opposed to detailed cross-section coordinates."
+
+msgid "LineSpacing.avgphaseheight"
+msgstr "Average height of phase conductors. Used for equivalent distance modeling (detailed=yes) as opposed to detailed cross-section coordinates."
+
+msgid "LineSpacing.avgneutralheight"
+msgstr "Average height of neutral conductors. Used for equivalent distance modeling (detailed=yes) as opposed to detailed cross-section coordinates."
 
 msgid "LineSpacing.like"
 msgstr ""
@@ -3049,6 +3082,22 @@ msgid "Line.epsrmedium"
 msgstr ""
 "Relative permittivity of the medium. Used by lines with a geometry definition.\n"
 "Defaults to 1.0 for air."
+
+msgid "Line.heightoffset"
+msgstr ""
+"Default=0.0. Average Height (or depth) offset to be applied on top of coordinates of geometry or spacing.\n"
+"Use negative value for depth in underground lines."
+
+msgid "Line.heightunit"
+msgstr "Height offset Units = {mi|kft|km|m|Ft|in|cm }. If none is detected, meters is assumed."
+
+msgid "Line.conductors"
+msgstr ""
+"Array of conductor names for use in line constants calculation.\n"
+"Must be used in conjunction with the \"Spacing\" property.\n"
+"Specify the Spacing first, and \"NCond\" wires.\n"
+"Specify the conductor type followed by the conductor name. e.g., \"conductors=[CNData.cncablename, TSData.tscablename, WireData.wirename]\"\n"
+"If a given position in the spacing is not to be used in the line, use \"none\" in the entry of the conductors array."
 
 msgid "Vsource.bus1"
 msgstr ""
@@ -9415,3 +9464,18 @@ msgid "Executive.showreports"
 msgstr ""
 "{YES/TRUE | NO/FALSE} Default = TRUE. If YES/TRUE will automatically show the results of a Show Command after it is written.\n"
 "On the DSS-Extensions/AltDSS engine, see also the \"AllowEditor\" setting."
+
+msgid "Executive.firstobj"
+msgstr "Sets the First element of the active class as the active element, returns the index of the active element. If none, returns 0. See \"Set Class\"."
+
+msgid "Executive.nextobj"
+msgstr "Sets the Next element of the active class as the active element, returns the index of the active element. If none, returns 0. See \"Set Class\"."
+
+msgid "Executive.countobj"
+msgstr "Returns the number of elements within the active class. See \"Set Class\"."
+
+msgid "Executive.activeobj"
+msgstr "Returns the name of the active object."
+
+msgid "Executive.classmembers"
+msgstr "Returns the list of objects belonging to the active class, comma separated. See \"Set Class\"."
